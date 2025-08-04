@@ -4,32 +4,174 @@
     <meta charset="UTF-8">
     <title>Finance Planner: The F.I.R.E Tool</title>
     <meta name="description" content="Insight for F.I.R.E. (Financial Independence, Retire Early) long-term planning.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
             color: #222;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
+        }
+        .header {
+            background: #1a4d2e;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        .nav {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav a:hover {
+            color: #b2dfdb;
         }
         .container {
-            max-width: 800px;
-            margin: 40px auto 0 auto;
-            background: #fff;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            background: white;
             border-radius: 16px;
             box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-            padding: 32px 28px 24px 28px;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
         }
-        h1 {
+        .hero h1 {
             color: #1a4d2e;
-            font-size: 2.5rem;
-            margin-bottom: 0.5em;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
         }
-        h2, h3 {
+        .hero .subtitle {
             color: #2b7a78;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        .btn-primary {
+            background: #2b7a78;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #1a4d2e;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: white;
+            color: #2b7a78;
+            border: 2px solid #2b7a78;
+        }
+        .btn-secondary:hover {
+            background: #2b7a78;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .section {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .section h2 {
+            color: #1a4d2e;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #2b7a78;
+            padding-bottom: 0.5rem;
+        }
+        .section h3 {
+            color: #2b7a78;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .feature-card {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #2b7a78;
+        }
+        .feature-card strong {
+            color: #1a4d2e;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .tutorials-section {
+            background: linear-gradient(135deg, #2b7a78 0%, #1a4d2e 100%);
+            color: white;
+            text-align: center;
+        }
+        .tutorials-section h2 {
+            color: white;
+            border-bottom: 3px solid white;
+        }
+        .tutorials-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .youtube-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
         }
         ul {
             margin-left: 1.5em;
+        }
+        li {
+            margin-bottom: 0.5rem;
         }
         a {
             color: #2b7a78;
@@ -39,68 +181,172 @@
         a:hover {
             text-decoration: underline;
         }
-        .links {
-            margin-top: 2.5em;
+        .footer {
+            background: #1a4d2e;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .footer-links {
             display: flex;
-            gap: 2em;
+            gap: 2rem;
+            justify-content: center;
             flex-wrap: wrap;
+            margin-bottom: 1rem;
         }
-        .links a {
-            display: inline-block;
-            background: #e0e7ef;
-            padding: 0.7em 1.2em;
-            border-radius: 8px;
-            transition: background 0.2s;
+        .footer-links a {
+            color: white;
+            font-weight: 500;
         }
-        .links a:hover {
-            background: #b2dfdb;
+        .footer-links a:hover {
+            color: #b2dfdb;
         }
-        hr {
-            border: none;
-            border-top: 1px solid #e0e7ef;
-            margin: 2em 0;
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav {
+                margin-top: 1rem;
+                justify-content: center;
+            }
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Finance Planner: The F.I.R.E Tool</h1>
-        <hr>
-        <h2>Take Control of Your Financial Future</h2>
-        <p>Finance Planner is your essential companion for comprehensive, long-term financial planning. Designed for the F.I.R.E. (Financial Independence, Retire Early) movement, it helps you visualize, track, and achieve your financial goals—whether you’re just starting out or deep into advanced planning.</p>
-        <h3>Key Features</h3>
-        <ul>
-            <li><strong>Multi-Person & Multi-Income Support:</strong> Manage finances for your entire household, including multiple people, income streams, and spending categories.</li>
-            <li><strong>Flexible Savings Accounts:</strong> Organize and track multiple savings accounts for different goals.</li>
-            <li><strong>Long-Term Projections:</strong> See your wealth grow over decades with detailed, year-by-year forecasts.</li>
-            <li><strong>FIRE Goal Tracking:</strong> Set your FIRE number and monitor your progress toward financial independence.</li>
-            <li><strong>"What If" Scenarios:</strong> Experiment with savings rates, investment returns, and withdrawal strategies to see their impact.</li>
-            <li><strong>Inflation Adjustment:</strong> All calculations account for inflation, giving you a realistic view of your future purchasing power.</li>
-            <li><strong>Yearly Overviews:</strong> Get clear, actionable summaries of your net worth, passive income, and projected retirement expenses.</li>
-            <li><strong>Customizable Inputs:</strong> Easily enter your income, expenses, investments, assets, and liabilities.</li>
-            <li><strong>Visual Insights:</strong> Intuitive charts and graphs make complex financial data easy to understand.</li>
-            <li><strong>Retirement Withdrawal Strategies:</strong> Model safe withdrawal rates (like the 4% rule) to ensure your portfolio lasts.</li>
-            <li><strong>Early Retirement Planning:</strong> Navigate both the accumulation and decumulation phases of early retirement.</li>
-            <li><strong>User-Friendly Interface:</strong> Clean, intuitive, and accessible for everyone.</li>
-        </ul>
-        <h3>Why Choose Finance Planner?</h3>
-        <ul>
-            <li><strong>Clarity for FIRE:</strong> Focus on the long-term vision crucial for financial independence.</li>
-            <li><strong>Empowering Decisions:</strong> Make smart financial choices today for a better tomorrow.</li>
-            <li><strong>Beyond Budgeting:</strong> Go deeper than basic budgeting—see the power of compounding and long-term strategy.</li>
-            <li><strong>Stay Motivated:</strong> Visualize your progress and stay inspired on your journey.</li>
-        </ul>
-        <h3>Who Is It For?</h3>
-        <ul>
-            <li>Individuals and couples pursuing F.I.R.E.</li>
-            <li>Anyone planning their long-term financial future.</li>
-            <li>Investors projecting wealth growth and retirement readiness.</li>
-            <li>Those wanting to understand the impact of their financial decisions.</li>
-        </ul>
-        <div class="links">
-            <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank" rel="noopener">💬 Questions? Visit our GitHub Discussions</a>
-            <a href="https://crwsolutions.nl/privacy_fp.html" target="_blank" rel="noopener">🔒 Privacy Statement</a>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Finance Planner</div>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#tutorials">Tutorials</a>
+                <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank">Community</a>
+            </nav>
         </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Finance Planner: The F.I.R.E Tool</h1>
+            <p class="subtitle">Your Essential Companion for Financial Independence</p>
+            <p>Designed for the F.I.R.E. (Financial Independence, Retire Early) movement, Finance Planner helps you visualize, track, and achieve your financial goals—whether you're just starting out or deep into advanced planning.</p>
+            <div class="cta-buttons">
+                <a href="#features" class="btn btn-primary">Explore Features</a>
+                <a href="#tutorials" class="btn btn-secondary">Watch Tutorials</a>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <strong>Multi-Person & Multi-Income Support</strong>
+                    Manage finances for your entire household, including multiple people, income streams, and spending categories.
+                </div>
+                <div class="feature-card">
+                    <strong>Flexible Savings Accounts</strong>
+                    Organize and track multiple savings accounts for different goals.
+                </div>
+                <div class="feature-card">
+                    <strong>Long-Term Projections</strong>
+                    See your wealth grow over decades with detailed, year-by-year forecasts.
+                </div>
+                <div class="feature-card">
+                    <strong>FIRE Goal Tracking</strong>
+                    Set your FIRE number and monitor your progress toward financial independence.
+                </div>
+                <div class="feature-card">
+                    <strong>"What If" Scenarios</strong>
+                    Experiment with savings rates, investment returns, and withdrawal strategies to see their impact.
+                </div>
+                <div class="feature-card">
+                    <strong>Inflation Adjustment</strong>
+                    All calculations account for inflation, giving you a realistic view of your future purchasing power.
+                </div>
+            </div>
+
+            <h3>Advanced Planning Tools</h3>
+            <ul>
+                <li><strong>Yearly Overviews:</strong> Get clear, actionable summaries of your net worth, passive income, and projected retirement expenses.</li>
+                <li><strong>Customizable Inputs:</strong> Easily enter your income, expenses, investments, assets, and liabilities.</li>
+                <li><strong>Visual Insights:</strong> Intuitive charts and graphs make complex financial data easy to understand.</li>
+                <li><strong>Retirement Withdrawal Strategies:</strong> Model safe withdrawal rates (like the 4% rule) to ensure your portfolio lasts.</li>
+                <li><strong>Early Retirement Planning:</strong> Navigate both the accumulation and decumulation phases of early retirement.</li>
+                <li><strong>User-Friendly Interface:</strong> Clean, intuitive, and accessible for everyone.</li>
+            </ul>
+        </section>
+
+        <section id="tutorials" class="section tutorials-section">
+            <h2>📚 Learn How to Use Finance Planner</h2>
+            <div class="tutorials-content">
+                <div>
+                    <div class="youtube-icon">🎥</div>
+                    <h3>Video Tutorials Available</h3>
+                    <p>Watch comprehensive tutorials on how to maximize your Financial Independence planning with Finance Planner. Learn best practices, tips, and advanced strategies.</p>
+                    <a href="https://www.youtube.com/@Juuul_FP" target="_blank" rel="noopener" class="btn btn-primary">
+                        Visit Our YouTube Channel
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Why Choose Finance Planner?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <strong>Clarity for FIRE</strong>
+                    Focus on the long-term vision crucial for financial independence.
+                </div>
+                <div class="feature-card">
+                    <strong>Empowering Decisions</strong>
+                    Make smart financial choices today for a better tomorrow.
+                </div>
+                <div class="feature-card">
+                    <strong>Beyond Budgeting</strong>
+                    Go deeper than basic budgeting—see the power of compounding and long-term strategy.
+                </div>
+                <div class="feature-card">
+                    <strong>Stay Motivated</strong>
+                    Visualize your progress and stay inspired on your journey.
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Who Is It For?</h2>
+            <ul>
+                <li><strong>Individuals and couples pursuing F.I.R.E.</strong> - Get the tools you need for financial independence</li>
+                <li><strong>Anyone planning their long-term financial future</strong> - Build wealth systematically</li>
+                <li><strong>Investors projecting wealth growth and retirement readiness</strong> - Model different scenarios</li>
+                <li><strong>Those wanting to understand the impact of their financial decisions</strong> - See long-term effects</li>
+            </ul>
+        </section>
     </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank" rel="noopener">💬 Community Discussions</a>
+                <a href="https://www.youtube.com/@Juuul_FP" target="_blank" rel="noopener">🎥 Video Tutorials</a>
+                <a href="https://crwsolutions.nl/privacy_fp.html" target="_blank" rel="noopener">🔒 Privacy Statement</a>
+            </div>
+            <p>&copy; 2024 Finance Planner. Empowering your journey to Financial Independence.</p>
+        </div>
+    </footer>
 </body>
 </html>
