@@ -240,6 +240,21 @@
         .footer-links a:hover {
             color: #b2dfdb;
         }
+        .lang-toggle {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+        .lang-toggle:hover {
+            background: white;
+            color: #1a4d2e;
+        }
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
@@ -267,87 +282,88 @@
         <div class="header-content">
             <div class="logo">Finance Planner</div>
             <nav class="nav">
-                <a href="#features">Features</a>
-                <a href="#tutorials">Tutorials</a>
-                <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank">Community</a>
+                <a href="#features" data-i18n="nav.features">Features</a>
+                <a href="#tutorials" data-i18n="nav.tutorials">Tutorials</a>
+                <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank" data-i18n="nav.community">Community</a>
+                <button class="lang-toggle" id="langToggle">NL</button>
             </nav>
         </div>
     </header>
 
     <div class="container">
         <section class="hero">
-            <h1>Finance Planner: The F.I.R.E Tool</h1>
-            <p class="subtitle">Your Essential Companion for Financial Independence</p>
-            <p>Designed for the F.I.R.E. (Financial Independence, Retire Early) movement, Finance Planner helps you visualize, track, and achieve your financial goals—whether you're just starting out or deep into advanced planning.</p>
+            <h1 data-i18n="hero.title">Finance Planner: The F.I.R.E Tool</h1>
+            <p class="subtitle" data-i18n="hero.subtitle">Your Essential Companion for Financial Independence</p>
+            <p data-i18n="hero.description">Designed for the F.I.R.E. (Financial Independence, Retire Early) movement, Finance Planner helps you visualize, track, and achieve your financial goals—whether you're just starting out or deep into advanced planning.</p>
             <div class="cta-buttons">
-                <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener" class="btn btn-primary">📱 Download iOS App</a>
-                <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener" class="btn btn-primary">📱 Download Android App</a>
-                <a href="#features" class="btn btn-secondary">Explore Features</a>
+                <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="hero.downloadIos">📱 Download iOS App</a>
+                <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="hero.downloadAndroid">📱 Download Android App</a>
+                <a href="#features" class="btn btn-secondary" data-i18n="hero.exploreFeatures">Explore Features</a>
             </div>
         </section>
 
         <section class="section app-store-section">
-            <h2>📱 Get Finance Planner on Your Mobile Device</h2>
-            <p>Take your financial planning on the go with our mobile apps, available now for iOS and Android!</p>
+            <h2 data-i18n="appStore.title">📱 Get Finance Planner on Your Mobile Device</h2>
+            <p data-i18n="appStore.description">Take your financial planning on the go with our mobile apps, available now for iOS and Android!</p>
             <div class="app-store-buttons">
                 <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener" class="btn-app-store">
                     <span style="font-size: 1.5rem;">🍎</span>
-                    <span>Download on the App Store</span>
+                    <span data-i18n="appStore.downloadAppStore">Download on the App Store</span>
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener" class="btn-app-store">
                     <span style="font-size: 1.5rem;">🤖</span>
-                    <span>Get it on Google Play</span>
+                    <span data-i18n="appStore.downloadGooglePlay">Get it on Google Play</span>
                 </a>
             </div>
         </section>
 
         <section id="features" class="section">
-            <h2>Key Features</h2>
+            <h2 data-i18n="features.title">Key Features</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <strong>Multi-Person & Multi-Income Support</strong>
-                    Manage finances for your entire household, including multiple people, income streams, and spending categories.
+                    <strong data-i18n="features.multiPerson.title">Multi-Person & Multi-Income Support</strong>
+                    <span data-i18n="features.multiPerson.description">Manage finances for your entire household, including multiple people, income streams, and spending categories.</span>
                 </div>
                 <div class="feature-card">
-                    <strong>Flexible Savings Accounts</strong>
-                    Organize and track multiple savings accounts for different goals.
+                    <strong data-i18n="features.flexibleSavings.title">Flexible Savings Accounts</strong>
+                    <span data-i18n="features.flexibleSavings.description">Organize and track multiple savings accounts for different goals.</span>
                 </div>
                 <div class="feature-card">
-                    <strong>Long-Term Projections</strong>
-                    See your wealth grow over decades with detailed, year-by-year forecasts.
+                    <strong data-i18n="features.longTermProjections.title">Long-Term Projections</strong>
+                    <span data-i18n="features.longTermProjections.description">See your wealth grow over decades with detailed, year-by-year forecasts.</span>
                 </div>
                 <div class="feature-card">
-                    <strong>FIRE Goal Tracking</strong>
-                    Set your FIRE number and monitor your progress toward financial independence.
+                    <strong data-i18n="features.fireGoal.title">FIRE Goal Tracking</strong>
+                    <span data-i18n="features.fireGoal.description">Set your FIRE number and monitor your progress toward financial independence.</span>
                 </div>
                 <div class="feature-card">
-                    <strong>"What If" Scenarios</strong>
-                    Experiment with savings rates, investment returns, and withdrawal strategies to see their impact.
+                    <strong data-i18n="features.whatIf.title">"What If" Scenarios</strong>
+                    <span data-i18n="features.whatIf.description">Experiment with savings rates, investment returns, and withdrawal strategies to see their impact.</span>
                 </div>
                 <div class="feature-card">
-                    <strong>Inflation Adjustment</strong>
-                    All calculations account for inflation, giving you a realistic view of your future purchasing power.
+                    <strong data-i18n="features.inflation.title">Inflation Adjustment</strong>
+                    <span data-i18n="features.inflation.description">All calculations account for inflation, giving you a realistic view of your future purchasing power.</span>
                 </div>
             </div>
 
-            <h3>Advanced Planning Tools</h3>
+            <h3 data-i18n="features.advancedTools.title">Advanced Planning Tools</h3>
             <ul>
-                <li><strong>Yearly Overviews:</strong> Get clear, actionable summaries of your net worth, passive income, and projected retirement expenses.</li>
-                <li><strong>Customizable Inputs:</strong> Easily enter your income, expenses, investments, assets, and liabilities.</li>
-                <li><strong>Visual Insights:</strong> Intuitive charts and graphs make complex financial data easy to understand.</li>
-                <li><strong>Early Retirement Planning:</strong> Navigate both the accumulation and decumulation phases of early retirement.</li>
-                <li><strong>User-Friendly Interface:</strong> Clean, intuitive, and accessible for everyone.</li>
+                <li data-i18n="features.advancedTools.yearly"><strong>Yearly Overviews:</strong> Get clear, actionable summaries of your net worth, passive income, and projected retirement expenses.</li>
+                <li data-i18n="features.advancedTools.customizable"><strong>Customizable Inputs:</strong> Easily enter your income, expenses, investments, assets, and liabilities.</li>
+                <li data-i18n="features.advancedTools.visual"><strong>Visual Insights:</strong> Intuitive charts and graphs make complex financial data easy to understand.</li>
+                <li data-i18n="features.advancedTools.earlyRetirement"><strong>Early Retirement Planning:</strong> Navigate both the accumulation and decumulation phases of early retirement.</li>
+                <li data-i18n="features.advancedTools.userFriendly"><strong>User-Friendly Interface:</strong> Clean, intuitive, and accessible for everyone.</li>
             </ul>
         </section>
 
         <section id="tutorials" class="section tutorials-section">
-            <h2>📚 Learn How to Use Finance Planner</h2>
+            <h2 data-i18n="tutorials.title">📚 Learn How to Use Finance Planner</h2>
             <div class="tutorials-content">
                 <div>
                     <div class="youtube-icon">🎥</div>
-                    <h3>Video Tutorials Available</h3>
-                    <p>Watch comprehensive tutorials on how to maximize your Financial Independence planning with Finance Planner. Learn best practices, tips, and advanced strategies.</p>
-                    <a href="https://www.youtube.com/@Juuul_FP" target="_blank" rel="noopener" class="btn btn-primary">
+                    <h3 data-i18n="tutorials.videoTitle">Video Tutorials Available</h3>
+                    <p data-i18n="tutorials.description">Watch comprehensive tutorials on how to maximize your Financial Independence planning with Finance Planner. Learn best practices, tips, and advanced strategies.</p>
+                    <a href="https://www.youtube.com/@Juuul_FP" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="tutorials.visitChannel">
                         Visit Our YouTube Channel
                     </a>
                 </div>
@@ -355,34 +371,34 @@
         </section>
 
         <section class="section">
-            <h2>Why Choose Finance Planner?</h2>
+            <h2 data-i18n="whyChoose.title">Why Choose Finance Planner?</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <strong>Clarity for FIRE</strong>
-                    Focus on the long-term vision crucial for financial independence.
+                    <strong data-i18n="whyChoose.clarity.title">Clarity for FIRE</strong>
+                    <span data-i18n="whyChoose.clarity.description">Focus on the long-term vision crucial for financial independence.</span>
                 </div>
                 <div class="feature-card">
-                    <strong>Empowering Decisions</strong>
-                    Make smart financial choices today for a better tomorrow.
+                    <strong data-i18n="whyChoose.empowering.title">Empowering Decisions</strong>
+                    <span data-i18n="whyChoose.empowering.description">Make smart financial choices today for a better tomorrow.</span>
                 </div>
                 <div class="feature-card">
-                    <strong>Beyond Budgeting</strong>
-                    Go deeper than basic budgeting—see the power of compounding and long-term strategy.
+                    <strong data-i18n="whyChoose.beyond.title">Beyond Budgeting</strong>
+                    <span data-i18n="whyChoose.beyond.description">Go deeper than basic budgeting—see the power of compounding and long-term strategy.</span>
                 </div>
                 <div class="feature-card">
-                    <strong>Stay Motivated</strong>
-                    Visualize your progress and stay inspired on your journey.
+                    <strong data-i18n="whyChoose.motivated.title">Stay Motivated</strong>
+                    <span data-i18n="whyChoose.motivated.description">Visualize your progress and stay inspired on your journey.</span>
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <h2>Who Is It For?</h2>
+            <h2 data-i18n="whoIsItFor.title">Who Is It For?</h2>
             <ul>
-                <li><strong>Individuals and couples pursuing F.I.R.E.</strong> - Get the tools you need for financial independence</li>
-                <li><strong>Anyone planning their long-term financial future</strong> - Build wealth systematically</li>
-                <li><strong>Investors projecting wealth growth and retirement readiness</strong> - Model different scenarios</li>
-                <li><strong>Those wanting to understand the impact of their financial decisions</strong> - See long-term effects</li>
+                <li data-i18n="whoIsItFor.individuals"><strong>Individuals and couples pursuing F.I.R.E.</strong> - Get the tools you need for financial independence</li>
+                <li data-i18n="whoIsItFor.planners"><strong>Anyone planning their long-term financial future</strong> - Build wealth systematically</li>
+                <li data-i18n="whoIsItFor.investors"><strong>Investors projecting wealth growth and retirement readiness</strong> - Model different scenarios</li>
+                <li data-i18n="whoIsItFor.decisionMakers"><strong>Those wanting to understand the impact of their financial decisions</strong> - See long-term effects</li>
             </ul>
         </section>
     </div>
@@ -390,14 +406,253 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-links">
-                <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener">📱 iOS App</a>
-                <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener">📱 Android App</a>
-                <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank" rel="noopener">💬 Community Discussions</a>
-                <a href="https://www.youtube.com/@Juuul_FP" target="_blank" rel="noopener">🎥 Video Tutorials</a>
-                <a href="https://crwsolutions.nl/privacy_fp.html" target="_blank" rel="noopener">🔒 Privacy Statement</a>
+                <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener" data-i18n="footer.iosApp">📱 iOS App</a>
+                <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener" data-i18n="footer.androidApp">📱 Android App</a>
+                <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank" rel="noopener" data-i18n="footer.community">💬 Community Discussions</a>
+                <a href="https://www.youtube.com/@Juuul_FP" target="_blank" rel="noopener" data-i18n="footer.tutorials">🎥 Video Tutorials</a>
+                <a href="https://crwsolutions.nl/privacy_fp.html" target="_blank" rel="noopener" data-i18n="footer.privacy">🔒 Privacy Statement</a>
             </div>
-            <p>&copy; 2024 Finance Planner. Empowering your journey to Financial Independence.</p>
+            <p data-i18n="footer.copyright">&copy; 2024 Finance Planner. Empowering your journey to Financial Independence.</p>
         </div>
     </footer>
+
+    <script>
+        // Translations
+        const translations = {
+            en: {
+                nav: {
+                    features: "Features",
+                    tutorials: "Tutorials",
+                    community: "Community"
+                },
+                hero: {
+                    title: "Finance Planner: The F.I.R.E Tool",
+                    subtitle: "Your Essential Companion for Financial Independence",
+                    description: "Designed for the F.I.R.E. (Financial Independence, Retire Early) movement, Finance Planner helps you visualize, track, and achieve your financial goals—whether you're just starting out or deep into advanced planning.",
+                    downloadIos: "📱 Download iOS App",
+                    downloadAndroid: "📱 Download Android App",
+                    exploreFeatures: "Explore Features"
+                },
+                appStore: {
+                    title: "📱 Get Finance Planner on Your Mobile Device",
+                    description: "Take your financial planning on the go with our mobile apps, available now for iOS and Android!",
+                    downloadAppStore: "Download on the App Store",
+                    downloadGooglePlay: "Get it on Google Play"
+                },
+                features: {
+                    title: "Key Features",
+                    multiPerson: {
+                        title: "Multi-Person & Multi-Income Support",
+                        description: "Manage finances for your entire household, including multiple people, income streams, and spending categories."
+                    },
+                    flexibleSavings: {
+                        title: "Flexible Savings Accounts",
+                        description: "Organize and track multiple savings accounts for different goals."
+                    },
+                    longTermProjections: {
+                        title: "Long-Term Projections",
+                        description: "See your wealth grow over decades with detailed, year-by-year forecasts."
+                    },
+                    fireGoal: {
+                        title: "FIRE Goal Tracking",
+                        description: "Set your FIRE number and monitor your progress toward financial independence."
+                    },
+                    whatIf: {
+                        title: '"What If" Scenarios',
+                        description: "Experiment with savings rates, investment returns, and withdrawal strategies to see their impact."
+                    },
+                    inflation: {
+                        title: "Inflation Adjustment",
+                        description: "All calculations account for inflation, giving you a realistic view of your future purchasing power."
+                    },
+                    advancedTools: {
+                        title: "Advanced Planning Tools",
+                        yearly: "<strong>Yearly Overviews:</strong> Get clear, actionable summaries of your net worth, passive income, and projected retirement expenses.",
+                        customizable: "<strong>Customizable Inputs:</strong> Easily enter your income, expenses, investments, assets, and liabilities.",
+                        visual: "<strong>Visual Insights:</strong> Intuitive charts and graphs make complex financial data easy to understand.",
+                        earlyRetirement: "<strong>Early Retirement Planning:</strong> Navigate both the accumulation and decumulation phases of early retirement.",
+                        userFriendly: "<strong>User-Friendly Interface:</strong> Clean, intuitive, and accessible for everyone."
+                    }
+                },
+                tutorials: {
+                    title: "📚 Learn How to Use Finance Planner",
+                    videoTitle: "Video Tutorials Available",
+                    description: "Watch comprehensive tutorials on how to maximize your Financial Independence planning with Finance Planner. Learn best practices, tips, and advanced strategies.",
+                    visitChannel: "Visit Our YouTube Channel"
+                },
+                whyChoose: {
+                    title: "Why Choose Finance Planner?",
+                    clarity: {
+                        title: "Clarity for FIRE",
+                        description: "Focus on the long-term vision crucial for financial independence."
+                    },
+                    empowering: {
+                        title: "Empowering Decisions",
+                        description: "Make smart financial choices today for a better tomorrow."
+                    },
+                    beyond: {
+                        title: "Beyond Budgeting",
+                        description: "Go deeper than basic budgeting—see the power of compounding and long-term strategy."
+                    },
+                    motivated: {
+                        title: "Stay Motivated",
+                        description: "Visualize your progress and stay inspired on your journey."
+                    }
+                },
+                whoIsItFor: {
+                    title: "Who Is It For?",
+                    individuals: "<strong>Individuals and couples pursuing F.I.R.E.</strong> - Get the tools you need for financial independence",
+                    planners: "<strong>Anyone planning their long-term financial future</strong> - Build wealth systematically",
+                    investors: "<strong>Investors projecting wealth growth and retirement readiness</strong> - Model different scenarios",
+                    decisionMakers: "<strong>Those wanting to understand the impact of their financial decisions</strong> - See long-term effects"
+                },
+                footer: {
+                    iosApp: "📱 iOS App",
+                    androidApp: "📱 Android App",
+                    community: "💬 Community Discussions",
+                    tutorials: "🎥 Video Tutorials",
+                    privacy: "🔒 Privacy Statement",
+                    copyright: "&copy; 2024 Finance Planner. Empowering your journey to Financial Independence."
+                }
+            },
+            nl: {
+                nav: {
+                    features: "Functies",
+                    tutorials: "Tutorials",
+                    community: "Gemeenschap"
+                },
+                hero: {
+                    title: "Finance Planner: De F.I.R.E Tool",
+                    subtitle: "Jouw Essentiële Partner voor Financiële Onafhankelijkheid",
+                    description: "Ontworpen voor de F.I.R.E. (Financial Independence, Retire Early) beweging, helpt Finance Planner je om je financiële doelen te visualiseren, volgen en bereiken—of je nu net begint of diep in geavanceerde planning zit.",
+                    downloadIos: "📱 Download iOS App",
+                    downloadAndroid: "📱 Download Android App",
+                    exploreFeatures: "Ontdek Functies"
+                },
+                appStore: {
+                    title: "📱 Download Finance Planner op je Mobiele Apparaat",
+                    description: "Neem je financiële planning overal mee naartoe met onze mobiele apps, nu beschikbaar voor iOS en Android!",
+                    downloadAppStore: "Download in de App Store",
+                    downloadGooglePlay: "Download op Google Play"
+                },
+                features: {
+                    title: "Belangrijkste Functies",
+                    multiPerson: {
+                        title: "Multi-Persoon & Multi-Inkomen Ondersteuning",
+                        description: "Beheer de financiën voor je hele huishouden, inclusief meerdere personen, inkomstenbronnen en uitgavencategorieën."
+                    },
+                    flexibleSavings: {
+                        title: "Flexibele Spaarrekeningen",
+                        description: "Organiseer en volg meerdere spaarrekeningen voor verschillende doelen."
+                    },
+                    longTermProjections: {
+                        title: "Langetermijnprojecties",
+                        description: "Zie je vermogen groeien over decennia met gedetailleerde, jaar-op-jaar prognoses."
+                    },
+                    fireGoal: {
+                        title: "FIRE Doel Tracking",
+                        description: "Stel je FIRE nummer in en monitor je voortgang naar financiële onafhankelijkheid."
+                    },
+                    whatIf: {
+                        title: '"Wat Als" Scenario\'s',
+                        description: "Experimenteer met spaarpercentages, investeringsrendementen en opnamestrategieën om hun impact te zien."
+                    },
+                    inflation: {
+                        title: "Inflatie Aanpassing",
+                        description: "Alle berekeningen houden rekening met inflatie, wat je een realistisch beeld geeft van je toekomstige koopkracht."
+                    },
+                    advancedTools: {
+                        title: "Geavanceerde Planning Tools",
+                        yearly: "<strong>Jaarlijkse Overzichten:</strong> Krijg duidelijke, uitvoerbare samenvattingen van je netto vermogen, passief inkomen en verwachte pensioenuitgaven.",
+                        customizable: "<strong>Aanpasbare Invoer:</strong> Voer gemakkelijk je inkomen, uitgaven, investeringen, activa en passiva in.",
+                        visual: "<strong>Visuele Inzichten:</strong> Intuïtieve grafieken maken complexe financiële gegevens gemakkelijk te begrijpen.",
+                        earlyRetirement: "<strong>Vroegpensioen Planning:</strong> Navigeer door zowel de accumulatie- als decumulatiefasen van vroegpensioen.",
+                        userFriendly: "<strong>Gebruiksvriendelijke Interface:</strong> Schoon, intuïtief en toegankelijk voor iedereen."
+                    }
+                },
+                tutorials: {
+                    title: "📚 Leer Finance Planner te Gebruiken",
+                    videoTitle: "Video Tutorials Beschikbaar",
+                    description: "Bekijk uitgebreide tutorials over hoe je je Financiële Onafhankelijkheidsplanning kunt maximaliseren met Finance Planner. Leer best practices, tips en geavanceerde strategieën.",
+                    visitChannel: "Bezoek Ons YouTube Kanaal"
+                },
+                whyChoose: {
+                    title: "Waarom Kiezen voor Finance Planner?",
+                    clarity: {
+                        title: "Duidelijkheid voor FIRE",
+                        description: "Focus op de langetermijnvisie die cruciaal is voor financiële onafhankelijkheid."
+                    },
+                    empowering: {
+                        title: "Versterkende Beslissingen",
+                        description: "Maak vandaag slimme financiële keuzes voor een betere toekomst."
+                    },
+                    beyond: {
+                        title: "Verder dan Budgetteren",
+                        description: "Ga dieper dan basis budgetteren—zie de kracht van samengesteld rendement en langetermijnstrategie."
+                    },
+                    motivated: {
+                        title: "Blijf Gemotiveerd",
+                        description: "Visualiseer je vooruitgang en blijf geïnspireerd op je reis."
+                    }
+                },
+                whoIsItFor: {
+                    title: "Voor Wie Is Het?",
+                    individuals: "<strong>Individuen en stellen die F.I.R.E. nastreven.</strong> - Krijg de tools die je nodig hebt voor financiële onafhankelijkheid",
+                    planners: "<strong>Iedereen die hun langetermijn financiële toekomst plant</strong> - Bouw systematisch vermogen op",
+                    investors: "<strong>Investeerders die vermogensgroei en pensioengerichtheid projecteren</strong> - Modelleer verschillende scenario's",
+                    decisionMakers: "<strong>Degenen die de impact van hun financiële beslissingen willen begrijpen</strong> - Zie langetermijneffecten"
+                },
+                footer: {
+                    iosApp: "📱 iOS App",
+                    androidApp: "📱 Android App",
+                    community: "💬 Gemeenschapsdiscussies",
+                    tutorials: "🎥 Video Tutorials",
+                    privacy: "🔒 Privacyverklaring",
+                    copyright: "&copy; 2024 Finance Planner. Ondersteunt je reis naar Financiële Onafhankelijkheid."
+                }
+            }
+        };
+
+        // Language management
+        let currentLang = localStorage.getItem('lang') || 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('lang', lang);
+            updatePageContent();
+            updateToggleButton();
+        }
+
+        function updatePageContent() {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                const keys = key.split('.');
+                let translation = translations[currentLang];
+                
+                for (const k of keys) {
+                    translation = translation[k];
+                }
+                
+                if (translation) {
+                    element.innerHTML = translation;
+                }
+            });
+        }
+
+        function updateToggleButton() {
+            const toggleBtn = document.getElementById('langToggle');
+            toggleBtn.textContent = currentLang === 'en' ? 'NL' : 'EN';
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updatePageContent();
+            updateToggleButton();
+            
+            document.getElementById('langToggle').addEventListener('click', () => {
+                setLanguage(currentLang === 'en' ? 'nl' : 'en');
+            });
+        });
+    </script>
 </body>
 </html>
