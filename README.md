@@ -5,17 +5,18 @@
 
 ## Overview
 
-Finance Planner is a comprehensive financial planning application designed to help you create and manage your long-term finance plan. The app enables you to match your incomes and expenses throughout time, providing a clear picture of your financial journey toward independence and early retirement.
+Finance Planner is a comprehensive financial planning application designed to help you create and manage your long-term finance plan. The app is used to make a finance plan by matching incomes and expenses throughout time, taking into account that payments to savings can result in cashback and that withdrawals can have taxes.
 
 ## What Does Finance Planner Do?
 
 Finance Planner helps you:
 
-- **Create comprehensive financial plans** by balancing your incomes and expenses over time
+- **Match incomes and expenses over time** - Create comprehensive financial plans by balancing your cash flows throughout your financial journey
 - **Track multiple income streams** from various sources (employment, investments, rental income, etc.)
 - **Manage expenses** across different categories and time periods
-- **Plan for savings** with sophisticated modeling of deposits and withdrawals
-- **Visualize your financial journey** with detailed year-by-year projections
+- **Plan deposits with tax benefits** - Model cashback and tax refunds on savings deposits (like 401(k), IRA, and other tax-advantaged accounts)
+- **Plan withdrawals with tax considerations** - Account for taxes on retirement withdrawals to see the real after-tax impact
+- **Visualize your financial journey** with detailed year-by-year projections showing income, expenses, and capital growth
 
 ## Key Features
 
