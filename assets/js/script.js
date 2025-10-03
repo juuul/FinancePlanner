@@ -14,6 +14,13 @@ const translations = {
             downloadAndroid: "📱 Download Android App",
             exploreFeatures: "Explore Features"
         },
+        gettingStarted: {
+            title: "Gain Control of Your Financial Future",
+            intro: "Finance Planner helps you gain insight into your finances so you can become and stay financially healthy. Understand where your money goes, plan for the future, and make informed decisions.",
+            healthyFinances: "<strong>Build Financial Health:</strong> Track income, expenses, and savings to understand your financial situation",
+            planning: "<strong>Plan Ahead:</strong> Model different scenarios and see the long-term impact of your decisions",
+            nextLevel: "<strong>Ready for More?</strong> Once you've achieved financial stability, explore F.I.R.E. (Financial Independence, Retire Early) concepts and plan for early retirement"
+        },
         appStore: {
             title: "📱 Get Finance Planner on Your Mobile Device",
             description: "Take your financial planning on the go with our mobile apps, available now for iOS and Android!",
@@ -144,6 +151,13 @@ const translations = {
             downloadIos: "📱 Download iOS App",
             downloadAndroid: "📱 Download Android App",
             exploreFeatures: "Ontdek Functies"
+        },
+        gettingStarted: {
+            title: "Krijg Controle over je Financiële Toekomst",
+            intro: "Finance Planner helpt je inzicht te krijgen in je financiën, zodat je financieel gezond wordt en blijft. Begrijp waar je geld naartoe gaat, plan voor de toekomst en neem weloverwogen beslissingen.",
+            healthyFinances: "<strong>Bouw Financiële Gezondheid:</strong> Volg inkomsten, uitgaven en besparingen om je financiële situatie te begrijpen",
+            planning: "<strong>Plan Vooruit:</strong> Modelleer verschillende scenario's en zie de langetermijnimpact van je beslissingen",
+            nextLevel: "<strong>Klaar voor Meer?</strong> Zodra je financiële stabiliteit hebt bereikt, verken dan F.I.R.E. (Financial Independence, Retire Early) concepten en plan voor vervroegd pensioen"
         },
         appStore: {
             title: "📱 Download Finance Planner op je Mobiele Apparaat",
