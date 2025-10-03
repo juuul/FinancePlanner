@@ -120,14 +120,14 @@ const translations = {
             motivated: {
                 title: "Stay Motivated",
                 description: "Visualize your progress and stay inspired on your journey."
+            },
+            whoIsItFor: {
+                title: "Who Is It For?",
+                individuals: "<strong>Individuals and couples pursuing F.I.R.E.</strong> - Get the tools you need for financial independence",
+                planners: "<strong>Anyone planning their long-term financial future</strong> - Build wealth systematically",
+                investors: "<strong>Investors projecting wealth growth and retirement readiness</strong> - Model different scenarios",
+                decisionMakers: "<strong>Those wanting to understand the impact of their financial decisions</strong> - See long-term effects"
             }
-        },
-        whoIsItFor: {
-            title: "Who Is It For?",
-            individuals: "<strong>Individuals and couples pursuing F.I.R.E.</strong> - Get the tools you need for financial independence",
-            planners: "<strong>Anyone planning their long-term financial future</strong> - Build wealth systematically",
-            investors: "<strong>Investors projecting wealth growth and retirement readiness</strong> - Model different scenarios",
-            decisionMakers: "<strong>Those wanting to understand the impact of their financial decisions</strong> - See long-term effects"
         },
         footer: {
             iosApp: "📱 iOS App",
@@ -258,14 +258,14 @@ const translations = {
             motivated: {
                 title: "Blijf Gemotiveerd",
                 description: "Visualiseer je vooruitgang en blijf geïnspireerd op je reis."
+            },
+            whoIsItFor: {
+                title: "Voor Wie Is Het?",
+                individuals: "<strong>Individuen en stellen die F.I.R.E. nastreven.</strong> - Krijg de tools die je nodig hebt voor financiële onafhankelijkheid",
+                planners: "<strong>Iedereen die hun langetermijn financiële toekomst plant</strong> - Bouw systematisch vermogen op",
+                investors: "<strong>Investeerders die vermogensgroei en pensioengerichtheid projecteren</strong> - Modelleer verschillende scenario's",
+                decisionMakers: "<strong>Degenen die de impact van hun financiële beslissingen willen begrijpen</strong> - Zie langetermijneffecten"
             }
-        },
-        whoIsItFor: {
-            title: "Voor Wie Is Het?",
-            individuals: "<strong>Individuen en stellen die F.I.R.E. nastreven.</strong> - Krijg de tools die je nodig hebt voor financiële onafhankelijkheid",
-            planners: "<strong>Iedereen die hun langetermijn financiële toekomst plant</strong> - Bouw systematisch vermogen op",
-            investors: "<strong>Investeerders die vermogensgroei en pensioengerichtheid projecteren</strong> - Modelleer verschillende scenario's",
-            decisionMakers: "<strong>Degenen die de impact van hun financiële beslissingen willen begrijpen</strong> - Zie langetermijneffecten"
         },
         footer: {
             iosApp: "📱 iOS App",
