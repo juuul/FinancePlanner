@@ -9,17 +9,10 @@ const translations = {
         hero: {
             title: "Finance Planner: The F.I.R.E Tool",
             subtitle: "Your Essential Companion for Financial Independence",
-            description: "Designed for the F.I.R.E. (Financial Independence, Retire Early) movement, Finance Planner helps you visualize, track, and achieve your financial goals—whether you're just starting out or deep into advanced planning.",
+            description: "Designed for the F.I.R.E. (Financial Independence, Retire Early) movement, Finance Planner helps you visualize, track, and achieve your financial goals. Build financial health, plan ahead with different scenarios, and see the long-term impact of your decisions—whether you're just starting out or planning for early retirement.",
             downloadIos: "📱 Download iOS App",
             downloadAndroid: "📱 Download Android App",
             exploreFeatures: "Explore Features"
-        },
-        gettingStarted: {
-            title: "Gain Control of Your Financial Future",
-            intro: "Finance Planner helps you gain insight into your finances so you can become and stay financially healthy. Understand where your money goes, plan for the future, and make informed decisions.",
-            healthyFinances: "<strong>Build Financial Health:</strong> Track income, expenses, and savings to understand your financial situation",
-            planning: "<strong>Plan Ahead:</strong> Model different scenarios and see the long-term impact of your decisions",
-            nextLevel: "<strong>Ready for More?</strong> Once you've achieved financial stability, explore F.I.R.E. (Financial Independence, Retire Early) concepts and plan for early retirement"
         },
         appStore: {
             title: "📱 Get Finance Planner on Your Mobile Device",
@@ -120,14 +113,14 @@ const translations = {
             motivated: {
                 title: "Stay Motivated",
                 description: "Visualize your progress and stay inspired on your journey."
-            },
-            whoIsItFor: {
-                title: "Who Is It For?",
-                individuals: "<strong>Individuals and couples pursuing F.I.R.E.</strong> - Get the tools you need for financial independence",
-                planners: "<strong>Anyone planning their long-term financial future</strong> - Build wealth systematically",
-                investors: "<strong>Investors projecting wealth growth and retirement readiness</strong> - Model different scenarios",
-                decisionMakers: "<strong>Those wanting to understand the impact of their financial decisions</strong> - See long-term effects"
             }
+        },
+        whoIsItFor: {
+            title: "Who Is It For?",
+            individuals: "<strong>Individuals and couples pursuing F.I.R.E.</strong> - Get the tools you need for financial independence",
+            planners: "<strong>Anyone planning their long-term financial future</strong> - Build wealth systematically",
+            investors: "<strong>Investors projecting wealth growth and retirement readiness</strong> - Model different scenarios",
+            decisionMakers: "<strong>Those wanting to understand the impact of their financial decisions</strong> - See long-term effects"
         },
         footer: {
             iosApp: "📱 iOS App",
@@ -147,17 +140,10 @@ const translations = {
         hero: {
             title: "Finance Planner: De F.I.R.E Tool",
             subtitle: "Jouw Essentiële Partner voor Financiële Onafhankelijkheid",
-            description: "Ontworpen voor de F.I.R.E. (Financial Independence, Retire Early) beweging, helpt Finance Planner je om je financiële doelen te visualiseren, volgen en bereiken—of je nu net begint of diep in geavanceerde planning zit.",
+            description: "Ontworpen voor de F.I.R.E. (Financial Independence, Retire Early) beweging, helpt Finance Planner je om je financiële doelen te visualiseren, volgen en bereiken. Bouw financiële gezondheid, plan vooruit met verschillende scenario's en zie de langetermijnimpact van je beslissingen—of je nu net begint of plant voor vervroegd pensioen.",
             downloadIos: "📱 Download iOS App",
             downloadAndroid: "📱 Download Android App",
             exploreFeatures: "Ontdek Functies"
-        },
-        gettingStarted: {
-            title: "Krijg Controle over je Financiële Toekomst",
-            intro: "Finance Planner helpt je inzicht te krijgen in je financiën, zodat je financieel gezond wordt en blijft. Begrijp waar je geld naartoe gaat, plan voor de toekomst en neem weloverwogen beslissingen.",
-            healthyFinances: "<strong>Bouw Financiële Gezondheid:</strong> Volg inkomsten, uitgaven en besparingen om je financiële situatie te begrijpen",
-            planning: "<strong>Plan Vooruit:</strong> Modelleer verschillende scenario's en zie de langetermijnimpact van je beslissingen",
-            nextLevel: "<strong>Klaar voor Meer?</strong> Zodra je financiële stabiliteit hebt bereikt, verken dan F.I.R.E. (Financial Independence, Retire Early) concepten en plan voor vervroegd pensioen"
         },
         appStore: {
             title: "📱 Download Finance Planner op je Mobiele Apparaat",
@@ -258,14 +244,14 @@ const translations = {
             motivated: {
                 title: "Blijf Gemotiveerd",
                 description: "Visualiseer je vooruitgang en blijf geïnspireerd op je reis."
-            },
-            whoIsItFor: {
-                title: "Voor Wie Is Het?",
-                individuals: "<strong>Individuen en stellen die F.I.R.E. nastreven.</strong> - Krijg de tools die je nodig hebt voor financiële onafhankelijkheid",
-                planners: "<strong>Iedereen die hun langetermijn financiële toekomst plant</strong> - Bouw systematisch vermogen op",
-                investors: "<strong>Investeerders die vermogensgroei en pensioengerichtheid projecteren</strong> - Modelleer verschillende scenario's",
-                decisionMakers: "<strong>Degenen die de impact van hun financiële beslissingen willen begrijpen</strong> - Zie langetermijneffecten"
             }
+        },
+        whoIsItFor: {
+            title: "Voor Wie Is Het?",
+            individuals: "<strong>Individuen en stellen die F.I.R.E. nastreven.</strong> - Krijg de tools die je nodig hebt voor financiële onafhankelijkheid",
+            planners: "<strong>Iedereen die hun langetermijn financiële toekomst plant</strong> - Bouw systematisch vermogen op",
+            investors: "<strong>Investeerders die vermogensgroei en pensioengerichtheid projecteren</strong> - Modelleer verschillende scenario's",
+            decisionMakers: "<strong>Degenen die de impact van hun financiële beslissingen willen begrijpen</strong> - Zie langetermijneffecten"
         },
         footer: {
             iosApp: "📱 iOS App",
