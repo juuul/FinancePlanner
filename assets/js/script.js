@@ -96,6 +96,13 @@ const translations = {
             description: "Watch comprehensive tutorials on how to maximize your Financial Independence planning with Finance Planner. Learn best practices, tips, and advanced strategies.",
             visitChannel: "Visit Our YouTube Channel"
         },
+        exampleFiles: {
+            title: "📂 Example Files",
+            description: "Download example files to explore Finance Planner's features. Open these files in the mobile app to see how a complete financial plan looks.",
+            exampleFamily: "Example Family Plan",
+            exampleFamilyDesc: "A comprehensive example showing a family with multiple income sources, expenses, and savings goals. Perfect for understanding how to structure your own plan.",
+            downloadFile: "Download Example"
+        },
         whyChoose: {
             title: "Why Choose Finance Planner?",
             clarity: {
@@ -226,6 +233,13 @@ const translations = {
             videoTitle: "Video Tutorials Beschikbaar",
             description: "Bekijk uitgebreide tutorials over hoe je je Financiële Onafhankelijkheidsplanning kunt maximaliseren met Finance Planner. Leer best practices, tips en geavanceerde strategieën.",
             visitChannel: "Bezoek Ons YouTube Kanaal"
+        },
+        exampleFiles: {
+            title: "📂 Voorbeeldbestanden",
+            description: "Download voorbeeldbestanden om de functies van Finance Planner te verkennen. Open deze bestanden in de mobiele app om te zien hoe een compleet financieel plan eruitziet.",
+            exampleFamily: "Voorbeeld Familie Plan",
+            exampleFamilyDesc: "Een uitgebreid voorbeeld van een familie met meerdere inkomstenbronnen, uitgaven en spaardoelen. Perfect om te begrijpen hoe je je eigen plan kunt structureren.",
+            downloadFile: "Download Voorbeeld"
         },
         whyChoose: {
             title: "Waarom Kiezen voor Finance Planner?",
