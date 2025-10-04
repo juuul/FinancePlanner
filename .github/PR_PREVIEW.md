@@ -56,6 +56,16 @@ Simply push new commits to your PR branch. The preview will automatically rebuil
 
 ## For Repository Maintainers
 
+### Initial Setup Required
+
+Before the preview system works, maintainers must complete the setup. See the **[Setup Guide](SETUP_GUIDE.md)** for detailed instructions.
+
+Quick checklist:
+- [ ] Enable GitHub Pages
+- [ ] Create gh-pages branch
+- [ ] Configure workflow permissions
+- [ ] Test with a sample PR
+
 ### Workflow Files
 
 Two workflows manage the preview environments:
