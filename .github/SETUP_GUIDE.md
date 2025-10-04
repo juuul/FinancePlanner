@@ -6,23 +6,34 @@ This guide helps repository maintainers set up the PR preview environment system
 
 Before the PR preview workflows can function, you need to:
 
-1. **GitHub Pages must be enabled** for this repository
-2. **The `gh-pages` branch must exist**
-3. **Workflow permissions must be configured**
+1. **Workflow permissions must be configured**
+2. **GitHub Pages must be enabled** for this repository (can be done after first PR)
+
+**Note:** The `gh-pages` branch is now created automatically by the workflow if it doesn't exist, so manual setup is no longer required!
 
 ## Step-by-Step Setup
 
-### 1. Create the gh-pages Branch
+### 1. Configure Workflow Permissions (Required First)
 
-The workflows will deploy to the `gh-pages` branch. If it doesn't exist yet, create it:
+The workflows need permission to create branches and push commits:
 
-**Option A: Create from GitHub UI**
-1. Go to repository Settings → Pages
-2. Under "Source", select "Deploy from a branch"
-3. Select "gh-pages" branch and "/ (root)" folder
-4. If gh-pages doesn't exist, GitHub will create it when you push to it
+1. Go to **Settings** → **Actions** → **General**
+2. Scroll to **Workflow permissions**
+3. Select **"Read and write permissions"**
+4. Check **"Allow GitHub Actions to create and approve pull requests"**
+5. Click **Save**
 
-**Option B: Create via Command Line**
+### 2. Create the gh-pages Branch (Automated)
+
+The workflow will automatically create the `gh-pages` branch when the first PR is opened. However, if you prefer to create it manually:
+
+**Option A: Let the workflow create it (Recommended)**
+Simply merge this PR and open any test PR. The workflow will automatically:
+- Create the gh-pages branch
+- Add an initial README
+- Deploy the PR preview
+
+**Option B: Create via Command Line (Optional)**
 ```bash
 # Clone the repository
 git clone https://github.com/juuul/FinancePlanner.git
@@ -56,7 +67,9 @@ git commit -m "Initialize gh-pages branch"
 git push origin gh-pages
 ```
 
-### 2. Configure GitHub Pages
+### 3. Configure GitHub Pages
+
+After the gh-pages branch is created (either automatically or manually):
 
 1. Go to **Settings** → **Pages**
 2. Under **Source**:
@@ -67,15 +80,7 @@ git push origin gh-pages
 
 Your site will be available at: `https://juuul.github.io/FinancePlanner/`
 
-### 3. Configure Workflow Permissions
-
-The workflows need permission to push to the gh-pages branch:
-
-1. Go to **Settings** → **Actions** → **General**
-2. Scroll to **Workflow permissions**
-3. Select **"Read and write permissions"**
-4. Check **"Allow GitHub Actions to create and approve pull requests"**
-5. Click **Save**
+**Note:** You may need to wait a few minutes after the first deployment for GitHub Pages to become active.
 
 ### 4. Test the Workflows
 
@@ -111,14 +116,15 @@ For the `gh-pages` branch, you might want to:
 
 ## Troubleshooting
 
-### Workflow Fails: "Permission denied"
+### Workflow Fails: "Permission denied" or "Failed to create branch"
 
-**Problem**: Workflow can't push to gh-pages branch
+**Problem**: Workflow can't create or push to gh-pages branch
 
 **Solution**: 
 1. Check workflow permissions in Settings → Actions → General
 2. Ensure "Read and write permissions" is selected
-3. Verify gh-pages branch exists
+3. Ensure "Allow GitHub Actions to create and approve pull requests" is checked
+4. The workflow will automatically create the gh-pages branch if it doesn't exist
 
 ### Preview Shows 404
 
@@ -126,15 +132,15 @@ For the `gh-pages` branch, you might want to:
 
 **Possible Causes**:
 1. GitHub Pages not enabled
-2. gh-pages branch doesn't exist
-3. Workflow failed to deploy
-4. GitHub Pages hasn't updated yet (can take 1-2 minutes)
+2. Workflow failed to deploy
+3. GitHub Pages hasn't updated yet (can take 1-2 minutes)
+4. This is the first PR and GitHub Pages needs to be configured
 
 **Solutions**:
-1. Enable GitHub Pages in Settings → Pages
-2. Create gh-pages branch (see step 1)
-3. Check workflow logs in Actions tab
-4. Wait a few minutes and try again
+1. Check workflow logs in Actions tab for errors
+2. Enable GitHub Pages in Settings → Pages (select gh-pages branch)
+3. Wait a few minutes for GitHub Pages to update
+4. Clear your browser cache and try again
 
 ### Comment Not Posted
 

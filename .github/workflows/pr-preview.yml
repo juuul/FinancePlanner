@@ -26,10 +26,14 @@ jobs:
             git worktree add gh-pages gh-pages
           else
             echo "gh-pages branch doesn't exist, creating it"
-            mkdir -p gh-pages
-            cd gh-pages
-            git init
-            git checkout -b gh-pages
+            
+            # Configure git
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            
+            # Create orphan branch (no history)
+            git checkout --orphan gh-pages-temp
+            git rm -rf . || true
             
             # Create initial README
             cat > README.md << 'EOF'
@@ -43,13 +47,17 @@ jobs:
           ⚠️ This branch is automatically managed by GitHub Actions. Do not edit manually.
           EOF
             
-            git add README.md
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
+            # Create pr-preview directory
+            mkdir -p pr-preview
+            
+            git add README.md pr-preview
             git commit -m "Initialize gh-pages branch"
-            git remote add origin ${{ github.server_url }}/${{ github.repository }}.git
-            git push -u origin gh-pages
-            cd ..
+            git push origin gh-pages-temp:gh-pages
+            
+            # Switch back to original branch and set up worktree
+            git checkout ${{ github.event.pull_request.head.sha }}
+            git fetch origin gh-pages:gh-pages
+            git worktree add gh-pages gh-pages
           fi
 
       - name: Deploy to PR preview directory
