@@ -94,7 +94,9 @@ Download Finance Planner today:
 
 ## Contributing
 
-We welcome contributions! When you open a pull request, a preview environment will be automatically deployed so reviewers can see your changes live. Learn more about [PR Preview Environments](.github/PR_PREVIEW.md).
+We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md) to get started.
+
+When you open a pull request, a preview environment will be automatically deployed so reviewers can see your changes live. Learn more about [PR Preview Environments](.github/PR_PREVIEW.md).
 
 ## Website
 
