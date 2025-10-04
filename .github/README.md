@@ -6,6 +6,7 @@ This directory contains GitHub-specific configurations and workflows for the Fin
 
 ### Workflows
 
+- **[deploy-gh-pages.yml](workflows/deploy-gh-pages.yml)** - Deploys the production site from main branch to GitHub Pages
 - **[pr-preview.yml](workflows/pr-preview.yml)** - Automatically deploys PR preview environments
 - **[pr-preview-cleanup.yml](workflows/pr-preview-cleanup.yml)** - Cleans up preview environments when PRs close
 
@@ -33,6 +34,28 @@ First time setting up? Follow these steps:
 
 ## 🔄 How It Works
 
+### Production Deployment
+```
+┌─────────────────────┐
+│  Push to main       │
+│  branch             │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│  deploy-gh-pages    │
+│  .yml triggers      │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│  Deploy to          │
+│  gh-pages root      │
+│  (production site)  │
+└─────────────────────┘
+```
+
+### PR Preview System
 ```
 ┌─────────────────────┐
 │  Pull Request       │
