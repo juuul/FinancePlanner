@@ -291,6 +291,35 @@ a:hover {
     color: #1a4d2e;
 }
 
+.example-files-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.example-file-card {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #2b7a78;
+}
+
+.example-file-card h3 {
+    color: #1a4d2e;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.example-file-card p {
+    margin-bottom: 1rem;
+}
+
+.example-file-card .btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
