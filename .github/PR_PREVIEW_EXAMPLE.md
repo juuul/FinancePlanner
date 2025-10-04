@@ -6,7 +6,8 @@ When you open or update a pull request, you'll receive an automated comment like
 
 ## 🚀 Preview environment deployed!
 
-Your preview is ready at: https://juuul.github.io/FinancePlanner/pr-preview/pr-123/
+**📱 View your changes live:**
+### [https://juuul.github.io/FinancePlanner/pr-preview/pr-123/](https://juuul.github.io/FinancePlanner/pr-preview/pr-123/)
 
 This preview will be automatically updated when you push new commits to this PR.
 

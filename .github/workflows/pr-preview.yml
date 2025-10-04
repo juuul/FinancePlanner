@@ -72,11 +72,12 @@ jobs:
             );
 
             const commentBody = `## 🚀 Preview environment deployed!
-
-            Your preview is ready at: ${previewUrl}
-
+            
+            **📱 View your changes live:**
+            ### [${previewUrl}](${previewUrl})
+            
             This preview will be automatically updated when you push new commits to this PR.
-
+            
             ---
             *Preview environments are cleaned up when the PR is closed or merged.*`;
 
