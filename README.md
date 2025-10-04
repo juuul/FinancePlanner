@@ -92,6 +92,10 @@ Download Finance Planner today:
 - 💬 [Community Discussions](https://github.com/juuul/FinancePlanner/discussions)
 - 🔒 [Privacy Statement](https://crwsolutions.nl/privacy_fp.html)
 
+## Contributing
+
+We welcome contributions! When you open a pull request, a preview environment will be automatically deployed so reviewers can see your changes live. Learn more about [PR Preview Environments](.github/PR_PREVIEW.md).
+
 ## Website
 
 Visit our website at: [https://juuul.github.io/FinancePlanner/](https://juuul.github.io/FinancePlanner/)
