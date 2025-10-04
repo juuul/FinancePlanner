@@ -17,11 +17,40 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages
+      - name: Checkout or create gh-pages branch
+        run: |
+          # Try to fetch gh-pages branch
+          if git ls-remote --heads origin gh-pages | grep gh-pages; then
+            echo "gh-pages branch exists, checking it out"
+            git fetch origin gh-pages:gh-pages
+            git worktree add gh-pages gh-pages
+          else
+            echo "gh-pages branch doesn't exist, creating it"
+            mkdir -p gh-pages
+            cd gh-pages
+            git init
+            git checkout -b gh-pages
+            
+            # Create initial README
+            cat > README.md << 'EOF'
+          # GitHub Pages Branch
+
+          This branch contains the deployed website and PR preview environments.
+
+          - **Root directory**: Production website (main branch)
+          - **pr-preview/**: Preview environments for open pull requests
+
+          ⚠️ This branch is automatically managed by GitHub Actions. Do not edit manually.
+          EOF
+            
+            git add README.md
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "Initialize gh-pages branch"
+            git remote add origin ${{ github.server_url }}/${{ github.repository }}.git
+            git push -u origin gh-pages
+            cd ..
+          fi
 
       - name: Deploy to PR preview directory
         run: |
