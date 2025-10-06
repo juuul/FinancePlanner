@@ -208,7 +208,7 @@
     }
   ],
   "Settings": {
-    "InflationRate": 2
+    "InflationRate": 0
   },
   "MutualGoal": {
     "SavingsGoals": [],
