@@ -121,12 +121,8 @@ body {
 }
 
 .btn-app-store {
-    background: #000;
-    color: white;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.8rem 1.5rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
@@ -134,7 +130,6 @@ body {
 }
 
 .btn-app-store:hover {
-    background: #333;
     transform: translateY(-2px);
     text-decoration: none;
 }
