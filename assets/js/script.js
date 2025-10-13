@@ -129,6 +129,14 @@ const translations = {
             investors: "<strong>Investors projecting wealth growth and retirement readiness</strong> - Model different scenarios",
             decisionMakers: "<strong>Those wanting to understand the impact of their financial decisions</strong> - See long-term effects"
         },
+        dataPrivacy: {
+            title: "🔒 Your Data, Your Privacy",
+            intro: "Your financial information is highly sensitive. Finance Planner is designed with privacy as a core principle:",
+            localStorage: "<strong>100% Local Storage:</strong> All your data and calculations stay on your phone—nothing is sent to external servers",
+            noCloud: "<strong>No Cloud Sync:</strong> Your financial plans are yours alone and remain completely private",
+            fullControl: "<strong>Full Control:</strong> You decide what to do with your data—export, backup, or delete it anytime",
+            adNotice: "Note: The mobile apps use ads to remain free. Ad providers (AdMob) may collect anonymous usage data as described in our Privacy Statement."
+        },
         footer: {
             iosApp: "📱 iOS App",
             androidApp: "📱 Android App",
@@ -266,6 +274,14 @@ const translations = {
             planners: "<strong>Iedereen die hun langetermijn financiële toekomst plant</strong> - Bouw systematisch vermogen op",
             investors: "<strong>Investeerders die vermogensgroei en pensioengerichtheid projecteren</strong> - Modelleer verschillende scenario's",
             decisionMakers: "<strong>Degenen die de impact van hun financiële beslissingen willen begrijpen</strong> - Zie langetermijneffecten"
+        },
+        dataPrivacy: {
+            title: "🔒 Jouw Data, Jouw Privacy",
+            intro: "Je financiële informatie is zeer gevoelig. Finance Planner is ontworpen met privacy als kernprincipe:",
+            localStorage: "<strong>100% Lokale Opslag:</strong> Al je gegevens en berekeningen blijven op je telefoon—niets wordt naar externe servers gestuurd",
+            noCloud: "<strong>Geen Cloud Sync:</strong> Je financiële plannen zijn van jou alleen en blijven volledig privé",
+            fullControl: "<strong>Volledige Controle:</strong> Jij bepaalt wat je met je gegevens doet—exporteer, back-up of verwijder ze op elk moment",
+            adNotice: "Let op: De mobiele apps gebruiken advertenties om gratis te blijven. Advertentieproviders (AdMob) kunnen anonieme gebruiksgegevens verzamelen zoals beschreven in onze Privacyverklaring."
         },
         footer: {
             iosApp: "📱 iOS App",
