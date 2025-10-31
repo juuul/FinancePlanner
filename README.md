@@ -7,6 +7,16 @@
 
 Finance Planner is a comprehensive financial planning application designed to help you create and manage your long-term finance plan. The app enables you to match your incomes and expenses throughout time, providing a clear picture of your financial journey toward independence and early retirement.
 
+## 💡 Our Mission: Financial Planning for Everyone
+
+**Free Financial Planning for All:** We believe everyone deserves access to quality financial planning tools—without paying expensive advisor fees. Finance Planner puts professional-grade planning in your hands, completely free.
+
+**Financial Health Worldwide:** Available across the globe, our tool helps people everywhere build a healthier financial future, regardless of location or background.
+
+**Your Data Stays Private:** All your personal financial data and calculations remain 100% on your device. Nothing is stored on external servers. Your information is completely safe and never shared.
+
+**About Ads:** The mobile apps use ads (AdMob) to remain free for everyone. Our privacy notice covers only the anonymous usage data collected by the ad provider—your financial data is never included.
+
 ## What Does Finance Planner Do?
 
 Finance Planner helps you:
