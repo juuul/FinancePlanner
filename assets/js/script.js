@@ -14,6 +14,13 @@ const translations = {
             downloadAndroid: "📱 Download Android App",
             exploreFeatures: "Explore Features"
         },
+        mission: {
+            title: "💡 Our Mission: Financial Planning for Everyone",
+            freeAccess: "<strong>Free Financial Planning for All:</strong> We believe everyone deserves access to quality financial planning tools—without paying expensive advisor fees. Finance Planner puts professional-grade planning in your hands, completely free.",
+            global: "<strong>Financial Health Worldwide:</strong> Available across the globe, our tool helps people everywhere build a healthier financial future, regardless of location or background.",
+            privacy: "<strong>Your Data Stays Private:</strong> All your personal financial data and calculations remain 100% on your device. Nothing is stored on external servers. Your information is completely safe and never shared.",
+            adPrivacy: "<strong>About Ads:</strong> The app uses ads (AdMob) to remain free for everyone. Our privacy notice covers only the anonymous usage data collected by the ad provider—your financial data is never included."
+        },
         appStore: {
             title: "📱 Get Finance Planner on Your Mobile Device",
             description: "Take your financial planning on the go with our mobile apps, available now for iOS and Android!",
@@ -159,6 +166,13 @@ const translations = {
             downloadIos: "📱 Download iOS App",
             downloadAndroid: "📱 Download Android App",
             exploreFeatures: "Ontdek Functies"
+        },
+        mission: {
+            title: "💡 Onze Missie: Financiële Planning voor Iedereen",
+            freeAccess: "<strong>Gratis Financiële Planning voor Iedereen:</strong> Wij geloven dat iedereen toegang moet hebben tot kwalitatieve financiële planningstools—zonder veel geld te hoeven uitgeven aan een dure adviseur. Finance Planner geeft je professionele planning tools in handen, volledig gratis.",
+            global: "<strong>Financiële Gezondheid Wereldwijd:</strong> Beschikbaar over de hele planeet, helpt onze tool mensen overal een gezondere financiële toekomst op te bouwen, ongeacht locatie of achtergrond.",
+            privacy: "<strong>Jouw Gegevens Blijven Privé:</strong> Al je persoonlijke financiële gegevens en berekeningen blijven 100% op jouw apparaat. Niets wordt opgeslagen op externe servers. Jouw informatie is volledig veilig en wordt nooit gedeeld.",
+            adPrivacy: "<strong>Over Advertenties:</strong> De app gebruikt advertenties (AdMob) om gratis te blijven voor iedereen. Onze privacyverklaring heeft alleen betrekking op de anonieme gebruiksgegevens die door de advertentieprovider worden verzameld—jouw financiële gegevens zijn hier nooit bij inbegrepen."
         },
         appStore: {
             title: "📱 Download Finance Planner op je Mobiele Apparaat",
