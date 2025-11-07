@@ -48,6 +48,7 @@ jobs:
           git add .
           git commit -m "Deploy preview for PR #${PR_NUMBER}" \
             || echo "No changes to commit"
+          git pull --rebase origin gh-pages
           git push origin gh-pages
 
       - name: Comment PR with preview link
