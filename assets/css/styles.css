@@ -315,6 +315,27 @@ a:hover {
     margin-top: 0.5rem;
 }
 
+/* Video container for embedded YouTube videos */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
