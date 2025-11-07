@@ -103,7 +103,8 @@ const translations = {
             title: "📚 Learn How to Use Finance Planner",
             videoTitle: "Video Tutorials Available",
             description: "Watch comprehensive tutorials on how to maximize your Financial Independence planning with Finance Planner. Learn best practices, tips, and advanced strategies.",
-            visitChannel: "Visit Our YouTube Channel"
+            visitChannel: "Visit Our YouTube Channel",
+            viewTutorials: "View Tutorials"
         },
         exampleFiles: {
             title: "📂 Example Files & Scenarios",
@@ -199,6 +200,46 @@ const translations = {
                 description: "Check out our resources to learn more about using Finance Planner:",
                 tutorials: "🎥 Watch Video Tutorials",
                 community: "💬 Join Community Discussions"
+            }
+        },
+        tutorialsPage: {
+            title: "📚 Finance Planner Tutorials",
+            subtitle: "Learn How to Maximize Your Financial Planning",
+            description: "Watch comprehensive video tutorials to help you get the most out of Finance Planner. Learn about advanced strategies, tax-advantaged accounts, and best practices for achieving financial independence.",
+            featuredVideo: {
+                title: "🎥 How to Implement Wealth Tax / Pensioensparen",
+                description: "Learn how to model tax-advantaged retirement accounts in Finance Planner. This tutorial covers implementing wealth tax strategies for the US system (401k, IRA) and the Dutch pensioensparen system."
+            },
+            moreVideos: {
+                title: "📺 More Video Tutorials",
+                channelTitle: "Visit Our YouTube Channel",
+                channelDescription: "Explore our complete library of Finance Planner tutorials. Learn best practices, tips, and advanced strategies for achieving Financial Independence.",
+                visitButton: "Visit YouTube Channel"
+            },
+            topics: {
+                title: "Tutorial Topics",
+                gettingStarted: {
+                    title: "Getting Started",
+                    description: "Learn the basics of Finance Planner and set up your first financial plan."
+                },
+                taxStrategies: {
+                    title: "Tax-Advantaged Strategies",
+                    description: "Model 401k, IRA, and pensioensparen accounts with tax benefits."
+                },
+                fireGoals: {
+                    title: "FIRE Goal Planning",
+                    description: "Set and track your Financial Independence targets effectively."
+                },
+                scenarios: {
+                    title: "Scenario Modeling",
+                    description: "Test different what-if scenarios to optimize your financial plan."
+                }
+            },
+            needHelp: {
+                title: "Need More Help?",
+                description: "Have questions or want to discuss your financial planning strategies?",
+                communityButton: "💬 Join Community Discussions",
+                scenariosButton: "📂 View Example Scenarios"
             }
         }
     },
@@ -305,7 +346,8 @@ const translations = {
             title: "📚 Leer Finance Planner te Gebruiken",
             videoTitle: "Video Tutorials Beschikbaar",
             description: "Bekijk uitgebreide tutorials over hoe je je Financiële Onafhankelijkheidsplanning kunt maximaliseren met Finance Planner. Leer best practices, tips en geavanceerde strategieën.",
-            visitChannel: "Bezoek Ons YouTube Kanaal"
+            visitChannel: "Bezoek Ons YouTube Kanaal",
+            viewTutorials: "Bekijk Tutorials"
         },
         exampleFiles: {
             title: "📂 Voorbeeldbestanden & Scenario's",
@@ -401,6 +443,46 @@ const translations = {
                 description: "Bekijk onze bronnen om meer te leren over het gebruik van Finance Planner:",
                 tutorials: "🎥 Bekijk Video Tutorials",
                 community: "💬 Deelnemen aan Gemeenschapsdiscussies"
+            }
+        },
+        tutorialsPage: {
+            title: "📚 Finance Planner Tutorials",
+            subtitle: "Leer Hoe Je Jouw Financiële Planning Maximaliseert",
+            description: "Bekijk uitgebreide video tutorials om het meeste uit Finance Planner te halen. Leer over geavanceerde strategieën, fiscaal voordelige rekeningen en best practices voor het bereiken van financiële onafhankelijkheid.",
+            featuredVideo: {
+                title: "🎥 Hoe Vermogensbelasting / Pensioensparen Te Implementeren",
+                description: "Leer hoe je fiscaal voordelige pensioenrekeningen modelleert in Finance Planner. Deze tutorial behandelt het implementeren van vermogensbelastingstrategieën voor het Amerikaanse systeem (401k, IRA) en het Nederlandse pensioenspaarsysteem."
+            },
+            moreVideos: {
+                title: "📺 Meer Video Tutorials",
+                channelTitle: "Bezoek Ons YouTube Kanaal",
+                channelDescription: "Ontdek onze complete bibliotheek van Finance Planner tutorials. Leer best practices, tips en geavanceerde strategieën voor het bereiken van Financiële Onafhankelijkheid.",
+                visitButton: "Bezoek YouTube Kanaal"
+            },
+            topics: {
+                title: "Tutorial Onderwerpen",
+                gettingStarted: {
+                    title: "Aan de Slag",
+                    description: "Leer de basis van Finance Planner en stel je eerste financiële plan op."
+                },
+                taxStrategies: {
+                    title: "Fiscaal Voordelige Strategieën",
+                    description: "Modelleer 401k, IRA en pensioenspaarrekeningen met belastingvoordelen."
+                },
+                fireGoals: {
+                    title: "FIRE Doel Planning",
+                    description: "Stel je Financiële Onafhankelijkheidsdoelen in en volg ze effectief."
+                },
+                scenarios: {
+                    title: "Scenario Modellering",
+                    description: "Test verschillende wat-als-scenario's om je financiële plan te optimaliseren."
+                }
+            },
+            needHelp: {
+                title: "Meer Hulp Nodig?",
+                description: "Heb je vragen of wil je je financiële planningsstrategieën bespreken?",
+                communityButton: "💬 Deelnemen aan Gemeenschapsdiscussies",
+                scenariosButton: "📂 Bekijk Voorbeeldscenario's"
             }
         }
     }
