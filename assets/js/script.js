@@ -505,7 +505,8 @@ function updatePageContent() {
         let translation = translations[currentLang];
         
         for (const k of keys) {
-            translation = translation[k];
+            translation = translation?.[k];
+            if (!translation) break;
         }
         
         if (translation) {
@@ -516,7 +517,9 @@ function updatePageContent() {
 
 function updateToggleButton() {
     const toggleBtn = document.getElementById('langToggle');
-    toggleBtn.textContent = currentLang === 'en' ? 'NL' : 'EN';
+    if (toggleBtn) {
+        toggleBtn.textContent = currentLang === 'en' ? 'NL' : 'EN';
+    }
 }
 
 // Initialize
@@ -524,7 +527,10 @@ document.addEventListener('DOMContentLoaded', () => {
     updatePageContent();
     updateToggleButton();
     
-    document.getElementById('langToggle').addEventListener('click', () => {
-        setLanguage(currentLang === 'en' ? 'nl' : 'en');
-    });
+    const langToggle = document.getElementById('langToggle');
+    if (langToggle) {
+        langToggle.addEventListener('click', () => {
+            setLanguage(currentLang === 'en' ? 'nl' : 'en');
+        });
+    }
 });
