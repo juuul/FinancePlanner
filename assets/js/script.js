@@ -2,9 +2,11 @@
 const translations = {
     en: {
         nav: {
+            home: "Home",
             features: "Features",
             tutorials: "Tutorials",
-            community: "Community"
+            community: "Community",
+            scenarios: "Scenarios"
         },
         hero: {
             title: "Finance Planner: The F.I.R.E Tool",
@@ -104,11 +106,9 @@ const translations = {
             visitChannel: "Visit Our YouTube Channel"
         },
         exampleFiles: {
-            title: "📂 Example Files",
-            description: "Download example files to explore Finance Planner's features. Open these files in the mobile app to see how a complete financial plan looks.",
-            exampleFamily: "Example Family Plan",
-            exampleFamilyDesc: "A comprehensive example showing a family with multiple income sources, expenses, and savings goals. Perfect for understanding how to structure your own plan.",
-            downloadFile: "Download Example"
+            title: "📂 Example Files & Scenarios",
+            description: "Explore different financial planning scenarios with real-world examples. Each scenario demonstrates how to use Finance Planner for specific financial goals.",
+            viewScenarios: "View All Scenarios"
         },
         whyChoose: {
             title: "Why Choose Finance Planner?",
@@ -151,13 +151,64 @@ const translations = {
             tutorials: "🎥 Video Tutorials",
             privacy: "🔒 Privacy Statement",
             copyright: "&copy; 2024 Finance Planner. Empowering your journey to Financial Independence."
+        },
+        scenarios: {
+            title: "Financial Planning Scenarios",
+            subtitle: "Explore Different Paths to Financial Independence",
+            description: "Finance Planner supports multiple financial planning scenarios. Each scenario helps you model different life situations and financial goals. Download the example files and open them in the mobile app to see complete financial plans in action.",
+            futurePlanning: {
+                title: "🎯 Future Planning",
+                description: "Plan your long-term financial future with comprehensive income, expense, and savings modeling. This scenario is perfect for families and individuals who want to build wealth systematically, track multiple income streams, and plan for major life events like children's education, home purchases, or career changes.",
+                idealFor: "Ideal For:",
+                use1: "Building wealth over time with multiple income sources",
+                use2: "Planning for major expenses (education, home, etc.)",
+                use3: "Tracking progress toward FIRE goals",
+                use4: "Modeling different savings rates and their impact",
+                downloadButton: "Download Future Planning Example"
+            },
+            businessExit: {
+                title: "💼 Selling Business and Retiring",
+                description: "Model the financial impact of selling your business and transitioning to retirement. This scenario helps you plan the sale proceeds, tax implications, and how to structure your retirement income from the sale. Understand how different sale prices and retirement withdrawal strategies affect your long-term financial security.",
+                idealFor: "Ideal For:",
+                use1: "Business owners planning an exit strategy",
+                use2: "Modeling different sale price scenarios",
+                use3: "Planning post-sale investment and withdrawal strategies",
+                use4: "Understanding tax implications of business sale",
+                comingSoon: "📌 Example file coming soon"
+            },
+            debtRepayment: {
+                title: "💳 Planning to Pay Off Debts",
+                description: "Create a comprehensive debt repayment plan while maintaining your other financial goals. This scenario helps you model different debt payoff strategies (avalanche vs. snowball), see the impact of extra payments, and understand how debt repayment fits into your overall financial plan. Balance paying down debt with building savings and investments.",
+                idealFor: "Ideal For:",
+                use1: "Creating structured debt repayment plans",
+                use2: "Comparing avalanche vs. snowball methods",
+                use3: "Balancing debt payoff with savings goals",
+                use4: "Modeling the impact of extra payments",
+                comingSoon: "📌 Example file coming soon"
+            },
+            howToUse: {
+                title: "How to Use These Scenarios",
+                step1: "<strong>Download the example file</strong> for the scenario that matches your situation",
+                step2: '<strong>Open it in the Finance Planner mobile app</strong> (available for <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank">iOS</a> and <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank">Android</a>)',
+                step3: "<strong>Explore the example</strong> to understand how the scenario is structured",
+                step4: "<strong>Customize with your own data</strong> by modifying income, expenses, and savings",
+                step5: "<strong>Save and track</strong> your personalized financial plan"
+            },
+            needHelp: {
+                title: "Need Help?",
+                description: "Check out our resources to learn more about using Finance Planner:",
+                tutorials: "🎥 Watch Video Tutorials",
+                community: "💬 Join Community Discussions"
+            }
         }
     },
     nl: {
         nav: {
+            home: "Home",
             features: "Functies",
             tutorials: "Tutorials",
-            community: "Gemeenschap"
+            community: "Gemeenschap",
+            scenarios: "Scenario's"
         },
         hero: {
             title: "Finance Planner: De F.I.R.E Tool",
@@ -257,11 +308,9 @@ const translations = {
             visitChannel: "Bezoek Ons YouTube Kanaal"
         },
         exampleFiles: {
-            title: "📂 Voorbeeldbestanden",
-            description: "Download voorbeeldbestanden om de functies van Finance Planner te verkennen. Open deze bestanden in de mobiele app om te zien hoe een compleet financieel plan eruitziet.",
-            exampleFamily: "Voorbeeld Familie Plan",
-            exampleFamilyDesc: "Een uitgebreid voorbeeld van een familie met meerdere inkomstenbronnen, uitgaven en spaardoelen. Perfect om te begrijpen hoe je je eigen plan kunt structureren.",
-            downloadFile: "Download Voorbeeld"
+            title: "📂 Voorbeeldbestanden & Scenario's",
+            description: "Ontdek verschillende financiële planning scenario's met voorbeelden uit de echte wereld. Elk scenario demonstreert hoe Finance Planner te gebruiken voor specifieke financiële doelen.",
+            viewScenarios: "Bekijk Alle Scenario's"
         },
         whyChoose: {
             title: "Waarom Kiezen voor Finance Planner?",
@@ -304,6 +353,55 @@ const translations = {
             tutorials: "🎥 Video Tutorials",
             privacy: "🔒 Privacyverklaring",
             copyright: "&copy; 2024 Finance Planner. Ondersteunt je reis naar Financiële Onafhankelijkheid."
+        },
+        scenarios: {
+            title: "Financiële Planning Scenario's",
+            subtitle: "Ontdek Verschillende Paden naar Financiële Onafhankelijkheid",
+            description: "Finance Planner ondersteunt meerdere financiële planning scenario's. Elk scenario helpt je verschillende levenssituaties en financiële doelen te modelleren. Download de voorbeeldbestanden en open ze in de mobiele app om complete financiële plannen in actie te zien.",
+            futurePlanning: {
+                title: "🎯 Toekomstige Planning",
+                description: "Plan je financiële toekomst op lange termijn met uitgebreide modellering van inkomsten, uitgaven en besparingen. Dit scenario is perfect voor families en individuen die systematisch vermogen willen opbouwen, meerdere inkomstenbronnen willen volgen en willen plannen voor grote levensgebeurtenissen zoals onderwijs voor kinderen, huizenaankopen of carrièreveranderingen.",
+                idealFor: "Ideaal Voor:",
+                use1: "Vermogen opbouwen in de loop van de tijd met meerdere inkomstenbronnen",
+                use2: "Plannen voor grote uitgaven (onderwijs, woning, etc.)",
+                use3: "Vooruitgang volgen naar FIRE doelen",
+                use4: "Verschillende spaarpercentages en hun impact modelleren",
+                downloadButton: "Download Toekomstige Planning Voorbeeld"
+            },
+            businessExit: {
+                title: "💼 Bedrijf Verkopen en Rentenieren",
+                description: "Modelleer de financiële impact van de verkoop van je bedrijf en de overgang naar pensioen. Dit scenario helpt je om de verkoopopbrengst, belastinggevolgen en hoe je je pensioeninkomen uit de verkoop structureert te plannen. Begrijp hoe verschillende verkoopprijzen en pensioenopnamestrategieën je financiële zekerheid op lange termijn beïnvloeden.",
+                idealFor: "Ideaal Voor:",
+                use1: "Bedrijfseigenaren die een exit-strategie plannen",
+                use2: "Verschillende verkoopprijsscenario's modelleren",
+                use3: "Investerings- en opnamestrategieën na verkoop plannen",
+                use4: "Belastinggevolgen van bedrijfsverkoop begrijpen",
+                comingSoon: "📌 Voorbeeldbestand komt binnenkort"
+            },
+            debtRepayment: {
+                title: "💳 Planning om Schulden Af te Lossen",
+                description: "Creëer een uitgebreid schuldafbetalingsplan terwijl je andere financiële doelen behoudt. Dit scenario helpt je verschillende schuldafbetalingsstrategieën te modelleren (lawine vs. sneeuwbal), de impact van extra betalingen te zien en te begrijpen hoe schuldaflossing in je algemene financiële plan past. Balanceer schuldaflossing met het opbouwen van besparingen en investeringen.",
+                idealFor: "Ideaal Voor:",
+                use1: "Gestructureerde schuldafbetalingsplannen creëren",
+                use2: "Lawine versus sneeuwbalmethoden vergelijken",
+                use3: "Schuldaflossing balanceren met spaardoelen",
+                use4: "De impact van extra betalingen modelleren",
+                comingSoon: "📌 Voorbeeldbestand komt binnenkort"
+            },
+            howToUse: {
+                title: "Hoe Deze Scenario's te Gebruiken",
+                step1: "<strong>Download het voorbeeldbestand</strong> voor het scenario dat bij jouw situatie past",
+                step2: '<strong>Open het in de Finance Planner mobiele app</strong> (beschikbaar voor <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank">iOS</a> en <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank">Android</a>)',
+                step3: "<strong>Verken het voorbeeld</strong> om te begrijpen hoe het scenario is gestructureerd",
+                step4: "<strong>Pas aan met je eigen gegevens</strong> door inkomsten, uitgaven en besparingen te wijzigen",
+                step5: "<strong>Bewaar en volg</strong> je gepersonaliseerde financiële plan"
+            },
+            needHelp: {
+                title: "Hulp Nodig?",
+                description: "Bekijk onze bronnen om meer te leren over het gebruik van Finance Planner:",
+                tutorials: "🎥 Bekijk Video Tutorials",
+                community: "💬 Deelnemen aan Gemeenschapsdiscussies"
+            }
         }
     }
 };
