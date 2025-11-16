@@ -208,7 +208,15 @@ const translations = {
             description: "Watch comprehensive video tutorials to help you get the most out of Finance Planner. Learn about advanced strategies, tax-advantaged accounts, and best practices for achieving financial independence.",
             featuredVideo: {
                 title: "🎥 How to Implement Wealth Tax / Pensioensparen",
-                description: "Learn how to model tax-advantaged retirement accounts in Finance Planner. This tutorial demonstrates the approach using the US 401(k) system as an example. All comparable pension savings systems work with this same method, including the Dutch pensioensparen and similar tax-advantaged retirement accounts worldwide."
+                description: "Learn how to model tax-advantaged retirement accounts in Finance Planner. This tutorial demonstrates the approach using the US 401(k) system as an example. All comparable pension savings systems work with this same method, including the Dutch pensioensparen and similar tax-advantaged retirement accounts worldwide.",
+                countriesTitle: "Countries with Tax-at-Payout Systems:",
+                countriesList: "This approach applies to countries where taxes on retirement savings are withheld at the moment of payout, such as: USA (401k, IRA), Germany, UK, France, Canada, Australia, Japan, and many other countries."
+            },
+            wealthTaxVideo: {
+                title: "🎥 Dutch Wealth Tax (Vermogensbelasting) Example",
+                description: "See how the Dutch wealth tax system works in Finance Planner. This tutorial demonstrates how to model annual wealth taxes based on your total assets—a tax system used in several countries worldwide.",
+                countriesTitle: "Countries with Annual Wealth Tax Systems:",
+                countriesList: "Similar annual wealth tax systems (taxing total assets each year) are used in: Netherlands, Norway, Spain, Switzerland, and Colombia."
             },
             moreVideos: {
                 title: "📺 More Video Tutorials",
@@ -451,7 +459,15 @@ const translations = {
             description: "Bekijk uitgebreide video tutorials om het meeste uit Finance Planner te halen. Leer over geavanceerde strategieën, fiscaal voordelige rekeningen en best practices voor het bereiken van financiële onafhankelijkheid.",
             featuredVideo: {
                 title: "🎥 Hoe Vermogensbelasting / Pensioensparen Te Implementeren",
-                description: "Leer hoe je fiscaal voordelige pensioenrekeningen modelleert in Finance Planner. Deze tutorial demonstreert de aanpak aan de hand van het Amerikaanse 401(k) systeem als voorbeeld. Alle vergelijkbare pensioenspaarsystemen werken met dezelfde methode, inclusief het Nederlandse pensioensparen en vergelijkbare fiscaal voordelige pensioenrekeningen wereldwijd."
+                description: "Leer hoe je fiscaal voordelige pensioenrekeningen modelleert in Finance Planner. Deze tutorial demonstreert de aanpak aan de hand van het Amerikaanse 401(k) systeem als voorbeeld. Alle vergelijkbare pensioenspaarsystemen werken met dezelfde methode, inclusief het Nederlandse pensioensparen en vergelijkbare fiscaal voordelige pensioenrekeningen wereldwijd.",
+                countriesTitle: "Landen met Belasting-bij-Uitbetaling Systemen:",
+                countriesList: "Deze aanpak geldt voor landen waar belastingen op pensioenbesparingen worden ingehouden op het moment van uitbetaling, zoals: VS (401k, IRA), Duitsland, VK, Frankrijk, Canada, Australië, Japan en vele andere landen."
+            },
+            wealthTaxVideo: {
+                title: "🎥 Nederlandse Vermogensbelasting Voorbeeld",
+                description: "Zie hoe het Nederlandse vermogensbelastingsysteem werkt in Finance Planner. Deze tutorial demonstreert hoe je jaarlijkse vermogensbelasting modelleert op basis van je totale vermogen—een belastingsysteem dat in verschillende landen wereldwijd wordt gebruikt.",
+                countriesTitle: "Landen met Jaarlijkse Vermogensbelasting Systemen:",
+                countriesList: "Vergelijkbare jaarlijkse vermogensbelastingsystemen (belasting op totaal vermogen elk jaar) worden gebruikt in: Nederland, Noorwegen, Spanje, Zwitserland en Colombia."
             },
             moreVideos: {
                 title: "📺 Meer Video Tutorials",
