@@ -208,7 +208,7 @@ const translations = {
             description: "Watch comprehensive video tutorials to help you get the most out of Finance Planner. Learn about advanced strategies, tax-advantaged accounts, and best practices for achieving financial independence.",
             featuredVideo: {
                 title: "🎥 How to Implement Wealth Tax / Pensioensparen",
-                description: "Learn how to model tax-advantaged retirement accounts in Finance Planner. This tutorial covers implementing wealth tax strategies for the US system (401k, IRA) and the Dutch pensioensparen system."
+                description: "Learn how to model tax-advantaged retirement accounts in Finance Planner. This tutorial demonstrates the approach using the US 401(k) system as an example. All comparable pension savings systems work with this same method, including the Dutch pensioensparen and similar tax-advantaged retirement accounts worldwide."
             },
             moreVideos: {
                 title: "📺 More Video Tutorials",
@@ -451,7 +451,7 @@ const translations = {
             description: "Bekijk uitgebreide video tutorials om het meeste uit Finance Planner te halen. Leer over geavanceerde strategieën, fiscaal voordelige rekeningen en best practices voor het bereiken van financiële onafhankelijkheid.",
             featuredVideo: {
                 title: "🎥 Hoe Vermogensbelasting / Pensioensparen Te Implementeren",
-                description: "Leer hoe je fiscaal voordelige pensioenrekeningen modelleert in Finance Planner. Deze tutorial behandelt het implementeren van vermogensbelastingstrategieën voor het Amerikaanse systeem (401k, IRA) en het Nederlandse pensioenspaarsysteem."
+                description: "Leer hoe je fiscaal voordelige pensioenrekeningen modelleert in Finance Planner. Deze tutorial demonstreert de aanpak aan de hand van het Amerikaanse 401(k) systeem als voorbeeld. Alle vergelijkbare pensioenspaarsystemen werken met dezelfde methode, inclusief het Nederlandse pensioensparen en vergelijkbare fiscaal voordelige pensioenrekeningen wereldwijd."
             },
             moreVideos: {
                 title: "📺 Meer Video Tutorials",
