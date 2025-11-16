@@ -8,6 +8,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: gh-pages-pr-cleanup-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
 jobs:
   cleanup-preview:
     runs-on: ubuntu-latest
@@ -30,14 +34,34 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
 
-            # Commit and push changes
+            # Commit changes
             git add .
-            git commit -m "Cleanup preview for PR #${PR_NUMBER}" \
-              || echo "No changes to commit"
-            git pull --rebase origin gh-pages
-            git push origin gh-pages
-
-            echo "Preview for PR #${PR_NUMBER} has been removed."
+            if git commit -m "Cleanup preview for PR #${PR_NUMBER}"; then
+              # Push with retry logic to handle concurrent deployments
+              max_retries=5
+              retry_count=0
+              until [ $retry_count -ge $max_retries ]
+              do
+                # Pull latest changes and rebase our commit on top
+                git pull --rebase origin gh-pages && \
+                # Try to push
+                git push origin gh-pages && break
+                
+                # If push failed, increment counter and retry
+                retry_count=$((retry_count+1))
+                echo "Push failed, retrying... (attempt $retry_count/$max_retries)"
+                sleep 2
+              done
+              
+              if [ $retry_count -ge $max_retries ]; then
+                echo "Failed to push after $max_retries attempts"
+                exit 1
+              fi
+              
+              echo "Preview for PR #${PR_NUMBER} has been removed."
+            else
+              echo "No changes to commit"
+            fi
           else
             echo "No preview directory found for PR #${PR_NUMBER}."
           fi
