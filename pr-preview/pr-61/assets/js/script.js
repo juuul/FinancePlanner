@@ -257,7 +257,7 @@ const translations = {
             features: "Functies",
             tutorials: "Tutorials",
             community: "Gemeenschap",
-            scenarios: "Scenario's"
+            scenarios: "Gebruiksvoorbeelden"
         },
         hero: {
             title: "Finance Planner: De F.I.R.E Tool",
