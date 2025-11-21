@@ -6,7 +6,7 @@ const translations = {
             features: "Features",
             tutorials: "Tutorials",
             community: "Community",
-            scenarios: "Scenarios"
+            scenarios: "Use Cases"
         },
         hero: {
             title: "Finance Planner: The F.I.R.E Tool",
@@ -258,7 +258,7 @@ const translations = {
             features: "Functies",
             tutorials: "Tutorials",
             community: "Gemeenschap",
-            scenarios: "Scenario's"
+            scenarios: "Gebruiksvoorbeelden"
         },
         hero: {
             title: "Finance Planner: De F.I.R.E Tool",
