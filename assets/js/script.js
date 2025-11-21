@@ -151,6 +151,7 @@ const translations = {
             community: "💬 Community Discussions",
             tutorials: "🎥 Video Tutorials",
             privacy: "🔒 Privacy Statement",
+            authorsTitle: "Authors",
             copyright: "&copy; 2024 Finance Planner. Empowering your journey to Financial Independence."
         },
         scenarios: {
@@ -402,6 +403,7 @@ const translations = {
             community: "💬 Gemeenschapsdiscussies",
             tutorials: "🎥 Video Tutorials",
             privacy: "🔒 Privacyverklaring",
+            authorsTitle: "Auteurs",
             copyright: "&copy; 2024 Finance Planner. Ondersteunt je reis naar Financiële Onafhankelijkheid."
         },
         scenarios: {
