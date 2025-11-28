@@ -268,7 +268,7 @@ const translations = {
                     title: "Account Balance",
                     description: "Enter the starting balance of your account. This is the balance of the account in which all subjects are calculated—for example, the shared bank account of a household."
                 },
-                tip: "💡 <strong>Tip:</strong> The account balance represents your current financial starting point. All income, expenses, and savings calculations will be based on this foundation."
+                tip: "💡 <strong>Tip:</strong> The account balance represents the shared account of all participants in the planning—similar to a profit and loss account in a business, but for private use. It serves as the reserve from which expenses are paid when they cannot be covered by current incomes."
             },
             step2: {
                 title: "Step 2: Add Persons",
@@ -669,7 +669,7 @@ const translations = {
                     title: "Rekeningsaldo",
                     description: "Voer het startsaldo van je rekening in. Dit is het saldo van de rekening waarop alle onderdelen worden berekend—bijvoorbeeld de gezamenlijke bankrekening van een huishouden."
                 },
-                tip: "💡 <strong>Tip:</strong> Het rekeningsaldo vertegenwoordigt je huidige financiële startpunt. Alle inkomsten-, uitgaven- en spaarberekeningen worden gebaseerd op deze basis."
+                tip: "💡 <strong>Tip:</strong> Het rekeningsaldo vertegenwoordigt de gezamenlijke rekening van alle deelnemers aan de planning—vergelijkbaar met een verlies- en winstrekening bij een bedrijf, maar dan voor privégebruik. Het dient als de reserve waaruit uitgaven worden betaald wanneer deze niet uit de lopende inkomsten kunnen worden gedekt."
             },
             step2: {
                 title: "Stap 2: Voeg Personen Toe",
