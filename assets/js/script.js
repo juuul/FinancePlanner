@@ -332,6 +332,26 @@ const translations = {
                 timing: {
                     title: "Timing & Scheduling",
                     description: "Set when each income starts and ends. This is especially useful for modeling career changes, retirement transitions, or temporary income sources."
+                },
+                example: {
+                    title: "🎯 Example: Setting Up Income",
+                    job: {
+                        description: "First, we set up a job income of 3,000 per month. The income is inflation-adjusted and will stop at the early retirement date.",
+                        caption: "Setting up job income of 3,000 per month, stopping at early retirement"
+                    },
+                    expenses: "We also set up expenses of 2,000 per month. This gives us a monthly surplus of 1,000 that we can save.",
+                    pension: {
+                        description: "Next, we add a pension of 1,000 per month. The pension starts at the fixed retirement age and is also inflation-adjusted.",
+                        caption: "Setting up pension income of 1,000 per month, starting at fixed retirement age"
+                    }
+                },
+                analyze: {
+                    title: "📊 Analyze the Results",
+                    description: "When we press Calculate, the first planning results appear. Here we've set the early retirement date to age 65 by clicking the FIRE button (1). If there are multiple persons in the planning, you can adjust their FIRE dates individually (2).",
+                    caption: "Calculation results with income, expense, and capital graphs",
+                    shortage: "Looking at the wealth graph, we can see there's a shortage starting in 2049 at age 76. This means we need to plan our savings to cover this gap.",
+                    shortageCaption: "The wealth graph shows a shortage at age 76 in 2049",
+                    insight: "By clicking on the pink line in the income graph, we can see we have 1,000 to spend monthly until the early retirement date. Let's use this surplus to build savings!"
                 }
             },
             step5: {
@@ -344,58 +364,17 @@ const translations = {
                 withdrawals: {
                     title: "Withdrawals",
                     description: "Plan how and when you'll withdraw from savings, especially important for retirement planning."
-                }
-            },
-            step6: {
-                title: "Step 6: Planning Loans",
-                intro: "If you have loans like a mortgage, you can model them in the Loans section:",
-                mortgage: {
-                    title: "Mortgage Planning",
-                    description: "Model your mortgage payments including principal, interest, and duration. For Dutch users, you can also calculate the return interest (hypotheekrenteaftrek)."
                 },
-                other: {
-                    title: "Other Loans",
-                    description: "Track car loans, student loans, or any other debt obligations with their payment schedules."
-                }
-            },
-            example: {
-                title: "🎯 Example Walkthrough: Creating Your First Plan",
-                intro: "Let's walk through a complete example to see how all the pieces fit together. In this scenario, we'll create a financial plan and use savings to extend our financial security.",
-                step1: {
-                    title: "Step 1: Set Up Income and Expenses",
-                    description: "First, we set up a job income of 3,000 per month. The income is inflation-adjusted and will stop at the early retirement date.",
-                    caption: "Setting up job income of 3,000 per month, stopping at early retirement",
-                    expenses: "We also set up expenses of 2,000 per month. This gives us a monthly surplus of 1,000 that we can save."
-                },
-                step2: {
-                    title: "Step 2: Add Pension Income",
-                    description: "Next, we add a pension of 1,000 per month. The pension starts at the fixed retirement age and is also inflation-adjusted.",
-                    caption: "Setting up pension income of 1,000 per month, starting at fixed retirement age"
-                },
-                step3: {
-                    title: "Step 3: Run the Calculation",
-                    description: "When we press Calculate, the first planning results appear. Here we've set the early retirement date to age 65 by clicking the FIRE button (1). If there are multiple persons in the planning, you can adjust their FIRE dates individually (2).",
-                    caption: "Calculation results with income, expense, and capital graphs"
-                },
-                step4: {
-                    title: "Step 4: Identify the Shortage",
-                    description: "Looking at the wealth graph, we can see there's a shortage starting in 2049 at age 76. This means we need to plan our savings to cover this gap.",
-                    caption: "The wealth graph shows a shortage at age 76 in 2049",
-                    insight: "By clicking on the pink line in the income graph, we can see we have 1,000 to spend monthly until the early retirement date. Let's use this surplus to build savings!"
-                },
-                step5: {
-                    title: "Step 5: Add a Savings Plan",
+                example: {
+                    title: "🎯 Example: Setting Up Savings",
                     description: "We add a savings account with a 6% annual interest rate. The deposits will stop at the early retirement date, and the savings account will end at the fixed retirement date—the remaining balance goes to the main account.",
                     caption: "Savings plan with 1,000 monthly deposits at 6% interest",
-                    details: "Note that we set both deposits and withdrawals to be inflation-adjusted. This ensures our savings strategy keeps pace with rising costs."
+                    details: "Note that we set both deposits and withdrawals to be inflation-adjusted. This ensures our savings strategy keeps pace with rising costs.",
+                    withdrawal: "We set up a withdrawal of 2,000 per month during the period between early retirement and the fixed pension date. This covers the income gap when our job income stops but pension hasn't started yet. The interest continues to grow on the remaining balance during the withdrawal period.",
+                    withdrawalCaption: "Setting up 2,000 monthly withdrawal during early retirement period"
                 },
-                step6: {
-                    title: "Step 6: Plan Withdrawals During Early Retirement",
-                    description: "We set up a withdrawal of 2,000 per month during the period between early retirement and the fixed pension date. This covers the income gap when our job income stops but pension hasn't started yet. The interest continues to grow on the remaining balance during the withdrawal period.",
-                    caption: "Setting up 2,000 monthly withdrawal during early retirement period"
-                },
-                step7: {
-                    title: "Step 7: Review the Improved Results",
+                results: {
+                    title: "📊 Review the Improved Results",
                     description: "After adding the savings plan, we recalculate. Now the wealth graph shows the shortage has moved from age 76 to age 85 (2058)—a significant improvement!",
                     caption: "With savings, the shortage now occurs much later at age 85"
                 },
@@ -754,6 +733,26 @@ const translations = {
                 timing: {
                     title: "Timing & Planning",
                     description: "Stel in wanneer elk inkomen begint en eindigt. Dit is vooral nuttig voor het modelleren van carrièreveranderingen, pensioenovergang of tijdelijke inkomensbronnen."
+                },
+                example: {
+                    title: "🎯 Voorbeeld: Inkomen Instellen",
+                    job: {
+                        description: "Eerst stellen we een arbeidsinkomen in van 3.000 per maand. Het inkomen is geïndexeerd voor inflatie en stopt op de vervroegde pensioendatum.",
+                        caption: "Arbeidsinkomen van 3.000 per maand instellen, stopt bij vervroegd pensioen"
+                    },
+                    expenses: "We stellen ook uitgaven in van 2.000 per maand. Dit geeft ons een maandelijks overschot van 1.000 dat we kunnen sparen.",
+                    pension: {
+                        description: "Vervolgens voegen we een pensioen toe van 1.000 per maand. Het pensioen begint op de vaste pensioenleeftijd en is ook geïndexeerd voor inflatie.",
+                        caption: "Pensioeninkomen van 1.000 per maand instellen, begint op vaste pensioenleeftijd"
+                    }
+                },
+                analyze: {
+                    title: "📊 Analyseer de Resultaten",
+                    description: "Wanneer we op Bereken drukken, verschijnen de eerste planningsresultaten. Hier hebben we de vervroegde pensioendatum op 65 jaar gezet door op de FIRE-knop te klikken (1). Als er meerdere personen in de planning zijn, kun je hun FIRE-datums individueel aanpassen (2).",
+                    caption: "Berekeningsresultaten met inkomsten-, uitgaven- en kapitaalgrafieken",
+                    shortage: "Kijkend naar de vermogensgrafiek zien we dat er een tekort begint in 2049 op 76-jarige leeftijd. Dit betekent dat we onze besparingen moeten plannen om dit gat te dekken.",
+                    shortageCaption: "De vermogensgrafiek toont een tekort op 76-jarige leeftijd in 2049",
+                    insight: "Door op de roze lijn in de inkomstengrafiek te klikken, zien we dat we 1.000 per maand te besteden hebben tot de vervroegde pensioendatum. Laten we dit overschot gebruiken om te sparen!"
                 }
             },
             step5: {
@@ -766,58 +765,17 @@ const translations = {
                 withdrawals: {
                     title: "Opnames",
                     description: "Plan hoe en wanneer je opneemt uit besparingen, vooral belangrijk voor pensioenplanning."
-                }
-            },
-            step6: {
-                title: "Stap 6: Leningen Plannen",
-                intro: "Als je leningen hebt zoals een hypotheek, kun je deze modelleren in de Leningen sectie:",
-                mortgage: {
-                    title: "Hypotheek Planning",
-                    description: "Modelleer je hypotheekbetalingen inclusief hoofdsom, rente en looptijd. Voor Nederlandse gebruikers kun je ook de hypotheekrenteaftrek berekenen."
                 },
-                other: {
-                    title: "Andere Leningen",
-                    description: "Volg autoleningen, studieleningen of andere schuldverplichtingen met hun betalingsschema's."
-                }
-            },
-            example: {
-                title: "🎯 Voorbeeld Doorloop: Je Eerste Plan Maken",
-                intro: "Laten we een compleet voorbeeld doorlopen om te zien hoe alle onderdelen samenkomen. In dit scenario maken we een financieel plan en gebruiken we spaargeld om onze financiële zekerheid te verlengen.",
-                step1: {
-                    title: "Stap 1: Inkomen en Uitgaven Instellen",
-                    description: "Eerst stellen we een arbeidsinkomen in van 3.000 per maand. Het inkomen is geïndexeerd voor inflatie en stopt op de vervroegde pensioendatum.",
-                    caption: "Arbeidsinkomen van 3.000 per maand instellen, stopt bij vervroegd pensioen",
-                    expenses: "We stellen ook uitgaven in van 2.000 per maand. Dit geeft ons een maandelijks overschot van 1.000 dat we kunnen sparen."
-                },
-                step2: {
-                    title: "Stap 2: Pensioeninkomen Toevoegen",
-                    description: "Vervolgens voegen we een pensioen toe van 1.000 per maand. Het pensioen begint op de vaste pensioenleeftijd en is ook geïndexeerd voor inflatie.",
-                    caption: "Pensioeninkomen van 1.000 per maand instellen, begint op vaste pensioenleeftijd"
-                },
-                step3: {
-                    title: "Stap 3: De Berekening Uitvoeren",
-                    description: "Wanneer we op Bereken drukken, verschijnen de eerste planningsresultaten. Hier hebben we de vervroegde pensioendatum op 65 jaar gezet door op de FIRE-knop te klikken (1). Als er meerdere personen in de planning zijn, kun je hun FIRE-datums individueel aanpassen (2).",
-                    caption: "Berekeningsresultaten met inkomsten-, uitgaven- en kapitaalgrafieken"
-                },
-                step4: {
-                    title: "Stap 4: Het Tekort Identificeren",
-                    description: "Kijkend naar de vermogensgrafiek zien we dat er een tekort begint in 2049 op 76-jarige leeftijd. Dit betekent dat we onze besparingen moeten plannen om dit gat te dekken.",
-                    caption: "De vermogensgrafiek toont een tekort op 76-jarige leeftijd in 2049",
-                    insight: "Door op de roze lijn in de inkomstengrafiek te klikken, zien we dat we 1.000 per maand te besteden hebben tot de vervroegde pensioendatum. Laten we dit overschot gebruiken om te sparen!"
-                },
-                step5: {
-                    title: "Stap 5: Een Spaarplan Toevoegen",
+                example: {
+                    title: "🎯 Voorbeeld: Besparingen Instellen",
                     description: "We voegen een spaarrekening toe met een jaarlijkse rente van 6%. De stortingen stoppen op de vervroegde pensioendatum, en de spaarrekening eindigt op de vaste pensioendatum—het resterende saldo gaat naar de hoofdrekening.",
                     caption: "Spaarplan met 1.000 maandelijkse stortingen tegen 6% rente",
-                    details: "Merk op dat we zowel stortingen als opnames hebben ingesteld op geïndexeerd voor inflatie. Dit zorgt ervoor dat onze spaarstrategie gelijke tred houdt met stijgende kosten."
+                    details: "Merk op dat we zowel stortingen als opnames hebben ingesteld op geïndexeerd voor inflatie. Dit zorgt ervoor dat onze spaarstrategie gelijke tred houdt met stijgende kosten.",
+                    withdrawal: "We stellen een opname in van 2.000 per maand gedurende de periode tussen vervroegd pensioen en de vaste pensioendatum. Dit dekt het inkomensgat wanneer ons arbeidsinkomen stopt maar het pensioen nog niet is begonnen. De rente blijft groeien op het resterende saldo tijdens de opnameperiode.",
+                    withdrawalCaption: "Maandelijkse opname van 2.000 instellen tijdens vervroegde pensioenperiode"
                 },
-                step6: {
-                    title: "Stap 6: Opnames Plannen Tijdens Vervroegd Pensioen",
-                    description: "We stellen een opname in van 2.000 per maand gedurende de periode tussen vervroegd pensioen en de vaste pensioendatum. Dit dekt het inkomensgat wanneer ons arbeidsinkomen stopt maar het pensioen nog niet is begonnen. De rente blijft groeien op het resterende saldo tijdens de opnameperiode.",
-                    caption: "Maandelijkse opname van 2.000 instellen tijdens vervroegde pensioenperiode"
-                },
-                step7: {
-                    title: "Stap 7: De Verbeterde Resultaten Bekijken",
+                results: {
+                    title: "📊 Bekijk de Verbeterde Resultaten",
                     description: "Na het toevoegen van het spaarplan berekenen we opnieuw. Nu toont de vermogensgrafiek dat het tekort is verschoven van 76 naar 85 jaar (2058)—een aanzienlijke verbetering!",
                     caption: "Met spaargeld treedt het tekort nu veel later op, op 85-jarige leeftijd"
                 },
