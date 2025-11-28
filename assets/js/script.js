@@ -391,7 +391,8 @@ const translations = {
                 },
                 step6: {
                     title: "Step 6: Plan Withdrawals During Early Retirement",
-                    description: "We set up a withdrawal of 2,000 per month during the period between early retirement and the fixed pension date. This covers the income gap when our job income stops but pension hasn't started yet. The interest continues to grow on the remaining balance during the withdrawal period."
+                    description: "We set up a withdrawal of 2,000 per month during the period between early retirement and the fixed pension date. This covers the income gap when our job income stops but pension hasn't started yet. The interest continues to grow on the remaining balance during the withdrawal period.",
+                    caption: "Setting up 2,000 monthly withdrawal during early retirement period"
                 },
                 step7: {
                     title: "Step 7: Review the Improved Results",
@@ -812,7 +813,8 @@ const translations = {
                 },
                 step6: {
                     title: "Stap 6: Opnames Plannen Tijdens Vervroegd Pensioen",
-                    description: "We stellen een opname in van 2.000 per maand gedurende de periode tussen vervroegd pensioen en de vaste pensioendatum. Dit dekt het inkomensgat wanneer ons arbeidsinkomen stopt maar het pensioen nog niet is begonnen. De rente blijft groeien op het resterende saldo tijdens de opnameperiode."
+                    description: "We stellen een opname in van 2.000 per maand gedurende de periode tussen vervroegd pensioen en de vaste pensioendatum. Dit dekt het inkomensgat wanneer ons arbeidsinkomen stopt maar het pensioen nog niet is begonnen. De rente blijft groeien op het resterende saldo tijdens de opnameperiode.",
+                    caption: "Maandelijkse opname van 2.000 instellen tijdens vervroegde pensioenperiode"
                 },
                 step7: {
                     title: "Stap 7: De Verbeterde Resultaten Bekijken",
