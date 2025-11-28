@@ -259,6 +259,7 @@ const translations = {
             step1: {
                 title: "Step 1: Create a Calculation",
                 intro: "The first step in creating your financial plan is to set up a new calculation. This forms the foundation of your planning.",
+                caption: "The Calculation dialog where you enter your planning name and starting balance",
                 name: {
                     title: "Planning Name",
                     description: "Give your planning a descriptive name, such as \"Family Budget 2025\" or \"Retirement Planning\". This helps you identify different scenarios later."
@@ -272,6 +273,7 @@ const translations = {
             step2: {
                 title: "Step 2: Add Persons",
                 intro: "After creating your calculation, add the persons involved in your financial plan. This is typically yourself, your partner, or other household members.",
+                caption: "The Person dialog where you enter name and date of birth, with retirement date slider visible",
                 name: {
                     title: "Person Name",
                     description: "Enter a name to identify each person in your plan, such as \"Person # 1\" or use actual names for clarity."
@@ -295,6 +297,7 @@ const translations = {
             step3: {
                 title: "Step 3: Planning Expenses",
                 intro: "Expenses are a crucial part of your financial plan. When you plan your expenses, you can see what you need to do to achieve your financial goals. Here's how to configure an expense:",
+                caption: "The Expense screen showing all configuration options with numbered annotations",
                 amount: {
                     title: "1️⃣ Net Amount",
                     description: "Enter the net expense amount. This subject is used for expenses whether they occur regularly or happen just once—like monthly household costs, annual holiday spending, etc. Use the Loan subject if you want to calculate costs for a loan like a mortgage, which can also calculate return interest (Dutch: hypotheekrenteaftrek)."
@@ -635,6 +638,7 @@ const translations = {
             step1: {
                 title: "Stap 1: Maak een Berekening",
                 intro: "De eerste stap bij het maken van je financiële plan is het opzetten van een nieuwe berekening. Dit vormt de basis van je planning.",
+                caption: "Het Berekening dialoogvenster waar je de naam en het startsaldo invoert",
                 name: {
                     title: "Planning Naam",
                     description: "Geef je planning een beschrijvende naam, zoals \"Gezinsbudget 2025\" of \"Pensioenplanning\". Dit helpt je later verschillende scenario's te identificeren."
@@ -648,6 +652,7 @@ const translations = {
             step2: {
                 title: "Stap 2: Voeg Personen Toe",
                 intro: "Na het aanmaken van je berekening, voeg je de personen toe die betrokken zijn bij je financiële plan. Dit is meestal jezelf, je partner of andere huishoudenleden.",
+                caption: "Het Persoon dialoogvenster waar je naam en geboortedatum invoert, met de pensioendatum schuifregelaar zichtbaar",
                 name: {
                     title: "Naam Persoon",
                     description: "Voer een naam in om elke persoon in je plan te identificeren, zoals \"Persoon # 1\" of gebruik echte namen voor duidelijkheid."
@@ -671,6 +676,7 @@ const translations = {
             step3: {
                 title: "Stap 3: Uitgaven Plannen",
                 intro: "Uitgaven zijn een cruciaal onderdeel van je financiële plan. Wanneer je je uitgaven plant, kun je zien wat je moet doen om je financiële doelen te bereiken. Zo configureer je een uitgave:",
+                caption: "Het Uitgaven scherm met alle configuratie-opties en genummerde annotaties",
                 amount: {
                     title: "1️⃣ Netto Bedrag",
                     description: "Voer het netto uitgavenbedrag in. Dit onderdeel wordt gebruikt voor uitgaven, of ze nu regelmatig voorkomen of eenmalig zijn—zoals maandelijkse huishoudkosten, jaarlijkse vakantie-uitgaven, etc. Gebruik het Lening-onderdeel als je kosten wilt berekenen voor een lening zoals een hypotheek, die ook de hypotheekrenteaftrek kan berekenen."
