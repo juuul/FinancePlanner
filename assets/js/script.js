@@ -6,7 +6,8 @@ const translations = {
             features: "Features",
             tutorials: "Tutorials",
             community: "Community",
-            scenarios: "Use Cases"
+            scenarios: "Use Cases",
+            howToPlan: "How to Plan"
         },
         hero: {
             title: "Finance Planner: The F.I.R.E Tool",
@@ -250,6 +251,132 @@ const translations = {
                 communityButton: "💬 Join Community Discussions",
                 scenariosButton: "📂 View Example Scenarios"
             }
+        },
+        howToPlan: {
+            title: "📋 How to Make a Planning",
+            subtitle: "Step-by-Step Guide to Creating Your Financial Plan",
+            description: "Learn how to set up a comprehensive financial plan in the Finance Planner app. Follow these steps to create your calculation, add persons, and plan your expenses, incomes, savings, and loans for a complete financial overview.",
+            step1: {
+                title: "Step 1: Create a Calculation",
+                intro: "The first step in creating your financial plan is to set up a new calculation. This forms the foundation of your planning.",
+                caption: "The Calculation dialog where you enter your planning name and starting balance",
+                name: {
+                    title: "Planning Name",
+                    description: "Give your planning a descriptive name, such as \"Family Budget 2025\" or \"Retirement Planning\". This helps you identify different scenarios later."
+                },
+                balance: {
+                    title: "Account Balance",
+                    description: "Enter the starting balance of your account. This is the balance of the account in which all subjects are calculated—for example, the shared bank account of a household."
+                },
+                tip: "💡 <strong>Tip:</strong> The account balance represents your current financial starting point. All income, expenses, and savings calculations will be based on this foundation."
+            },
+            step2: {
+                title: "Step 2: Add Persons",
+                intro: "After creating your calculation, add the persons involved in your financial plan. This is typically yourself, your partner, or other household members.",
+                caption: "The Person dialog where you enter name and date of birth, with retirement date slider visible",
+                name: {
+                    title: "Person Name",
+                    description: "Enter a name to identify each person in your plan, such as \"Person # 1\" or use actual names for clarity."
+                },
+                dob: {
+                    title: "Date of Birth",
+                    description: "The date of birth is used to determine the pension age, which you can later adjust. The app calculates ages and retirement dates automatically."
+                },
+                retirement: {
+                    title: "📅 Retirement Date Planning",
+                    description: "Once a person is added, you can see and adjust their early retirement dates. Use the slider to explore different retirement scenarios and see how they affect your financial plan."
+                }
+            },
+            overview: {
+                title: "Planning Categories",
+                intro: "After adding persons, you can start planning different financial categories. The recommended order is:",
+                step1: "<strong>Expenses & Loans:</strong> Start by planning the costs you need to cover",
+                step2: "<strong>Incomes:</strong> Set up current and future income sources, taking into account your expenses",
+                step3: "<strong>Savings:</strong> Plan your savings to see if you can cover your costs and potentially retire early"
+            },
+            step3: {
+                title: "Step 3: Planning Expenses",
+                intro: "Expenses are a crucial part of your financial plan. When you plan your expenses, you can see what you need to do to achieve your financial goals. Here's how to configure an expense:",
+                caption: "The Expense screen showing all configuration options with numbered annotations",
+                amount: {
+                    title: "1️⃣ Net Amount",
+                    description: "Enter the net expense amount. This subject is used for expenses whether they occur regularly or happen just once—like monthly household costs, annual holiday spending, etc. Use the Loan subject if you want to calculate costs for a loan like a mortgage, which can also calculate return interest (Dutch: hypotheekrenteaftrek)."
+                },
+                frequency: {
+                    title: "2️⃣ Frequency",
+                    description: "Set how often the expense is paid. You can choose monthly, quarterly, or yearly expenses. You can also set the occurrence frequency—for example, every 1 or 2 months."
+                },
+                period: {
+                    title: "3️⃣ Time Period",
+                    description: "Define when this expense should happen. You can plan future expenses like college fees for your children, or recurring costs like house painting every 5 years. Some expenses will change after you reach your retirement age."
+                },
+                link: {
+                    title: "4️⃣ Date Linking",
+                    description: "This feature helps you easily link dates to retirement. You can set the date to the fixed retirement date or to an adjustable retirement date using a slider when analyzing your calculation results—for example, to check when you can stop working given all the subjects you have entered.",
+                    early: "Early retirement date",
+                    standard: "Standard retirement date",
+                    none: "No link (manual date)"
+                },
+                inflation: {
+                    title: "5️⃣ Inflation Adjustment",
+                    description: "Determine if the expense should be indexed for inflation. Most costs are indexed over time, so enable this for most cases. This is important when you want to analyze your calculation with the effect of inflation to get a realistic view of future costs."
+                }
+            },
+            step4: {
+                title: "Step 4: Planning Incomes",
+                intro: "After planning your expenses, set up your income sources. Income planning follows similar principles to expense planning:",
+                sources: {
+                    title: "Multiple Income Sources",
+                    description: "Add various income streams such as salary, rental income, dividends, or pension. Each source can have its own schedule and settings."
+                },
+                timing: {
+                    title: "Timing & Scheduling",
+                    description: "Set when each income starts and ends. This is especially useful for modeling career changes, retirement transitions, or temporary income sources."
+                }
+            },
+            step5: {
+                title: "Step 5: Planning Savings",
+                intro: "Savings planning helps you understand if you can cover your costs and even retire early. Set up your savings strategy:",
+                deposits: {
+                    title: "Deposits",
+                    description: "Plan regular or one-time deposits to your savings accounts. Configure tax benefits and inflation adjustments."
+                },
+                withdrawals: {
+                    title: "Withdrawals",
+                    description: "Plan how and when you'll withdraw from savings, especially important for retirement planning."
+                }
+            },
+            step6: {
+                title: "Step 6: Planning Loans",
+                intro: "If you have loans like a mortgage, you can model them in the Loans section:",
+                mortgage: {
+                    title: "Mortgage Planning",
+                    description: "Model your mortgage payments including principal, interest, and duration. For Dutch users, you can also calculate the return interest (hypotheekrenteaftrek)."
+                },
+                other: {
+                    title: "Other Loans",
+                    description: "Track car loans, student loans, or any other debt obligations with their payment schedules."
+                }
+            },
+            calculate: {
+                title: "📊 Calculate and Analyze",
+                intro: "Once you've entered all your financial data, use the Calculate button to run your analysis:",
+                visual: "View visual projections of your financial future",
+                retirement: "Adjust retirement age sliders to see different scenarios",
+                whatif: "Test \"what if\" scenarios by modifying inputs",
+                export: "Export or save your financial plan for future reference"
+            },
+            getStarted: {
+                title: "Get Started Now",
+                description: "Download Finance Planner and start creating your financial plan today:"
+            },
+            needHelp: {
+                title: "Need More Help?",
+                description: "Explore our additional resources:",
+                tutorials: "🎥 Watch Video Tutorials",
+                scenarios: "📂 View Example Scenarios",
+                community: "💬 Join Community Discussions"
+            }
         }
     },
     nl: {
@@ -258,7 +385,8 @@ const translations = {
             features: "Functies",
             tutorials: "Tutorials",
             community: "Gemeenschap",
-            scenarios: "Gebruiksvoorbeelden"
+            scenarios: "Gebruiksvoorbeelden",
+            howToPlan: "Hoe te Plannen"
         },
         hero: {
             title: "Finance Planner: De F.I.R.E Tool",
@@ -501,6 +629,132 @@ const translations = {
                 description: "Heb je vragen of wil je je financiële planningsstrategieën bespreken?",
                 communityButton: "💬 Deelnemen aan Gemeenschapsdiscussies",
                 scenariosButton: "📂 Bekijk Voorbeeldscenario's"
+            }
+        },
+        howToPlan: {
+            title: "📋 Hoe Maak Je een Planning",
+            subtitle: "Stapsgewijze Handleiding voor het Maken van Je Financiële Plan",
+            description: "Leer hoe je een uitgebreid financieel plan opzet in de Finance Planner app. Volg deze stappen om je berekening te maken, personen toe te voegen en je uitgaven, inkomsten, besparingen en leningen te plannen voor een compleet financieel overzicht.",
+            step1: {
+                title: "Stap 1: Maak een Berekening",
+                intro: "De eerste stap bij het maken van je financiële plan is het opzetten van een nieuwe berekening. Dit vormt de basis van je planning.",
+                caption: "Het Berekening dialoogvenster waar je de naam en het startsaldo invoert",
+                name: {
+                    title: "Planning Naam",
+                    description: "Geef je planning een beschrijvende naam, zoals \"Gezinsbudget 2025\" of \"Pensioenplanning\". Dit helpt je later verschillende scenario's te identificeren."
+                },
+                balance: {
+                    title: "Rekeningsaldo",
+                    description: "Voer het startsaldo van je rekening in. Dit is het saldo van de rekening waarop alle onderdelen worden berekend—bijvoorbeeld de gezamenlijke bankrekening van een huishouden."
+                },
+                tip: "💡 <strong>Tip:</strong> Het rekeningsaldo vertegenwoordigt je huidige financiële startpunt. Alle inkomsten-, uitgaven- en spaarberekeningn worden gebaseerd op deze basis."
+            },
+            step2: {
+                title: "Stap 2: Voeg Personen Toe",
+                intro: "Na het aanmaken van je berekening, voeg je de personen toe die betrokken zijn bij je financiële plan. Dit is meestal jezelf, je partner of andere huishoudenleden.",
+                caption: "Het Persoon dialoogvenster waar je naam en geboortedatum invoert, met de pensioendatum schuifregelaar zichtbaar",
+                name: {
+                    title: "Naam Persoon",
+                    description: "Voer een naam in om elke persoon in je plan te identificeren, zoals \"Persoon # 1\" of gebruik echte namen voor duidelijkheid."
+                },
+                dob: {
+                    title: "Geboortedatum",
+                    description: "De geboortedatum wordt gebruikt om de pensioenleeftijd te bepalen, die je later kunt aanpassen. De app berekent automatisch leeftijden en pensioendata."
+                },
+                retirement: {
+                    title: "📅 Pensioendatum Planning",
+                    description: "Zodra een persoon is toegevoegd, kun je hun vervroegde pensioendata zien en aanpassen. Gebruik de schuifregelaar om verschillende pensioenscenario's te verkennen en te zien hoe ze je financiële plan beïnvloeden."
+                }
+            },
+            overview: {
+                title: "Planning Categorieën",
+                intro: "Na het toevoegen van personen kun je beginnen met het plannen van verschillende financiële categorieën. De aanbevolen volgorde is:",
+                step1: "<strong>Uitgaven & Leningen:</strong> Begin met het plannen van de kosten die je moet dekken",
+                step2: "<strong>Inkomsten:</strong> Stel huidige en toekomstige inkomensbronnen in, rekening houdend met je uitgaven",
+                step3: "<strong>Besparingen:</strong> Plan je besparingen om te zien of je je kosten kunt dekken en mogelijk eerder met pensioen kunt"
+            },
+            step3: {
+                title: "Stap 3: Uitgaven Plannen",
+                intro: "Uitgaven zijn een cruciaal onderdeel van je financiële plan. Wanneer je je uitgaven plant, kun je zien wat je moet doen om je financiële doelen te bereiken. Zo configureer je een uitgave:",
+                caption: "Het Uitgaven scherm met alle configuratie-opties en genummerde annotaties",
+                amount: {
+                    title: "1️⃣ Netto Bedrag",
+                    description: "Voer het netto uitgavenbedrag in. Dit onderdeel wordt gebruikt voor uitgaven, of ze nu regelmatig voorkomen of eenmalig zijn—zoals maandelijkse huishoudkosten, jaarlijkse vakantie-uitgaven, etc. Gebruik het Lening-onderdeel als je kosten wilt berekenen voor een lening zoals een hypotheek, die ook de hypotheekrenteaftrek kan berekenen."
+                },
+                frequency: {
+                    title: "2️⃣ Frequentie",
+                    description: "Stel in hoe vaak de uitgave wordt betaald. Je kunt kiezen uit maandelijkse, driemaandelijkse of jaarlijkse uitgaven. Je kunt ook de voorkomingsfrequentie instellen—bijvoorbeeld elke 1 of 2 maanden."
+                },
+                period: {
+                    title: "3️⃣ Tijdsperiode",
+                    description: "Bepaal wanneer deze uitgave moet plaatsvinden. Je kunt toekomstige uitgaven plannen zoals studiekosten voor je kinderen, of terugkerende kosten zoals huisschilderen elke 5 jaar. Sommige uitgaven veranderen nadat je je pensioenleeftijd bereikt."
+                },
+                link: {
+                    title: "4️⃣ Datum Koppeling",
+                    description: "Deze functie helpt je gemakkelijk datums te koppelen aan pensioen. Je kunt de datum instellen op de vaste pensioendatum of op een aanpasbare pensioendatum met behulp van een schuifregelaar bij het analyseren van je berekeningsresultaten—bijvoorbeeld om te controleren wanneer je kunt stoppen met werken gezien alle onderdelen die je hebt ingevoerd.",
+                    early: "Vervroegde pensioendatum",
+                    standard: "Standaard pensioendatum",
+                    none: "Geen koppeling (handmatige datum)"
+                },
+                inflation: {
+                    title: "5️⃣ Inflatie Aanpassing",
+                    description: "Bepaal of de uitgave moet worden geïndexeerd voor inflatie. De meeste kosten worden in de loop van de tijd geïndexeerd, dus schakel dit in voor de meeste gevallen. Dit is belangrijk wanneer je je berekening wilt analyseren met het effect van inflatie om een realistisch beeld te krijgen van toekomstige kosten."
+                }
+            },
+            step4: {
+                title: "Stap 4: Inkomsten Plannen",
+                intro: "Na het plannen van je uitgaven, stel je je inkomensbronnen in. Inkomensplanning volgt vergelijkbare principes als uitgavenplanning:",
+                sources: {
+                    title: "Meerdere Inkomensbronnen",
+                    description: "Voeg verschillende inkomstenstromen toe zoals salaris, huurinkomsten, dividenden of pensioen. Elke bron kan zijn eigen schema en instellingen hebben."
+                },
+                timing: {
+                    title: "Timing & Planning",
+                    description: "Stel in wanneer elk inkomen begint en eindigt. Dit is vooral nuttig voor het modelleren van carrièreveranderingen, pensioenovergang of tijdelijke inkomensbronnen."
+                }
+            },
+            step5: {
+                title: "Stap 5: Besparingen Plannen",
+                intro: "Besparingsplanning helpt je te begrijpen of je je kosten kunt dekken en zelfs eerder met pensioen kunt. Stel je spaarstrategie in:",
+                deposits: {
+                    title: "Stortingen",
+                    description: "Plan regelmatige of eenmalige stortingen op je spaarrekeningen. Configureer belastingvoordelen en inflatie-aanpassingen."
+                },
+                withdrawals: {
+                    title: "Opnames",
+                    description: "Plan hoe en wanneer je opneemt uit besparingen, vooral belangrijk voor pensioenplanning."
+                }
+            },
+            step6: {
+                title: "Stap 6: Leningen Plannen",
+                intro: "Als je leningen hebt zoals een hypotheek, kun je deze modelleren in de Leningen sectie:",
+                mortgage: {
+                    title: "Hypotheek Planning",
+                    description: "Modelleer je hypotheekbetalingen inclusief hoofdsom, rente en looptijd. Voor Nederlandse gebruikers kun je ook de hypotheekrenteaftrek berekenen."
+                },
+                other: {
+                    title: "Andere Leningen",
+                    description: "Volg autoleningen, studieleningen of andere schuldverplichtingen met hun betalingsschema's."
+                }
+            },
+            calculate: {
+                title: "📊 Bereken en Analyseer",
+                intro: "Zodra je al je financiële gegevens hebt ingevoerd, gebruik je de Bereken-knop om je analyse uit te voeren:",
+                visual: "Bekijk visuele projecties van je financiële toekomst",
+                retirement: "Pas pensioenleeftijd-schuifregelaars aan om verschillende scenario's te zien",
+                whatif: "Test \"wat als\" scenario's door invoer aan te passen",
+                export: "Exporteer of bewaar je financiële plan voor toekomstige referentie"
+            },
+            getStarted: {
+                title: "Begin Nu",
+                description: "Download Finance Planner en begin vandaag met het maken van je financiële plan:"
+            },
+            needHelp: {
+                title: "Meer Hulp Nodig?",
+                description: "Ontdek onze aanvullende bronnen:",
+                tutorials: "🎥 Bekijk Video Tutorials",
+                scenarios: "📂 Bekijk Voorbeeldscenario's",
+                community: "💬 Deelnemen aan Gemeenschapsdiscussies"
             }
         }
     }
