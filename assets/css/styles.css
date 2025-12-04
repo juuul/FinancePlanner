@@ -80,6 +80,11 @@ body {
     font-weight: 500;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
 .cta-buttons {
     display: flex;
     gap: 1rem;
@@ -423,5 +428,13 @@ a:hover {
     .header-content {
         flex-direction: column;
         text-align: center;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+    
+    .section {
+        padding: 1rem;
     }
 }
