@@ -9,6 +9,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: gh-pages-deployment
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -36,8 +40,29 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Commit and push changes
+          # Commit changes
           git add .
-          git commit -m "Deploy production site from main branch" \
-            || echo "No changes to commit"
-          git push origin gh-pages
+          if git commit -m "Deploy production site from main branch"; then
+            # Push with retry logic to handle concurrent deployments
+            max_retries=5
+            retry_count=0
+            until [ $retry_count -ge $max_retries ]
+            do
+              # Pull latest changes and rebase our commit on top
+              git pull --rebase origin gh-pages && \
+              # Try to push
+              git push origin gh-pages && break
+              
+              # If push failed, increment counter and retry
+              retry_count=$((retry_count+1))
+              echo "Push failed, retrying... (attempt $retry_count/$max_retries)"
+              sleep 2
+            done
+            
+            if [ $retry_count -ge $max_retries ]; then
+              echo "Failed to push after $max_retries attempts"
+              exit 1
+            fi
+          else
+            echo "No changes to commit"
+          fi
