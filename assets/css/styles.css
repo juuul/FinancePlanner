@@ -28,11 +28,6 @@ body {
     flex-wrap: wrap;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -83,6 +78,11 @@ body {
     font-size: 1.3rem;
     margin-bottom: 2rem;
     font-weight: 500;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
 }
 
 .cta-buttons {
@@ -342,5 +342,13 @@ a:hover {
     .header-content {
         flex-direction: column;
         text-align: center;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+    
+    .section {
+        padding: 1rem;
     }
 }
