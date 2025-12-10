@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-    background: #1a4d2e;
+    background: #7f1d1d;
     color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -48,7 +48,7 @@ body {
 }
 
 .nav a:hover {
-    color: #b2dfdb;
+    color: #fca5a5;
 }
 
 .container {
@@ -67,14 +67,14 @@ body {
 }
 
 .hero h1 {
-    color: #1a4d2e;
+    color: #7f1d1d;
     font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .hero .subtitle {
-    color: #2b7a78;
+    color: #b91c1c;
     font-size: 1.3rem;
     margin-bottom: 2rem;
     font-weight: 500;
@@ -104,23 +104,23 @@ body {
 }
 
 .btn-primary {
-    background: #2b7a78;
+    background: #b91c1c;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #1a4d2e;
+    background: #7f1d1d;
     transform: translateY(-2px);
 }
 
 .btn-secondary {
     background: white;
-    color: #2b7a78;
-    border: 2px solid #2b7a78;
+    color: #b91c1c;
+    border: 2px solid #b91c1c;
 }
 
 .btn-secondary:hover {
-    background: #2b7a78;
+    background: #b91c1c;
     color: white;
     transform: translateY(-2px);
 }
@@ -140,7 +140,7 @@ body {
 }
 
 .app-store-section {
-    background: linear-gradient(135deg, #1a4d2e 0%, #2b7a78 100%);
+    background: linear-gradient(135deg, #7f1d1d 0%, #b91c1c 100%);
     color: white;
     text-align: center;
     padding: 2rem;
@@ -168,15 +168,15 @@ body {
 }
 
 .section h2 {
-    color: #1a4d2e;
+    color: #7f1d1d;
     font-size: 2rem;
     margin-bottom: 1rem;
-    border-bottom: 3px solid #2b7a78;
+    border-bottom: 3px solid #b91c1c;
     padding-bottom: 0.5rem;
 }
 
 .section h3 {
-    color: #2b7a78;
+    color: #b91c1c;
     font-size: 1.3rem;
     margin-top: 1.5rem;
     margin-bottom: 0.8rem;
@@ -193,17 +193,17 @@ body {
     background: #f8fafc;
     padding: 1.5rem;
     border-radius: 8px;
-    border-left: 4px solid #2b7a78;
+    border-left: 4px solid #b91c1c;
 }
 
 .feature-card strong {
-    color: #1a4d2e;
+    color: #7f1d1d;
     display: block;
     margin-bottom: 0.5rem;
 }
 
 .tutorials-section {
-    background: linear-gradient(135deg, #2b7a78 0%, #1a4d2e 100%);
+    background: linear-gradient(135deg, #b91c1c 0%, #7f1d1d 100%);
     color: white;
     text-align: center;
 }
@@ -235,7 +235,7 @@ li {
 }
 
 a {
-    color: #2b7a78;
+    color: #b91c1c;
     text-decoration: none;
     font-weight: 500;
 }
@@ -245,7 +245,7 @@ a:hover {
 }
 
 .footer {
-    background: #1a4d2e;
+    background: #7f1d1d;
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -271,7 +271,7 @@ a:hover {
 }
 
 .footer-links a:hover {
-    color: #b2dfdb;
+    color: #fca5a5;
 }
 
 .footer-authors {
@@ -305,7 +305,7 @@ a:hover {
 }
 
 .footer-authors-links a:hover {
-    color: #b2dfdb;
+    color: #fca5a5;
 }
 
 .footer-authors-links a::before {
@@ -327,7 +327,7 @@ a:hover {
 
 .lang-toggle:hover {
     background: white;
-    color: #1a4d2e;
+    color: #7f1d1d;
 }
 
 .example-files-list {
@@ -341,11 +341,11 @@ a:hover {
     background: #f8fafc;
     padding: 1.5rem;
     border-radius: 8px;
-    border-left: 4px solid #2b7a78;
+    border-left: 4px solid #b91c1c;
 }
 
 .example-file-card h3 {
-    color: #1a4d2e;
+    color: #7f1d1d;
     margin-top: 0;
     margin-bottom: 0.8rem;
 }
