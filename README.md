@@ -110,7 +110,7 @@ When you open a pull request, a preview environment will be automatically deploy
 
 ## Website
 
-Visit our website at: [https://juuul.github.io/FinancePlanner/](https://juuul.github.io/FinancePlanner/)
+Visit our website at: [https://financeplannerapp.com](https://financeplannerapp.com)
 
 ---
 
