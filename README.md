@@ -1,4 +1,4 @@
-# Finance Planner: The F.I.R.E Tool
+# Finance Planner: The F.I.R.E. Tool
 
 [![iOS App](https://img.shields.io/badge/Download-iOS-blue.svg)](https://apps.apple.com/us/app/finance-planner/id6743322133)
 [![Android App](https://img.shields.io/badge/Download-Android-green.svg)](https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile)
