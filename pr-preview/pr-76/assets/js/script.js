@@ -408,31 +408,31 @@ const translations = {
             tutorials: "Tutorials",
             community: "Gemeenschap",
             scenarios: "Gebruiksvoorbeelden",
-            howToPlan: "Hoe te Plannen"
+            howToPlan: "Hoe te plannen"
         },
         hero: {
-            title: "Finance Planner: De F.I.R.E Tool",
-            subtitle: "Jouw Essentiële Partner voor Financiële Onafhankelijkheid",
+            title: "Finance Planner: De F.I.R.E tool",
+            subtitle: "Jouw essentiële partner voor financiële onafhankelijkheid",
             description: "Ontworpen voor de F.I.R.E. (Financial Independence, Retire Early) beweging, helpt Finance Planner je om je financiële doelen te visualiseren, volgen en bereiken. Bouw financiële gezondheid, plan vooruit met verschillende scenario's en zie de langetermijnimpact van je beslissingen—of je nu net begint of plant voor vervroegd pensioen.",
-            downloadIos: "📱 Download iOS App",
-            downloadAndroid: "📱 Download Android App",
-            exploreFeatures: "Ontdek Functies"
+            downloadIos: "📱 Download iOS app",
+            downloadAndroid: "📱 Download Android app",
+            exploreFeatures: "Ontdek functies"
         },
         mission: {
-            title: "💡 Onze Missie: Financiële Planning voor Iedereen",
-            freeAccess: "<strong>Gratis Financiële Planning voor Iedereen:</strong> Wij geloven dat iedereen toegang moet hebben tot kwalitatieve financiële planningstools—zonder veel geld te hoeven uitgeven aan een dure adviseur. Finance Planner geeft je professionele planning tools in handen, volledig gratis.",
-            global: "<strong>Financiële Gezondheid Wereldwijd:</strong> Beschikbaar over de hele planeet, helpt onze tool mensen overal een gezondere financiële toekomst op te bouwen, ongeacht locatie of achtergrond.",
-            privacy: "<strong>Jouw Gegevens Blijven Privé:</strong> Al je persoonlijke financiële gegevens en berekeningen blijven 100% op jouw apparaat. Niets wordt opgeslagen op externe servers. Jouw informatie is volledig veilig en wordt nooit gedeeld.",
-            adPrivacy: "<strong>Over Advertenties:</strong> De app gebruikt advertenties (AdMob) om gratis te blijven voor iedereen. Onze privacyverklaring heeft alleen betrekking op de anonieme gebruiksgegevens die door de advertentieprovider worden verzameld—jouw financiële gegevens zijn hier nooit bij inbegrepen."
+            title: "💡 Onze missie: financiële planning voor iedereen",
+            freeAccess: "<strong>Gratis financiële planning voor iedereen:</strong> Wij geloven dat iedereen toegang moet hebben tot kwalitatieve financiële planningstools—zonder veel geld te hoeven uitgeven aan een dure adviseur. Finance Planner geeft je professionele planning tools in handen, volledig gratis.",
+            global: "<strong>Financiële gezondheid wereldwijd:</strong> Beschikbaar over de hele planeet, helpt onze tool mensen overal een gezondere financiële toekomst op te bouwen, ongeacht locatie of achtergrond.",
+            privacy: "<strong>Jouw gegevens blijven privé:</strong> Al je persoonlijke financiële gegevens en berekeningen blijven 100% op jouw apparaat. Niets wordt opgeslagen op externe servers. Jouw informatie is volledig veilig en wordt nooit gedeeld.",
+            adPrivacy: "<strong>Over advertenties:</strong> De app gebruikt advertenties (AdMob) om gratis te blijven voor iedereen. Onze privacyverklaring heeft alleen betrekking op de anonieme gebruiksgegevens die door de advertentieprovider worden verzameld—jouw financiële gegevens zijn hier nooit bij inbegrepen."
         },
         appStore: {
-            title: "📱 Download Finance Planner op je Mobiele Apparaat",
+            title: "📱 Download Finance Planner op je mobiele apparaat",
             description: "Neem je financiële planning overal mee naartoe met onze mobiele apps, nu beschikbaar voor iOS en Android!",
-            downloadAppStore: "Download in de App Store",
+            downloadAppStore: "Download in de app store",
             downloadGooglePlay: "Download op Google Play"
         },
         features: {
-            title: "Belangrijkste Functies",
+            title: "Belangrijkste functies",
             multiPerson: {
                 title: "Multi-persoon & multi-inkomen ondersteuning",
                 description: "Beheer de financiën voor je hele huishouden, inclusief meerdere personen, inkomstenbronnen en uitgavencategorieën."
@@ -450,24 +450,24 @@ const translations = {
                 description: "Stel je FIRE nummer in en monitor je voortgang naar financiële onafhankelijkheid."
             },
             whatIf: {
-                title: '"Wat Als" Scenario\'s',
+                title: '"Wat als" scenario\'s',
                 description: "Experimenteer met spaarpercentages, investeringsrendementen en opnamestrategieën om hun impact te zien."
             },
             inflation: {
-                title: "Inflatie Aanpassing",
+                title: "Inflatie aanpassing",
                 description: "Alle berekeningen houden rekening met inflatie, wat je een realistisch beeld geeft van je toekomstige koopkracht."
             },
             advancedTools: {
                 title: "Geavanceerde planning tools",
-                yearly: "<strong>Jaarlijkse Overzichten:</strong> Krijg duidelijke, uitvoerbare samenvattingen van je netto vermogen, passief inkomen en verwachte pensioenuitgaven.",
-                customizable: "<strong>Aanpasbare Invoer:</strong> Voer gemakkelijk je inkomen, uitgaven, investeringen, activa en passiva in.",
-                visual: "<strong>Visuele Inzichten:</strong> Intuïtieve grafieken maken complexe financiële gegevens gemakkelijk te begrijpen.",
-                earlyRetirement: "<strong>Vroegpensioen Planning:</strong> Navigeer door zowel de accumulatie- als decumulatiefasen van vroegpensioen.",
-                userFriendly: "<strong>Gebruiksvriendelijke Interface:</strong> Schoon, intuïtief en toegankelijk voor iedereen."
+                yearly: "<strong>Jaarlijkse overzichten:</strong> Krijg duidelijke, uitvoerbare samenvattingen van je netto vermogen, passief inkomen en verwachte pensioenuitgaven.",
+                customizable: "<strong>Aanpasbare invoer:</strong> Voer gemakkelijk je inkomen, uitgaven, investeringen, activa en passiva in.",
+                visual: "<strong>Visuele inzichten:</strong> Intuïtieve grafieken maken complexe financiële gegevens gemakkelijk te begrijpen.",
+                earlyRetirement: "<strong>Vroegpensioen planning:</strong> Navigeer door zowel de accumulatie- als decumulatiefasen van vroegpensioen.",
+                userFriendly: "<strong>Gebruiksvriendelijke interface:</strong> Schoon, intuïtief en toegankelijk voor iedereen."
             }
         },
         depositPlanning: {
-            title: "📥 Stortingen Plannen",
+            title: "📥 Stortingen plannen",
             intro: "Plan je spaarstortingen met geavanceerde functies, waaronder:",
             scheduling: "<strong>Flexibele planning:</strong> Stel eenmalige of terugkerende stortingen in (maandelijks, jaarlijks, enz.)",
             timeframe: "<strong>Tijdsplanning:</strong> Definieer start- en einddata voor je stortingsschema's",
@@ -480,7 +480,7 @@ const translations = {
             refundImpact: "Zie hoe belastingteruggaven je daadwerkelijke spaarpercentage beïnvloeden en de echte kosten van sparen verlagen"
         },
         withdrawalPlanning: {
-            title: "📤 Opnames Plannen",
+            title: "📤 Opnames plannen",
             intro: "Plan je opnames met uitgebreide belastingoverwegingen:",
             scheduling: "<strong>Flexibele opnameschema's:</strong> Plan periodieke of eenmalige opnames",
             timeframe: "<strong>Tijdsplanning:</strong> Bepaal wanneer opnames beginnen en eindigen",
@@ -502,19 +502,19 @@ const translations = {
             yearByYear: "<strong>Jaar-op-jaar uitsplitsing:</strong> Begrijp precies wat er elk jaar gebeurt"
         },
         tutorials: {
-            title: "📚 Leer Finance Planner te Gebruiken",
-            videoTitle: "Video Tutorials Beschikbaar",
-            description: "Bekijk uitgebreide tutorials over hoe je je Financiële Onafhankelijkheidsplanning kunt maximaliseren met Finance Planner. Leer best practices, tips en geavanceerde strategieën.",
-            visitChannel: "Bezoek Ons YouTube Kanaal",
-            viewTutorials: "Bekijk Tutorials"
+            title: "📚 Leer Finance Planner te gebruiken",
+            videoTitle: "Video tutorials beschikbaar",
+            description: "Bekijk uitgebreide tutorials over hoe je je financiële onafhankelijkheidsplanning kunt maximaliseren met Finance Planner. Leer best practices, tips en geavanceerde strategieën.",
+            visitChannel: "Bezoek ons YouTube kanaal",
+            viewTutorials: "Bekijk tutorials"
         },
         exampleFiles: {
-            title: "📂 Voorbeeldbestanden & Scenario's",
+            title: "📂 Voorbeeldbestanden & scenario's",
             description: "Ontdek verschillende financiële planning scenario's met voorbeelden uit de echte wereld. Elk scenario demonstreert hoe Finance Planner te gebruiken voor specifieke financiële doelen.",
-            viewScenarios: "Bekijk Alle Scenario's"
+            viewScenarios: "Bekijk alle scenario's"
         },
         whyChoose: {
-            title: "Waarom Kiezen voor Finance Planner?",
+            title: "Waarom kiezen voor Finance Planner?",
             clarity: {
                 title: "Duidelijkheid voor FIRE",
                 description: "Focus op de langetermijnvisie die cruciaal is voor financiële onafhankelijkheid."
@@ -533,28 +533,28 @@ const translations = {
             }
         },
         whoIsItFor: {
-            title: "Voor Wie Is Het?",
+            title: "Voor wie is het?",
             individuals: "<strong>Individuen en stellen die F.I.R.E. nastreven.</strong> - Krijg de tools die je nodig hebt voor financiële onafhankelijkheid",
             planners: "<strong>Iedereen die hun langetermijn financiële toekomst plant</strong> - Bouw systematisch vermogen op",
             investors: "<strong>Investeerders die vermogensgroei en pensioengerichtheid projecteren</strong> - Modelleer verschillende scenario's",
             decisionMakers: "<strong>Degenen die de impact van hun financiële beslissingen willen begrijpen</strong> - Zie langetermijneffecten"
         },
         dataPrivacy: {
-            title: "🔒 Jouw Data, Jouw Privacy",
+            title: "🔒 Jouw data, jouw privacy",
             intro: "Je financiële informatie is zeer gevoelig. Finance Planner is ontworpen met privacy als kernprincipe:",
-            localStorage: "<strong>100% Lokale Opslag:</strong> Al je gegevens en berekeningen blijven op je telefoon—niets wordt naar externe servers gestuurd",
-            noCloud: "<strong>Geen Cloud Sync:</strong> Je financiële plannen zijn van jou alleen en blijven volledig privé",
-            fullControl: "<strong>Volledige Controle:</strong> Jij bepaalt wat je met je gegevens doet—exporteer, back-up of verwijder ze op elk moment",
+            localStorage: "<strong>100% lokale opslag:</strong> Al je gegevens en berekeningen blijven op je telefoon—niets wordt naar externe servers gestuurd",
+            noCloud: "<strong>Geen cloud sync:</strong> Je financiële plannen zijn van jou alleen en blijven volledig privé",
+            fullControl: "<strong>Volledige controle:</strong> Jij bepaalt wat je met je gegevens doet—exporteer, back-up of verwijder ze op elk moment",
             adNotice: "Let op: De mobiele apps gebruiken advertenties om gratis te blijven. Advertentieproviders (AdMob) kunnen anonieme gebruiksgegevens verzamelen zoals beschreven in onze Privacyverklaring."
         },
         footer: {
-            iosApp: "📱 iOS App",
-            androidApp: "📱 Android App",
+            iosApp: "📱 iOS app",
+            androidApp: "📱 Android app",
             community: "💬 Gemeenschapsdiscussies",
-            tutorials: "🎥 Video Tutorials",
+            tutorials: "🎥 Video tutorials",
             privacy: "🔒 Privacyverklaring",
             authorsTitle: "Auteurs",
-            copyright: "&copy; 2024 Finance Planner. Ondersteunt je reis naar Financiële Onafhankelijkheid."
+            copyright: "&copy; 2024 Finance Planner. Ondersteunt je reis naar financiële onafhankelijkheid."
         },
         scenarios: {
             title: "Financiële planning scenario's",
@@ -601,12 +601,12 @@ const translations = {
             needHelp: {
                 title: "Hulp nodig?",
                 description: "Bekijk onze bronnen om meer te leren over het gebruik van Finance Planner:",
-                tutorials: "🎥 Bekijk Video Tutorials",
-                community: "💬 Deelnemen aan Gemeenschapsdiscussies"
+                tutorials: "🎥 Bekijk video tutorials",
+                community: "💬 Deelnemen aan gemeenschapsdiscussies"
             }
         },
         tutorialsPage: {
-            title: "📚 Finance Planner Tutorials",
+            title: "📚 Finance Planner tutorials",
             subtitle: "Leer hoe je jouw financiële planning maximaliseert",
             description: "Bekijk uitgebreide video tutorials om het meeste uit Finance Planner te halen. Leer over geavanceerde strategieën, fiscaal voordelige rekeningen en best practices voor het bereiken van financiële onafhankelijkheid.",
             featuredVideo: {
@@ -624,7 +624,7 @@ const translations = {
             moreVideos: {
                 title: "📺 Meer video tutorials",
                 channelTitle: "Bezoek ons YouTube kanaal",
-                channelDescription: "Ontdek onze complete bibliotheek van Finance Planner tutorials. Leer best practices, tips en geavanceerde strategieën voor het bereiken van Financiële Onafhankelijkheid.",
+                channelDescription: "Ontdek onze complete bibliotheek van Finance Planner tutorials. Leer best practices, tips en geavanceerde strategieën voor het bereiken van financiële onafhankelijkheid.",
                 visitButton: "Bezoek YouTube kanaal"
             },
             topics: {
@@ -649,8 +649,8 @@ const translations = {
             needHelp: {
                 title: "Meer hulp nodig?",
                 description: "Heb je vragen of wil je je financiële planningsstrategieën bespreken?",
-                communityButton: "💬 Deelnemen aan Gemeenschapsdiscussies",
-                scenariosButton: "📂 Bekijk Voorbeeldscenario's"
+                communityButton: "💬 Deelnemen aan gemeenschapsdiscussies",
+                scenariosButton: "📂 Bekijk voorbeeldscenario's"
             }
         },
         howToPlan: {
