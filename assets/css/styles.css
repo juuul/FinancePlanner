@@ -32,6 +32,12 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.logo:hover {
+    color: #b2dfdb;
 }
 
 .nav {
