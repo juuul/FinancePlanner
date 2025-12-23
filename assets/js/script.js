@@ -10,7 +10,7 @@ const translations = {
             howToPlan: "How to Plan"
         },
         hero: {
-            title: "Finance Planner: The F.I.R.E Tool",
+            title: "Finance Planner: The F.I.R.E. Tool",
             subtitle: "Your Essential Companion for Financial Independence",
             description: "Designed for the F.I.R.E. (Financial Independence, Retire Early) movement, Finance Planner helps you visualize, track, and achieve your financial goals. Build financial health, plan ahead with different scenarios, and see the long-term impact of your decisions—whether you're just starting out or planning for early retirement.",
             downloadIos: "📱 Download iOS App",
@@ -411,7 +411,7 @@ const translations = {
             howToPlan: "Hoe te plannen"
         },
         hero: {
-            title: "Finance Planner: De F.I.R.E tool",
+            title: "Finance Planner: De F.I.R.E. tool",
             subtitle: "Jouw essentiële partner voor financiële onafhankelijkheid",
             description: "Ontworpen voor de F.I.R.E. (Financial Independence, Retire Early) beweging, helpt Finance Planner je om je financiële doelen te visualiseren, volgen en bereiken. Bouw financiële gezondheid, plan vooruit met verschillende scenario's en zie de langetermijnimpact van je beslissingen—of je nu net begint of plant voor vervroegd pensioen.",
             downloadIos: "📱 Download iOS app",
