@@ -408,37 +408,37 @@ const translations = {
             tutorials: "Tutorials",
             community: "Gemeenschap",
             scenarios: "Gebruiksvoorbeelden",
-            howToPlan: "Hoe te Plannen"
+            howToPlan: "Hoe te plannen"
         },
         hero: {
-            title: "Finance Planner: De F.I.R.E Tool",
-            subtitle: "Jouw Essentiële Partner voor Financiële Onafhankelijkheid",
+            title: "Finance Planner: De F.I.R.E tool",
+            subtitle: "Jouw essentiële partner voor financiële onafhankelijkheid",
             description: "Ontworpen voor de F.I.R.E. (Financial Independence, Retire Early) beweging, helpt Finance Planner je om je financiële doelen te visualiseren, volgen en bereiken. Bouw financiële gezondheid, plan vooruit met verschillende scenario's en zie de langetermijnimpact van je beslissingen—of je nu net begint of plant voor vervroegd pensioen.",
-            downloadIos: "📱 Download iOS App",
-            downloadAndroid: "📱 Download Android App",
-            exploreFeatures: "Ontdek Functies"
+            downloadIos: "📱 Download iOS app",
+            downloadAndroid: "📱 Download Android app",
+            exploreFeatures: "Ontdek functies"
         },
         mission: {
-            title: "💡 Onze Missie: Financiële Planning voor Iedereen",
-            freeAccess: "<strong>Gratis Financiële Planning voor Iedereen:</strong> Wij geloven dat iedereen toegang moet hebben tot kwalitatieve financiële planningstools—zonder veel geld te hoeven uitgeven aan een dure adviseur. Finance Planner geeft je professionele planning tools in handen, volledig gratis.",
-            global: "<strong>Financiële Gezondheid Wereldwijd:</strong> Beschikbaar over de hele planeet, helpt onze tool mensen overal een gezondere financiële toekomst op te bouwen, ongeacht locatie of achtergrond.",
-            privacy: "<strong>Jouw Gegevens Blijven Privé:</strong> Al je persoonlijke financiële gegevens en berekeningen blijven 100% op jouw apparaat. Niets wordt opgeslagen op externe servers. Jouw informatie is volledig veilig en wordt nooit gedeeld.",
-            adPrivacy: "<strong>Over Advertenties:</strong> De app gebruikt advertenties (AdMob) om gratis te blijven voor iedereen. Onze privacyverklaring heeft alleen betrekking op de anonieme gebruiksgegevens die door de advertentieprovider worden verzameld—jouw financiële gegevens zijn hier nooit bij inbegrepen."
+            title: "💡 Onze missie: financiële planning voor iedereen",
+            freeAccess: "<strong>Gratis financiële planning voor iedereen:</strong> Wij geloven dat iedereen toegang moet hebben tot kwalitatieve financiële planningstools—zonder veel geld te hoeven uitgeven aan een dure adviseur. Finance Planner geeft je professionele planning tools in handen, volledig gratis.",
+            global: "<strong>Financiële gezondheid wereldwijd:</strong> Beschikbaar over de hele planeet, helpt onze tool mensen overal een gezondere financiële toekomst op te bouwen, ongeacht locatie of achtergrond.",
+            privacy: "<strong>Jouw gegevens blijven privé:</strong> Al je persoonlijke financiële gegevens en berekeningen blijven 100% op jouw apparaat. Niets wordt opgeslagen op externe servers. Jouw informatie is volledig veilig en wordt nooit gedeeld.",
+            adPrivacy: "<strong>Over advertenties:</strong> De app gebruikt advertenties (AdMob) om gratis te blijven voor iedereen. Onze privacyverklaring heeft alleen betrekking op de anonieme gebruiksgegevens die door de advertentieprovider worden verzameld—jouw financiële gegevens zijn hier nooit bij inbegrepen."
         },
         appStore: {
-            title: "📱 Download Finance Planner op je Mobiele Apparaat",
+            title: "📱 Download Finance Planner op je mobiele apparaat",
             description: "Neem je financiële planning overal mee naartoe met onze mobiele apps, nu beschikbaar voor iOS en Android!",
-            downloadAppStore: "Download in de App Store",
+            downloadAppStore: "Download in de app store",
             downloadGooglePlay: "Download op Google Play"
         },
         features: {
-            title: "Belangrijkste Functies",
+            title: "Belangrijkste functies",
             multiPerson: {
-                title: "Multi-Persoon & Multi-Inkomen Ondersteuning",
+                title: "Multi-persoon & multi-inkomen ondersteuning",
                 description: "Beheer de financiën voor je hele huishouden, inclusief meerdere personen, inkomstenbronnen en uitgavencategorieën."
             },
             flexibleSavings: {
-                title: "Flexibele Spaarrekeningen",
+                title: "Flexibele spaarrekeningen",
                 description: "Organiseer en volg meerdere spaarrekeningen voor verschillende doelen."
             },
             longTermProjections: {
@@ -446,54 +446,54 @@ const translations = {
                 description: "Zie je vermogen groeien over decennia met gedetailleerde, jaar-op-jaar prognoses."
             },
             fireGoal: {
-                title: "FIRE Doel Tracking",
+                title: "FIRE doel tracking",
                 description: "Stel je FIRE nummer in en monitor je voortgang naar financiële onafhankelijkheid."
             },
             whatIf: {
-                title: '"Wat Als" Scenario\'s',
+                title: '"Wat als" scenario\'s',
                 description: "Experimenteer met spaarpercentages, investeringsrendementen en opnamestrategieën om hun impact te zien."
             },
             inflation: {
-                title: "Inflatie Aanpassing",
+                title: "Inflatie aanpassing",
                 description: "Alle berekeningen houden rekening met inflatie, wat je een realistisch beeld geeft van je toekomstige koopkracht."
             },
             advancedTools: {
-                title: "Geavanceerde Planning Tools",
-                yearly: "<strong>Jaarlijkse Overzichten:</strong> Krijg duidelijke, uitvoerbare samenvattingen van je netto vermogen, passief inkomen en verwachte pensioenuitgaven.",
-                customizable: "<strong>Aanpasbare Invoer:</strong> Voer gemakkelijk je inkomen, uitgaven, investeringen, activa en passiva in.",
-                visual: "<strong>Visuele Inzichten:</strong> Intuïtieve grafieken maken complexe financiële gegevens gemakkelijk te begrijpen.",
-                earlyRetirement: "<strong>Vroegpensioen Planning:</strong> Navigeer door zowel de accumulatie- als decumulatiefasen van vroegpensioen.",
-                userFriendly: "<strong>Gebruiksvriendelijke Interface:</strong> Schoon, intuïtief en toegankelijk voor iedereen."
+                title: "Geavanceerde planning tools",
+                yearly: "<strong>Jaarlijkse overzichten:</strong> Krijg duidelijke, uitvoerbare samenvattingen van je netto vermogen, passief inkomen en verwachte pensioenuitgaven.",
+                customizable: "<strong>Aanpasbare invoer:</strong> Voer gemakkelijk je inkomen, uitgaven, investeringen, activa en passiva in.",
+                visual: "<strong>Visuele inzichten:</strong> Intuïtieve grafieken maken complexe financiële gegevens gemakkelijk te begrijpen.",
+                earlyRetirement: "<strong>Vroegpensioen planning:</strong> Navigeer door zowel de accumulatie- als decumulatiefasen van vroegpensioen.",
+                userFriendly: "<strong>Gebruiksvriendelijke interface:</strong> Schoon, intuïtief en toegankelijk voor iedereen."
             }
         },
         depositPlanning: {
-            title: "📥 Stortingen Plannen",
+            title: "📥 Stortingen plannen",
             intro: "Plan je spaarstortingen met geavanceerde functies, waaronder:",
             scheduling: "<strong>Flexibele planning:</strong> Stel eenmalige of terugkerende stortingen in (maandelijks, jaarlijks, enz.)",
             timeframe: "<strong>Tijdsplanning:</strong> Definieer start- en einddata voor je stortingsschema's",
             inflation: "<strong>Inflatie-aanpassingen:</strong> Pas je stortingen automatisch aan voor inflatie in de loop van de tijd",
             taxBenefits: "<strong>Belastingvoordelen modellering:</strong> Houd rekening met cashback en belastingteruggaven op stortingen",
-            taxAdvantagesTitle: "Fiscaal Voordelige Rekeningen",
+            taxAdvantagesTitle: "Fiscaal voordelige rekeningen",
             taxAdvantagesDesc: "Finance Planner helpt je om de belastingvoordelen van stortingen op pensioenrekeningen te modelleren:",
             accountTypes: "Modelleer fiscaal voordelige rekeningen zoals 401(k), IRA en andere pensioenrekeningen",
             taxRate: "Bereken belastingvoordelen op basis van je marginale belastingtarief (bijv. 22% of 24%)",
             refundImpact: "Zie hoe belastingteruggaven je daadwerkelijke spaarpercentage beïnvloeden en de echte kosten van sparen verlagen"
         },
         withdrawalPlanning: {
-            title: "📤 Opnames Plannen",
+            title: "📤 Opnames plannen",
             intro: "Plan je opnames met uitgebreide belastingoverwegingen:",
             scheduling: "<strong>Flexibele opnameschema's:</strong> Plan periodieke of eenmalige opnames",
             timeframe: "<strong>Tijdsplanning:</strong> Bepaal wanneer opnames beginnen en eindigen",
             inflation: "<strong>Inflatie-aanpassingen:</strong> Houd opnames in lijn met inflatie",
             taxImpact: "<strong>Belastingimpact modellering:</strong> Houd rekening met belastingen op opnames",
-            retirementTaxTitle: "Pensioenopname Belastingen",
+            retirementTaxTitle: "Pensioenopname belastingen",
             retirementTaxDesc: "Begrijp de belastinggevolgen van je pensioenopnames:",
             scenarios: "Modelleer verschillende belastingscenario's voor pensioenopnames",
             rmds: "Plan voor verplichte minimale uitkeringen (RMDs)",
             afterTax: "Zie de echte impact na belasting van je opnames en plan dienovereenkomstig"
         },
         financialJourney: {
-            title: "📊 Financieel Traject Overzicht",
+            title: "📊 Financieel traject overzicht",
             intro: "Krijg een compleet beeld van je financiële toekomst door inkomsten en uitgaven in de loop van de tijd te matchen:",
             incomeTracking: "<strong>Inkomsten tracking:</strong> Visualiseer alle inkomensbronnen in de loop van de tijd",
             expensePlanning: "<strong>Uitgaven planning:</strong> Zie hoe uitgaven (tekort/overschot) zich ontwikkelen",
@@ -502,78 +502,78 @@ const translations = {
             yearByYear: "<strong>Jaar-op-jaar uitsplitsing:</strong> Begrijp precies wat er elk jaar gebeurt"
         },
         tutorials: {
-            title: "📚 Leer Finance Planner te Gebruiken",
-            videoTitle: "Video Tutorials Beschikbaar",
-            description: "Bekijk uitgebreide tutorials over hoe je je Financiële Onafhankelijkheidsplanning kunt maximaliseren met Finance Planner. Leer best practices, tips en geavanceerde strategieën.",
-            visitChannel: "Bezoek Ons YouTube Kanaal",
-            viewTutorials: "Bekijk Tutorials"
+            title: "📚 Leer Finance Planner te gebruiken",
+            videoTitle: "Video tutorials beschikbaar",
+            description: "Bekijk uitgebreide tutorials over hoe je je financiële onafhankelijkheidsplanning kunt maximaliseren met Finance Planner. Leer best practices, tips en geavanceerde strategieën.",
+            visitChannel: "Bezoek ons YouTube kanaal",
+            viewTutorials: "Bekijk tutorials"
         },
         exampleFiles: {
-            title: "📂 Voorbeeldbestanden & Scenario's",
+            title: "📂 Voorbeeldbestanden & scenario's",
             description: "Ontdek verschillende financiële planning scenario's met voorbeelden uit de echte wereld. Elk scenario demonstreert hoe Finance Planner te gebruiken voor specifieke financiële doelen.",
-            viewScenarios: "Bekijk Alle Scenario's"
+            viewScenarios: "Bekijk alle scenario's"
         },
         whyChoose: {
-            title: "Waarom Kiezen voor Finance Planner?",
+            title: "Waarom kiezen voor Finance Planner?",
             clarity: {
                 title: "Duidelijkheid voor FIRE",
                 description: "Focus op de langetermijnvisie die cruciaal is voor financiële onafhankelijkheid."
             },
             empowering: {
-                title: "Versterkende Beslissingen",
+                title: "Versterkende beslissingen",
                 description: "Maak vandaag slimme financiële keuzes voor een betere toekomst."
             },
             beyond: {
-                title: "Verder dan Budgetteren",
+                title: "Verder dan budgetteren",
                 description: "Ga dieper dan basis budgetteren—zie de kracht van samengesteld rendement en langetermijnstrategie."
             },
             motivated: {
-                title: "Blijf Gemotiveerd",
+                title: "Blijf gemotiveerd",
                 description: "Visualiseer je vooruitgang en blijf geïnspireerd op je reis."
             }
         },
         whoIsItFor: {
-            title: "Voor Wie Is Het?",
+            title: "Voor wie is het?",
             individuals: "<strong>Individuen en stellen die F.I.R.E. nastreven.</strong> - Krijg de tools die je nodig hebt voor financiële onafhankelijkheid",
             planners: "<strong>Iedereen die hun langetermijn financiële toekomst plant</strong> - Bouw systematisch vermogen op",
             investors: "<strong>Investeerders die vermogensgroei en pensioengerichtheid projecteren</strong> - Modelleer verschillende scenario's",
             decisionMakers: "<strong>Degenen die de impact van hun financiële beslissingen willen begrijpen</strong> - Zie langetermijneffecten"
         },
         dataPrivacy: {
-            title: "🔒 Jouw Data, Jouw Privacy",
+            title: "🔒 Jouw data, jouw privacy",
             intro: "Je financiële informatie is zeer gevoelig. Finance Planner is ontworpen met privacy als kernprincipe:",
-            localStorage: "<strong>100% Lokale Opslag:</strong> Al je gegevens en berekeningen blijven op je telefoon—niets wordt naar externe servers gestuurd",
-            noCloud: "<strong>Geen Cloud Sync:</strong> Je financiële plannen zijn van jou alleen en blijven volledig privé",
-            fullControl: "<strong>Volledige Controle:</strong> Jij bepaalt wat je met je gegevens doet—exporteer, back-up of verwijder ze op elk moment",
+            localStorage: "<strong>100% lokale opslag:</strong> Al je gegevens en berekeningen blijven op je telefoon—niets wordt naar externe servers gestuurd",
+            noCloud: "<strong>Geen cloud sync:</strong> Je financiële plannen zijn van jou alleen en blijven volledig privé",
+            fullControl: "<strong>Volledige controle:</strong> Jij bepaalt wat je met je gegevens doet—exporteer, back-up of verwijder ze op elk moment",
             adNotice: "Let op: De mobiele apps gebruiken advertenties om gratis te blijven. Advertentieproviders (AdMob) kunnen anonieme gebruiksgegevens verzamelen zoals beschreven in onze Privacyverklaring."
         },
         footer: {
-            iosApp: "📱 iOS App",
-            androidApp: "📱 Android App",
+            iosApp: "📱 iOS app",
+            androidApp: "📱 Android app",
             community: "💬 Gemeenschapsdiscussies",
-            tutorials: "🎥 Video Tutorials",
+            tutorials: "🎥 Video tutorials",
             privacy: "🔒 Privacyverklaring",
             authorsTitle: "Auteurs",
-            copyright: "&copy; 2024 Finance Planner. Ondersteunt je reis naar Financiële Onafhankelijkheid."
+            copyright: "&copy; 2024 Finance Planner. Ondersteunt je reis naar financiële onafhankelijkheid."
         },
         scenarios: {
-            title: "Financiële Planning Scenario's",
-            subtitle: "Ontdek Verschillende Paden naar Financiële Onafhankelijkheid",
+            title: "Financiële planning scenario's",
+            subtitle: "Ontdek verschillende paden naar financiële onafhankelijkheid",
             description: "Finance Planner ondersteunt meerdere financiële planning scenario's. Elk scenario helpt je verschillende levenssituaties en financiële doelen te modelleren. Download de voorbeeldbestanden en open ze in de mobiele app om complete financiële plannen in actie te zien.",
             futurePlanning: {
-                title: "🎯 Toekomstige Planning",
+                title: "🎯 Toekomstige planning",
                 description: "Plan je financiële toekomst op lange termijn met uitgebreide modellering van inkomsten, uitgaven en besparingen. Dit scenario is perfect voor families en individuen die systematisch vermogen willen opbouwen, meerdere inkomstenbronnen willen volgen en willen plannen voor grote levensgebeurtenissen zoals onderwijs voor kinderen, huizenaankopen of carrièreveranderingen.",
-                idealFor: "Ideaal Voor:",
+                idealFor: "Ideaal voor:",
                 use1: "Vermogen opbouwen in de loop van de tijd met meerdere inkomstenbronnen",
                 use2: "Plannen voor grote uitgaven (onderwijs, woning, etc.)",
                 use3: "Vooruitgang volgen naar FIRE doelen",
                 use4: "Verschillende spaarpercentages en hun impact modelleren",
-                downloadButton: "Download Toekomstige Planning Voorbeeld"
+                downloadButton: "Download toekomstige planning voorbeeld"
             },
             businessExit: {
-                title: "💼 Bedrijf Verkopen en Rentenieren",
+                title: "💼 Bedrijf verkopen en rentenieren",
                 description: "Modelleer de financiële impact van de verkoop van je bedrijf en de overgang naar pensioen. Dit scenario helpt je om de verkoopopbrengst, belastinggevolgen en hoe je je pensioeninkomen uit de verkoop structureert te plannen. Begrijp hoe verschillende verkoopprijzen en pensioenopnamestrategieën je financiële zekerheid op lange termijn beïnvloeden.",
-                idealFor: "Ideaal Voor:",
+                idealFor: "Ideaal voor:",
                 use1: "Bedrijfseigenaren die een exit-strategie plannen",
                 use2: "Verschillende verkoopprijsscenario's modelleren",
                 use3: "Investerings- en opnamestrategieën na verkoop plannen",
@@ -581,9 +581,9 @@ const translations = {
                 comingSoon: "📌 Voorbeeldbestand komt binnenkort"
             },
             debtRepayment: {
-                title: "💳 Planning om Schulden Af te Lossen",
+                title: "💳 Planning om schulden af te lossen",
                 description: "Creëer een uitgebreid schuldafbetalingsplan terwijl je andere financiële doelen behoudt. Dit scenario helpt je verschillende schuldafbetalingsstrategieën te modelleren (lawine vs. sneeuwbal), de impact van extra betalingen te zien en te begrijpen hoe schuldaflossing in je algemene financiële plan past. Balanceer schuldaflossing met het opbouwen van besparingen en investeringen.",
-                idealFor: "Ideaal Voor:",
+                idealFor: "Ideaal voor:",
                 use1: "Gestructureerde schuldafbetalingsplannen creëren",
                 use2: "Lawine versus sneeuwbalmethoden vergelijken",
                 use3: "Schuldaflossing balanceren met spaardoelen",
@@ -591,7 +591,7 @@ const translations = {
                 comingSoon: "📌 Voorbeeldbestand komt binnenkort"
             },
             howToUse: {
-                title: "Hoe Deze Scenario's te Gebruiken",
+                title: "Hoe deze scenario's te gebruiken",
                 step1: "<strong>Download het voorbeeldbestand</strong> voor het scenario dat bij jouw situatie past",
                 step2: '<strong>Open het in de Finance Planner mobiele app</strong> (beschikbaar voor <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank">iOS</a> en <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank">Android</a>)',
                 step3: "<strong>Verken het voorbeeld</strong> om te begrijpen hoe het scenario is gestructureerd",
@@ -599,70 +599,70 @@ const translations = {
                 step5: "<strong>Bewaar en volg</strong> je gepersonaliseerde financiële plan"
             },
             needHelp: {
-                title: "Hulp Nodig?",
+                title: "Hulp nodig?",
                 description: "Bekijk onze bronnen om meer te leren over het gebruik van Finance Planner:",
-                tutorials: "🎥 Bekijk Video Tutorials",
-                community: "💬 Deelnemen aan Gemeenschapsdiscussies"
+                tutorials: "🎥 Bekijk video tutorials",
+                community: "💬 Deelnemen aan gemeenschapsdiscussies"
             }
         },
         tutorialsPage: {
-            title: "📚 Finance Planner Tutorials",
-            subtitle: "Leer Hoe Je Jouw Financiële Planning Maximaliseert",
+            title: "📚 Finance Planner tutorials",
+            subtitle: "Leer hoe je jouw financiële planning maximaliseert",
             description: "Bekijk uitgebreide video tutorials om het meeste uit Finance Planner te halen. Leer over geavanceerde strategieën, fiscaal voordelige rekeningen en best practices voor het bereiken van financiële onafhankelijkheid.",
             featuredVideo: {
-                title: "🎥 Hoe Vermogensbelasting / Pensioensparen Te Implementeren",
+                title: "🎥 Hoe vermogensbelasting / pensioensparen te implementeren",
                 description: "Leer hoe je fiscaal voordelige pensioenrekeningen modelleert in Finance Planner. Deze tutorial demonstreert de aanpak aan de hand van het Amerikaanse 401(k) systeem als voorbeeld. Alle vergelijkbare pensioenspaarsystemen werken met dezelfde methode, inclusief het Nederlandse pensioensparen en vergelijkbare fiscaal voordelige pensioenrekeningen wereldwijd.",
-                countriesTitle: "Landen met Belasting-bij-Uitbetaling Systemen:",
+                countriesTitle: "Landen met belasting-bij-uitbetaling systemen:",
                 countriesList: "Deze aanpak geldt voor landen waar belastingen op pensioenbesparingen worden ingehouden op het moment van uitbetaling, zoals: VS (401k, IRA), Duitsland, VK, Frankrijk, Canada, Australië, Japan en vele andere landen."
             },
             wealthTaxVideo: {
-                title: "🎥 Nederlandse Vermogensbelasting Voorbeeld",
+                title: "🎥 Nederlandse vermogensbelasting voorbeeld",
                 description: "Zie hoe het Nederlandse vermogensbelastingsysteem werkt in Finance Planner. Deze tutorial demonstreert hoe je jaarlijkse vermogensbelasting modelleert op basis van je totale vermogen—een belastingsysteem dat in verschillende landen wereldwijd wordt gebruikt.",
-                countriesTitle: "Landen met Jaarlijkse Vermogensbelasting Systemen:",
+                countriesTitle: "Landen met jaarlijkse vermogensbelasting systemen:",
                 countriesList: "Vergelijkbare jaarlijkse vermogensbelastingsystemen (belasting op totaal vermogen elk jaar) worden gebruikt in: Nederland, Noorwegen, Spanje, Zwitserland en Colombia."
             },
             moreVideos: {
-                title: "📺 Meer Video Tutorials",
-                channelTitle: "Bezoek Ons YouTube Kanaal",
-                channelDescription: "Ontdek onze complete bibliotheek van Finance Planner tutorials. Leer best practices, tips en geavanceerde strategieën voor het bereiken van Financiële Onafhankelijkheid.",
-                visitButton: "Bezoek YouTube Kanaal"
+                title: "📺 Meer video tutorials",
+                channelTitle: "Bezoek ons YouTube kanaal",
+                channelDescription: "Ontdek onze complete bibliotheek van Finance Planner tutorials. Leer best practices, tips en geavanceerde strategieën voor het bereiken van financiële onafhankelijkheid.",
+                visitButton: "Bezoek YouTube kanaal"
             },
             topics: {
-                title: "Tutorial Onderwerpen",
+                title: "Tutorial onderwerpen",
                 gettingStarted: {
-                    title: "Aan de Slag",
+                    title: "Aan de slag",
                     description: "Leer de basis van Finance Planner en stel je eerste financiële plan op."
                 },
                 taxStrategies: {
-                    title: "Fiscaal Voordelige Strategieën",
+                    title: "Fiscaal voordelige strategieën",
                     description: "Modelleer 401k, IRA en pensioenspaarrekeningen met belastingvoordelen."
                 },
                 fireGoals: {
-                    title: "FIRE Doel Planning",
+                    title: "FIRE doel planning",
                     description: "Stel je Financiële Onafhankelijkheidsdoelen in en volg ze effectief."
                 },
                 scenarios: {
-                    title: "Scenario Modellering",
+                    title: "Scenario modellering",
                     description: "Test verschillende wat-als-scenario's om je financiële plan te optimaliseren."
                 }
             },
             needHelp: {
-                title: "Meer Hulp Nodig?",
+                title: "Meer hulp nodig?",
                 description: "Heb je vragen of wil je je financiële planningsstrategieën bespreken?",
-                communityButton: "💬 Deelnemen aan Gemeenschapsdiscussies",
-                scenariosButton: "📂 Bekijk Voorbeeldscenario's"
+                communityButton: "💬 Deelnemen aan gemeenschapsdiscussies",
+                scenariosButton: "📂 Bekijk voorbeeldscenario's"
             }
         },
         howToPlan: {
-            title: "📋 Hoe Maak Je een Planning",
-            subtitle: "Stapsgewijze Handleiding voor het Maken van Je Financiële Plan",
+            title: "📋 Hoe maak je een planning",
+            subtitle: "Stapsgewijze handleiding voor het maken van je financiële plan",
             description: "Leer hoe je een uitgebreid financieel plan opzet in de Finance Planner app. Volg deze stappen om je berekening te maken, personen toe te voegen en je uitgaven, inkomsten, besparingen en leningen te plannen voor een compleet financieel overzicht.",
             step1: {
-                title: "Stap 1: Maak een Berekening",
+                title: "Stap 1: Maak een berekening",
                 intro: "De eerste stap bij het maken van je financiële plan is het opzetten van een nieuwe berekening. Dit vormt de basis van je planning.",
                 caption: "Het Berekening dialoogvenster waar je de naam en het startsaldo invoert",
                 name: {
-                    title: "Planning Naam",
+                    title: "Planning naam",
                     description: "Geef je planning een beschrijvende naam, zoals \"Gezinsbudget 2025\" of \"Pensioenplanning\". Dit helpt je later verschillende scenario's te identificeren."
                 },
                 balance: {
@@ -672,11 +672,11 @@ const translations = {
                 tip: "💡 <strong>Tip:</strong> Het rekeningsaldo vertegenwoordigt de gezamenlijke rekening van alle deelnemers aan de planning—vergelijkbaar met een verlies- en winstrekening bij een bedrijf, maar dan voor privégebruik. Het dient als de reserve waaruit uitgaven worden betaald wanneer deze niet uit de lopende inkomsten kunnen worden gedekt."
             },
             step2: {
-                title: "Stap 2: Voeg Personen Toe",
+                title: "Stap 2: Voeg personen toe",
                 intro: "Na het aanmaken van je berekening, voeg je de personen toe die betrokken zijn bij je financiële plan. Dit is meestal jezelf, je partner of andere huishoudenleden.",
                 caption: "Het Persoon dialoogvenster waar je naam en geboortedatum invoert, met de pensioendatum schuifregelaar zichtbaar",
                 name: {
-                    title: "Naam Persoon",
+                    title: "Naam persoon",
                     description: "Voer een naam in om elke persoon in je plan te identificeren, zoals \"Persoon # 1\" of gebruik echte namen voor duidelijkheid."
                 },
                 dob: {
@@ -684,23 +684,23 @@ const translations = {
                     description: "De geboortedatum wordt gebruikt om de pensioenleeftijd te bepalen, die je later kunt aanpassen. De app berekent automatisch leeftijden en pensioendata."
                 },
                 retirement: {
-                    title: "📅 Pensioendatum Planning",
+                    title: "📅 Pensioendatum planning",
                     description: "Zodra een persoon is toegevoegd, kun je hun vervroegde pensioendata zien en aanpassen. Gebruik de schuifregelaar om verschillende pensioenscenario's te verkennen en te zien hoe ze je financiële plan beïnvloeden."
                 }
             },
             overview: {
-                title: "Planning Categorieën",
+                title: "Planning categorieën",
                 intro: "Na het toevoegen van personen kun je beginnen met het plannen van verschillende financiële categorieën. De aanbevolen volgorde is:",
                 step1: "<strong>Uitgaven & Leningen:</strong> Begin met het plannen van de kosten die je moet dekken",
                 step2: "<strong>Inkomsten:</strong> Stel huidige en toekomstige inkomensbronnen in, rekening houdend met je uitgaven",
                 step3: "<strong>Besparingen:</strong> Plan je besparingen om te zien of je je kosten kunt dekken en mogelijk eerder met pensioen kunt"
             },
             step3: {
-                title: "Stap 3: Uitgaven Plannen",
+                title: "Stap 3: Uitgaven plannen",
                 intro: "Uitgaven zijn een cruciaal onderdeel van je financiële plan. Wanneer je je uitgaven plant, kun je zien wat je moet doen om je financiële doelen te bereiken. Zo configureer je een uitgave:",
                 caption: "Het Uitgaven scherm met alle configuratie-opties en genummerde annotaties",
                 amount: {
-                    title: "1️⃣ Netto Bedrag",
+                    title: "1️⃣ Netto bedrag",
                     description: "Voer het netto uitgavenbedrag in. Dit onderdeel wordt gebruikt voor uitgaven, of ze nu regelmatig voorkomen of eenmalig zijn—zoals maandelijkse huishoudkosten, jaarlijkse vakantie-uitgaven, etc. Gebruik het Lening-onderdeel als je kosten wilt berekenen voor een lening zoals een hypotheek, die ook de hypotheekrenteaftrek kan berekenen."
                 },
                 frequency: {
@@ -712,30 +712,30 @@ const translations = {
                     description: "Bepaal wanneer deze uitgave moet plaatsvinden. Je kunt toekomstige uitgaven plannen zoals studiekosten voor je kinderen, of terugkerende kosten zoals huisschilderen elke 5 jaar. Sommige uitgaven veranderen nadat je je pensioenleeftijd bereikt."
                 },
                 link: {
-                    title: "4️⃣ Datum Koppeling",
+                    title: "4️⃣ Datum koppeling",
                     description: "Deze functie helpt je gemakkelijk datums te koppelen aan pensioen. Je kunt de datum instellen op de vaste pensioendatum of op een aanpasbare pensioendatum met behulp van een schuifregelaar bij het analyseren van je berekeningsresultaten—bijvoorbeeld om te controleren wanneer je kunt stoppen met werken gezien alle onderdelen die je hebt ingevoerd.",
                     early: "Vervroegde pensioendatum",
                     standard: "Standaard pensioendatum",
                     none: "Geen koppeling (handmatige datum)"
                 },
                 inflation: {
-                    title: "5️⃣ Inflatie Aanpassing",
+                    title: "5️⃣ Inflatie aanpassing",
                     description: "Bepaal of de uitgave moet worden geïndexeerd voor inflatie. De meeste kosten worden in de loop van de tijd geïndexeerd, dus schakel dit in voor de meeste gevallen. Dit is belangrijk wanneer je je berekening wilt analyseren met het effect van inflatie om een realistisch beeld te krijgen van toekomstige kosten."
                 }
             },
             step4: {
-                title: "Stap 4: Inkomsten Plannen",
+                title: "Stap 4: Inkomsten plannen",
                 intro: "Na het plannen van je uitgaven, stel je je inkomensbronnen in. Inkomensplanning volgt vergelijkbare principes als uitgavenplanning:",
                 sources: {
-                    title: "Meerdere Inkomensbronnen",
+                    title: "Meerdere inkomensbronnen",
                     description: "Voeg verschillende inkomstenstromen toe zoals salaris, huurinkomsten, dividenden of pensioen. Elke bron kan zijn eigen schema en instellingen hebben."
                 },
                 timing: {
-                    title: "Timing & Planning",
+                    title: "Timing & planning",
                     description: "Stel in wanneer elk inkomen begint en eindigt. Dit is vooral nuttig voor het modelleren van carrièreveranderingen, pensioenovergang of tijdelijke inkomensbronnen."
                 },
                 example: {
-                    title: "🎯 Voorbeeld: Inkomen Instellen",
+                    title: "🎯 Voorbeeld: Inkomen instellen",
                     job: {
                         description: "Eerst stellen we een arbeidsinkomen in van 3.000 per maand. Het inkomen is geïndexeerd voor inflatie en stopt op de vervroegde pensioendatum.",
                         caption: "Arbeidsinkomen van 3.000 per maand instellen, stopt bij vervroegd pensioen"
@@ -747,7 +747,7 @@ const translations = {
                     }
                 },
                 analyze: {
-                    title: "📊 Analyseer de Resultaten",
+                    title: "📊 Analyseer de resultaten",
                     description: "Wanneer we op Bereken drukken, verschijnen de eerste planningsresultaten. Hier hebben we de vervroegde pensioendatum op 65 jaar gezet door op de FIRE-knop te klikken (1). Als er meerdere personen in de planning zijn, kun je hun FIRE-datums individueel aanpassen (2).",
                     caption: "Berekeningsresultaten met inkomsten-, uitgaven- en kapitaalgrafieken",
                     shortage: "Kijkend naar de vermogensgrafiek zien we dat er een tekort begint in 2049 op 76-jarige leeftijd. Dit betekent dat we onze besparingen moeten plannen om dit gat te dekken.",
@@ -756,7 +756,7 @@ const translations = {
                 }
             },
             step5: {
-                title: "Stap 5: Besparingen Plannen",
+                title: "Stap 5: Besparingen plannen",
                 intro: "Besparingsplanning helpt je te begrijpen of je je kosten kunt dekken en zelfs eerder met pensioen kunt. Stel je spaarstrategie in:",
                 deposits: {
                     title: "Stortingen",
@@ -767,7 +767,7 @@ const translations = {
                     description: "Plan hoe en wanneer je opneemt uit besparingen, vooral belangrijk voor pensioenplanning."
                 },
                 example: {
-                    title: "🎯 Voorbeeld: Besparingen Instellen",
+                    title: "🎯 Voorbeeld: Besparingen instellen",
                     description: "We voegen een spaarrekening toe met een jaarlijkse rente van 6%. De stortingen stoppen op de vervroegde pensioendatum, en de spaarrekening eindigt op de vaste pensioendatum—het resterende saldo gaat naar de hoofdrekening.",
                     caption: "Spaarplan met 1.000 maandelijkse stortingen tegen 6% rente",
                     details: "Merk op dat we zowel stortingen als opnames hebben ingesteld op geïndexeerd voor inflatie. Dit zorgt ervoor dat onze spaarstrategie gelijke tred houdt met stijgende kosten.",
@@ -775,14 +775,14 @@ const translations = {
                     withdrawalCaption: "Maandelijkse opname van 2.000 instellen tijdens vervroegde pensioenperiode"
                 },
                 results: {
-                    title: "📊 Bekijk de Verbeterde Resultaten",
+                    title: "📊 Bekijk de verbeterde resultaten",
                     description: "Na het toevoegen van het spaarplan berekenen we opnieuw. Nu toont de vermogensgrafiek dat het tekort is verschoven van 76 naar 85 jaar (2058)—een aanzienlijke verbetering!",
                     caption: "Met spaargeld treedt het tekort nu veel later op, op 85-jarige leeftijd"
                 },
                 conclusion: "Gefeliciteerd! Je hebt je eerste complete financiële plan gemaakt. Vanaf hier kun je je plan blijven verfijnen door spaarpercentages aan te passen, verschillende pensioenleeftijden te verkennen of extra inkomensbronnen toe te voegen."
             },
             calculate: {
-                title: "📊 Bereken en Analyseer",
+                title: "📊 Bereken en analyseer",
                 intro: "Zodra je al je financiële gegevens hebt ingevoerd, gebruik je de Bereken-knop om je analyse uit te voeren:",
                 visual: "Bekijk visuele projecties van je financiële toekomst",
                 retirement: "Pas pensioenleeftijd-schuifregelaars aan om verschillende scenario's te zien",
@@ -790,15 +790,15 @@ const translations = {
                 export: "Exporteer of bewaar je financiële plan voor toekomstige referentie"
             },
             getStarted: {
-                title: "Begin Nu",
+                title: "Begin nu",
                 description: "Download Finance Planner en begin vandaag met het maken van je financiële plan:"
             },
             needHelp: {
-                title: "Meer Hulp Nodig?",
+                title: "Meer hulp nodig?",
                 description: "Ontdek onze aanvullende bronnen:",
-                tutorials: "🎥 Bekijk Video Tutorials",
-                scenarios: "📂 Bekijk Voorbeeldscenario's",
-                community: "💬 Deelnemen aan Gemeenschapsdiscussies"
+                tutorials: "🎥 Bekijk video tutorials",
+                scenarios: "📂 Bekijk voorbeeldscenario's",
+                community: "💬 Deelnemen aan gemeenschapsdiscussies"
             }
         }
     }
