@@ -209,10 +209,10 @@ const translations = {
             subtitle: "Learn How to Maximize Your Financial Planning",
             description: "Watch comprehensive video tutorials to help you get the most out of Finance Planner. Learn about advanced strategies, tax-advantaged accounts, and best practices for achieving financial independence.",
             featuredVideo: {
-                title: "🎥 How to Implement Wealth Tax / Pensioensparen",
-                description: "Learn how to model tax-advantaged retirement accounts in Finance Planner. This tutorial demonstrates the approach using the US 401(k) system as an example. All comparable pension savings systems work with this same method, including the Dutch pensioensparen and similar tax-advantaged retirement accounts worldwide.",
-                countriesTitle: "Countries with Tax-at-Payout Systems:",
-                countriesList: "This approach applies to countries where taxes on retirement savings are withheld at the moment of payout, such as: USA (401k, IRA), Germany, UK, France, Canada, Australia, Japan, and many other countries."
+                title: "🎥 How to Implement Tax-Deferred Retirement Accounts",
+                description: "Learn how to model tax-deferred retirement accounts in Finance Planner. This tutorial demonstrates pension savings systems where you receive tax refunds during contributions and pay taxes during withdrawals. Covers US 401(k)/IRA, Dutch pensioensparen, and similar tax-advantaged retirement accounts worldwide.",
+                countriesTitle: "Countries with Tax-Deferred Retirement Systems:",
+                countriesList: "This approach applies to countries where you get tax benefits when contributing and pay taxes when withdrawing retirement savings, such as: USA (401k, IRA), Netherlands (pensioensparen), Germany, UK, France, Canada, Australia, Japan, and many other countries."
             },
             wealthTaxVideo: {
                 title: "🎥 Dutch Wealth Tax (Vermogensbelasting) Example",
@@ -610,10 +610,10 @@ const translations = {
             subtitle: "Leer hoe je jouw financiële planning maximaliseert",
             description: "Bekijk uitgebreide video tutorials om het meeste uit Finance Planner te halen. Leer over geavanceerde strategieën, fiscaal voordelige rekeningen en best practices voor het bereiken van financiële onafhankelijkheid.",
             featuredVideo: {
-                title: "🎥 Hoe vermogensbelasting / pensioensparen te implementeren",
-                description: "Leer hoe je fiscaal voordelige pensioenrekeningen modelleert in Finance Planner. Deze tutorial demonstreert de aanpak aan de hand van het Amerikaanse 401(k) systeem als voorbeeld. Alle vergelijkbare pensioenspaarsystemen werken met dezelfde methode, inclusief het Nederlandse pensioensparen en vergelijkbare fiscaal voordelige pensioenrekeningen wereldwijd.",
-                countriesTitle: "Landen met belasting-bij-uitbetaling systemen:",
-                countriesList: "Deze aanpak geldt voor landen waar belastingen op pensioenbesparingen worden ingehouden op het moment van uitbetaling, zoals: VS (401k, IRA), Duitsland, VK, Frankrijk, Canada, Australië, Japan en vele andere landen."
+                title: "🎥 Hoe pensioensparen te implementeren",
+                description: "Leer hoe je fiscaal voordelige pensioenrekeningen modelleert in Finance Planner. Deze tutorial demonstreert pensioenspaarsystemen waar je belastingteruggaven ontvangt tijdens stortingen en belasting betaalt tijdens opnames. Behandelt het Amerikaanse 401(k)/IRA, Nederlandse pensioensparen en vergelijkbare fiscaal voordelige pensioenrekeningen wereldwijd.",
+                countriesTitle: "Landen met belasting-uitgestelde pensioensystemen:",
+                countriesList: "Deze aanpak geldt voor landen waar je belastingvoordelen krijgt bij het storten en belasting betaalt bij het opnemen van pensioenbesparingen, zoals: VS (401k, IRA), Nederland (pensioensparen), Duitsland, VK, Frankrijk, Canada, Australië, Japan en vele andere landen."
             },
             wealthTaxVideo: {
                 title: "🎥 Nederlandse vermogensbelasting voorbeeld",
