@@ -412,6 +412,40 @@ a:hover {
     font-size: 0.9rem;
 }
 
+/* Ad section styling */
+.ad-section {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.ad-section .adsbygoogle {
+    margin: 0 auto;
+}
+
+.coming-soon {
+    background: #fff3cd;
+    color: #856404;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.mission-section {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0f2f1 100%);
+}
+
+.mission-content {
+    margin-top: 1rem;
+}
+
+.mission-content p {
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;

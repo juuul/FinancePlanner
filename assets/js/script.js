@@ -333,7 +333,7 @@ const translations = {
                 }
             },
             step4: {
-                title: "Step 3: Planning Expenses",
+                title: "Step 4: Planning Expenses",
                 intro: "Expenses are a crucial part of your financial plan. When you plan your expenses, you can see what you need to do to achieve your financial goals. Here's how to configure an expense:",
                 caption: "The Expense screen showing all configuration options with numbered annotations",
                 amount: {
@@ -361,7 +361,7 @@ const translations = {
                 }
             },
             step5: {
-                title: "Step 4: Planning Incomes",
+                title: "Step 5: Planning Incomes",
                 intro: "After planning your expenses, set up your income sources. Income planning follows similar principles to expense planning:",
                 sources: {
                     title: "Multiple Income Sources",
@@ -393,7 +393,7 @@ const translations = {
                 }
             },
             step6: {
-                title: "Step 5: Planning Savings",
+                title: "Step 6: Planning Savings",
                 intro: "Savings planning helps you understand if you can cover your costs and even retire early. Set up your savings strategy:",
                 deposits: {
                     title: "Deposits",
