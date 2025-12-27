@@ -294,6 +294,48 @@ const translations = {
                 step2: "<strong>Incomes:</strong> Set up current and future income sources, taking into account your expenses",
                 step3: "<strong>Savings:</strong> Plan your savings to see if you can cover your costs and potentially retire early"
             },
+            stepLoans: {
+                title: "Step 2.5: Understanding Loans & Mortgages",
+                intro: "Before planning regular expenses, it's important to understand how to model loans and mortgages in Finance Planner. Loans like mortgages are a special type of expense where the monthly payment is calculated based on the loan parameters, and you can benefit from tax deductions on interest payments.",
+                caption: "The Loan configuration screen showing all mortgage parameters",
+                whenToUse: {
+                    title: "When to Use Loans vs. Regular Expenses",
+                    description: "Use the <strong>Loan</strong> feature when you want to automatically calculate monthly payments based on loan parameters (amount, interest rate, repayment scheme). Use regular <strong>Expenses</strong> for costs where you already know the fixed monthly amount."
+                },
+                amount: {
+                    title: "1️⃣ Loan Amount",
+                    description: "Enter the total loan amount at the start date. For mortgages, this is typically the home purchase price minus your down payment. The app will calculate your monthly payments based on this amount, the interest rate, and the repayment scheme you select."
+                },
+                interest: {
+                    title: "2️⃣ Annual Interest Rate",
+                    description: "Set the annual interest rate for your loan as a percentage (e.g., 3.76%). This rate is used to calculate the interest portion of your monthly payments. The interest affects how much of each payment goes toward principal vs. interest."
+                },
+                repayment: {
+                    title: "3️⃣ Repayment Scheme",
+                    description: "Choose how you'll repay the loan. Finance Planner supports three common repayment methods:",
+                    annuity: "<strong>Annuity:</strong> Fixed monthly payment throughout the loan period. Early payments are mostly interest; later payments are mostly principal. This is the most common mortgage type.",
+                    linear: "<strong>Linear:</strong> The principal portion remains constant, so total monthly payments decrease over time as interest decreases. Higher initial payments but lower total interest paid.",
+                    interestOnly: "<strong>Interest-Only:</strong> Pay only interest during the loan period; the principal is repaid in full at the end or through separate investments. Lower monthly payments but higher total cost."
+                },
+                taxRefund: {
+                    title: "4️⃣ Tax Refund on Interest",
+                    description: "In many countries, you can deduct mortgage interest from your taxes. Enter your marginal tax rate (e.g., 37.48%) to model this benefit. The app will calculate the tax refund you receive, reducing your effective monthly cost.",
+                    validUntil: "<strong>Valid Until:</strong> Set the date until which the tax deduction applies. Tax laws may change or phase out deductions after a certain period or when you reach a certain age.",
+                    note: "Note: This feature models systems like the Dutch 'hypotheekrenteaftrek', US mortgage interest deduction, and similar tax benefits in other countries."
+                },
+                extraRepayment: {
+                    title: "💰 Extra Repayments",
+                    description: "Plan additional payments beyond your regular monthly payment to pay off your loan faster and save on interest. You can set up extra repayments with custom schedules:",
+                    frequency: "Configure the frequency (monthly, yearly, one-time)",
+                    amount: "Set the extra payment amount",
+                    period: "Define when extra payments start and end",
+                    excluded: "Choose whether extra repayments are excluded from wealth tax calculations"
+                },
+                example: {
+                    title: "🎯 Example: Setting Up a Mortgage",
+                    description: "A typical mortgage might look like this: $300,000 loan at 3.76% annual interest using an annuity repayment scheme, with a 37.48% tax refund rate valid until 2045. The app calculates your monthly payment and shows the tax benefit, giving you a clear picture of your actual monthly housing cost."
+                }
+            },
             step3: {
                 title: "Step 3: Planning Expenses",
                 intro: "Expenses are a crucial part of your financial plan. When you plan your expenses, you can see what you need to do to achieve your financial goals. Here's how to configure an expense:",
@@ -694,6 +736,48 @@ const translations = {
                 step1: "<strong>Uitgaven & Leningen:</strong> Begin met het plannen van de kosten die je moet dekken",
                 step2: "<strong>Inkomsten:</strong> Stel huidige en toekomstige inkomensbronnen in, rekening houdend met je uitgaven",
                 step3: "<strong>Besparingen:</strong> Plan je besparingen om te zien of je je kosten kunt dekken en mogelijk eerder met pensioen kunt"
+            },
+            stepLoans: {
+                title: "Stap 2.5: Leningen & hypotheken begrijpen",
+                intro: "Voordat je reguliere uitgaven plant, is het belangrijk om te begrijpen hoe je leningen en hypotheken modelleert in Finance Planner. Leningen zoals hypotheken zijn een speciaal type uitgave waarbij de maandelijkse betaling wordt berekend op basis van de leningparameters, en je kunt profiteren van belastingaftrek op rentebetalingen.",
+                caption: "Het Lening configuratiescherm met alle hypotheekparameters",
+                whenToUse: {
+                    title: "Wanneer Leningen gebruiken vs. reguliere uitgaven",
+                    description: "Gebruik de <strong>Lening</strong> functie wanneer je automatisch maandelijkse betalingen wilt berekenen op basis van leningparameters (bedrag, rente, aflosschema). Gebruik reguliere <strong>Uitgaven</strong> voor kosten waarbij je al het vaste maandbedrag kent."
+                },
+                amount: {
+                    title: "1️⃣ Leningbedrag",
+                    description: "Voer het totale leningbedrag op de startdatum in. Voor hypotheken is dit typisch de aankoopprijs van de woning minus je eigen geld. De app berekent je maandelijkse betalingen op basis van dit bedrag, de rente en het aflosschema dat je selecteert."
+                },
+                interest: {
+                    title: "2️⃣ Jaarlijkse rente",
+                    description: "Stel de jaarlijkse rente voor je lening in als percentage (bijv. 3,76%). Deze rente wordt gebruikt om het rentedeel van je maandelijkse betalingen te berekenen. De rente bepaalt hoeveel van elke betaling naar de hoofdsom gaat versus rente."
+                },
+                repayment: {
+                    title: "3️⃣ Aflosschema",
+                    description: "Kies hoe je de lening aflost. Finance Planner ondersteunt drie veelvoorkomende aflosmethoden:",
+                    annuity: "<strong>Annuïteit:</strong> Vaste maandelijkse betaling gedurende de leningperiode. Vroege betalingen zijn voornamelijk rente; latere betalingen zijn voornamelijk hoofdsom. Dit is het meest voorkomende hypotheektype.",
+                    linear: "<strong>Lineair:</strong> Het hoofdsomdeel blijft constant, dus de totale maandelijkse betalingen nemen af in de tijd naarmate de rente afneemt. Hogere initiële betalingen maar lagere totale rente betaald.",
+                    interestOnly: "<strong>Aflossingsvrij:</strong> Betaal alleen rente tijdens de leningperiode; de hoofdsom wordt aan het einde volledig afgelost of via separate investeringen. Lagere maandelijkse betalingen maar hogere totale kosten."
+                },
+                taxRefund: {
+                    title: "4️⃣ Belastingteruggave op rente",
+                    description: "In veel landen kun je hypotheekrente aftrekken van je belastingen. Voer je marginale belastingtarief in (bijv. 37,48%) om dit voordeel te modelleren. De app berekent de belastingteruggave die je ontvangt, waardoor je effectieve maandelijkse kosten dalen.",
+                    validUntil: "<strong>Geldig tot:</strong> Stel de datum in tot wanneer de belastingaftrek van toepassing is. Belastingwetten kunnen veranderen of aftrekmogelijkheden kunnen na een bepaalde periode of leeftijd afnemen.",
+                    note: "Let op: Deze functie modelleert systemen zoals de Nederlandse 'hypotheekrenteaftrek', de Amerikaanse hypotheekrenteaftrek en vergelijkbare belastingvoordelen in andere landen."
+                },
+                extraRepayment: {
+                    title: "💰 Extra aflossingen",
+                    description: "Plan extra betalingen naast je reguliere maandelijkse betaling om je lening sneller af te lossen en rente te besparen. Je kunt extra aflossingen instellen met aangepaste schema's:",
+                    frequency: "Configureer de frequentie (maandelijks, jaarlijks, eenmalig)",
+                    amount: "Stel het extra betalingsbedrag in",
+                    period: "Bepaal wanneer extra betalingen beginnen en eindigen",
+                    excluded: "Kies of extra aflossingen worden uitgesloten van vermogensbelasting berekeningen"
+                },
+                example: {
+                    title: "🎯 Voorbeeld: Een hypotheek instellen",
+                    description: "Een typische hypotheek kan er zo uitzien: €300.000 lening tegen 3,76% jaarlijkse rente met een annuïteitsaflosschema, met een belastingteruggave van 37,48% geldig tot 2045. De app berekent je maandelijkse betaling en toont het belastingvoordeel, waardoor je een helder beeld krijgt van je werkelijke maandelijkse woonkosten."
+                }
             },
             step3: {
                 title: "Stap 3: Uitgaven plannen",

@@ -77,6 +77,65 @@
             </div>
         </section>
 
+        <!-- Step 2.5: Understanding Loans & Mortgages -->
+        <section class="section">
+            <h2 data-i18n="howToPlan.stepLoans.title">Step 2.5: Understanding Loans & Mortgages</h2>
+            <p data-i18n="howToPlan.stepLoans.intro">Before planning regular expenses, it's important to understand how to model loans and mortgages in Finance Planner. Loans like mortgages are a special type of expense where the monthly payment is calculated based on the loan parameters, and you can benefit from tax deductions on interest payments.</p>
+            
+            <img src="https://github.com/user-attachments/assets/8b7c5f7b-d0b5-459b-b61e-ab5ee35ee2d3" alt="Loan configuration screen in Finance Planner app" class="app-screenshot">
+            <p class="screenshot-caption" data-i18n="howToPlan.stepLoans.caption">The Loan configuration screen showing all mortgage parameters</p>
+            
+            <div class="feature-card" style="margin-bottom: 1.5rem;">
+                <strong data-i18n="howToPlan.stepLoans.whenToUse.title">When to Use Loans vs. Regular Expenses</strong>
+                <span data-i18n="howToPlan.stepLoans.whenToUse.description">Use the <strong>Loan</strong> feature when you want to automatically calculate monthly payments based on loan parameters (amount, interest rate, repayment scheme). Use regular <strong>Expenses</strong> for costs where you already know the fixed monthly amount.</span>
+            </div>
+            
+            <div class="example-files-list">
+                <div class="example-file-card">
+                    <h3 data-i18n="howToPlan.stepLoans.amount.title">1️⃣ Loan Amount</h3>
+                    <p data-i18n="howToPlan.stepLoans.amount.description">Enter the total loan amount at the start date. For mortgages, this is typically the home purchase price minus your down payment. The app will calculate your monthly payments based on this amount, the interest rate, and the repayment scheme you select.</p>
+                </div>
+                
+                <div class="example-file-card">
+                    <h3 data-i18n="howToPlan.stepLoans.interest.title">2️⃣ Annual Interest Rate</h3>
+                    <p data-i18n="howToPlan.stepLoans.interest.description">Set the annual interest rate for your loan as a percentage (e.g., 3.76%). This rate is used to calculate the interest portion of your monthly payments. The interest affects how much of each payment goes toward principal vs. interest.</p>
+                </div>
+                
+                <div class="example-file-card">
+                    <h3 data-i18n="howToPlan.stepLoans.repayment.title">3️⃣ Repayment Scheme</h3>
+                    <p data-i18n="howToPlan.stepLoans.repayment.description">Choose how you'll repay the loan. Finance Planner supports three common repayment methods:</p>
+                    <ul>
+                        <li data-i18n="howToPlan.stepLoans.repayment.annuity"><strong>Annuity:</strong> Fixed monthly payment throughout the loan period. Early payments are mostly interest; later payments are mostly principal. This is the most common mortgage type.</li>
+                        <li data-i18n="howToPlan.stepLoans.repayment.linear"><strong>Linear:</strong> The principal portion remains constant, so total monthly payments decrease over time as interest decreases. Higher initial payments but lower total interest paid.</li>
+                        <li data-i18n="howToPlan.stepLoans.repayment.interestOnly"><strong>Interest-Only:</strong> Pay only interest during the loan period; the principal is repaid in full at the end or through separate investments. Lower monthly payments but higher total cost.</li>
+                    </ul>
+                </div>
+                
+                <div class="example-file-card">
+                    <h3 data-i18n="howToPlan.stepLoans.taxRefund.title">4️⃣ Tax Refund on Interest</h3>
+                    <p data-i18n="howToPlan.stepLoans.taxRefund.description">In many countries, you can deduct mortgage interest from your taxes. Enter your marginal tax rate (e.g., 37.48%) to model this benefit. The app will calculate the tax refund you receive, reducing your effective monthly cost.</p>
+                    <p data-i18n="howToPlan.stepLoans.taxRefund.validUntil"><strong>Valid Until:</strong> Set the date until which the tax deduction applies. Tax laws may change or phase out deductions after a certain period or when you reach a certain age.</p>
+                    <p data-i18n="howToPlan.stepLoans.taxRefund.note">Note: This feature models systems like the Dutch 'hypotheekrenteaftrek', US mortgage interest deduction, and similar tax benefits in other countries.</p>
+                </div>
+                
+                <div class="example-file-card">
+                    <h3 data-i18n="howToPlan.stepLoans.extraRepayment.title">💰 Extra Repayments</h3>
+                    <p data-i18n="howToPlan.stepLoans.extraRepayment.description">Plan additional payments beyond your regular monthly payment to pay off your loan faster and save on interest. You can set up extra repayments with custom schedules:</p>
+                    <ul>
+                        <li data-i18n="howToPlan.stepLoans.extraRepayment.frequency">Configure the frequency (monthly, yearly, one-time)</li>
+                        <li data-i18n="howToPlan.stepLoans.extraRepayment.amount">Set the extra payment amount</li>
+                        <li data-i18n="howToPlan.stepLoans.extraRepayment.period">Define when extra payments start and end</li>
+                        <li data-i18n="howToPlan.stepLoans.extraRepayment.excluded">Choose whether extra repayments are excluded from wealth tax calculations</li>
+                    </ul>
+                </div>
+                
+                <div class="example-file-card">
+                    <h3 data-i18n="howToPlan.stepLoans.example.title">🎯 Example: Setting Up a Mortgage</h3>
+                    <p data-i18n="howToPlan.stepLoans.example.description">A typical mortgage might look like this: $300,000 loan at 3.76% annual interest using an annuity repayment scheme, with a 37.48% tax refund rate valid until 2045. The app calculates your monthly payment and shows the tax benefit, giving you a clear picture of your actual monthly housing cost.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Planning Overview -->
         <section class="section">
             <h2 data-i18n="howToPlan.overview.title">Planning Categories</h2>
