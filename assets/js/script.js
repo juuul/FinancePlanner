@@ -327,7 +327,7 @@ const translations = {
                 caption: "The Expense screen showing all configuration options with numbered annotations",
                 amount: {
                     title: "1️⃣ Net Amount",
-                    description: "Enter the net expense amount. This subject is used for expenses whether they occur regularly or happen just once—like monthly household costs, annual holiday spending, etc. Use the Loan subject if you want to calculate costs for a loan like a mortgage, which can also calculate return interest (Dutch: hypotheekrenteaftrek)."
+                    description: "Enter the net expense amount. This option is used for expenses whether they occur regularly or happen just once—like monthly household costs, annual holiday spending, etc. Use the Loan option if you want to calculate costs for a loan like a mortgage, which can also calculate interest deductions (Dutch: hypotheekrenteaftrek)."
                 },
                 frequency: {
                     title: "2️⃣ Frequency",
@@ -339,7 +339,7 @@ const translations = {
                 },
                 link: {
                     title: "4️⃣ Date Linking",
-                    description: "This feature helps you easily link dates to retirement. You can set the date to the fixed retirement date or to an adjustable retirement date using a slider when analyzing your calculation results—for example, to check when you can stop working given all the subjects you have entered.",
+                    description: "This feature helps you easily link dates to retirement. You can set the date to the fixed retirement date or to an adjustable retirement date using a slider when analyzing your calculation results—for example, to check when you can stop working given all the items you have entered.",
                     early: "Early retirement date",
                     standard: "Standard retirement date",
                     none: "No link (manual date)"
@@ -767,7 +767,7 @@ const translations = {
                 },
                 link: {
                     title: "4️⃣ Datum koppeling",
-                    description: "Deze functie helpt je gemakkelijk datums te koppelen aan pensioen. Je kunt de datum instellen op de vaste pensioendatum of op een aanpasbare pensioendatum met behulp van een schuifregelaar bij het analyseren van je berekeningsresultaten—bijvoorbeeld om te controleren wanneer je kunt stoppen met werken gezien alle onderdelen die je hebt ingevoerd.",
+                    description: "Deze functie helpt je gemakkelijk datums te koppelen aan pensioen. Je kunt de datum instellen op de vaste pensioendatum of op een aanpasbare pensioendatum met behulp van een schuifregelaar bij het analyseren van je berekeningsresultaten—bijvoorbeeld om te controleren wanneer je kunt stoppen met werken gezien alle items die je hebt ingevoerd.",
                     early: "Vervroegde pensioendatum",
                     standard: "Standaard pensioendatum",
                     none: "Geen koppeling (handmatige datum)"
