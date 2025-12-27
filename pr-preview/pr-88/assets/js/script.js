@@ -294,14 +294,10 @@ const translations = {
                 step2: "<strong>Incomes:</strong> Set up current and future income sources, taking into account your expenses",
                 step3: "<strong>Savings:</strong> Plan your savings to see if you can cover your costs and potentially retire early"
             },
-            stepLoans: {
-                title: "Step 2.5: Understanding Loans & Mortgages",
-                intro: "Before planning regular expenses, it's important to understand how to model loans and mortgages in Finance Planner. Loans like mortgages are a special type of expense where the monthly payment is calculated based on the loan parameters, and you can benefit from tax deductions on interest payments.",
+            step3: {
+                title: "Step 3: Planning Mortgage Expenses",
+                intro: "Mortgages are a special type of expense where the monthly payment can be calculated automatically, and tax deductions on interest can be included. For simple planning, you can enter your fixed monthly mortgage costs directly in the regular Expenses section (Step 4). Use the Loan feature when you want to model mortgage details like interest rates, repayment schemes, and tax benefits.",
                 caption: "The Loan configuration screen showing all mortgage parameters",
-                whenToUse: {
-                    title: "When to Use Loans vs. Regular Expenses",
-                    description: "Use the <strong>Loan</strong> feature when you want to automatically calculate monthly payments based on loan parameters (amount, interest rate, repayment scheme). Use regular <strong>Expenses</strong> for costs where you already know the fixed monthly amount."
-                },
                 amount: {
                     title: "1️⃣ Loan Amount",
                     description: "Enter the total loan amount at the start date. For mortgages, this is typically the home purchase price minus your down payment. The app will calculate your monthly payments based on this amount, the interest rate, and the repayment scheme you select."
@@ -336,8 +332,8 @@ const translations = {
                     description: "A typical mortgage might look like this: $300,000 loan at 3.76% annual interest using an annuity repayment scheme, with a 37.48% tax refund rate valid until 2045. The app calculates your monthly payment and shows the tax benefit, giving you a clear picture of your actual monthly housing cost."
                 }
             },
-            step3: {
-                title: "Step 3: Planning Expenses",
+            step4: {
+                title: "Step 4: Planning Expenses",
                 intro: "Expenses are a crucial part of your financial plan. When you plan your expenses, you can see what you need to do to achieve your financial goals. Here's how to configure an expense:",
                 caption: "The Expense screen showing all configuration options with numbered annotations",
                 amount: {
@@ -364,8 +360,8 @@ const translations = {
                     description: "Determine if the expense should be indexed for inflation. Most costs are indexed over time, so enable this for most cases. This is important when you want to analyze your calculation with the effect of inflation to get a realistic view of future costs."
                 }
             },
-            step4: {
-                title: "Step 4: Planning Incomes",
+            step5: {
+                title: "Step 5: Planning Incomes",
                 intro: "After planning your expenses, set up your income sources. Income planning follows similar principles to expense planning:",
                 sources: {
                     title: "Multiple Income Sources",
@@ -396,8 +392,8 @@ const translations = {
                     insight: "By clicking on the pink line in the income graph, we can see we have 1,000 to spend monthly until the early retirement date. Let's use this surplus to build savings!"
                 }
             },
-            step5: {
-                title: "Step 5: Planning Savings",
+            step6: {
+                title: "Step 6: Planning Savings",
                 intro: "Savings planning helps you understand if you can cover your costs and even retire early. Set up your savings strategy:",
                 deposits: {
                     title: "Deposits",
@@ -779,8 +775,8 @@ const translations = {
                     description: "Een typische hypotheek kan er zo uitzien: €300.000 lening tegen 3,76% jaarlijkse rente met een annuïteitsaflosschema, met een belastingteruggave van 37,48% geldig tot 2045. De app berekent je maandelijkse betaling en toont het belastingvoordeel, waardoor je een helder beeld krijgt van je werkelijke maandelijkse woonkosten."
                 }
             },
-            step3: {
-                title: "Stap 3: Uitgaven plannen",
+            step4: {
+                title: "Stap 4: Uitgaven plannen",
                 intro: "Uitgaven zijn een cruciaal onderdeel van je financiële plan. Wanneer je je uitgaven plant, kun je zien wat je moet doen om je financiële doelen te bereiken. Zo configureer je een uitgave:",
                 caption: "Het Uitgaven scherm met alle configuratie-opties en genummerde annotaties",
                 amount: {
@@ -807,8 +803,8 @@ const translations = {
                     description: "Bepaal of de uitgave moet worden geïndexeerd voor inflatie. De meeste kosten worden in de loop van de tijd geïndexeerd, dus schakel dit in voor de meeste gevallen. Dit is belangrijk wanneer je je berekening wilt analyseren met het effect van inflatie om een realistisch beeld te krijgen van toekomstige kosten."
                 }
             },
-            step4: {
-                title: "Stap 4: Inkomsten plannen",
+            step5: {
+                title: "Stap 5: Inkomsten plannen",
                 intro: "Na het plannen van je uitgaven, stel je je inkomensbronnen in. Inkomensplanning volgt vergelijkbare principes als uitgavenplanning:",
                 sources: {
                     title: "Meerdere inkomensbronnen",
@@ -839,8 +835,8 @@ const translations = {
                     insight: "Door op de roze lijn in de inkomstengrafiek te klikken, zien we dat we 1.000 per maand te besteden hebben tot de vervroegde pensioendatum. Laten we dit overschot gebruiken om te sparen!"
                 }
             },
-            step5: {
-                title: "Stap 5: Besparingen plannen",
+            step6: {
+                title: "Stap 6: Besparingen plannen",
                 intro: "Besparingsplanning helpt je te begrijpen of je je kosten kunt dekken en zelfs eerder met pensioen kunt. Stel je spaarstrategie in:",
                 deposits: {
                     title: "Stortingen",
