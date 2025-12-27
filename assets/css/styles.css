@@ -419,6 +419,7 @@ a:hover {
     padding: 1rem;
     margin: 2rem auto;
     text-align: center;
+    display: none; /* Hidden until ads are approved */
 }
 
 .ad-section .adsbygoogle {
