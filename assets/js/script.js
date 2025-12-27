@@ -290,12 +290,39 @@ const translations = {
             overview: {
                 title: "Planning Categories",
                 intro: "After adding persons, you can start planning different financial categories. The recommended order is:",
-                step1: "<strong>Expenses & Loans:</strong> Start by planning the costs you need to cover",
-                step2: "<strong>Incomes:</strong> Set up current and future income sources, taking into account your expenses",
-                step3: "<strong>Savings:</strong> Plan your savings to see if you can cover your costs and potentially retire early"
+                step1: "<strong>Mortgages:</strong> Set up mortgage loans with interest calculations and tax deductions",
+                step2: "<strong>Expenses:</strong> Plan other costs you need to cover",
+                step3: "<strong>Incomes:</strong> Set up current and future income sources, taking into account your expenses",
+                step4: "<strong>Savings:</strong> Plan your savings to see if you can cover your costs and potentially retire early"
             },
-            step3: {
-                title: "Step 3: Planning Expenses",
+            step3Mortgage: {
+                title: "Step 3: Planning Mortgages",
+                intro: "Mortgages are a specific type of expense where the monthly payment is calculated based on the loan amount, interest rate, and repayment schedule. You can also model mortgage interest tax deductions. Here's how to configure a mortgage:",
+                caption: "The Mortgage screen showing all configuration options with numbered annotations",
+                amount: {
+                    title: "1️⃣ Loan Amount",
+                    description: "Enter the total loan amount at the specified start date. For example, if you're taking out a mortgage of $300,000, enter this amount here. The app will calculate the monthly payments based on this amount, the interest rate, and the repayment scheme."
+                },
+                interest: {
+                    title: "2️⃣ Annual Interest Rate",
+                    description: "Set the annual mortgage interest rate as a percentage. This is the interest rate charged by your lender on the loan amount. For example, 3.76% annual interest."
+                },
+                repayment: {
+                    title: "3️⃣ Repayment Scheme",
+                    description: "Choose the repayment scheme for your mortgage. There are three options:",
+                    annuity: "<strong>Annuity:</strong> Fixed monthly payments throughout the mortgage term, with the proportion of interest vs. principal changing over time.",
+                    linear: "<strong>Linear:</strong> Fixed principal repayment each month, with decreasing interest payments over time, resulting in decreasing total monthly payments.",
+                    interestOnly: "<strong>Interest-only:</strong> Only pay interest each month, with no principal repayment. The full loan amount remains due at the end of the term."
+                },
+                taxDeduction: {
+                    title: "4️⃣ Tax Refund on Interest",
+                    description: "Configure the mortgage interest tax deduction (if applicable in your country). Enter the tax deduction rate as a percentage and specify the date until which this deduction is valid. This helps you model tax benefits like the Dutch \"hypotheekrenteaftrek\" or similar tax advantages in other countries.",
+                    note: "💡 <strong>Note:</strong> Many countries offer tax deductions on mortgage interest to encourage homeownership. Check your local tax regulations to determine if you qualify and what percentage applies to you."
+                },
+                tip: "💡 <strong>Tip:</strong> Mortgage planning is essential for long-term financial planning, as it typically represents one of the largest expenses in a household budget. By modeling different scenarios, you can understand how your mortgage affects your ability to save and retire early."
+            },
+            step4: {
+                title: "Step 4: Planning Expenses",
                 intro: "Expenses are a crucial part of your financial plan. When you plan your expenses, you can see what you need to do to achieve your financial goals. Here's how to configure an expense:",
                 caption: "The Expense screen showing all configuration options with numbered annotations",
                 amount: {
@@ -322,8 +349,8 @@ const translations = {
                     description: "Determine if the expense should be indexed for inflation. Most costs are indexed over time, so enable this for most cases. This is important when you want to analyze your calculation with the effect of inflation to get a realistic view of future costs."
                 }
             },
-            step4: {
-                title: "Step 4: Planning Incomes",
+            step5Income: {
+                title: "Step 5: Planning Incomes",
                 intro: "After planning your expenses, set up your income sources. Income planning follows similar principles to expense planning:",
                 sources: {
                     title: "Multiple Income Sources",
@@ -354,8 +381,8 @@ const translations = {
                     insight: "By clicking on the pink line in the income graph, we can see we have 1,000 to spend monthly until the early retirement date. Let's use this surplus to build savings!"
                 }
             },
-            step5: {
-                title: "Step 5: Planning Savings",
+            step6: {
+                title: "Step 6: Planning Savings",
                 intro: "Savings planning helps you understand if you can cover your costs and even retire early. Set up your savings strategy:",
                 deposits: {
                     title: "Deposits",
@@ -691,12 +718,39 @@ const translations = {
             overview: {
                 title: "Planning categorieën",
                 intro: "Na het toevoegen van personen kun je beginnen met het plannen van verschillende financiële categorieën. De aanbevolen volgorde is:",
-                step1: "<strong>Uitgaven & Leningen:</strong> Begin met het plannen van de kosten die je moet dekken",
-                step2: "<strong>Inkomsten:</strong> Stel huidige en toekomstige inkomensbronnen in, rekening houdend met je uitgaven",
-                step3: "<strong>Besparingen:</strong> Plan je besparingen om te zien of je je kosten kunt dekken en mogelijk eerder met pensioen kunt"
+                step1: "<strong>Hypotheken:</strong> Stel hypotheken in met renteberekeningen en belastingaftrek",
+                step2: "<strong>Uitgaven:</strong> Plan andere kosten die je moet dekken",
+                step3: "<strong>Inkomsten:</strong> Stel huidige en toekomstige inkomensbronnen in, rekening houdend met je uitgaven",
+                step4: "<strong>Besparingen:</strong> Plan je besparingen om te zien of je je kosten kunt dekken en mogelijk eerder met pensioen kunt"
             },
-            step3: {
-                title: "Stap 3: Uitgaven plannen",
+            step3Mortgage: {
+                title: "Stap 3: Hypotheken plannen",
+                intro: "Hypotheken zijn een specifiek type uitgave waarbij de maandelijkse betaling wordt berekend op basis van het leningbedrag, de rente en het aflossingsschema. Je kunt ook hypotheekrenteaftrek modelleren. Zo configureer je een hypotheek:",
+                caption: "Het Hypotheek scherm met alle configuratie-opties en genummerde annotaties",
+                amount: {
+                    title: "1️⃣ Leningbedrag",
+                    description: "Voer het totale leningbedrag in op de opgegeven startdatum. Als je bijvoorbeeld een hypotheek van €300.000 afsluit, voer je dit bedrag hier in. De app berekent de maandelijkse betalingen op basis van dit bedrag, de rente en het aflossingsschema."
+                },
+                interest: {
+                    title: "2️⃣ Jaarlijkse hypotheekrente",
+                    description: "Stel de jaarlijkse hypotheekrente in als percentage. Dit is de rente die je kredietverstrekker in rekening brengt over het leningbedrag. Bijvoorbeeld 3,76% jaarlijkse rente."
+                },
+                repayment: {
+                    title: "3️⃣ Aflossingsschema",
+                    description: "Kies het aflossingsschema voor je hypotheek. Er zijn drie opties:",
+                    annuity: "<strong>Annuïteit:</strong> Vaste maandelijkse betalingen gedurende de gehele hypotheekperiode, waarbij de verhouding tussen rente en hoofdsom in de loop van de tijd verandert.",
+                    linear: "<strong>Lineair:</strong> Vaste aflossing van de hoofdsom elke maand, met dalende rentebetalingen in de loop van de tijd, wat resulteert in dalende totale maandelijkse betalingen.",
+                    interestOnly: "<strong>Aflossingsvrij:</strong> Betaal alleen rente elke maand, zonder aflossing van de hoofdsom. Het volledige leningbedrag blijft verschuldigd aan het einde van de termijn."
+                },
+                taxDeduction: {
+                    title: "4️⃣ Belastingteruggave op rente",
+                    description: "Configureer de hypotheekrenteaftrek (indien van toepassing in jouw land). Voer het belastingaftrekpercentage in en specificeer de datum tot wanneer deze aftrek geldig is. Dit helpt je om belastingvoordelen te modelleren zoals de Nederlandse \"hypotheekrenteaftrek\" of vergelijkbare belastingvoordelen in andere landen.",
+                    note: "💡 <strong>Let op:</strong> Veel landen bieden belastingaftrek op hypotheekrente om woningbezit aan te moedigen. Controleer je lokale belastingregels om te bepalen of je in aanmerking komt en welk percentage voor jou van toepassing is."
+                },
+                tip: "💡 <strong>Tip:</strong> Hypotheekplanning is essentieel voor langetermijnplanning, omdat het meestal een van de grootste uitgaven in een huishoudbudget vertegenwoordigt. Door verschillende scenario's te modelleren, kun je begrijpen hoe je hypotheek je mogelijkheid om te sparen en eerder met pensioen te gaan beïnvloedt."
+            },
+            step4: {
+                title: "Stap 4: Uitgaven plannen",
                 intro: "Uitgaven zijn een cruciaal onderdeel van je financiële plan. Wanneer je je uitgaven plant, kun je zien wat je moet doen om je financiële doelen te bereiken. Zo configureer je een uitgave:",
                 caption: "Het Uitgaven scherm met alle configuratie-opties en genummerde annotaties",
                 amount: {
@@ -723,8 +777,8 @@ const translations = {
                     description: "Bepaal of de uitgave moet worden geïndexeerd voor inflatie. De meeste kosten worden in de loop van de tijd geïndexeerd, dus schakel dit in voor de meeste gevallen. Dit is belangrijk wanneer je je berekening wilt analyseren met het effect van inflatie om een realistisch beeld te krijgen van toekomstige kosten."
                 }
             },
-            step4: {
-                title: "Stap 4: Inkomsten plannen",
+            step5Income: {
+                title: "Stap 5: Inkomsten plannen",
                 intro: "Na het plannen van je uitgaven, stel je je inkomensbronnen in. Inkomensplanning volgt vergelijkbare principes als uitgavenplanning:",
                 sources: {
                     title: "Meerdere inkomensbronnen",
@@ -755,8 +809,8 @@ const translations = {
                     insight: "Door op de roze lijn in de inkomstengrafiek te klikken, zien we dat we 1.000 per maand te besteden hebben tot de vervroegde pensioendatum. Laten we dit overschot gebruiken om te sparen!"
                 }
             },
-            step5: {
-                title: "Stap 5: Besparingen plannen",
+            step6: {
+                title: "Stap 6: Besparingen plannen",
                 intro: "Besparingsplanning helpt je te begrijpen of je je kosten kunt dekken en zelfs eerder met pensioen kunt. Stel je spaarstrategie in:",
                 deposits: {
                     title: "Stortingen",
