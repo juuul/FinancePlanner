@@ -2,14 +2,9 @@
     box-sizing: border-box;
 }
 
-/* Ensure fonts load with minimal layout shift */
-@font-face {
-    font-family: 'Segoe UI';
-    font-display: swap;
-}
-
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
+    font-display: swap;
     background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
     color: #222;
     margin: 0;
