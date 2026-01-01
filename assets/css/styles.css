@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+/* Ensure fonts load with minimal layout shift */
+@font-face {
+    font-family: 'Segoe UI';
+    font-display: swap;
+}
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
@@ -89,6 +95,8 @@ body {
 .hero img {
     width: 100%;
     height: auto;
+    aspect-ratio: 1920 / 937;
+    display: block;
 }
 
 .cta-buttons {
@@ -391,6 +399,8 @@ a:hover {
 .app-screenshot {
     display: block;
     max-width: 300px;
+    width: 100%;
+    height: auto;
     margin: 1.5rem auto;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
@@ -399,9 +409,17 @@ a:hover {
 .app-screenshot-wide {
     display: block;
     max-width: 100%;
+    width: 100%;
+    height: auto;
     margin: 1.5rem auto;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Prevent layout shift for all images */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .screenshot-caption {
