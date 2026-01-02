@@ -35,6 +35,20 @@ body {
     color: white;
     text-decoration: none;
     transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url('assets/images/app_icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    flex-shrink: 0;
 }
 
 .logo:hover {
@@ -348,7 +362,7 @@ a:hover {
     cursor: pointer;
     padding: 0.5rem;
     z-index: 1001;
-    margin-right: 0.8rem;
+    margin-right: 0.5rem;
 }
 
 .hamburger-icon {
