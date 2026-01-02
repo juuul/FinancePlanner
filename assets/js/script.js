@@ -7,7 +7,8 @@ const translations = {
             tutorials: "Tutorials",
             community: "Community",
             scenarios: "Use Cases",
-            howToPlan: "How to Plan"
+            howToPlan: "How to Plan",
+            about: "About"
         },
         hero: {
             title: "Finance Planner: The F.I.R.E. Tool",
@@ -435,7 +436,8 @@ const translations = {
             tutorials: "Tutorials",
             community: "Gemeenschap",
             scenarios: "Gebruiksvoorbeelden",
-            howToPlan: "Hoe te plannen"
+            howToPlan: "Hoe te plannen",
+            about: "Over"
         },
         hero: {
             title: "Finance Planner: De F.I.R.E. tool",
