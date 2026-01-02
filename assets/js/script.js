@@ -3,7 +3,7 @@ const translations = {
     en: {
         nav: {
             home: "Home",
-            features: "Features",
+            moreInfo: "More Info",
             tutorials: "Tutorials",
             community: "Community",
             scenarios: "Use Cases",
@@ -24,6 +24,10 @@ const translations = {
             global: "<strong>Financial Health Worldwide:</strong> Available across the globe, our tool helps people everywhere build a healthier financial future, regardless of location or background.",
             privacy: "<strong>Your Data Stays Private:</strong> All your personal financial data and calculations remain 100% on your device. Nothing is stored on external servers. Your information is completely safe and never shared.",
             adPrivacy: "<strong>About Ads:</strong> The app uses ads (AdMob) to remain free for everyone. Our privacy notice covers only the anonymous usage data collected by the ad provider—your financial data is never included."
+        },
+        moreInfo: {
+            title: "More Information About Finance Planner",
+            subtitle: "Discover the Features and Capabilities"
         },
         appStore: {
             title: "📱 Get Finance Planner on Your Mobile Device",
@@ -432,7 +436,7 @@ const translations = {
     nl: {
         nav: {
             home: "Home",
-            features: "Functies",
+            moreInfo: "Meer info",
             tutorials: "Tutorials",
             community: "Gemeenschap",
             scenarios: "Gebruiksvoorbeelden",
@@ -453,6 +457,10 @@ const translations = {
             global: "<strong>Financiële gezondheid wereldwijd:</strong> Beschikbaar over de hele planeet, helpt onze tool mensen overal een gezondere financiële toekomst op te bouwen, ongeacht locatie of achtergrond.",
             privacy: "<strong>Jouw gegevens blijven privé:</strong> Al je persoonlijke financiële gegevens en berekeningen blijven 100% op jouw apparaat. Niets wordt opgeslagen op externe servers. Jouw informatie is volledig veilig en wordt nooit gedeeld.",
             adPrivacy: "<strong>Over advertenties:</strong> De app gebruikt advertenties (AdMob) om gratis te blijven voor iedereen. Onze privacyverklaring heeft alleen betrekking op de anonieme gebruiksgegevens die door de advertentieprovider worden verzameld—jouw financiële gegevens zijn hier nooit bij inbegrepen."
+        },
+        moreInfo: {
+            title: "Meer informatie over Finance Planner",
+            subtitle: "Ontdek de functies en mogelijkheden"
         },
         appStore: {
             title: "📱 Download Finance Planner op je mobiele apparaat",
