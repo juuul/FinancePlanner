@@ -531,6 +531,11 @@ img {
         font-size: 1.2rem;
     }
 
+    .lang-toggle {
+        order: 1;
+        margin-left: auto;
+    }
+
     .nav {
         position: fixed;
         top: 0;
@@ -546,6 +551,7 @@ img {
         transition: left 0.3s ease-in-out;
         z-index: 1000;
         overflow-y: auto;
+        order: 2;
     }
 
     .nav.active {
@@ -555,11 +561,6 @@ img {
     .nav a {
         padding: 1rem 0;
         border-bottom: 1px solid rgba(255,255,255,0.1);
-        width: 100%;
-    }
-
-    .nav .lang-toggle {
-        margin-top: 1rem;
         width: 100%;
     }
 
