@@ -339,6 +339,46 @@ a:hover {
     color: #1a4d2e;
 }
 
+/* Hamburger menu button */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.hamburger-icon {
+    width: 24px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .hamburger-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger.active .hamburger-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .hamburger-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
 .example-files-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -474,14 +514,69 @@ img {
         align-items: center;
     }
     
-    .nav {
-        margin-top: 1rem;
-        justify-content: center;
-    }
-    
     .header-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .hamburger {
+        display: block;
+        order: -1;
+    }
+
+    .logo {
+        order: 0;
+        font-size: 1.2rem;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: #1a4d2e;
         flex-direction: column;
-        text-align: center;
+        gap: 0;
+        padding: 5rem 2rem 2rem;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    .nav.active {
+        left: 0;
+    }
+
+    .nav a {
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        width: 100%;
+    }
+
+    .nav .lang-toggle {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    /* Overlay for hamburger menu */
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 999;
+    }
+
+    .nav-overlay.active {
+        display: block;
     }
 
     .container {
