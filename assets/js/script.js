@@ -438,8 +438,8 @@ const translations = {
             home: "Home",
             moreInfo: "Meer info",
             tutorials: "Tutorials",
-            community: "Gemeenschap",
-            scenarios: "Gebruiksvoorbeelden",
+            community: "Forum",
+            scenarios: "Voorbeelden",
             howToPlan: "Hoe te plannen",
             about: "Over"
         },
