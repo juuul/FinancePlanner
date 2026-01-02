@@ -6,7 +6,7 @@ const translations = {
             moreInfo: "More Info",
             tutorials: "Tutorials",
             community: "Community",
-            scenarios: "Use Cases",
+            scenarios: "Examples",
             howToPlan: "How to Plan",
             about: "About"
         },
@@ -439,7 +439,7 @@ const translations = {
             moreInfo: "Meer info",
             tutorials: "Tutorials",
             community: "Gemeenschap",
-            scenarios: "Gebruiksvoorbeelden",
+            scenarios: "Voorbeelden",
             howToPlan: "Hoe te plannen",
             about: "Over"
         },
