@@ -876,6 +876,7 @@ function setLanguage(lang) {
     localStorage.setItem('lang', lang);
     updatePageContent();
     updateToggleButton();
+    updateLanguageMetadata(lang);
 }
 
 function updatePageContent() {
@@ -902,10 +903,22 @@ function updateToggleButton() {
     }
 }
 
+function updateLanguageMetadata(lang) {
+    // Update the html lang attribute
+    document.documentElement.setAttribute('lang', lang);
+    
+    // Update the meta language tag
+    let metaLang = document.querySelector('meta[name="language"]');
+    if (metaLang) {
+        metaLang.setAttribute('content', lang);
+    }
+}
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     updatePageContent();
     updateToggleButton();
+    updateLanguageMetadata(currentLang);
     
     const langToggle = document.getElementById('langToggle');
     if (langToggle) {
