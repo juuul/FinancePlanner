@@ -30,7 +30,7 @@ const translations = {
             subtitle: "Discover the Features and Capabilities"
         },
         appStore: {
-            title: "📱 Get Finance Planner on Your Mobile Device",
+            title: "📱 Get the app",
             description: "Take your financial planning on the go with our mobile apps, available now for iOS and Android!",
             downloadAppStore: "Download on the App Store",
             downloadGooglePlay: "Get it on Google Play"
@@ -438,8 +438,8 @@ const translations = {
             home: "Home",
             moreInfo: "Meer info",
             tutorials: "Tutorials",
-            community: "Gemeenschap",
-            scenarios: "Gebruiksvoorbeelden",
+            community: "Forum",
+            scenarios: "Voorbeelden",
             howToPlan: "Hoe te plannen",
             about: "Over"
         },
@@ -463,7 +463,7 @@ const translations = {
             subtitle: "Ontdek de functies en mogelijkheden"
         },
         appStore: {
-            title: "📱 Download Finance Planner op je mobiele apparaat",
+            title: "📱 Download",
             description: "Neem je financiële planning overal mee naartoe met onze mobiele apps, nu beschikbaar voor iOS en Android!",
             downloadAppStore: "Download in de app store",
             downloadGooglePlay: "Download op Google Play"
