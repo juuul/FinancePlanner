@@ -158,7 +158,7 @@ const translations = {
             tutorials: "🎥 Video Tutorials",
             privacy: "🔒 Privacy Statement",
             authorsTitle: "Authors",
-            copyright: "&copy; 2024 Finance Planner. Empowering your journey to Financial Independence."
+            copyright: "&copy; 2026 Finance Planner. Empowering your journey to Financial Independence."
         },
         scenarios: {
             title: "Financial Planning Scenarios",
@@ -591,7 +591,7 @@ const translations = {
             tutorials: "🎥 Video tutorials",
             privacy: "🔒 Privacyverklaring",
             authorsTitle: "Auteurs",
-            copyright: "&copy; 2024 Finance Planner. Ondersteunt je reis naar financiële onafhankelijkheid."
+            copyright: "&copy; 2026 Finance Planner. Ondersteunt je reis naar financiële onafhankelijkheid."
         },
         scenarios: {
             title: "Financiële planning scenario's",
