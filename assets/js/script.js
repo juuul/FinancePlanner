@@ -16,7 +16,7 @@ const translations = {
             description: "Designed for the F.I.R.E. (Financial Independence, Retire Early) movement, Finance Planner helps you visualize, track, and achieve your financial goals. Build financial health, plan ahead with different scenarios, and see the long-term impact of your decisions—whether you're just starting out or planning for early retirement.",
             downloadIos: "📱 Download iOS App",
             downloadAndroid: "📱 Download Android App",
-            exploreFeatures: "Explore Features"
+            exploreFeatures: "More information"
         },
         mission: {
             title: "💡 Our Mission: Financial Planning for Everyone",
@@ -449,7 +449,7 @@ const translations = {
             description: "Ontworpen voor de F.I.R.E. (Financial Independence, Retire Early) beweging, helpt Finance Planner je om je financiële doelen te visualiseren, volgen en bereiken. Bouw financiële gezondheid, plan vooruit met verschillende scenario's en zie de langetermijnimpact van je beslissingen—of je nu net begint of plant voor vervroegd pensioen.",
             downloadIos: "📱 Download iOS app",
             downloadAndroid: "📱 Download Android app",
-            exploreFeatures: "Ontdek functies"
+            exploreFeatures: "Meer informatie"
         },
         mission: {
             title: "💡 Onze missie: financiële planning voor iedereen",
