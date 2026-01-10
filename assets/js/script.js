@@ -31,7 +31,6 @@ const translations = {
         },
         appStore: {
             title: "📱 Get the app",
-            description: "Take your financial planning on the go with our mobile apps, available now for iOS and Android!",
             downloadAppStore: "Download on the App Store",
             downloadGooglePlay: "Get it on Google Play"
         },
