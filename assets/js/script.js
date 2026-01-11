@@ -13,7 +13,7 @@ const translations = {
         hero: {
             title: "Finance Planner: The F.I.R.E. Tool",
             subtitle: "Your Essential Companion for Financial Independence",
-            description: "Designed for the F.I.R.E. (Financial Independence, Retire Early) movement, Finance Planner helps you visualize, track, and achieve your financial goals. Build financial health, plan ahead with different scenarios, and see the long-term impact of your decisions—whether you're just starting out or planning for early retirement.",
+            description: "Designed for the F.I.R.E. (Financial Independence, Retire Early) movement, Finance Planner provides clarity and direction for anyone striving for long-term financial freedom. The app helps you visualize, track, and achieve your financial goals, with a strong focus on long-term strategy and the power of compound interest.<br/><br/>Finance Planner goes beyond simple budgeting and focuses on thoughtful long-term financial decisions made today that have a meaningful impact tomorrow. By planning ahead, whether you are just getting started or working toward early retirement, you build sustainable financial health step by step.<br/><br/>Visualize your progress and stay motivated with a clear roadmap to financial independence.",
             downloadIos: "📱 Download iOS App",
             downloadAndroid: "📱 Download Android App",
             exploreFeatures: "More information"
@@ -445,7 +445,7 @@ const translations = {
         hero: {
             title: "Finance Planner: De F.I.R.E. tool",
             subtitle: "Jouw essentiële partner voor financiële onafhankelijkheid",
-            description: "Ontworpen voor de F.I.R.E. (Financial Independence, Retire Early) beweging, helpt Finance Planner je om je financiële doelen te visualiseren, volgen en bereiken. Bouw financiële gezondheid, plan vooruit met verschillende scenario's en zie de langetermijnimpact van je beslissingen—of je nu net begint of plant voor vervroegd pensioen.",
+            description: "Ontworpen voor de F.I.R.E. (Financial Independence, Retire Early) beweging helpt Finance Planner je om financiële vrijheid op de lange termijn concreet en haalbaar te maken. Je visualiseert, volgt en bereikt je financiële doelen met een duidelijke focus op langetermijndenken, samengestelde rente en slimme strategieën.<br/><br/>In plaats van alleen te focussen op dagelijks budgetteren ondersteunt Finance Planner je bij het maken van bewuste financiële keuzes voor de lange termijn. Of je nu aan het begin staat of richting vervroegd pensioen werkt, bouw je aan blijvende financiële gezondheid.<br/><br/> Visualiseer je voortgang en blijf gemotiveerd op je weg naar financiële onafhankelijkheid.",
             downloadIos: "📱 Download iOS app",
             downloadAndroid: "📱 Download Android app",
             exploreFeatures: "Meer informatie"
