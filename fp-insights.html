@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Finance Planner - User Insights</title>
+    <link rel="icon" href="assets/images/app_icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .insights-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .insights-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .insights-header h1 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .insights-header p {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card.green {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+
+        .stat-card.orange {
+            background: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%);
+        }
+
+        .stat-card.blue {
+            background: linear-gradient(135deg, #0061ff 0%, #60efff 100%);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .chart-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .chart-container h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .page-visits {
+            list-style: none;
+            padding: 0;
+        }
+
+        .page-visit-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 1px solid #ecf0f1;
+            transition: background 0.3s ease;
+        }
+
+        .page-visit-item:hover {
+            background: #f8f9fa;
+        }
+
+        .page-name {
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .visit-count {
+            background: #667eea;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .visitor-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .visitor-info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .visitor-info-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .info-value {
+            color: #6c757d;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        .actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #856404;
+        }
+
+        .note p {
+            margin: 0.5rem 0 0 0;
+            color: #856404;
+        }
+
+        .ga-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .ga-section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .ga-section p {
+            color: #6c757d;
+            line-height: 1.6;
+        }
+
+        .ga-section a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .ga-section a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .insights-container {
+                padding: 1rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-value {
+                font-size: 2rem;
+            }
+
+            .actions {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="insights-container">
+        <div class="insights-header">
+            <h1>📊 Finance Planner - User Insights</h1>
+            <p>Local visitor tracking for this browser</p>
+        </div>
+
+        <div class="note">
+            <strong>📝 Note:</strong>
+            <p>This page shows visitor data stored locally in your browser using localStorage. Each visitor has their own unique data that cannot be aggregated across all website visitors. For comprehensive analytics across all users, use Google Analytics (see instructions below).</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Total Visits (This Browser)</div>
+                <div class="stat-value" id="totalVisits">-</div>
+            </div>
+            <div class="stat-card green">
+                <div class="stat-label">Unique Visitor ID</div>
+                <div class="stat-value" id="visitorId" style="font-size: 1rem; word-break: break-all;">-</div>
+            </div>
+            <div class="stat-card orange">
+                <div class="stat-label">First Visit</div>
+                <div class="stat-value" id="firstVisit" style="font-size: 1rem;">-</div>
+            </div>
+            <div class="stat-card blue">
+                <div class="stat-label">Last Visit</div>
+                <div class="stat-value" id="lastVisit" style="font-size: 1rem;">-</div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h2>📄 Page Visit Statistics</h2>
+            <ul class="page-visits" id="pageVisits">
+                <li style="text-align: center; color: #7f8c8d;">Loading...</li>
+            </ul>
+        </div>
+
+        <div class="visitor-info">
+            <h3 style="margin-top: 0; color: #2c3e50;">Visitor Information</h3>
+            <div class="visitor-info-item">
+                <span class="info-label">Current Page:</span>
+                <span class="info-value" id="currentPage">-</span>
+            </div>
+            <div class="visitor-info-item">
+                <span class="info-label">Browser Language:</span>
+                <span class="info-value" id="browserLanguage">-</span>
+            </div>
+            <div class="visitor-info-item">
+                <span class="info-label">Screen Resolution:</span>
+                <span class="info-value" id="screenResolution">-</span>
+            </div>
+            <div class="visitor-info-item">
+                <span class="info-label">Tracking Version:</span>
+                <span class="info-value" id="trackingVersion">-</span>
+            </div>
+        </div>
+
+        <div class="ga-section">
+            <h2>🌐 Google Analytics Setup (Recommended)</h2>
+            <p>For comprehensive user analytics across all visitors including unique users over time, demographics, real-time users, and detailed behavior tracking, integrate Google Analytics 4 (GA4):</p>
+            
+            <ol style="line-height: 2; color: #495057;">
+                <li>Create a Google Analytics 4 property at <a href="https://analytics.google.com" target="_blank">analytics.google.com</a></li>
+                <li>Get your Measurement ID (format: G-XXXXXXXXXX)</li>
+                <li>Add the GA4 tracking code to all HTML pages in the &lt;head&gt; section</li>
+                <li>View reports in Google Analytics dashboard including:
+                    <ul style="margin-top: 0.5rem;">
+                        <li><strong>Real-time users:</strong> See active users right now</li>
+                        <li><strong>User demographics:</strong> Age, gender, location, interests</li>
+                        <li><strong>Acquisition:</strong> How users find your site</li>
+                        <li><strong>Engagement:</strong> What pages users visit and how long they stay</li>
+                        <li><strong>Retention:</strong> How many users return over time</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <p style="margin-top: 1.5rem;"><strong>Example GA4 tracking code:</strong></p>
+            <pre style="background: #f8f9fa; padding: 1rem; border-radius: 4px; overflow-x: auto; font-size: 0.85rem;"><code>&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+&lt;/script&gt;</code></pre>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-primary" onclick="exportData()">📥 Export Data (JSON)</button>
+            <button class="btn btn-secondary" onclick="window.location.href='index.html'">🏠 Back to Home</button>
+        </div>
+    </div>
+
+    <script src="assets/js/visitor-tracking.js"></script>
+    <script>
+        // Display visitor statistics
+        function displayStats() {
+            if (typeof FinancePlannerTracking === 'undefined') {
+                console.error('Visitor tracking not loaded');
+                return;
+            }
+
+            const stats = FinancePlannerTracking.getStats();
+            
+            // Update stat cards
+            document.getElementById('totalVisits').textContent = stats.totalVisits;
+            document.getElementById('visitorId').textContent = stats.visitorId.substring(0, 20) + '...';
+            
+            // Format dates
+            const firstVisitDate = new Date(stats.firstVisit);
+            const lastVisitDate = new Date(stats.lastVisit);
+            document.getElementById('firstVisit').textContent = firstVisitDate.toLocaleDateString();
+            document.getElementById('lastVisit').textContent = lastVisitDate.toLocaleDateString();
+            
+            // Display page visits
+            const pageVisitsContainer = document.getElementById('pageVisits');
+            pageVisitsContainer.innerHTML = '';
+            
+            // Sort pages by visit count
+            const sortedPages = Object.entries(stats.pageVisits)
+                .sort((a, b) => b[1] - a[1]);
+            
+            if (sortedPages.length === 0) {
+                pageVisitsContainer.innerHTML = '<li style="text-align: center; color: #7f8c8d;">No page visits recorded yet</li>';
+            } else {
+                sortedPages.forEach(([page, count]) => {
+                    const li = document.createElement('li');
+                    li.className = 'page-visit-item';
+                    li.innerHTML = `
+                        <span class="page-name">${page || '/'}</span>
+                        <span class="visit-count">${count} visit${count > 1 ? 's' : ''}</span>
+                    `;
+                    pageVisitsContainer.appendChild(li);
+                });
+            }
+            
+            // Display visitor info
+            document.getElementById('currentPage').textContent = window.location.pathname;
+            document.getElementById('browserLanguage').textContent = navigator.language;
+            document.getElementById('screenResolution').textContent = `${window.screen.width}x${window.screen.height}`;
+            document.getElementById('trackingVersion').textContent = stats.trackingVersion;
+        }
+
+        // Export data as JSON
+        function exportData() {
+            const data = FinancePlannerTracking.exportData();
+            const dataStr = JSON.stringify(data, null, 2);
+            const dataBlob = new Blob([dataStr], {type: 'application/json'});
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `finance-planner-visitor-data-${new Date().toISOString().split('T')[0]}.json`;
+            link.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // Initialize display when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', displayStats);
+        } else {
+            displayStats();
+        }
+    </script>
+</body>
+</html>
