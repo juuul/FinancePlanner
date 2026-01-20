@@ -1,6 +1,6 @@
 /**
  * Visitor Tracking System
- * Tracks unique visitors using localStorage and sends data to a simple tracking endpoint
+ * Tracks unique visitors using localStorage (client-side only, no data sent to servers)
  */
 
 (function() {
@@ -14,7 +14,7 @@
      * Generate a unique visitor ID
      */
     function generateVisitorId() {
-        return 'fp_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+        return 'fp_' + Date.now() + '_' + Math.random().toString(36).substring(2, 11);
     }
 
     /**
