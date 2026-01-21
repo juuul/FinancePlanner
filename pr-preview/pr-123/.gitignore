@@ -1,8 +1,0 @@
-
-/.vs
-
-# Jekyll build artifacts
-_site/
-.jekyll-cache/
-.sass-cache/
-Gemfile.lock
