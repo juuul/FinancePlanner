@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /example-files/
-
-Sitemap: https://financeplannerapp.com/sitemap.xml
