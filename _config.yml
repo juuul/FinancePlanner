@@ -19,7 +19,8 @@ kramdown:
   hard_wrap: false
 
 # Permalink structure
-permalink: pretty
+# Use none to keep .html extensions
+permalink: none
 
 # Default values
 defaults:
@@ -38,6 +39,6 @@ defaults:
 collections: []
 
 # Plugins (safe for GitHub Pages)
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+# plugins:
+#   - jekyll-sitemap
+#   - jekyll-seo-tag
