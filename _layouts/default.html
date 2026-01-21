@@ -65,11 +65,10 @@
                 <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank">{{ site.data.nl.nav.community }}</a>
                 {% endif %}
             </nav>
-            {% if page.lang == 'en' %}
             {% assign page_name = page.path | split: "/" | last %}
+            {% if page.lang == 'en' %}
             <a href="{{ page.asset_prefix }}nl/{{ page_name }}" class="lang-toggle">NL</a>
             {% else %}
-            {% assign page_name = page.path | split: "/" | last %}
             <a href="{{ page.asset_prefix }}{{ page_name }}" class="lang-toggle">EN</a>
             {% endif %}
         </div>
