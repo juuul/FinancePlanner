@@ -1,0 +1,43 @@
+# Jekyll configuration for Finance Planner
+title: "Finance Planner"
+description: "Your Essential Companion for Financial Independence"
+url: "https://financeplannerapp.com"
+baseurl: ""
+
+# Exclude files from Jekyll processing
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - .git
+  - .github
+  - example-files
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Permalink structure
+permalink: pretty
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      lang: "en"
+  - scope:
+      path: "nl"
+    values:
+      layout: "default"
+      lang: "nl"
+
+# Collections
+collections: []
+
+# Plugins (safe for GitHub Pages)
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
