@@ -22,6 +22,20 @@ jobs:
         with:
           ref: main
 
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: false
+
+      - name: Install Jekyll
+        run: |
+          gem install jekyll bundler
+
+      - name: Build Jekyll site
+        run: |
+          jekyll build
+
       - name: Checkout gh-pages branch
         uses: actions/checkout@v4
         with:
@@ -30,10 +44,9 @@ jobs:
 
       - name: Deploy to gh-pages root
         run: |
-          # Copy website files to gh-pages root (excluding .git, .github, gh-pages directory, and markdown files)
-          rsync -av --exclude='.git' --exclude='.github' \
-            --exclude='gh-pages' --exclude='*.md' \
-            --exclude='pr-preview' ./ gh-pages/
+          # Copy built site files to gh-pages root (excluding .git and gh-pages directory)
+          rsync -av --delete --exclude='.git' --exclude='gh-pages' \
+            --exclude='pr-preview' _site/ gh-pages/
 
           # Configure git
           cd gh-pages

@@ -21,6 +21,20 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: false
+
+      - name: Install Jekyll
+        run: |
+          gem install jekyll bundler
+
+      - name: Build Jekyll site
+        run: |
+          jekyll build
+
       - name: Checkout gh-pages branch
         uses: actions/checkout@v4
         with:
@@ -39,9 +53,9 @@ jobs:
           # Create directory structure
           mkdir -p "${PREVIEW_DIR}"
 
-          # Copy website files (excluding .git, .github, and gh-pages directory)
-          rsync -av --exclude='.git' --exclude='.github' \
-            --exclude='gh-pages' --exclude='*.md' ./ "${PREVIEW_DIR}/"
+          # Copy built site files
+          rsync -av --exclude='.git' --exclude='gh-pages' \
+            _site/ "${PREVIEW_DIR}/"
 
           # Configure git
           cd gh-pages
