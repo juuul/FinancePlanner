@@ -66,9 +66,11 @@
                 {% endif %}
             </nav>
             {% if page.lang == 'en' %}
-            <a href="{{ site.url }}/nl{{ page.url }}" class="lang-toggle">NL</a>
+            {% assign page_name = page.path | split: "/" | last %}
+            <a href="{{ page.asset_prefix }}nl/{{ page_name }}" class="lang-toggle">NL</a>
             {% else %}
-            <a href="{{ site.url }}{{ page.url | replace: '/nl/', '/' }}" class="lang-toggle">EN</a>
+            {% assign page_name = page.path | split: "/" | last %}
+            <a href="{{ page.asset_prefix }}{{ page_name }}" class="lang-toggle">EN</a>
             {% endif %}
         </div>
         <div class="nav-overlay"></div>
