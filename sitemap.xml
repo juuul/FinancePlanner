@@ -13,6 +13,7 @@ layout: none
     
     <url>
       <loc>{{ site.url }}{{ page.url }}</loc>
+
       {%- assign page_name = page.path | split: "/" | last -%}
       {%- if page.lang == 'en' -%}
       <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}" />
@@ -22,7 +23,9 @@ layout: none
       <xhtml:link rel="alternate" hreflang="nl" href="{{ site.url }}{{ page.url }}" />
       <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/{{ page_name }}" />
       {%- endif -%}
+
       <lastmod>{{ page.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
+      
       <priority>{% if page.url == "/" or page.url == "/nl/" %}1.0{% else %}0.5{% endif %}</priority>
     </url>
     {%- endunless -%}
