@@ -12,10 +12,6 @@ exclude:
   - .github
   - example-files
 
-# Keep sitemap.xml as static file (don't process it)
-include:
-  - sitemap.xml
-
 # Markdown settings
 markdown: kramdown
 kramdown:
