@@ -39,5 +39,5 @@ defaults:
 collections: []
 
 # Plugins (safe for GitHub Pages)
-plugins:
-  - jekyll-sitemap
+# plugins:
+#  - jekyll-sitemap
