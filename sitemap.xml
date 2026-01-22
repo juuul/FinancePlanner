@@ -25,9 +25,10 @@ layout: none
       {%- endif -%}
 
       <lastmod>{{ page.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
-      
+
       <priority>{% if page.url == "/" or page.url == "/nl/" %}1.0{% else %}0.5{% endif %}</priority>
     </url>
+    
     {%- endunless -%}
   {%- endfor -%}
 </urlset>
