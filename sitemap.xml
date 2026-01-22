@@ -3,36 +3,27 @@ layout: none
 search: exclude
 ---
 
+---
+layout: none
+---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-  {% unless post.search == "exclude" %}
-  <url>
-    <loc>{{site.url}}{{post.url}}</loc>
-  </url>
-  {% endunless %}
-  {% endfor %}
-
-
-  {% for page in site.html_pages %}
-  {% unless page.search == "exclude" %}
-  <url>
-    <loc>{{site.url}}{{ page.url}}</loc>
-
-    {% if page.lang %}
-    <xhtml:link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url | xml_escape }}" />
-    {% endif %}
-
-    <lastmod>{{ page.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
-
-    <priority>
-    {% if page.url == "/" or page.url == "/index.html" %}
-        1.0
-    {% else %}
-        0.5
-    {% endif %}
-    </priority>
-  </url>
-  {% endunless %}
-  {% endfor %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {%- for page in site.html_pages -%}
+    {%- unless page.search == "exclude" or page.url contains "404" -%}
+    <url>
+      <loc>{{ site.url }}{{ page.url }}</loc>
+      {%- assign page_name = page.path | split: "/" | last -%}
+      {%- if page.lang == 'en' -%}
+      <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}" />
+      <xhtml:link rel="alternate" hreflang="nl" href="{{ site.url }}/nl/{{ page_name }}" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url }}" />
+      {%- elsif page.lang == 'nl' -%}
+      <xhtml:link rel="alternate" hreflang="nl" href="{{ site.url }}{{ page.url }}" />
+      <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/{{ page_name }}" />
+      {%- endif -%}
+      <lastmod>{{ page.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
+      <priority>{% if page.url == "/" or page.url == "/nl/" %}1.0{% else %}0.5{% endif %}</priority>
+    </url>
+    {%- endunless -%}
+  {%- endfor -%}
 </urlset>
