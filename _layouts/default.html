@@ -33,6 +33,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8095952209861312" crossorigin="anonymous"></script>
 </head>
 <body>
+    {% assign lang_data = site.data[page.lang] %}
     <header class="header">
         <div class="header-content">
             <button class="hamburger" aria-label="Toggle menu">
@@ -47,23 +48,13 @@
                 <span class="logo-text">Finance Planner</span>
             </a>
             <nav class="nav">
-                {% if page.lang == 'en' %}
-                <a href="index.html">{{ site.data.en.nav.home }}</a>
-                <a href="more-info.html">{{ site.data.en.nav.moreInfo }}</a>
-                <a href="scenarios.html">{{ site.data.en.nav.scenarios }}</a>
-                <a href="how-to-plan.html">{{ site.data.en.nav.howToPlan }}</a>
-                <a href="tutorials.html">{{ site.data.en.nav.tutorials }}</a>
-                <a href="about.html">{{ site.data.en.nav.about }}</a>
-                <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank">{{ site.data.en.nav.community }}</a>
-                {% else %}
-                <a href="index.html">{{ site.data.nl.nav.home }}</a>
-                <a href="more-info.html">{{ site.data.nl.nav.moreInfo }}</a>
-                <a href="scenarios.html">{{ site.data.nl.nav.scenarios }}</a>
-                <a href="how-to-plan.html">{{ site.data.nl.nav.howToPlan }}</a>
-                <a href="tutorials.html">{{ site.data.nl.nav.tutorials }}</a>
-                <a href="about.html">{{ site.data.nl.nav.about }}</a>
-                <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank">{{ site.data.nl.nav.community }}</a>
-                {% endif %}
+                <a href="index.html">{{ lang_data.nav.home }}</a>
+                <a href="more-info.html">{{ lang_data.nav.moreInfo }}</a>
+                <a href="scenarios.html">{{ lang_data.nav.scenarios }}</a>
+                <a href="how-to-plan.html">{{ lang_data.nav.howToPlan }}</a>
+                <a href="tutorials.html">{{ lang_data.nav.tutorials }}</a>
+                <a href="about.html">{{ lang_data.nav.about }}</a>
+                <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank">{{ lang_data.nav.community }}</a>
             </nav>
             {% assign page_name = page.path | split: "/" | last %}
             {% if page.lang == 'en' %}
@@ -82,40 +73,22 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-links">
-                {% if page.lang == 'en' %}
-                <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener">{{ site.data.en.footer.iosApp }}</a>
-                <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener">{{ site.data.en.footer.androidApp }}</a>
-                <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank" rel="noopener">{{ site.data.en.footer.community }}</a>
-                <a href="https://www.youtube.com/@Juuul_FP" target="_blank" rel="noopener">{{ site.data.en.footer.tutorials }}</a>
-                <a href="{{ page.asset_prefix }}privacy.html">{{ site.data.en.footer.privacy }}</a>
-                <a href="{{ page.asset_prefix }}contact.html">{{ site.data.en.footer.contact }}</a>
-                <a href="{{ page.asset_prefix }}about.html">{{ site.data.en.footer.about }}</a>
-                {% else %}
-                <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener">{{ site.data.nl.footer.iosApp }}</a>
-                <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener">{{ site.data.nl.footer.androidApp }}</a>
-                <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank" rel="noopener">{{ site.data.nl.footer.community }}</a>
-                <a href="https://www.youtube.com/@Juuul_FP" target="_blank" rel="noopener">{{ site.data.nl.footer.tutorials }}</a>
-                <a href="{{ page.asset_prefix }}privacy.html">{{ site.data.nl.footer.privacy }}</a>
-                <a href="{{ page.asset_prefix }}contact.html">{{ site.data.nl.footer.contact }}</a>
-                <a href="{{ page.asset_prefix }}about.html">{{ site.data.nl.footer.about }}</a>
-                {% endif %}
+                <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener">{{ lang_data.footer.iosApp }}</a>
+                <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener">{{ lang_data.footer.androidApp }}</a>
+                <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank" rel="noopener">{{ lang_data.footer.community }}</a>
+                <a href="https://www.youtube.com/@Juuul_FP" target="_blank" rel="noopener">{{ lang_data.footer.tutorials }}</a>
+                <a href="privacy.html">{{ lang_data.footer.privacy }}</a>
+                <a href="contact.html">{{ lang_data.footer.contact }}</a>
+                <a href="about.html">{{ lang_data.footer.about }}</a>
             </div>
             <div class="footer-authors">
-                {% if page.lang == 'en' %}
-                <h3>{{ site.data.en.footer.authorsTitle }}</h3>
-                {% else %}
-                <h3>{{ site.data.nl.footer.authorsTitle }}</h3>
-                {% endif %}
+                <h3>{{ lang_data.footer.authorsTitle }}</h3>
                 <div class="footer-authors-links">
                     <a href="https://www.linkedin.com/in/juliaan-meijboom-313b7924" target="_blank" rel="noopener">Juliaan Meijboom</a>
                     <a href="https://www.linkedin.com/in/colin-wilmans-aa95171" target="_blank" rel="noopener">Colin Wilmans</a>
                 </div>
             </div>
-            {% if page.lang == 'en' %}
-            <p>{{ site.data.en.footer.copyright }}</p>
-            {% else %}
-            <p>{{ site.data.nl.footer.copyright }}</p>
-            {% endif %}
+            <p>{{ lang_data.footer.copyright }}</p>
         </div>
     </footer>
 
