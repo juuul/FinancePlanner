@@ -307,6 +307,10 @@ a:hover {
     align-items: center;
 }
 
+.footer-app-store-buttons img {
+    height: 3.5rem;
+}
+
 .footer-links {
     display: flex;
     flex-direction: column;
