@@ -72,14 +72,30 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-links">
-                <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener">{{ lang_data.footer.iosApp }}</a>
-                <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener">{{ lang_data.footer.androidApp }}</a>
-                <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank" rel="noopener">{{ lang_data.footer.community }}</a>
-                <a href="https://www.youtube.com/@Juuul_FP" target="_blank" rel="noopener">{{ lang_data.footer.tutorials }}</a>
-                <a href="privacy.html">{{ lang_data.footer.privacy }}</a>
-                <a href="contact.html">{{ lang_data.footer.contact }}</a>
-                <a href="about.html">{{ lang_data.footer.about }}</a>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <div class="footer-app-store-buttons">
+                        <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener" class="btn-app-store">
+                            <img src="{{ page.asset_prefix }}assets/images/app_store_badge.svg" alt="Download on the App Store" width="216" height="72" style="height: 3.5rem;">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener" class="btn-app-store">
+                            <img src="{{ page.asset_prefix }}assets/images/google_play_store_badge.svg" alt="Get it on Google Play" width="243" height="72" style="height: 3.5rem;">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-links">
+                        <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank" rel="noopener">{{ lang_data.footer.community }}</a>
+                        <a href="https://www.youtube.com/@Juuul_FP" target="_blank" rel="noopener">{{ lang_data.footer.tutorials }}</a>
+                        <a href="privacy.html">{{ lang_data.footer.privacy }}</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-links">
+                        <a href="contact.html">{{ lang_data.footer.contact }}</a>
+                        <a href="about.html">{{ lang_data.footer.about }}</a>
+                    </div>
+                </div>
             </div>
             <div class="footer-authors">
                 <h3>{{ lang_data.footer.authorsTitle }}</h3>
