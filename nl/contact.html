@@ -91,10 +91,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Validation functions
     function validateName(name) {
-        if (!name || name.trim().length < 2) {
+        const trimmedName = name ? name.trim() : '';
+        if (trimmedName.length < 2) {
             return 'Naam moet minimaal 2 tekens lang zijn';
         }
-        if (name.length > 100) {
+        if (trimmedName.length > 100) {
             return 'Naam moet minder dan 100 tekens zijn';
         }
         return null;
@@ -104,18 +105,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!email) {
             return 'E-mail is verplicht';
         }
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(email.trim())) {
             return 'Voer een geldig e-mailadres in';
         }
         return null;
     }
     
     function validateMessage(message) {
-        if (!message || message.trim().length < 10) {
+        const trimmedMessage = message ? message.trim() : '';
+        if (trimmedMessage.length < 10) {
             return 'Bericht moet minimaal 10 tekens lang zijn';
         }
-        if (message.length > 2000) {
+        if (trimmedMessage.length > 2000) {
             return 'Bericht moet minder dan 2000 tekens zijn';
         }
         return null;

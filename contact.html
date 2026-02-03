@@ -91,10 +91,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Validation functions
     function validateName(name) {
-        if (!name || name.trim().length < 2) {
+        const trimmedName = name ? name.trim() : '';
+        if (trimmedName.length < 2) {
             return 'Name must be at least 2 characters long';
         }
-        if (name.length > 100) {
+        if (trimmedName.length > 100) {
             return 'Name must be less than 100 characters';
         }
         return null;
@@ -104,18 +105,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!email) {
             return 'Email is required';
         }
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(email.trim())) {
             return 'Please enter a valid email address';
         }
         return null;
     }
     
     function validateMessage(message) {
-        if (!message || message.trim().length < 10) {
+        const trimmedMessage = message ? message.trim() : '';
+        if (trimmedMessage.length < 10) {
             return 'Message must be at least 10 characters long';
         }
-        if (message.length > 2000) {
+        if (trimmedMessage.length > 2000) {
             return 'Message must be less than 2000 characters';
         }
         return null;
