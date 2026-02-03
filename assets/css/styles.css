@@ -78,6 +78,12 @@ body {
     color: #B2FFA9;
 }
 
+.nav a.active {
+    color: #B2FFA9;
+    border-bottom: 3px solid #B2FFA9;
+    padding-bottom: 0.25rem;
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -700,6 +706,11 @@ img {
         padding: 1rem 0;
         border-bottom: 1px solid rgba(255,255,255,0.1);
         width: 100%;
+    }
+
+    .nav a.active {
+        font-weight: 700;
+        border-bottom: 1px solid rgba(178, 255, 169, 0.3);
     }
 
     /* Overlay for hamburger menu */
