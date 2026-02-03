@@ -659,6 +659,8 @@ img {
     .lang-toggle {
         order: 1;
         margin-left: auto;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
     }
 
     .btn-get-app {
