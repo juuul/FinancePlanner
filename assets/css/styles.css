@@ -431,8 +431,20 @@ a:hover {
     transition: all 0.3s;
     font-size: 0.95rem;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
     box-shadow: 0 2px 8px rgba(27, 154, 170, 0.3);
+}
+
+.btn-get-app .logo-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.btn-get-app .logo-text {
+    color: white;
 }
 
 .btn-get-app:hover {
@@ -652,8 +664,14 @@ img {
     .btn-get-app {
         order: 2;
         margin-left: 0.5rem;
-        font-size: 0.85rem;
-        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+        gap: 0.5rem;
+    }
+
+    .btn-get-app .logo-icon {
+        width: 24px;
+        height: 24px;
     }
 
     .nav {
