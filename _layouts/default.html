@@ -44,12 +44,13 @@
                 </div>
             </button>
             <nav class="nav">
-                <a href="index.html">{{ lang_data.nav.home }}</a>
-                <a href="more-info.html">{{ lang_data.nav.moreInfo }}</a>
-                <a href="scenarios.html">{{ lang_data.nav.scenarios }}</a>
-                <a href="how-to-plan.html">{{ lang_data.nav.howToPlan }}</a>
-                <a href="tutorials.html">{{ lang_data.nav.tutorials }}</a>
-                <a href="about.html">{{ lang_data.nav.about }}</a>
+                {% assign current_page = page.path | split: "/" | last %}
+                <a href="index.html" {% if current_page == 'index.html' %}class="active"{% endif %}>{{ lang_data.nav.home }}</a>
+                <a href="more-info.html" {% if current_page == 'more-info.html' %}class="active"{% endif %}>{{ lang_data.nav.moreInfo }}</a>
+                <a href="scenarios.html" {% if current_page == 'scenarios.html' %}class="active"{% endif %}>{{ lang_data.nav.scenarios }}</a>
+                <a href="how-to-plan.html" {% if current_page == 'how-to-plan.html' %}class="active"{% endif %}>{{ lang_data.nav.howToPlan }}</a>
+                <a href="tutorials.html" {% if current_page == 'tutorials.html' %}class="active"{% endif %}>{{ lang_data.nav.tutorials }}</a>
+                <a href="about.html" {% if current_page == 'about.html' %}class="active"{% endif %}>{{ lang_data.nav.about }}</a>
                 <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank">{{ lang_data.nav.community }}</a>
             </nav>
             <a href="#" class="btn-get-app" id="getAppBtn" aria-label="Get Finance Planner App">
