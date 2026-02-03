@@ -3,20 +3,25 @@
 }
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
     font-display: swap;
-    background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
-    color: #222;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    color: #1a1f36;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.7;
+    letter-spacing: -0.011em;
 }
 
 .header {
-    background: #1a4d2e;
+    background: #163247;
     color: white;
     padding: 1rem 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .header-content {
@@ -52,7 +57,8 @@ body {
 }
 
 .logo:hover {
-    color: #b2dfdb;
+    color: #1B9AAA;
+    opacity: 0.9;
 }
 
 .nav {
@@ -69,7 +75,7 @@ body {
 }
 
 .nav a:hover {
-    color: #b2dfdb;
+    color: #B2FFA9;
 }
 
 .container {
@@ -79,27 +85,31 @@ body {
 }
 
 .hero {
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    padding: 3rem 2rem;
+    background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(22, 50, 71, 0.08), 0 2px 8px rgba(22, 50, 71, 0.04);
+    padding: 4rem 3rem;
     text-align: center;
     margin-bottom: 2rem;
+    border: 1px solid rgba(22, 50, 71, 0.06);
 }
 
 .hero h1 {
-    color: #1a4d2e;
-    font-size: 3rem;
+    color: #163247;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     margin-top: 0rem;
     font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
 }
 
 .hero .subtitle {
-    color: #2b7a78;
-    font-size: 1.3rem;
+    color: #1B9AAA;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: -0.015em;
 }
 
 .hero img {
@@ -128,25 +138,29 @@ body {
 }
 
 .btn-primary {
-    background: #2b7a78;
+    background: linear-gradient(135deg, #1B9AAA 0%, #16889a 100%);
     color: white;
+    box-shadow: 0 4px 14px rgba(27, 154, 170, 0.3);
 }
 
 .btn-primary:hover {
-    background: #1a4d2e;
+    background: linear-gradient(135deg, #16889a 0%, #1B9AAA 100%);
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(27, 154, 170, 0.4);
 }
 
 .btn-secondary {
     background: white;
-    color: #2b7a78;
-    border: 2px solid #2b7a78;
+    color: #1B9AAA;
+    border: 2px solid #1B9AAA;
+    box-shadow: 0 2px 8px rgba(22, 50, 71, 0.08);
 }
 
 .btn-secondary:hover {
-    background: #2b7a78;
+    background: #1B9AAA;
     color: white;
     transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(27, 154, 170, 0.3);
 }
 
 .btn-app-store {
@@ -164,15 +178,18 @@ body {
 }
 
 .app-store-section {
-    background: linear-gradient(135deg, #1a4d2e 0%, #2b7a78 100%);
+    background: linear-gradient(135deg, #163247 0%, #1B9AAA 100%);
     color: white;
     text-align: center;
-    padding: 2rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 10px 40px rgba(22, 50, 71, 0.15);
 }
 
 .app-store-section h2 {
     color: white;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid rgba(178, 255, 169, 0.5);
+    padding-bottom: 1rem;
+    font-weight: 700;
 }
 
 .app-store-buttons {
@@ -185,25 +202,30 @@ body {
 
 .section {
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.05);
-    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(22, 50, 71, 0.06), 0 1px 4px rgba(22, 50, 71, 0.04);
+    padding: 2.5rem;
     margin-bottom: 2rem;
+    border: 1px solid rgba(22, 50, 71, 0.05);
 }
 
 .section h2 {
-    color: #1a4d2e;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 3px solid #2b7a78;
-    padding-bottom: 0.5rem;
+    color: #163247;
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #1B9AAA;
+    padding-bottom: 0.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 .section h3 {
-    color: #2b7a78;
-    font-size: 1.3rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.8rem;
+    color: #1B9AAA;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
 }
 
 .features-grid {
@@ -214,18 +236,27 @@ body {
 }
 
 .feature-card {
-    background: #f8fafc;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #2b7a78;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid #1B9AAA;
+    box-shadow: 0 2px 12px rgba(22, 50, 71, 0.04);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(27, 154, 170, 0.12);
+    border-left-color: #B2FFA9;
 }
 
 .feature-card strong,
 .feature-card .card-title {
-    color: #1a4d2e;
+    color: #163247;
     display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+    font-size: 1.15rem;
 }
 
 .list-label {
@@ -233,14 +264,17 @@ body {
 }
 
 .tutorials-section {
-    background: linear-gradient(135deg, #2b7a78 0%, #1a4d2e 100%);
+    background: linear-gradient(135deg, #163247 0%, #273A3C 100%);
     color: white;
     text-align: center;
+    box-shadow: 0 10px 40px rgba(22, 50, 71, 0.15);
 }
 
 .tutorials-section h2 {
     color: white;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid rgba(178, 255, 169, 0.5);
+    padding-bottom: 1rem;
+    font-weight: 700;
 }
 
 .tutorials-content {
@@ -265,20 +299,23 @@ li {
 }
 
 a {
-    color: #2b7a78;
+    color: #1B9AAA;
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #163247;
+    text-decoration: none;
 }
 
 .footer {
-    background: #1a4d2e;
+    background: #163247;
     color: white;
-    padding: 2rem 0;
+    padding: 3rem 0 2rem;
     text-align: center;
+    box-shadow: 0 -2px 20px rgba(22, 50, 71, 0.1);
 }
 
 .footer-content {
@@ -324,7 +361,7 @@ a:hover {
 }
 
 .footer-links a:hover {
-    color: #b2dfdb;
+    color: #B2FFA9;
 }
 
 .footer-authors {
@@ -358,7 +395,7 @@ a:hover {
 }
 
 .footer-authors-links a:hover {
-    color: #b2dfdb;
+    color: #B2FFA9;
 }
 
 .footer-authors-links a::before {
@@ -380,7 +417,29 @@ a:hover {
 
 .lang-toggle:hover {
     background: white;
-    color: #1a4d2e;
+    color: #163247;
+}
+
+/* Get App button */
+.btn-get-app {
+    background: linear-gradient(135deg, #1B9AAA 0%, #16889a 100%);
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    font-size: 0.95rem;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(27, 154, 170, 0.3);
+}
+
+.btn-get-app:hover {
+    background: linear-gradient(135deg, #16889a 0%, #1B9AAA 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(27, 154, 170, 0.4);
+    color: white;
 }
 
 /* Hamburger menu button */
@@ -432,16 +491,24 @@ a:hover {
 }
 
 .example-file-card {
-    background: #f8fafc;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #2b7a78;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid #1B9AAA;
+    box-shadow: 0 2px 12px rgba(22, 50, 71, 0.04);
+    transition: all 0.3s ease;
+}
+
+.example-file-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(27, 154, 170, 0.12);
 }
 
 .example-file-card h3 {
-    color: #1a4d2e;
+    color: #163247;
     margin-top: 0;
     margin-bottom: 0.8rem;
+    font-weight: 700;
 }
 
 .example-file-card p {
@@ -534,7 +601,8 @@ img {
 }
 
 .mission-section {
-    background: linear-gradient(135deg, #f8fafc 0%, #e0f2f1 100%);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9f5f7 100%);
+    border: 1px solid rgba(27, 154, 170, 0.1);
 }
 
 .mission-content {
@@ -581,6 +649,13 @@ img {
         margin-left: auto;
     }
 
+    .btn-get-app {
+        order: 2;
+        margin-left: 0.5rem;
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+
     .nav {
         position: fixed;
         top: 0;
@@ -588,11 +663,11 @@ img {
         width: 80%;
         max-width: 300px;
         height: 100vh;
-        background: #1a4d2e;
+        background: #163247;
         flex-direction: column;
         gap: 0;
         padding: 5rem 2rem 2rem;
-        box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+        box-shadow: 2px 0 20px rgba(22, 50, 71, 0.3);
         transition: left 0.3s ease-in-out;
         z-index: 1000;
         overflow-y: auto;
