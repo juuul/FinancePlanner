@@ -424,7 +424,7 @@ a:hover {
 .btn-get-app {
     background: linear-gradient(135deg, #1B9AAA 0%, #16889a 100%);
     color: white;
-    padding: 0.6rem 1.5rem;
+    padding: 0.6rem 0.8rem;
     border-radius: 8px;
     cursor: pointer;
     font-weight: 600;
