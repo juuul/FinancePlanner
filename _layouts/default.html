@@ -43,10 +43,6 @@
                     <span></span>
                 </div>
             </button>
-            <a href="{{ page.asset_prefix }}index.html" class="logo">
-                <img src="{{ page.asset_prefix }}assets/images/app_icon.svg" alt="Finance Planner Logo" class="logo-icon" />
-                <span class="logo-text">Finance Planner</span>
-            </a>
             <nav class="nav">
                 <a href="index.html">{{ lang_data.nav.home }}</a>
                 <a href="more-info.html">{{ lang_data.nav.moreInfo }}</a>
@@ -56,7 +52,10 @@
                 <a href="about.html">{{ lang_data.nav.about }}</a>
                 <a href="https://github.com/juuul/FinancePlanner/discussions" target="_blank">{{ lang_data.nav.community }}</a>
             </nav>
-            <a href="#" class="btn-get-app" id="getAppBtn">Get App</a>
+            <a href="#" class="btn-get-app" id="getAppBtn" aria-label="Get Finance Planner App">
+                <img src="{{ page.asset_prefix }}assets/images/app_icon.svg" alt="Finance Planner Logo" class="logo-icon" />
+                <span class="logo-text">Finance Planner</span>
+            </a>
             {% assign page_name = page.path | split: "/" | last %}
             {% if page.lang == 'en' %}
             <a href="{{ page.asset_prefix }}nl/{{ page_name }}" class="lang-toggle">NL</a>
