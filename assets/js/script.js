@@ -50,9 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         // Default to app store section on page
         else {
-            // Get the asset prefix from the current page's structure
-            const assetPrefix = window.location.pathname.includes('/nl/') ? '../' : '';
-            getAppBtn.href = assetPrefix + 'index.html#get-the-app';
+            // Use relative navigation to the homepage anchor
+            const currentPath = window.location.pathname;
+            const isInSubdir = currentPath.includes('/nl/') || currentPath.split('/').filter(p => p).length > 1;
+            getAppBtn.href = isInSubdir ? '../index.html#get-the-app' : 'index.html#get-the-app';
         }
     }
 });
