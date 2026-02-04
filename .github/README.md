@@ -1,6 +1,6 @@
 # .github Directory
 
-This directory contains GitHub-specific configurations and workflows for the Finance Planner repository.
+This directory contains GitHub-specific configurations and workflows for the Finance Planner repository
 
 ## 📁 Contents
 
