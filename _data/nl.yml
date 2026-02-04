@@ -2,7 +2,6 @@ nav:
   home: "Home"
   moreInfo: "Meer info"
   tutorials: "Tutorials"
-  community: "Forum"
   scenarios: "Voorbeelden"
   howToPlan: "Hoe te plannen"
   about: "Over"
@@ -141,7 +140,6 @@ dataPrivacy:
 footer:
   iosApp: "📱 iOS app"
   androidApp: "📱 Android app"
-  community: "💬 Gemeenschapsdiscussies"
   tutorials: "🎥 Video tutorials"
   contact: "✉️ Contact"
   about: "ℹ️ Over Finance Planner"

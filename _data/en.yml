@@ -2,7 +2,6 @@ nav:
   home: "Home"
   moreInfo: "More Info"
   tutorials: "Tutorials"
-  community: "Community"
   scenarios: "Use Cases"
   howToPlan: "How to Plan"
   about: "About"
@@ -140,7 +139,6 @@ dataPrivacy:
 footer:
   iosApp: "📱 iOS App"
   androidApp: "📱 Android App"
-  community: "💬 Community Discussions"
   tutorials: "🎥 Video Tutorials"
   privacy: "🔒 Privacy Statement"
   contact: "✉️ Contact"
