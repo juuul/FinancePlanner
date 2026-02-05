@@ -8,6 +8,8 @@ baseurl: ""
 exclude:
   - README.md
   - CONTRIBUTING.md
+  - DEPLOYMENT.md
+  - .deploy-timestamp
   - .git
   - .github
   - example-files
