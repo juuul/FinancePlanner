@@ -631,7 +631,7 @@ img {
     margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .hero h1 {
         font-size: 2rem;
     }
@@ -663,14 +663,14 @@ img {
     }
 
     .lang-toggle {
-        order: 1;
+        order: 2;
         margin-left: auto;
         padding: 0.4rem 0.8rem;
         font-size: 0.75rem;
     }
 
     .btn-get-app {
-        order: 2;
+        order: 1;
         margin-left: 0.5rem;
         font-size: 0.75rem;
         padding: 0.4rem 0.8rem;
@@ -838,7 +838,7 @@ img {
     margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900) {
     .contact-form {
         padding: 1.5rem;
     }
