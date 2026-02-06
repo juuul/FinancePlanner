@@ -5,4 +5,5 @@
 _site/
 .jekyll-cache/
 .sass-cache/
+Gemfile
 Gemfile.lock
