@@ -847,3 +847,142 @@ img {
         padding: 1.5rem;
     }
 }
+
+/* Blog Styles */
+.blog-posts {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-post-preview {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-post-preview:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.blog-post-preview h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #163247;
+}
+
+.blog-post-preview h2 a {
+    color: #163247;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.blog-post-preview h2 a:hover {
+    color: #28a745;
+}
+
+.post-meta {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post-preview p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.blog-post-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.blog-post-header h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #163247;
+}
+
+.blog-post-content {
+    line-height: 1.8;
+}
+
+.blog-post-content h2 {
+    color: #163247;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post-content h3 {
+    color: #163247;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.blog-post-content code {
+    background: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+    font-size: 0.9em;
+    color: #d63384;
+}
+
+.blog-post-content pre {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border: 1px solid #e9ecef;
+}
+
+.blog-post-content pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.blog-post-content ul, .blog-post-content ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.blog-post-content li {
+    margin-bottom: 0.5rem;
+}
+
+.blog-post-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e9ecef;
+}
+
+@media (max-width: 768px) {
+    .blog-post {
+        padding: 2rem 1.5rem;
+    }
+    
+    .blog-post-preview {
+        padding: 1.5rem;
+    }
+    
+    .blog-post-content pre {
+        padding: 1rem;
+    }
+}

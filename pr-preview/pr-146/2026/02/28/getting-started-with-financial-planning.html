@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6RDLWGCG1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-S6RDLWGCG1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="language" content="en">
+    <title>Getting Started with Financial Planning</title>
+    <meta name="description" content="Learn the basics of financial planning and how to use Finance Planner effectively.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://financeplannerapp.com/2026/02/28/getting-started-with-financial-planning.html">
+    
+    <link rel="alternate" hreflang="nl" href="https://financeplannerapp.com/nl/2026/02/28/getting-started-with-financial-planning.html">
+    <link rel="alternate" hreflang="en" href="https://financeplannerapp.com/2026/02/28/getting-started-with-financial-planning.html">
+    
+    
+    <link rel="icon" href="../assets/images/app_icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../assets/images/app_icon.png">
+    <link rel="preload" href="../assets/css/styles.css" as="style">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8095952209861312" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-content">
+            <button class="hamburger" aria-label="Toggle menu">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <nav class="nav">
+                
+                <a href="index.html" >Home</a>
+                <a href="more-info.html" >More Info</a>
+                <a href="scenarios.html" >Use Cases</a>
+                <a href="how-to-plan.html" >How to Plan</a>
+                <a href="tutorials.html" >Tutorials</a>
+                <a href="blog.html" >Blog</a>
+                <a href="about.html" >About</a>
+                <a href="contact.html" >Contact</a>
+            </nav>
+            <a href="#" class="btn-get-app" id="getAppBtn" aria-label="Get Finance Planner App">
+                <img src="../assets/images/app_icon.svg" alt="Finance Planner Logo" class="logo-icon" />
+                <span class="logo-text">Get App</span>
+            </a>
+            
+            
+            <a href="../nl/2026-02-28-getting-started-with-financial-planning.md" class="lang-toggle">NL</a>
+            
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
+
+    <div class="container">
+        
+
+<article class="section blog-post">
+    <header class="blog-post-header">
+        <h1>Getting Started with Financial Planning</h1>
+        <div class="post-meta">
+            <span>Posted on February 28, 2026</span>
+            
+            <span> by Finance Planner Team</span>
+            
+        </div>
+    </header>
+
+    <div class="blog-post-content">
+        <p>Welcome to our first blog post! This is a technical placeholder post designed to demonstrate the blog functionality, including code formatting and markdown rendering.</p>
+
+<h2 id="introduction-to-financial-planning">Introduction to Financial Planning</h2>
+
+<p>Financial planning is essential for achieving long-term financial independence. With Finance Planner, you can model various scenarios and make informed decisions about your financial future.</p>
+
+<h2 id="key-concepts">Key Concepts</h2>
+
+<p>When planning your finances, consider these important variables:</p>
+
+<ul>
+  <li><strong>Savings Rate</strong>: The percentage of your income that you save</li>
+  <li><strong>Investment Return</strong>: Expected annual return on your investments (e.g., <code class="language-plaintext highlighter-rouge">7%</code> for stocks)</li>
+  <li><strong>Withdrawal Rate</strong>: How much you plan to withdraw in retirement</li>
+  <li><strong>Time Horizon</strong>: Years until your target retirement date</li>
+</ul>
+
+<h2 id="code-examples">Code Examples</h2>
+
+<h3 id="simple-compound-interest-calculation">Simple Compound Interest Calculation</h3>
+
+<p>Here’s a simple example of how compound interest works in C#:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">CompoundInterest</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="kt">decimal</span> <span class="nf">Calculate</span><span class="p">(</span><span class="kt">decimal</span> <span class="n">principal</span><span class="p">,</span> <span class="kt">decimal</span> <span class="n">rate</span><span class="p">,</span> <span class="kt">int</span> <span class="n">years</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">// Formula: A = P(1 + r)^t</span>
+        <span class="kt">decimal</span> <span class="n">amount</span> <span class="p">=</span> <span class="n">principal</span> <span class="p">*</span> <span class="p">(</span><span class="kt">decimal</span><span class="p">)</span><span class="n">Math</span><span class="p">.</span><span class="nf">Pow</span><span class="p">((</span><span class="kt">double</span><span class="p">)(</span><span class="m">1</span> <span class="p">+</span> <span class="n">rate</span><span class="p">),</span> <span class="n">years</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">amount</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="kt">decimal</span> <span class="n">initial</span> <span class="p">=</span> <span class="m">10000m</span><span class="p">;</span>
+        <span class="kt">decimal</span> <span class="n">annualRate</span> <span class="p">=</span> <span class="m">0.07m</span><span class="p">;</span> <span class="c1">// 7% annual return</span>
+        <span class="kt">int</span> <span class="n">years</span> <span class="p">=</span> <span class="m">30</span><span class="p">;</span>
+
+        <span class="kt">decimal</span> <span class="n">finalAmount</span> <span class="p">=</span> <span class="nf">Calculate</span><span class="p">(</span><span class="n">initial</span><span class="p">,</span> <span class="n">annualRate</span><span class="p">,</span> <span class="n">years</span><span class="p">);</span>
+        <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">$"Initial: $</span><span class="p">{</span><span class="n">initial</span><span class="p">:</span><span class="n">N2</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
+        <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">$"After </span><span class="p">{</span><span class="n">years</span><span class="p">}</span><span class="s"> years: $</span><span class="p">{</span><span class="n">finalAmount</span><span class="p">:</span><span class="n">N2</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
+        <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">$"Growth: $</span><span class="p">{(</span><span class="n">finalAmount</span> <span class="p">-</span> <span class="n">initial</span><span class="p">):</span><span class="n">N2</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="configuration-example">Configuration Example</h3>
+
+<p>You might store your financial plan configuration in JSON format:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"planName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"My FIRE Plan"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"currentAge"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"retirementAge"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"currentSavings"</span><span class="p">:</span><span class="w"> </span><span class="mi">50000</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"monthlyIncome"</span><span class="p">:</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"monthlySavings"</span><span class="p">:</span><span class="w"> </span><span class="mi">2000</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"expectedReturn"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.07</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"withdrawalRate"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.04</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="inline-code">Inline Code</h2>
+
+<p>When discussing financial concepts, you might reference variables like <code class="language-plaintext highlighter-rouge">savingsRate</code>, <code class="language-plaintext highlighter-rouge">netWorth</code>, or <code class="language-plaintext highlighter-rouge">monthlyExpenses</code> directly in your text.</p>
+
+<h2 id="tips-for-using-finance-planner">Tips for Using Finance Planner</h2>
+
+<ol>
+  <li><strong>Start with realistic assumptions</strong> - Use historical market returns as guidance</li>
+  <li><strong>Model multiple scenarios</strong> - Test optimistic, realistic, and pessimistic cases</li>
+  <li><strong>Review regularly</strong> - Update your plan at least annually</li>
+  <li><strong>Account for inflation</strong> - Use real (inflation-adjusted) returns</li>
+</ol>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>This placeholder post demonstrates that our blog system supports:</p>
+<ul>
+  <li>Markdown headers and lists</li>
+  <li><strong>Inline code</strong> formatting</li>
+  <li>Code blocks with syntax highlighting</li>
+  <li>Structured content with sections</li>
+</ul>
+
+<p>Stay tuned for more posts about financial planning strategies, FIRE case studies, and tips for achieving financial independence!</p>
+
+    </div>
+
+    <footer class="blog-post-footer">
+        
+        <a href="/blog.html" class="btn btn-secondary">← Back to Blog</a>
+        
+    </footer>
+</article>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <div class="footer-app-store-buttons">
+                        <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener" class="btn-app-store">
+                            <img src="../assets/images/app_store_badge.svg" alt="Download on the App Store" width="216" height="72">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener" class="btn-app-store">
+                            <img src="../assets/images/google_play_store_badge.svg" alt="Get it on Google Play" width="243" height="72">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-links">
+                        <a href="https://www.youtube.com/@Juuul_FP" target="_blank" rel="noopener">🎥 Video Tutorials</a>
+                        <a href="privacy.html">🔒 Privacy Statement</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-links">
+                        <a href="contact.html">✉️ Contact</a>
+                        <a href="about.html">ℹ️ About Finance Planner</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-authors">
+                <h3>Authors</h3>
+                <div class="footer-authors-links">
+                    <a href="https://www.linkedin.com/in/juliaan-meijboom-313b7924" target="_blank" rel="noopener">Juliaan Meijboom</a>
+                    <a href="https://www.linkedin.com/in/colin-wilmans-aa95171" target="_blank" rel="noopener">Colin Wilmans</a>
+                </div>
+            </div>
+            <p>&copy; 2026 Finance Planner. Empowering your journey to Financial Independence.</p>
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
