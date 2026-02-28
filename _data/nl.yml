@@ -4,6 +4,7 @@ nav:
   tutorials: "Tutorials"
   scenarios: "Voorbeelden"
   howToPlan: "Hoe te plannen"
+  blog: "Blog"
   about: "Over"
   contact: "Contact"
 
@@ -370,3 +371,13 @@ howToPlan:
     tutorials: "🎥 Bekijk video tutorials"
     scenarios: "📂 Bekijk voorbeeldscenario's"
     community: "💬 Deelnemen aan gemeenschapsdiscussies"
+
+blog:
+  title: "Blog"
+  subtitle: "Financiële tips, updates en voorbeelden"
+  readMore: "Lees meer"
+  postedOn: "Geplaatst op"
+  by: "door"
+  backToBlog: "← Terug naar Blog"
+  recentPosts: "Recente berichten"
+  noPostsYet: "Nog geen blogberichten. Kom snel terug!"

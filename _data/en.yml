@@ -4,6 +4,7 @@ nav:
   tutorials: "Tutorials"
   scenarios: "Use Cases"
   howToPlan: "How to Plan"
+  blog: "Blog"
   about: "About"
   contact: "Contact"
 
@@ -369,3 +370,13 @@ howToPlan:
     tutorials: "🎥 Watch Video Tutorials"
     scenarios: "📂 View Example Scenarios"
     community: "💬 Join Community Discussions"
+
+blog:
+  title: "Blog"
+  subtitle: "Financial Tips, Updates, and Case Studies"
+  readMore: "Read more"
+  postedOn: "Posted on"
+  by: "by"
+  backToBlog: "← Back to Blog"
+  recentPosts: "Recent Posts"
+  noPostsYet: "No blog posts yet. Check back soon!"
