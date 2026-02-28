@@ -59,7 +59,14 @@
                 <span class="logo-text">Get App</span>
             </a>
             {% assign page_name = page.path | split: "/" | last %}
-            {% if page.lang == 'en' %}
+            {% if page.layout == 'post' %}
+                {% comment %}For blog posts, link to the blog index of the other language{% endcomment %}
+                {% if page.lang == 'en' %}
+                <a href="/nl/blog.html" class="lang-toggle">NL</a>
+                {% else %}
+                <a href="/blog.html" class="lang-toggle">EN</a>
+                {% endif %}
+            {% elsif page.lang == 'en' %}
             <a href="{{ page.asset_prefix }}nl/{{ page_name }}" class="lang-toggle">NL</a>
             {% else %}
             <a href="{{ page.asset_prefix }}{{ page_name }}" class="lang-toggle">EN</a>
