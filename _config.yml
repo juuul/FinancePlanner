@@ -39,7 +39,6 @@ defaults:
 collections:
   posts:
     output: true
-    permalink: /:year/:month/:day/:title.html
 
 # Plugins (safe for GitHub Pages)
 # plugins:
