@@ -4,6 +4,7 @@ title: "Aan de slag met financiële planning"
 date: 2026-02-28
 author: "Finance Planner Team"
 lang: nl
+permalink: /nl/blog_2026_02_28_aan-de-slag-met-financiele-planning.html
 asset_prefix: "../../"
 description: "Leer de basis van financiële planning en hoe je Finance Planner effectief gebruikt."
 ---

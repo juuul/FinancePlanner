@@ -4,6 +4,7 @@ title: "Getting Started with Financial Planning"
 date: 2026-02-28
 author: "Finance Planner Team"
 lang: en
+permalink: /blog_2026_02_28_getting-started-with-financial-planning.html
 asset_prefix: "../"
 description: "Learn the basics of financial planning and how to use Finance Planner effectively."
 ---
