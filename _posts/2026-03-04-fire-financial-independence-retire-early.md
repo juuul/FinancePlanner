@@ -5,7 +5,7 @@ date: 2026-03-04
 author: "Finance Planner Team"
 lang: en
 permalink: blog_2026_03_04_fire-financial-independence-retire-early.html
-asset_prefix: "../"
+asset_prefix: ""
 description: "A complete guide to the FIRE movement and how to achieve financial independence to retire early"
 ---
 
