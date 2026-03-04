@@ -200,6 +200,15 @@ The blog system uses only features available in the `github-pages` gem:
 - No additional plugins required
 - Syntax highlighting via Rouge (built into Jekyll)
 
+## Language Switcher for Blog Posts
+
+**Important Note:** The language switcher behaves differently for blog posts compared to regular pages:
+
+- **Regular pages** (e.g., about.html, contact.html): The language switcher takes you to the same page in the other language
+- **Blog posts**: Since post titles and slugs differ between languages, the language switcher redirects you to the **blog index page** of the other language instead of trying to find a corresponding post
+
+This ensures users always get a valid page instead of a 404 error when switching languages while reading a blog post.
+
 ## Example Post Template
 
 Create a new file in `_posts/` directory:
