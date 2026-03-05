@@ -163,13 +163,29 @@ Overweeg om de aanpak aan te passen:
 - Plan om met je vijftigste met pensioen te gaan in plaats van zo snel mogelijk
 - Richt je op het opbouwen van flexibiliteit in plaats van volledige financiële onafhankelijkheid
 
-## Beginnen met Beleggen
+## Beginnen met Plannen
 
-Als je klaar bent om te beginnen met beleggen maar geen tijd of expertise hebt, bieden beheerde beleggingsdiensten een oplossing. Professionele beleggingsexperts beheren je portefeuille op basis van je risicoprofiel en doelen.
+De eerste en belangrijkste stap op je weg naar financiële onafhankelijkheid is het maken van een duidelijk financieel plan. Zonder inzicht in je huidige situatie en doelen is het moeilijk om de juiste beslissingen te nemen.
 
-Beheerd beleggen kan beginnen met zo weinig als €50 per maand of €1.000 als een eenmalige investering.
+De Finance Planner app helpt je om:
 
-**Belangrijk:** Hoewel beleggen sterke rendementen kan genereren, brengt het risico's en kosten met zich mee. Je kunt een deel of al je ingelegde kapitaal verliezen.
+- Je huidige financiële situatie in kaart te brengen
+- Realistische doelen te stellen voor je FIRE-reis
+- Verschillende scenario's te visualiseren en te vergelijken
+- Je voortgang te volgen en gemotiveerd te blijven
+
+De app is gratis te downloaden en biedt een geweldige manier om direct te beginnen met het plannen van je financiële toekomst. Geen ingewikkelde setup, geen verborgen kosten – gewoon een krachtige tool om je FIRE-doelen te bereiken.
+
+<div class="app-store-buttons" style="margin: 2rem 0;">
+    <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener" class="btn-app-store">
+        <img src="../assets/images/app_store_badge.svg" alt="Download in de app store" width="216" height="72" style="height: 4.0rem;">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener" class="btn-app-store">
+        <img src="../assets/images/google_play_store_badge.svg" alt="Download op Google Play" width="243" height="72" style="height: 4.0rem; margin-right: 0.5rem;">
+    </a>
+</div>
+
+**Start vandaag nog met plannen en zet je eerste stap naar financiële onafhankelijkheid!**
 
 ---
 

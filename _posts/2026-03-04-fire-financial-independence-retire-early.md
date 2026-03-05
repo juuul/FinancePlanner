@@ -163,13 +163,29 @@ Consider customizing the approach:
 - Plan to retire at 50 instead of as soon as possible
 - Focus on building flexibility rather than complete financial independence
 
-## Getting Started with Investing
+## Getting Started with Planning
 
-If you're ready to begin investing but lack time or expertise, managed investing services offer a solution. Professional investment experts handle your portfolio according to your risk profile and goals.
+The first and most important step on your journey to financial independence is creating a clear financial plan. Without understanding your current situation and goals, it's difficult to make the right decisions.
 
-Managed investing can start with as little as $50 per month or $1,000 as a one-time investment.
+The Finance Planner app helps you:
 
-**Important:** While investing can generate strong returns, it carries risks and costs. You could lose part or all of your invested capital.
+- Map out your current financial situation
+- Set realistic goals for your FIRE journey
+- Visualize and compare different scenarios
+- Track your progress and stay motivated
+
+The app is free to download and offers a great way to start planning your financial future right away. No complicated setup, no hidden fees – just a powerful tool to help you achieve your FIRE goals.
+
+<div class="app-store-buttons" style="margin: 2rem 0;">
+    <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener" class="btn-app-store">
+        <img src="../assets/images/app_store_badge.svg" alt="Download in the app store" width="216" height="72" style="height: 4.0rem;">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener" class="btn-app-store">
+        <img src="../assets/images/google_play_store_badge.svg" alt="Download on Google Play" width="243" height="72" style="height: 4.0rem; margin-right: 0.5rem;">
+    </a>
+</div>
+
+**Start planning today and take your first step toward financial independence!**
 
 ---
 
