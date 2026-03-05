@@ -174,7 +174,7 @@ The Finance Planner app helps you:
 - Visualize and compare different scenarios
 - Track your progress and stay motivated
 
-The app is free to download and offers a great way to start planning your financial future right away. No complicated setup, no hidden fees – just a powerful tool to help you achieve your FIRE goals.
+The app is completely free to use and offers a great way to start planning your financial future right away. No complicated setup, no hidden fees – just a powerful tool to help you achieve your FIRE goals.
 
 <div class="app-store-buttons" style="margin: 2rem 0;">
     <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener" class="btn-app-store">

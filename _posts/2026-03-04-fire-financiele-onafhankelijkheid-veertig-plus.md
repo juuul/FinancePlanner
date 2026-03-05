@@ -174,7 +174,7 @@ De Finance Planner app helpt je om:
 - Verschillende scenario's te visualiseren en te vergelijken
 - Je voortgang te volgen en gemotiveerd te blijven
 
-De app is gratis te downloaden en biedt een geweldige manier om direct te beginnen met het plannen van je financiële toekomst. Geen ingewikkelde setup, geen verborgen kosten – gewoon een krachtige tool om je FIRE-doelen te bereiken.
+De app is volledig gratis te gebruiken en biedt een geweldige manier om direct te beginnen met het plannen van je financiële toekomst. Geen ingewikkelde setup, geen verborgen kosten – gewoon een krachtige tool om je FIRE-doelen te bereiken.
 
 <div class="app-store-buttons" style="margin: 2rem 0;">
     <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener" class="btn-app-store">
