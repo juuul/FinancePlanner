@@ -2,14 +2,17 @@
 layout: none
 search: exclude
 ---
-
----
-layout: none
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {%- for post in site.posts -%}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      <lastmod>{{ post.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
+      <priority>0.5</priority>
+    </url>
+  {%- endfor -%}
   {%- for page in site.html_pages -%}
-    {%- unless page.search == "exclude" or page.url contains "404" -%}
+    {%- unless page.search == "exclude" or page.url contains "404" or page.url contains "/blog" -%}
     
     <url>
       <loc>{{ site.url }}{{ page.url }}</loc>
