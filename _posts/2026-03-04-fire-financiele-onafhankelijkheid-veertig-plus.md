@@ -28,7 +28,7 @@ Voor velen in de FIRE-community draait het meer om vrijheid dan om vroeg met pen
 - Hobbies, creatieve projecten of vrijwilligerswerk volgen
 - Carrièreveranderingen maken zonder je zorgen te maken over inkomensverlies
 
-De beweging is vooral populair geworden onder mensen in hun twintigers en dertigsten die uit het traditionele werk-pensioen-cyclus willen breken.
+De beweging is vooral populair geworden bij twintigers en dertigsten die uit het traditionele werk-pensioen-cyclus willen breken.
 
 ## De Wiskunde: Hoeveel Geld Heb Je Nodig?
 
