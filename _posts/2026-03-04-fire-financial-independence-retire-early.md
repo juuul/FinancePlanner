@@ -38,11 +38,11 @@ This calculation is based on the **4% rule**, which suggests that if you withdra
 
 ### Example Calculation
 
-| Monthly expenses: | €3,000 |
-| ----------------- | ------ |
-| Annual expenses: | 12 × €3,000 = €36,000 |
-| Target portfolio: | 25 × €36,000 = €900,000 |
-| Annual 4% return: | 4% × €900,000 = €36,000 |
+| Maandelijkse uitgaven: | $2.750 |
+| ---------------------- | ------ |
+| Jaarlijkse uitgaven: | 12 × $2.750 = $33.000 |
+| Streefvermogen: | 25 × $33.000 = $825.000 |
+| Jaarlijks 4% rendement: | 4% × $825.000 = $33.000 |
 
 **Result:** Your annual investment return equals your annual expenses, meaning you don't need additional income sources.
 
@@ -164,7 +164,7 @@ Consider customizing the approach:
 
 If you're ready to begin investing but lack time or expertise, managed investing services offer a solution. Professional investment experts handle your portfolio according to your risk profile and goals.
 
-Managed investing can start with as little as €50 per month or €1,000 as a one-time investment.
+Managed investing can start with as little as $50 per month or $1,000 as a one-time investment.
 
 **Important:** While investing can generate strong returns, it carries risks and costs. You could lose part or all of your invested capital.
 
