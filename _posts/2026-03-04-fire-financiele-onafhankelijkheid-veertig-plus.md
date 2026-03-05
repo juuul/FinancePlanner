@@ -47,6 +47,7 @@ Deze berekening is gebaseerd op de **4%-regel**, die stelt dat als je 4% van je 
 **Resultaat:** Je jaarlijkse beleggingsrendement is gelijk aan je jaarlijkse uitgaven, wat betekent dat je geen extra inkomensbronnen nodig hebt.
 
 ![Normal retirement scenario: 60-year graph showing income, expenses, and capital for someone retiring at government age](../assets/images/blog/fire-normal-retirement.png)
+
 *Figure 1: Traditionele pensioenroute met duurzaam vermogen gedurende de hele pensioenperiode*
 
 ## Vijf Stappen naar Financiële Onafhankelijkheid
@@ -103,6 +104,7 @@ Alleen sparen is niet genoeg in de huidige economische omgeving. Met lage of neg
 Investeren stelt je geld in staat te groeien. De meeste FIRE-beoefenaars streven ernaar om ten minste 25% van hun inkomen te beleggen, met velen die hogere percentages nastreven. Het potentieel voor sterke rendementen maakt beleggen aantrekkelijk, maar het brengt risico's en kosten met zich mee. Je kunt een deel of al je investering verliezen.
 
 ![Early retirement with capital shortage: graph showing investment growth insufficient to cover expenses](../assets/images/blog/fire-shortage-scenario.png)
+
 *Figure 2: Het risico van vroeg met pensioen gaan zonder voldoende vermogensopbouw*
 
 ## Hoe Haalbaar is FIRE?
@@ -140,6 +142,7 @@ Je FIRE-tijdslijn beïnvloedt haalbaarheid drastisch:
 Veel FIRE-beoefenaars ontdekken dat het proces zelf leidt tot betere financiële beslissingen, wat resulteert in groter geluk ongeacht wanneer ze financiële onafhankelijkheid bereiken.
 
 ![Successful FIRE scenario: 50-60 year projection showing sustainable capital growth and expenses](../assets/images/blog/fire-success-scenario.png)
+
 *Figure 3: Succesvolle FIRE-route met voldoende vermogen voor vroeg met pensioen gaan*
 
 ## Is FIRE Iets voor Jou?

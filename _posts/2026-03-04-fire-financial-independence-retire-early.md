@@ -47,6 +47,7 @@ This calculation is based on the **4% rule**, which suggests that if you withdra
 **Result:** Your annual investment return equals your annual expenses, meaning you don't need additional income sources.
 
 ![Normal retirement scenario: 60-year graph showing income, expenses, and capital for someone retiring at government age](../assets/images/blog/fire-normal-retirement.png)
+
 *Figure 1: Traditional retirement path with sustainable capital throughout*
 
 ## Five Steps to Financial Independence
@@ -103,6 +104,7 @@ Saving alone isn't enough in today's economic environment. With low or negative 
 Investing allows your money to grow. Most FIRE followers aim to invest at least 25% of their income, with many targeting higher percentages. The potential for strong returns makes investing attractive, but it comes with risks and costs. You could lose part or all of your investment.
 
 ![Early retirement with capital shortage: graph showing investment growth insufficient to cover expenses](../assets/images/blog/fire-shortage-scenario.png)
+
 *Figure 2: The risk of early retirement without sufficient capital accumulation*
 
 ## How Realistic is FIRE?
@@ -140,6 +142,7 @@ Your FIRE timeline dramatically affects feasibility:
 Many FIRE practitioners discover that the process itself leads to better financial decisions, resulting in greater happiness regardless of when they achieve financial independence.
 
 ![Successful FIRE scenario: 50-60 year projection showing sustainable capital growth and expenses](../assets/images/blog/fire-success-scenario.png)
+
 *Figure 3: Successful FIRE path with adequate capital for early retirement*
 
 ## Is FIRE Right for You?
