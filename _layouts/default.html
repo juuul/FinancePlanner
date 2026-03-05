@@ -27,6 +27,8 @@
     <link rel="apple-touch-icon" href="{{ page.asset_prefix }}assets/images/app_icon.png">
     <link rel="preload" href="{{ page.asset_prefix }}assets/css/styles.css" as="style">
     <link rel="stylesheet" href="{{ page.asset_prefix }}assets/css/styles.css">
+    <link rel="preload" href="{{ page.asset_prefix }}assets/css/syntax-highlighting.css" as="style">
+    <link rel="stylesheet" href="{{ page.asset_prefix }}assets/css/syntax-highlighting.css">
     {% if page.hero_image %}
     <link rel="preload" href="{{ page.asset_prefix }}assets/images/hero.png" as="image">
     {% endif %}
@@ -50,6 +52,7 @@
                 <a href="scenarios.html" {% if current_page == 'scenarios.html' %}class="active"{% endif %}>{{ lang_data.nav.scenarios }}</a>
                 <a href="how-to-plan.html" {% if current_page == 'how-to-plan.html' %}class="active"{% endif %}>{{ lang_data.nav.howToPlan }}</a>
                 <a href="tutorials.html" {% if current_page == 'tutorials.html' %}class="active"{% endif %}>{{ lang_data.nav.tutorials }}</a>
+                <a href="blog.html" {% if current_page == 'blog.html' %}class="active"{% endif %}>{{ lang_data.nav.blog }}</a>
                 <a href="about.html" {% if current_page == 'about.html' %}class="active"{% endif %}>{{ lang_data.nav.about }}</a>
                 <a href="contact.html" {% if current_page == 'contact.html' %}class="active"{% endif %}>{{ lang_data.nav.contact }}</a>
             </nav>
@@ -58,7 +61,14 @@
                 <span class="logo-text">Get App</span>
             </a>
             {% assign page_name = page.path | split: "/" | last %}
-            {% if page.lang == 'en' %}
+            {% if page.layout == 'post' %}
+                {% comment %}For blog posts, link to the blog index of the other language{% endcomment %}
+                {% if page.lang == 'en' %}
+                <a href="/nl/blog.html" class="lang-toggle">NL</a>
+                {% else %}
+                <a href="/blog.html" class="lang-toggle">EN</a>
+                {% endif %}
+            {% elsif page.lang == 'en' %}
             <a href="{{ page.asset_prefix }}nl/{{ page_name }}" class="lang-toggle">NL</a>
             {% else %}
             <a href="{{ page.asset_prefix }}{{ page_name }}" class="lang-toggle">EN</a>

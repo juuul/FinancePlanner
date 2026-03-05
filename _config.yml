@@ -36,7 +36,9 @@ defaults:
       lang: "nl"
 
 # Collections
-collections: []
+collections:
+  posts:
+    output: true
 
 # Plugins (safe for GitHub Pages)
 # plugins:
