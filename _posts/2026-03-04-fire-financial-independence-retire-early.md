@@ -38,11 +38,11 @@ This calculation is based on the **4% rule**, which suggests that if you withdra
 
 ### Example Calculation
 
-| Maandelijkse uitgaven: | $2.750 |
-| ---------------------- | ------ |
-| Jaarlijkse uitgaven: | 12 × $2.750 = $33.000 |
-| Streefvermogen: | 25 × $33.000 = $825.000 |
-| Jaarlijks 4% rendement: | 4% × $825.000 = $33.000 |
+| Monthly Expenses: | $2,750 |
+| ------------------ | ------ |
+| Annual Expenses: | 12 × $2,750 = $33,000 |
+| Target Capital: | 25 × $33,000 = $825,000 |
+| Annual 4% Return: | 4% × $825,000 = $33,000 |
 
 **Result:** Your annual investment return equals your annual expenses, meaning you don't need additional income sources.
 
