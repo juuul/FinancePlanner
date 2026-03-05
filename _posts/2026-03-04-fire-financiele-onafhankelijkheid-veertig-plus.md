@@ -4,7 +4,7 @@ title: "FIRE: Financiële Onafhankelijkheid - Vroeg met Pensioen"
 date: 2026-03-04
 author: "Finance Planner Team"
 lang: nl
-permalink: nl/blog_2026_03_04_fire-financiele-onafhankelijkheid-veertig-plus.html
+permalink: blog_2026_03_04_fire-financiele-onafhankelijkheid-veertig-plus.html
 asset_prefix: "../"
 description: "Een complete gids over de FIRE-beweging en hoe je financieel onafhankelijk kunt worden om vroeg met pensioen te gaan"
 ---
@@ -46,7 +46,7 @@ Deze berekening is gebaseerd op de **4%-regel**, die stelt dat als je 4% van je 
 
 **Resultaat:** Je jaarlijkse beleggingsrendement is gelijk aan je jaarlijkse uitgaven, wat betekent dat je geen extra inkomensbronnen nodig hebt.
 
-![Normal retirement scenario: 60-year graph showing income, expenses, and capital for someone retiring at government age](../assets/images/blog/fire-normal-retirement.png)
+![Normal retirement scenario: 60-year graph showing income, expenses, and capital for someone retiring at government age]({{ page.asset_prefix }}assets/images/blog/fire-normal-retirement.png)
 
 *Figure 1: Traditionele pensioenroute met duurzaam vermogen gedurende de hele pensioenperiode*
 
@@ -103,7 +103,7 @@ Alleen sparen is niet genoeg in de huidige economische omgeving. Met lage of neg
 
 Investeren stelt je geld in staat te groeien. De meeste FIRE-beoefenaars streven ernaar om ten minste 25% van hun inkomen te beleggen, met velen die hogere percentages nastreven. Het potentieel voor sterke rendementen maakt beleggen aantrekkelijk, maar het brengt risico's en kosten met zich mee. Je kunt een deel of al je investering verliezen.
 
-![Early retirement with capital shortage: graph showing investment growth insufficient to cover expenses](../assets/images/blog/fire-shortage-scenario.png)
+![Early retirement with capital shortage: graph showing investment growth insufficient to cover expenses]({{ page.asset_prefix }}assets/images/blog/fire-shortage-scenario.png)
 
 *Figure 2: Het risico van vroeg met pensioen gaan zonder voldoende vermogensopbouw*
 
@@ -141,7 +141,7 @@ Je FIRE-tijdslijn beïnvloedt haalbaarheid drastisch:
 
 Veel FIRE-beoefenaars ontdekken dat het proces zelf leidt tot betere financiële beslissingen, wat resulteert in groter geluk ongeacht wanneer ze financiële onafhankelijkheid bereiken.
 
-![Successful FIRE scenario: 50-60 year projection showing sustainable capital growth and expenses](../assets/images/blog/fire-success-scenario.png)
+![Successful FIRE scenario: 50-60 year projection showing sustainable capital growth and expenses]({{ page.asset_prefix }}assets/images/blog/fire-success-scenario.png)
 
 *Figure 3: Succesvolle FIRE-route met voldoende vermogen voor vroeg met pensioen gaan*
 
@@ -178,10 +178,10 @@ De app is volledig gratis te gebruiken en biedt een geweldige manier om direct t
 
 <div class="app-store-buttons" style="margin: 2rem 0;">
     <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener" class="btn-app-store">
-        <img src="../assets/images/app_store_badge.svg" alt="Download in de app store" width="216" height="72" style="height: 4.0rem;">
+        <img src="{{ page.asset_prefix }}assets/images/app_store_badge.svg" alt="Download in de app store" width="216" height="72" style="height: 4.0rem;">
     </a>
     <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener" class="btn-app-store">
-        <img src="../assets/images/google_play_store_badge.svg" alt="Download op Google Play" width="243" height="72" style="height: 4.0rem; margin-right: 0.5rem;">
+        <img src="{{ page.asset_prefix }}assets/images/google_play_store_badge.svg" alt="Download op Google Play" width="243" height="72" style="height: 4.0rem; margin-right: 0.5rem;">
     </a>
 </div>
 
