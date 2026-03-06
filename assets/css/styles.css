@@ -232,7 +232,7 @@ strong {
 .logo-icon {
     width: 40px;
     height: 40px;
-    background-image: url('assets/images/app_icon.svg');
+    background-image: url('../images/app_icon.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
