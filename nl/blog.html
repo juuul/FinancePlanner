@@ -7,18 +7,18 @@ description: "Financiële tips, updates en voorbeelden voor het bereiken van fin
 ---
 {% assign lang_data = site.data[page.lang] %}
 
-<section class="section">
+<section class="animate-fade-in section">
     <h1>{{ lang_data.blog.title }}</h1>
-    <p class="subtitle">{{ lang_data.blog.subtitle }}</p>
+    <p class="subtitle animate-from-top" data-animate-delay="200ms">{{ lang_data.blog.subtitle }}</p>
 </section>
 
-<section class="section">
+<section class="animate-fade-in section">
     {% assign posts = site.posts | where: "lang", "nl" | sort: "date" | reverse %}
     {% if posts.size > 0 %}
         <div class="blog-posts">
             {% for post in posts %}
                 <article class="blog-post-preview">
-                    <h2><a href="../{{ post.permalink }}">{{ post.title }}</a></h2>
+                    <h2 class="animate-from-left"><a href="../{{ post.permalink }}">{{ post.title }}</a></h2>
                     <div class="post-meta">
                         <span>{{ lang_data.blog.postedOn }} {{ post.date | date: "%d %B %Y" }}</span>
                         {% if post.author %}
