@@ -7,6 +7,8 @@ lang: en
 permalink: blog_2026_03_04_fire-financial-independence-retire-early.html
 asset_prefix: ""
 description: "A complete guide to the FIRE movement and how to achieve financial independence to retire early"
+alternate_lang: nl
+alternate_url: nl/blog_2026_03_04_fire-financiele-onafhankelijkheid-veertig-plus.html
 ---
 
 The FIRE movement has gained significant traction among younger generations, offering a roadmap to financial freedom and the possibility of retiring far before traditional retirement age. But what exactly is FIRE, and is it achievable for you?

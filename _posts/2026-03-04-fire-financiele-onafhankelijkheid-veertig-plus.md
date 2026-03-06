@@ -4,9 +4,11 @@ title: "FIRE: Financiële Onafhankelijkheid - Vroeg met Pensioen"
 date: 2026-03-04
 author: "Finance Planner Team"
 lang: nl
-permalink: blog_2026_03_04_fire-financiele-onafhankelijkheid-veertig-plus.html
+permalink: nl/blog_2026_03_04_fire-financiele-onafhankelijkheid-veertig-plus.html
 asset_prefix: "../"
 description: "Een complete gids over de FIRE-beweging en hoe je financieel onafhankelijk kunt worden om vroeg met pensioen te gaan"
+alternate_lang: en
+alternate_url: blog_2026_03_04_fire-financial-independence-retire-early.html
 ---
 
 De FIRE-beweging heeft een grote aanhang onder jongere generaties gewonnen en biedt een routeplan naar financiële vrijheid en de mogelijkheid om veel eerder met pensioen te gaan dan traditioneel het geval is. Maar wat is FIRE precies, en is het haalbaar voor jou?

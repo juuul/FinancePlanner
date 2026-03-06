@@ -6,7 +6,15 @@ search: exclude
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {%- for post in site.posts -%}
     <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
+      <loc>{{ site.url }}/{{ post.permalink }}</loc>
+      {%- if post.lang == 'en' -%}
+      <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/{{ post.permalink }}" />
+      <xhtml:link rel="alternate" hreflang="nl" href="{{ site.url }}/{{ post.alternate_url }}" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/{{ post.permalink }}" />
+      {%- elsif post.lang == 'nl' -%}
+      <xhtml:link rel="alternate" hreflang="nl" href="{{ site.url }}/{{ post.permalink }}" />
+      <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/{{ post.alternate_url }}" />
+      {%- endif -%}
       <lastmod>{{ post.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
       <priority>0.5</priority>
     </url>
