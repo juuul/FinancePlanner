@@ -6,8 +6,8 @@ hide_lang_switcher: false
 
 <article class="section blog-post">
     <header class="blog-post-header">
-        <h1>{{ page.title }}</h1>
-        <div class="post-meta">
+        <h1 class="animate-from-top">{{ page.title }}</h1>
+        <div class="post-meta animate-from-left">
             <span>{{ lang_data.blog.postedOn }} {{ page.date | date: "%B %d, %Y" }}</span>
             {% if page.author %}
             <span> {{ lang_data.blog.by }} {{ page.author }}</span>
@@ -19,7 +19,7 @@ hide_lang_switcher: false
         {{ content }}
     </div>
 
-    <footer class="blog-post-footer">
+    <footer class="blog-post-footer animate-from-top">
         {% if page.lang == 'en' %}
         <a href="/blog.html" class="btn btn-secondary">{{ lang_data.blog.backToBlog }}</a>
         {% else %}

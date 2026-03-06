@@ -8,16 +8,17 @@ description: "Financial tips, updates, and case studies for achieving financial 
 {% assign lang_data = site.data[page.lang] %}
 
 <section class="section">
-    <h1>{{ lang_data.blog.title }}</h1>
-    <p class="subtitle">{{ lang_data.blog.subtitle }}</p>
+    <h1 class="animate-from-top">{{ lang_data.blog.title }}</h1>
+    <p class="subtitle animate-from-top" data-animate-delay="100ms">{{ lang_data.blog.subtitle }}</p>
 </section>
 
 <section class="section">
+    <div class="animate-from-left">
     {% assign posts = site.posts | where: "lang", "en" | sort: "date" | reverse %}
     {% if posts.size > 0 %}
         <div class="blog-posts">
             {% for post in posts %}
-                <article class="blog-post-preview">
+                <article class="blog-post-preview animate-from-bottom">
                     <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
                     <div class="post-meta">
                         <span>{{ lang_data.blog.postedOn }} {{ post.date | date: "%B %d, %Y" }}</span>
@@ -33,4 +34,5 @@ description: "Financial tips, updates, and case studies for achieving financial 
     {% else %}
         <p>{{ lang_data.blog.noPostsYet }}</p>
     {% endif %}
+    </div>
 </section>
