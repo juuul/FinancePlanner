@@ -15,13 +15,21 @@
     <meta name="description" content="{{ page.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-    {% if page.lang == 'en' %}
-    <link rel="alternate" hreflang="nl" href="{{ site.url }}/nl{{ page.url }}">
-    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}">
-    {% endif %}
-    {% if page.lang == 'nl' %}
-    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url | replace: '/nl/', '/' }}">
-    <link rel="alternate" hreflang="nl" href="{{ site.url }}{{ page.url }}">
+    {% if page.layout == 'post' %}
+        {% comment %}For blog posts, use alternate_url from front matter{% endcomment %}
+        {% if page.lang == 'en' %}
+        <link rel="alternate" hreflang="en" href="{{ site.url }}/{{ page.permalink }}">
+        <link rel="alternate" hreflang="nl" href="{{ site.url }}/{{ page.alternate_url }}">
+        {% elsif page.lang == 'nl' %}
+        <link rel="alternate" hreflang="nl" href="{{ site.url }}/{{ page.permalink }}">
+        <link rel="alternate" hreflang="en" href="{{ site.url }}/{{ page.alternate_url }}">
+        {% endif %}
+    {% elsif page.lang == 'en' %}
+        <link rel="alternate" hreflang="nl" href="{{ site.url }}/nl{{ page.url }}">
+        <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}">
+    {% elsif page.lang == 'nl' %}
+        <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url | replace: '/nl/', '/' }}">
+        <link rel="alternate" hreflang="nl" href="{{ site.url }}{{ page.url }}">
     {% endif %}
     <link rel="icon" href="{{ page.asset_prefix }}assets/images/app_icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="{{ page.asset_prefix }}assets/images/app_icon.png">
@@ -62,12 +70,8 @@
             </a>
             {% assign page_name = page.path | split: "/" | last %}
             {% if page.layout == 'post' %}
-                {% comment %}For blog posts, link to the blog index of the other language{% endcomment %}
-                {% if page.lang == 'en' %}
-                <a href="/nl/blog.html" class="lang-toggle">NL</a>
-                {% else %}
-                <a href="/blog.html" class="lang-toggle">EN</a>
-                {% endif %}
+                {% comment %}For blog posts, link to the alternate language version of the post{% endcomment %}
+                <a href="{{ page.asset_prefix }}{{ page.alternate_url }}" class="lang-toggle">{{ page.alternate_lang | upcase }}</a>
             {% elsif page.lang == 'en' %}
             <a href="{{ page.asset_prefix }}nl/{{ page_name }}" class="lang-toggle">NL</a>
             {% else %}
