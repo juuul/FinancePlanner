@@ -1,0 +1,52 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "url": "{{ site.url }}",
+      "name": "Finance Planner: The F.I.R.E. Tool",
+      "description": "{{ page.description }}",
+      "inLanguage": "{{ page.lang }}",
+      "publisher": {
+        "@id": "{{ site.url }}/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "{{ site.url }}/#organization",
+      "name": "Finance Planner",
+      "url": "{{ site.url }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/assets/images/app_icon.svg",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/juliaan-meijboom-313b7924",
+        "https://www.linkedin.com/in/colin-wilmans-aa95171"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Finance Planner",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": ["iOS", "Android"],
+      "description": "{% if page.lang == 'nl' %}De Finance Planner app helpt je uitgebreide financiële plannen te maken en je reis naar financiële onafhankelijkheid en vroegpensioen te visualiseren.{% else %}The Finance Planner app helps you create comprehensive financial plans and visualize your journey to Financial Independence and Early Retirement.{% endif %}",
+      "inLanguage": "{{ page.lang }}",
+      "author": {
+        "@type": "Person",
+        "name": "Juliaan Meijboom",
+        "url": "https://www.linkedin.com/in/juliaan-meijboom-313b7924"
+      },
+      "downloadUrl": [
+        "https://apps.apple.com/us/app/finance-planner/id6743322133",
+        "https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile"
+      ],
+      "screenshot": "{{ site.url }}/assets/images/hero.png"
+    }
+  ]
+}
+</script>
