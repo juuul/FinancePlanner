@@ -22,9 +22,7 @@
 
     /* Swedish Flag Neon Accents */
     --color-accent-blue: #006AA7;
-    --color-accent-blue-glow: rgba(0, 106, 167, 0.4);
     --color-accent-yellow: #FECC13;
-    --color-accent-yellow-glow: rgba(254, 204, 19, 0.4);
 
     /* Text Colors */
     --color-text-primary: #E6E9EF;
@@ -313,14 +311,12 @@ strong {
     background: var(--color-accent-blue);
     color: white;
     border-color: var(--color-accent-blue);
-    box-shadow: 0 0 20px var(--color-accent-blue-glow);
 }
 
 .btn-primary:hover {
     background: transparent;
     border-color: var(--color-accent-blue);
     color: var(--color-accent-blue);
-    box-shadow: 0 0 30px var(--color-accent-blue-glow);
     transform: translateY(-2px);
 }
 
@@ -328,13 +324,11 @@ strong {
     background: transparent;
     color: var(--color-accent-yellow);
     border: 2px solid var(--color-accent-yellow);
-    box-shadow: 0 0 20px var(--color-accent-yellow-glow);
 }
 
 .btn-secondary:hover {
     background: var(--color-accent-yellow);
     color: var(--color-bg-dark);
-    box-shadow: 0 0 30px var(--color-accent-yellow-glow);
     transform: translateY(-2px);
 }
 
@@ -367,7 +361,6 @@ strong {
     display: inline-flex;
     align-items: center;
     gap: var(--space-sm);
-    box-shadow: 0 0 20px var(--color-accent-blue-glow);
     border: 2px solid transparent;
 }
 
@@ -385,7 +378,6 @@ strong {
     background: transparent;
     border-color: var(--color-accent-blue);
     color: var(--color-accent-blue);
-    box-shadow: 0 0 30px var(--color-accent-blue-glow);
     transform: translateY(-2px);
 }
 
@@ -406,7 +398,6 @@ strong {
     background: transparent;
     border-color: var(--color-accent-yellow);
     color: var(--color-accent-yellow);
-    box-shadow: 0 0 20px var(--color-accent-yellow-glow);
 }
 
 /* ========================================
@@ -422,7 +413,7 @@ strong {
 .section {
     background: var(--color-bg-dark-card);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: var(--radius-lg);
+    border-radius: 0;
     padding: var(--space-3xl) var(--space-xl);
     margin-bottom: var(--space-2xl);
     position: relative;
@@ -436,7 +427,7 @@ strong {
     width: 4px;
     height: 100%;
     background: linear-gradient(180deg, var(--color-accent-blue), var(--color-accent-yellow));
-    border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+    border-radius: 0;
 }
 
 .section h2 {
@@ -461,7 +452,7 @@ strong {
 .hero {
     background: linear-gradient(135deg, var(--color-bg-dark-elevated) 0%, var(--color-bg-dark-card) 100%);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: var(--radius-lg);
+    border-radius: 0;
     padding: var(--space-3xl);
     text-align: center;
     margin-bottom: var(--space-2xl);
@@ -485,10 +476,7 @@ strong {
     position: relative;
     z-index: 1;
     margin-top: 0;
-    background: linear-gradient(135deg, var(--color-text-primary), var(--color-accent-blue));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-text-primary);
 }
 
 .hero .subtitle {
