@@ -5,6 +5,7 @@ nav:
   scenarios: "Voorbeelden"
   howToPlan: "Hoe te plannen"
   blog: "Blog"
+  faq: "Veelgestelde Vragen"
   about: "Over"
   contact: "Contact"
 
@@ -381,3 +382,54 @@ blog:
   backToBlog: "← Terug naar Blog"
   recentPosts: "Recente berichten"
   noPostsYet: "Nog geen blogberichten. Kom snel terug!"
+
+faq:
+  title: "Veelgestelde Vragen"
+  subtitle: "Vind antwoorden op veelgestelde vragen over Finance Planner"
+  general:
+    title: "Algemene vragen over de app"
+    whatIsFire:
+      question: "Wat is F.I.R.E.?"
+      answer: "F.I.R.E. staat voor Financial Independence, Retire Early (Financiële Onafhankelijkheid, Vervroegd Pensioen). Het is een beweging gericht op het bereiken van financiële vrijheid door strategisch sparen, investeren en onder je middelen leven. Het doel is om genoeg vermogen op te bouwen om de vrijheid te hebben om te kiezen hoe je je tijd besteedt, of dat nu betekent vervroegd met pensioen gaan, minder werken of passieprojecten nastreven zonder financiële druk."
+      learnMore: "Lees meer over F.I.R.E. in ons"
+      blogLink: "uitgebreide blogartikel"
+    howWorks:
+      question: "Hoe werkt de app?"
+      answer: "Finance Planner helpt je uitgebreide financiële plannen te maken door je inkomen, uitgaven, besparingen en investeringen in de loop van de tijd te modelleren. Je kunt je financiële toekomst visualiseren, verschillende scenario's testen en je pad naar financiële onafhankelijkheid plannen. De app biedt gedetailleerde jaar-op-jaar projecties, waarbij rekening wordt gehouden met inflatie, belastingen en investeringsrendementen."
+      getStarted: "Begin door"
+      tutorialLink: "de app te downloaden"
+      and: "en volg onze"
+      howToPlanLink: "stapsgewijze handleiding"
+    isFree:
+      question: "Is de app gratis?"
+      answer: "Ja! Finance Planner is 100% gratis te downloaden en te gebruiken met 100% functionaliteit. Er zijn geen premiumfuncties of betaalmuren. De app wordt gefinancierd door advertenties (AdMob) die hem voor iedereen gratis houden met respect voor je privacy—alleen anonieme gebruiksgegevens worden verzameld door de advertentieprovider, nooit je financiële gegevens."
+  privacy:
+    title: "Privacy & Data"
+    dataStorage:
+      question: "Waar worden mijn gegevens opgeslagen?"
+      answer: "Al je financiële gegevens worden lokaal op je apparaat opgeslagen. Niets wordt naar externe servers of de cloud gestuurd. Je persoonlijke financiële informatie blijft 100% privé en veilig op je telefoon."
+    offline:
+      question: "Werkt de app offline?"
+      answer: "Ja! Omdat al je gegevens lokaal op je apparaat worden opgeslagen, werkt Finance Planner volledig offline. Je kunt je financiële plannen altijd en overal maken en beheren, zonder internetverbinding."
+    export:
+      question: "Kan ik mijn gegevens exporteren?"
+      answer: "Ja! Je kunt je financiële plannen exporteren via het Delen-menu bovenaan de app. Hiermee kun je een back-up van je gegevens maken, deze naar een ander apparaat overdragen of specifieke scenario's met anderen delen."
+  technology:
+    title: "Technologie"
+    devices:
+      question: "Op welke apparaten werkt de app?"
+      answer: "Finance Planner is beschikbaar voor zowel iOS- als Android-apparaten. Download de app via de"
+      appStoreLink: "App Store"
+      or: "of"
+      playStoreLink: "Google Play Store"
+    updates:
+      question: "Hoe vaak wordt de app geüpdatet?"
+      answer: "We werken constant aan het maken van Finance Planner tot de beste financiële planningstool die er is. Updates worden regelmatig uitgebracht met nieuwe functies, verbeteringen en bugfixes op basis van gebruikersfeedback en onze toewijding aan uitmuntendheid."
+  api:
+    title: "API & Integratie"
+    availability:
+      question: "Is er een API beschikbaar?"
+      answer: "Integratie is een van de kernprincipes van onze technologie. We verkennen API-opties voor gevorderde gebruikers en ontwikkelaars. Als je geïnteresseerd bent in API-toegang of integratiemogelijkheden,"
+      contactLink: "neem dan contact met ons op"
+      or: "of maak verbinding met ons op"
+      linkedinLink: "LinkedIn"

@@ -1,0 +1,88 @@
+---
+layout: default
+lang: en
+asset_prefix: ""
+title: "FAQ - Finance Planner"
+description: "Frequently asked questions about Finance Planner, the free F.I.R.E. planning tool. Learn about features, privacy, data storage, and more."
+---
+{% assign lang_data = site.data[page.lang] %}
+
+<section class="animate-fade-in hero">
+    <h1 class="animate-from-top" data-animate-delay="100ms">{{ lang_data.faq.title }}</h1>
+    <p class="subtitle animate-from-top" data-animate-delay="200ms">{{ lang_data.faq.subtitle }}</p>
+</section>
+
+<section class="animate-fade-in section">
+    <h2 class="animate-from-left">{{ lang_data.faq.general.title }}</h2>
+
+    <div class="faq-item animate-from-bottom" data-animate-delay="100ms">
+        <h3>{{ lang_data.faq.general.whatIsFire.question }}</h3>
+        <p>{{ lang_data.faq.general.whatIsFire.answer }}</p>
+        <p>{{ lang_data.faq.general.whatIsFire.learnMore }} <a href="blog_2026_03_04_fire-financial-independence-retire-early.html">{{ lang_data.faq.general.whatIsFire.blogLink }}</a>.</p>
+    </div>
+
+    <div class="faq-item animate-from-bottom" data-animate-delay="200ms">
+        <h3>{{ lang_data.faq.general.howWorks.question }}</h3>
+        <p>{{ lang_data.faq.general.howWorks.answer }}</p>
+        <p>{{ lang_data.faq.general.howWorks.getStarted }} <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener">{{ lang_data.faq.general.howWorks.tutorialLink }}</a> {{ lang_data.faq.general.howWorks.and }} <a href="how-to-plan.html">{{ lang_data.faq.general.howWorks.howToPlanLink }}</a>.</p>
+    </div>
+
+    <div class="faq-item animate-from-bottom" data-animate-delay="300ms">
+        <h3>{{ lang_data.faq.general.isFree.question }}</h3>
+        <p>{{ lang_data.faq.general.isFree.answer }}</p>
+    </div>
+</section>
+
+<section class="animate-fade-in section">
+    <h2 class="animate-from-right">{{ lang_data.faq.privacy.title }}</h2>
+
+    <div class="faq-item animate-from-bottom" data-animate-delay="100ms">
+        <h3>{{ lang_data.faq.privacy.dataStorage.question }}</h3>
+        <p>{{ lang_data.faq.privacy.dataStorage.answer }}</p>
+    </div>
+
+    <div class="faq-item animate-from-bottom" data-animate-delay="200ms">
+        <h3>{{ lang_data.faq.privacy.offline.question }}</h3>
+        <p>{{ lang_data.faq.privacy.offline.answer }}</p>
+    </div>
+
+    <div class="faq-item animate-from-bottom" data-animate-delay="300ms">
+        <h3>{{ lang_data.faq.privacy.export.question }}</h3>
+        <p>{{ lang_data.faq.privacy.export.answer }}</p>
+    </div>
+</section>
+
+<section class="animate-fade-in section">
+    <h2 class="animate-from-left">{{ lang_data.faq.technology.title }}</h2>
+
+    <div class="faq-item animate-from-bottom" data-animate-delay="100ms">
+        <h3>{{ lang_data.faq.technology.devices.question }}</h3>
+        <p>{{ lang_data.faq.technology.devices.answer }} <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener">{{ lang_data.faq.technology.devices.appStoreLink }}</a> {{ lang_data.faq.technology.devices.or }} <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener">{{ lang_data.faq.technology.devices.playStoreLink }}</a>.</p>
+    </div>
+
+    <div class="faq-item animate-from-bottom" data-animate-delay="200ms">
+        <h3>{{ lang_data.faq.technology.updates.question }}</h3>
+        <p>{{ lang_data.faq.technology.updates.answer }}</p>
+    </div>
+</section>
+
+<section class="animate-fade-in section">
+    <h2 class="animate-from-right">{{ lang_data.faq.api.title }}</h2>
+
+    <div class="faq-item animate-from-bottom" data-animate-delay="100ms">
+        <h3>{{ lang_data.faq.api.availability.question }}</h3>
+        <p>{{ lang_data.faq.api.availability.answer }} <a href="contact.html">{{ lang_data.faq.api.availability.contactLink }}</a> {{ lang_data.faq.api.availability.or }} <a href="https://www.linkedin.com/in/juliaan-meijboom-313b7924" target="_blank" rel="noopener">{{ lang_data.faq.api.availability.linkedinLink }}</a>.</p>
+    </div>
+</section>
+
+<section class="animate-fade-in section app-store-section">
+    <h2 class="animate-from-left">📱 {{ lang_data.appStore.title }}</h2>
+    <div class="app-store-buttons">
+        <a href="https://apps.apple.com/us/app/finance-planner/id6743322133" target="_blank" rel="noopener" class="btn-app-store">
+            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" width="216" height="72" style="height: 4.0rem;">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=nl.crwsolutions.CalcApi.Mobile" target="_blank" rel="noopener" class="btn-app-store">
+            <img src="assets/images/google_play_store_badge.svg" alt="Get it on Google Play" width="243" height="72" style="height: 4.0rem; margin-right: 0.5rem;">
+        </a>
+    </div>
+</section>
