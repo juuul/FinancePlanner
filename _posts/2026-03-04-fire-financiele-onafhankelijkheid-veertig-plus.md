@@ -40,11 +40,13 @@ Deze berekening is gebaseerd op de **4%-regel**, die stelt dat als je 4% van je 
 
 ### Voorbeeldberekening
 
-| Maandelijkse uitgaven: | €2.750 |
-| ---------------------- | ------ |
-| Jaarlijkse uitgaven: | 12 × €2.750 = €33.000 |
-| Streefvermogen: | 25 × €33.000 = €825.000 |
-| Jaarlijks 4% rendement: | 4% × €825.000 = €33.000 |
+| | | | | |
+|:---|---:|:---:|:---:|---:|
+| Maandelijkse uitgaven: €2.750 | | | | |
+| Jaarlijkse uitgaven:  | €2.750 | × 12 | = | €33.000 |
+| Streefvermogen:  | €33.000 | × 25 | = | €825.000 |
+| Jaarlijks 4% rendement:  | €825.000 | × 4% | = | €33.000 |
+| | | | | |
 
 **Resultaat:** Je jaarlijkse beleggingsrendement is gelijk aan je jaarlijkse uitgaven, wat betekent dat je geen extra inkomensbronnen nodig hebt.
 

@@ -40,11 +40,13 @@ This calculation is based on the **4% rule**, which suggests that if you withdra
 
 ### Example Calculation
 
-| Monthly Expenses: | $2,750 |
-| ------------------ | ------ |
-| Annual Expenses: | 12 × $2,750 = $33,000 |
-| Target Capital: | 25 × $33,000 = $825,000 |
-| Annual 4% Return: | 4% × $825,000 = $33,000 |
+| | | | | |
+|:---|---:|:---:|:---:|---:|
+| Monthly Expenses:  $2,750 | | | | |
+| Annual Expenses: | $2,750 | × 12 | = | $33,000 |
+| Target Capital: | $33,000 | × 25 | = | $825,000 |
+| Annual 4% Return: | $825,000 | × 4% | = | $33,000 |
+| | | | | |
 
 **Result:** Your annual investment return equals your annual expenses, meaning you don't need additional income sources.
 
