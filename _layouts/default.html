@@ -41,6 +41,7 @@
     <link rel="preload" href="{{ page.asset_prefix }}assets/images/hero.png" as="image">
     {% endif %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8095952209861312" crossorigin="anonymous"></script>
+    {% include json-ld.html %}
 </head>
 <body>
     {% assign lang_data = site.data[page.lang] %}
