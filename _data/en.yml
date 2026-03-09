@@ -5,6 +5,7 @@ nav:
   scenarios: "Use Cases"
   howToPlan: "How to Plan"
   blog: "Blog"
+  faq: "FAQ"
   about: "About"
   contact: "Contact"
 
@@ -380,3 +381,54 @@ blog:
   backToBlog: "← Back to Blog"
   recentPosts: "Recent Posts"
   noPostsYet: "No blog posts yet. Check back soon!"
+
+faq:
+  title: "Frequently Asked Questions"
+  subtitle: "Find Answers to Common Questions About Finance Planner"
+  general:
+    title: "General Questions About the App"
+    whatIsFire:
+      question: "What is F.I.R.E.?"
+      answer: "F.I.R.E. stands for Financial Independence, Retire Early. It's a movement focused on achieving financial freedom through strategic saving, investing, and living below your means. The goal is to build enough wealth to have the freedom to choose how you spend your time, whether that means retiring early, working less, or pursuing passion projects without financial pressure."
+      learnMore: "Learn more about F.I.R.E. in our"
+      blogLink: "detailed blog post"
+    howWorks:
+      question: "How does the app work?"
+      answer: "Finance Planner helps you create comprehensive financial plans by modeling your income, expenses, savings, and investments over time. You can visualize your financial future, test different scenarios, and plan your path to financial independence. The app provides detailed year-by-year projections, accounting for inflation, taxes, and investment returns."
+      getStarted: "Get started by"
+      tutorialLink: "downloading the app"
+      and: "and following our"
+      howToPlanLink: "step-by-step guide"
+    isFree:
+      question: "Is the app free?"
+      answer: "Yes! Finance Planner is 100% free to download and use with 100% functionality. There are no premium features or paywalls. The app is funded by ads (AdMob) which keep it free for everyone while respecting your privacy—only anonymous usage data is collected by the ad provider, never your financial data."
+  privacy:
+    title: "Privacy & Data"
+    dataStorage:
+      question: "Where is my data stored?"
+      answer: "All your financial data is stored locally on your device. Nothing is sent to external servers or the cloud. Your personal financial information stays 100% private and secure on your phone."
+    offline:
+      question: "Does the app work offline?"
+      answer: "Yes! Since all your data is stored locally on your device, Finance Planner works completely offline. You can create and manage your financial plans anytime, anywhere, without needing an internet connection."
+    export:
+      question: "Can I export my data?"
+      answer: "Yes! You can export your financial plans using the Share menu item at the top of the app. This allows you to backup your data, transfer it to another device, or share specific scenarios with others."
+  technology:
+    title: "Technology"
+    devices:
+      question: "What devices does the app work on?"
+      answer: "Finance Planner is available for both iOS and Android devices. Download it from the"
+      appStoreLink: "App Store"
+      or: "or"
+      playStoreLink: "Google Play Store"
+    updates:
+      question: "How often is the app updated?"
+      answer: "We're constantly working to make Finance Planner the best financial planning tool available. Updates are released regularly with new features, improvements, and bug fixes based on user feedback and our commitment to excellence."
+  api:
+    title: "API & Integration"
+    availability:
+      question: "Is there an API available?"
+      answer: "Integration is one of the core principles of our technology. We're exploring API options for advanced users and developers. If you're interested in API access or integration possibilities, please"
+      contactLink: "contact us"
+      or: "or connect with us on"
+      linkedinLink: "LinkedIn"
