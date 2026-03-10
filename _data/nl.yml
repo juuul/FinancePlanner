@@ -5,7 +5,7 @@ nav:
   scenarios: "Voorbeelden"
   howToPlan: "Hoe te plannen"
   blog: "Blog"
-  faq: "Veelgestelde Vragen"
+  faq: "FAQ"
   about: "Over"
   contact: "Contact"
 
@@ -147,7 +147,7 @@ footer:
   contact: "✉️ Contact"
   about: "ℹ️ Over Finance Planner"
   privacy: "🔒 Privacyverklaring"
-  faq: "❓ Veelgestelde Vragen"
+  faq: "❓ FAQ"
   authorsTitle: "Auteurs"
   copyright: "&copy; 2026 Finance Planner. Ondersteunt je reis naar financiële onafhankelijkheid."
 
@@ -386,7 +386,7 @@ blog:
   noPostsYet: "Nog geen blogberichten. Kom snel terug!"
 
 faq:
-  title: "Veelgestelde Vragen"
+  title: "FAQ"
   subtitle: "Vind antwoorden op veelgestelde vragen over Finance Planner"
   general:
     title: "Algemene vragen over de app"
