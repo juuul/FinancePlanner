@@ -951,7 +951,7 @@ img {
 
 .footer-columns {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--space-xl);
     margin-bottom: var(--space-xl);
     align-items: start;
@@ -966,7 +966,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
-    align-items: center;
+    align-items: flex-start;
 }
 
 .footer-app-store-buttons img {

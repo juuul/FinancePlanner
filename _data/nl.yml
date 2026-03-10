@@ -143,9 +143,11 @@ footer:
   iosApp: "📱 iOS app"
   androidApp: "📱 Android app"
   tutorials: "🎥 Video tutorials"
+  blog: "📝 Blog"
   contact: "✉️ Contact"
   about: "ℹ️ Over Finance Planner"
   privacy: "🔒 Privacyverklaring"
+  faq: "❓ Veelgestelde Vragen"
   authorsTitle: "Auteurs"
   copyright: "&copy; 2026 Finance Planner. Ondersteunt je reis naar financiële onafhankelijkheid."
 

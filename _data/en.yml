@@ -142,9 +142,11 @@ footer:
   iosApp: "📱 iOS App"
   androidApp: "📱 Android App"
   tutorials: "🎥 Video Tutorials"
+  blog: "📝 Blog"
   privacy: "🔒 Privacy Statement"
   contact: "✉️ Contact"
   about: "ℹ️ About Finance Planner"
+  faq: "❓ FAQ"
   authorsTitle: "Authors"
   copyright: "&copy; 2026 Finance Planner. Empowering your journey to Financial Independence."
 
