@@ -244,7 +244,7 @@ howToPlan:
   step1:
     title: "Stap 1: Maak een berekening"
     intro: "De eerste stap bij het maken van je financiële plan is het opzetten van een nieuwe berekening. Dit vormt de basis van je planning door je planningsnaam en belangrijke financiële parameters te definiëren."
-    caption: "Het Berekening dialoogvenster waar je je planningdetails invoert"
+    caption: "Het Berekening dialoogvenster waar je je planningsdetails invoert"
     name:
       title: "Planning naam"
       description: "Geef je planning een beschrijvende naam, zoals \"Eerder met pensioen\" of \"Financiële onafhankelijkheid gezin\". Dit is de naam voor de planning die je helpt om later verschillende scenario's te identificeren."
