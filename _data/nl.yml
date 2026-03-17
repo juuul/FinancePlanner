@@ -250,7 +250,7 @@ howToPlan:
       description: "Geef je planning een beschrijvende naam, zoals \"Eerder met pensioen\" of \"Financiële onafhankelijkheid gezin\". Dit is de naam voor de planning die je helpt om later verschillende scenario's te identificeren."
     currentIncome:
       title: "Huidig inkomen"
-      description: "Voer je huidige maandelijkse of jaarlijkse inkomen in. Dit inkomen wordt automatisch toegevoegd als een inkomensonderwerp met een tijdlijn van nu tot je FIRE (Financiële Onafhankelijkheid Eerder met Pensioen) leeftijd. Het vertegenwoordigt je actieve werkinkomen."
+      description: "Voer je huidige maandelijkse of jaarlijkse inkomen in. Dit inkomen wordt automatisch toegevoegd als een inkomensonderwerp met een tijdlijn van nu tot je FIRE-leeftijd (Financiële Onafhankelijkheid Eerder met Pensioen). Het vertegenwoordigt je actieve werkinkomen."
     expense:
       title: "Uitgave"
       description: "Voer je totale uitgaven in. Deze uitgave wordt automatisch toegevoegd als een uitgavenonderwerp dat van toepassing is op de volledige planningsperiode. Het vertegenwoordigt je doorlopende levenskosten gedurende je financiële plan."
