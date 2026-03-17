@@ -235,20 +235,32 @@ tutorialsPage:
     scenariosButton: "📂 Bekijk voorbeeldscenario's"
 
 howToPlan:
+  # OPMERKING: Deze vertalingen worden momenteel niet gebruikt in de how-to-plan.html pagina's.
+  # De inhoud is hardcoded in aparte NL en EN HTML bestanden.
+  # Deze vertalingen worden bewaard voor mogelijk toekomstig gebruik.
   title: "📋 Hoe maak je een planning"
   subtitle: "Stapsgewijze handleiding voor het maken van je financiële plan"
   description: "Leer hoe je een uitgebreid financieel plan opzet in de Finance Planner app. Volg deze stappen om je berekening te maken, personen toe te voegen en je uitgaven, inkomsten, besparingen en leningen te plannen voor een compleet financieel overzicht."
   step1:
     title: "Stap 1: Maak een berekening"
-    intro: "De eerste stap bij het maken van je financiële plan is het opzetten van een nieuwe berekening. Dit vormt de basis van je planning."
-    caption: "Het Berekening dialoogvenster waar je de naam en het startsaldo invoert"
+    intro: "De eerste stap bij het maken van je financiële plan is het opzetten van een nieuwe berekening. Dit vormt de basis van je planning door je planningsnaam en belangrijke financiële parameters te definiëren."
+    caption: "Het Berekening dialoogvenster waar je je planningsdetails invoert"
     name:
       title: "Planning naam"
-      description: "Geef je planning een beschrijvende naam, zoals \"Gezinsbudget 2025\" of \"Pensioenplanning\". Dit helpt je later verschillende scenario's te identificeren."
-    balance:
-      title: "Rekeningsaldo"
-      description: "Voer het startsaldo van je rekening in. Dit is het saldo van de rekening waarop alle onderdelen worden berekend—bijvoorbeeld de gezamenlijke bankrekening van een huishouden."
-    tip: "💡 <strong>Tip:</strong> Het rekeningsaldo vertegenwoordigt de gezamenlijke rekening van alle deelnemers aan de planning—vergelijkbaar met een verlies- en winstrekening bij een bedrijf, maar dan voor privégebruik. Het dient als de reserve waaruit uitgaven worden betaald wanneer deze niet uit de lopende inkomsten kunnen worden gedekt."
+      description: "Geef je planning een beschrijvende naam, zoals \"Eerder met pensioen\" of \"Financiële onafhankelijkheid gezin\". Dit is de naam voor de planning die je helpt om later verschillende scenario's te identificeren."
+    currentIncome:
+      title: "Huidig inkomen"
+      description: "Voer je huidige maandelijkse of jaarlijkse inkomen in. Dit inkomen wordt automatisch toegevoegd als een inkomensonderwerp met een tijdlijn van nu tot je FIRE-leeftijd (Financiële Onafhankelijkheid Eerder met Pensioen). Het vertegenwoordigt je actieve werkinkomen."
+    expense:
+      title: "Uitgave"
+      description: "Voer je totale uitgaven in. Deze uitgave wordt automatisch toegevoegd als een uitgavenonderwerp dat van toepassing is op de volledige planningsperiode. Het vertegenwoordigt je doorlopende levenskosten gedurende je financiële plan."
+    pensionIncome:
+      title: "Pensioeninkomen"
+      description: "Voer het totale pensioeninkomen in dat je verwacht te ontvangen vanaf de pensioenleeftijd. Dit wordt automatisch toegevoegd als een inkomensonderwerp dat start op je standaard pensioenleeftijd en vertegenwoordigt je passieve pensioeninkomen."
+    annualInterest:
+      title: "Jaarlijkse rente"
+      description: "Stel de jaarlijkse rente voor je besparingen in. Dit voegt automatisch een spaaronderwerp toe met het opgegeven rentepercentage. De spaarrekening zal automatisch al het inkomen opslaan dat overblijft na uitgaven en zal de besparingen verminderen wanneer het inkomen lager is dan de uitgaven."
+    tip: "💡 <strong>Tip:</strong> Deze vereenvoudigde instelling maakt automatisch de essentiële onderwerpen (inkomen, uitgaven, pensioen en besparingen) aan die nodig zijn voor FIRE-planning. De spaarrekening fungeert als een buffer, verzamelt overtollig inkomen tijdens werkjaren en voorziet in middelen tijdens de periode tussen vervroegd pensioen en de pensioenleeftijd."
   step2:
     title: "Stap 2: Voeg personen toe"
     intro: "Na het aanmaken van je berekening, voeg je de personen toe die betrokken zijn bij je financiële plan. Dit is meestal jezelf, je partner of andere huishoudenleden."
