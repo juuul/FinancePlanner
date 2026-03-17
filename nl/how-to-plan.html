@@ -213,31 +213,34 @@ description: "Leer hoe je een financieel plan maakt in Finance Planner. Stapsgew
         <!-- Step 6: Planning Savings -->
         <section class="animate-fade-in section">
             <h2 class="animate-from-left">Stap 6: Besparingen plannen</h2>
-            <p>Besparingsplanning helpt je te begrijpen of je je kosten kunt dekken en zelfs eerder met pensioen kunt. Stel je spaarstrategie in:</p>
-            
-            <div class="features-grid">
-                <div class="animate-from-left feature-card" data-animate-delay="100ms">
-                    <span class="card-title">Stortingen</span>
-                    <span>Plan regelmatige of eenmalige stortingen op je spaarrekeningen. Configureer belastingvoordelen en inflatie-aanpassingen.</span>
-                </div>
-                <div class="animate-from-right feature-card" data-animate-delay="200ms">
-                    <span class="card-title">Opnames</span>
-                    <span>Plan hoe en wanneer je opneemt uit besparingen, vooral belangrijk voor pensioenplanning.</span>
-                </div>
-            </div>
-            
-            <h3>🎯 Voorbeeld: Besparingen instellen</h3>
-            <p>We voegen een spaarrekening toe met een jaarlijkse rente van 6%. De stortingen stoppen op de vervroegde pensioendatum, en de spaarrekening eindigt op de vaste pensioendatum—het resterende saldo gaat naar de hoofdrekening.</p>
-            
-            <img src="https://github.com/user-attachments/assets/d66b3b96-271e-4c41-91c6-26318ea48384" alt="Savings plan setup with deposits" class="app-screenshot">
-            <p class="screenshot-caption">Spaarplan met 1.000 maandelijkse stortingen tegen 6% rente</p>
-            
-            <p>Merk op dat we zowel stortingen als opnames hebben ingesteld op geïndexeerd voor inflatie. Dit zorgt ervoor dat onze spaarstrategie gelijke tred houdt met stijgende kosten.</p>
-            
-            <p>We stellen een opname in van 2.000 per maand gedurende de periode tussen vervroegd pensioen en de vaste pensioendatum. Dit dekt het inkomensgat wanneer ons arbeidsinkomen stopt maar het pensioen nog niet is begonnen. De rente blijft groeien op het resterende saldo tijdens de opnameperiode.</p>
-            
+            <p>Besparingsplanning helpt je te begrijpen of je je kosten kunt dekken en zelfs eerder met pensioen kunt. Een spaarbewerking bestaat uit drie onderdelen: algemene instellingen, stortingen en opnames.</p>
+
+            <h3>⚙️ Deel 1: Algemene instellingen</h3>
+            <p>De algemene instellingen bepalen de basis van je spaarrekening: het openingssaldo, het jaarlijkse rentepercentage en de periode waarin de rekening actief is. Je kunt de rekening ook uitsluiten van vermogensbelastingberekeningen.</p>
+
+            <img src="https://github.com/user-attachments/assets/c68a4674-bcde-411f-95c5-7cb31b20c6de" alt="Savings plan general settings" class="app-screenshot">
+            <p class="screenshot-caption">Algemene spaarsettings: openingssaldo, rente, periode en gebruik bij tekorten</p>
+
+            <p>De schakelaar <strong>Gebruik bij tekorten</strong> is een krachtige nieuwe functie. Wanneer ingeschakeld, wordt deze spaarrekening automatisch gebruikt als er een tekort is (d.w.z. de totale uitgaven overtreffen het totale inkomen). Het stortingsbedrag wordt ook begrensd tot het verschil tussen het totale inkomen en de totale uitgaven, zodat je nooit meer spaart dan je werkelijke overschot.</p>
+
+            <h3>💰 Deel 2: Stortingen</h3>
+            <p>In het stortingsgedeelte stel je in hoeveel je op de spaarrekening zet, hoe vaak en voor welke periode.</p>
+
+            <img src="https://github.com/user-attachments/assets/91950e3e-fddc-48f1-b1d9-ad55c9094e68" alt="Savings deposit settings" class="app-screenshot">
+            <p class="screenshot-caption">Stortingsinstellingen: bedrag, frequentie, periode, inflatiecorrectie en belastingteruggave</p>
+
+            <p>Het <strong>Belastingteruggavepercentage op stortingen</strong> is het percentage van elke storting dat als inkomen wordt teruggestort. Als het percentage bijvoorbeeld 20% is en je stort 1.000, ontvang je effectief 200 terug als inkomen—zodat de netto kosten van de storting 800 zijn, maar er toch 1.000 wordt gespaard.</p>
+
+            <h3>🏧 Deel 3: Opnames</h3>
+            <p>In het opnamegedeelte kun je plannen wanneer en hoeveel je opneemt van de spaarrekening—vooral handig om de periode tussen vervroegd pensioen en de start van je pensioen te overbruggen.</p>
+
             <img src="https://github.com/user-attachments/assets/1ea09ef6-1d35-4880-863d-828848822c52" alt="Withdrawal setup showing 2,000 monthly withdrawal" class="app-screenshot">
-            <p class="screenshot-caption">Maandelijkse opname van 2.000 instellen tijdens vervroegde pensioenperiode</p>
+            <p class="screenshot-caption">Opname-instellingen: bedrag, frequentie, periode, inflatiecorrectie en belastingtarief</p>
+
+            <p>Het <strong>Belastingpercentage op opnames</strong> is het percentage dat bij elke opname wordt ingehouden. Als het percentage bijvoorbeeld 15% is en je neemt 1.000 op, wordt slechts 850 aan je inkomen toegevoegd.</p>
+
+            <h3>🎯 Voorbeeld: Besparingen instellen</h3>
+            <p>In dit voorbeeld stellen we een volledig spaarplan in met behulp van de drie hierboven beschreven onderdelen. De jaarlijkse rente is ingesteld op 3%. We configureren een maandelijkse storting van 40.000, maar dankzij de functie "Gebruik bij tekorten" wordt de werkelijke storting automatisch begrensd tot het verschil tussen het totale inkomen en de totale uitgaven—zodat je nooit meer spaart dan je werkelijke overschot.</p>
             
             <h3>📊 Bekijk de verbeterde resultaten</h3>
             <p>Na het toevoegen van het spaarplan berekenen we opnieuw. Nu toont de vermogensgrafiek dat het tekort is verschoven van 76 naar 85 jaar (2058)—een aanzienlijke verbetering!</p>
