@@ -234,20 +234,32 @@ tutorialsPage:
     scenariosButton: "📂 View Example Scenarios"
 
 howToPlan:
+  # NOTE: These translations are not currently used in the how-to-plan.html pages.
+  # The content is hardcoded in separate EN and NL HTML files instead.
+  # These translations are kept for potential future use.
   title: "📋 How to Make a Planning"
   subtitle: "Step-by-Step Guide to Creating Your Financial Plan"
   description: "Learn how to set up a comprehensive financial plan in the Finance Planner app. Follow these steps to create your calculation, add persons, and plan your expenses, incomes, savings, and loans for a complete financial overview."
   step1:
     title: "Step 1: Create a Calculation"
-    intro: "The first step in creating your financial plan is to set up a new calculation. This forms the foundation of your planning."
-    caption: "The Calculation dialog where you enter your planning name and starting balance"
+    intro: "The first step in creating your financial plan is to set up a new calculation. This forms the foundation of your planning by defining your planning name and key financial parameters."
+    caption: "The Calculation dialog where you enter your planning details"
     name:
       title: "Planning Name"
-      description: "Give your planning a descriptive name, such as \"Family Budget 2025\" or \"Retirement Planning\". This helps you identify different scenarios later."
-    balance:
-      title: "Account Balance"
-      description: "Enter the starting balance of your account. This is the balance of the account in which all subjects are calculated—for example, the shared bank account of a household."
-    tip: "💡 <strong>Tip:</strong> The account balance represents the shared account of all participants in the planning—similar to a profit and loss account in a business, but for private use. It serves as the reserve from which expenses are paid when they cannot be covered by current incomes."
+      description: "Give your planning a descriptive name, such as \"Retire Early\" or \"Family Financial Independence\". This is the name for the planning that helps you identify different scenarios later."
+    currentIncome:
+      title: "Current Income"
+      description: "Enter your current monthly or yearly income. This income is automatically added as an income subject with a timeline from now to your FIRE (Financial Independence Retire Early) age. It represents your active working income."
+    expense:
+      title: "Expense"
+      description: "Enter your total expenses. This expense is automatically added as an expense subject that applies to the complete planning period. It represents your ongoing living costs throughout your financial plan."
+    pensionIncome:
+      title: "Pension Income"
+      description: "Enter the total pension income you expect to receive from retirement age. This is automatically added as an income subject starting at your standard retirement age, representing your passive retirement income."
+    annualInterest:
+      title: "Annual Interest"
+      description: "Set the annual interest rate for your savings. This automatically adds a savings subject with the given interest rate. The savings account will automatically store all income that is left after expenses and will reduce the savings when income is lower than expenses."
+    tip: "💡 <strong>Tip:</strong> This simplified setup automatically creates the essential subjects (income, expenses, pension, and savings) needed for FIRE planning. The savings account acts as a buffer, accumulating surplus income during working years and providing funds during the gap between early retirement and pension age."
   step2:
     title: "Step 2: Add Persons"
     intro: "After creating your calculation, add the persons involved in your financial plan. This is typically yourself, your partner, or other household members."
