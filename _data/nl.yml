@@ -30,9 +30,17 @@ moreInfo:
 
 appStore:
   title: "📱 Download"
+  subtitle: "100% Gratis"
   description: "Neem je financiële planning overal mee naartoe met onze mobiele apps, nu beschikbaar voor iOS en Android!"
   downloadAppStore: "Download in de app store"
   downloadGooglePlay: "Download op Google Play"
+  features:
+    - "100% gratis"
+    - "Geen aankoopkosten"
+    - "Geen in-app aankopen"
+    - "Geen verrassingen"
+    - "100% Privé"
+    - "Start direct met financiële planning"
 
 features:
   title: "Belangrijkste functies"

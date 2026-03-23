@@ -30,8 +30,16 @@ moreInfo:
 
 appStore:
   title: "📱 Get the app"
+  subtitle: "100% Free"
   downloadAppStore: "Download on the App Store"
   downloadGooglePlay: "Get it on Google Play"
+  features:
+    - "100% free"
+    - "No purchase fee"
+    - "No in-app purchases"
+    - "No surprises"
+    - "100% Private"
+    - "Start immediately with financial planning"
 
 features:
   title: "Key Features"
