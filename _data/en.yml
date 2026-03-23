@@ -4,6 +4,7 @@ nav:
   tutorials: "Tutorials"
   scenarios: "Use Cases"
   howToPlan: "How to Plan"
+  tools: "Tools"
   blog: "Blog"
   faq: "FAQ"
   about: "About"
@@ -385,6 +386,25 @@ howToPlan:
     tutorials: "🎥 Watch Video Tutorials"
     scenarios: "📂 View Example Scenarios"
     community: "💬 Join Community Discussions"
+
+tools:
+  title: "Financial Tools"
+  subtitle: "Interactive Tools to Help You Plan Your Financial Future"
+  compoundInterest:
+    title: "🔢 Compound Interest Calculator"
+    description: "Visualize the power of compound interest over time. See how regular investments and interest rates affect your wealth accumulation with an interactive 3D chart."
+    tryItOut: "Try it out"
+  compoundInterestCalc:
+    title: "Compound Interest Calculator"
+    subtitle: "Visualize the Power of Compound Interest"
+    initial: "Initial Amount"
+    monthly: "Monthly Contribution"
+    interest: "Annual Interest Rate (%)"
+    years: "Investment Period (Years)"
+    totalValue: "Total Value"
+    totalContributions: "Total Contributions"
+    totalInterest: "Total Interest Earned"
+    description: "Adjust the sliders to see how compound interest affects your wealth accumulation over time. The 3D visualization shows your investment growth year by year."
 
 blog:
   title: "Blog"
