@@ -374,6 +374,14 @@ strong {
     color: white;
 }
 
+.btn-get-app .logo-text small {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--color-accent-yellow);
+    margin-top: 0.1rem;
+}
+
 .btn-get-app:hover {
     background: transparent;
     border-color: var(--color-accent-blue);
@@ -603,6 +611,21 @@ strong {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: var(--space-lg);
+}
+
+.app-features-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-lg) auto;
+    max-width: 500px;
+    text-align: left;
+    display: inline-block;
+}
+
+.app-features-list li {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    color: white;
 }
 
 /* ========================================
