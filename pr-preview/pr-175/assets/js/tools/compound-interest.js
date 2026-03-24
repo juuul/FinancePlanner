@@ -46,7 +46,7 @@ function updateChartDimensions() {
     const containerWidth = container.clientWidth;
     const containerHeight = container.clientHeight;
 
-    margin = { top: 40, right: 30, bottom: 60, left: 70 };
+    margin = { top: 0, right: 0, bottom: 160, left: 30 };
     width = Math.min(800, containerWidth - margin.left - margin.right);
     height = containerHeight - margin.top - margin.bottom;
 }
@@ -141,10 +141,13 @@ let isFirstRender = true;
 
 // Draw line chart with gradient backfill
 function drawChart(data) {
-    // Clear previous chart content but keep SVG and defs
-    svg.selectAll('.chart-content').remove();
-
-    const chartGroup = svg.append('g').attr('class', 'chart-content');
+    // Get or create chart group
+    let chartGroup = svg.select('.chart-content');
+    const isCreate = chartGroup.empty();
+    
+    if (isCreate) {
+        chartGroup = svg.append('g').attr('class', 'chart-content');
+    }
 
     // Create scales
     const xScale = d3.scaleLinear()
@@ -166,11 +169,21 @@ function drawChart(data) {
     const areaData = [{ year: 0, value: data[0].value, deposits: data[0].deposits }, ...data];
 
     // Draw area gradient backfill
-    chartGroup.append('path')
-        .datum(areaData)
-        .attr('d', area)
-        .attr('fill', 'url(#area-gradient)')
-        .attr('opacity', 0.6);
+    let areaPath = chartGroup.select('path.area-backfill');
+    if (isCreate) {
+        areaPath = chartGroup.append('path')
+            .attr('class', 'area-backfill')
+            .datum(areaData)
+            .attr('fill', 'url(#area-gradient)')
+            .attr('opacity', 0)
+            .attr('d', area);
+        
+        areaPath.transition()
+            .duration(800)
+            .attr('opacity', 0.6);
+    } else {
+        areaPath.datum(areaData).attr('d', area);
+    }
 
     // Create line paths
     const line = d3.line()
@@ -184,28 +197,85 @@ function drawChart(data) {
         .curve(d3.curveMonotoneX);
 
     // Draw total value line
-    const totalLine = chartGroup.append('path')
-        .datum(areaData)
-        .attr('d', line)
-        .attr('fill', 'none')
-        .attr('stroke', 'url(#line-gradient)')
-        .attr('stroke-width', 4)
-        .attr('opacity', 0.9);
+    let totalLine = chartGroup.select('path.total-value-line');
+    const totalLinePath = line(areaData);
+    
+    if (isCreate) {
+        const flatPath = d3.line()
+            .x(d => xScale(d.year))
+            .y(() => height)
+            .curve(d3.curveMonotoneX);
+        
+        totalLine = chartGroup.append('path')
+            .attr('class', 'total-value-line')
+            .datum(areaData)
+            .attr('fill', 'none')
+            .attr('stroke', 'url(#line-gradient)')
+            .attr('stroke-width', 4)
+            .attr('opacity', 0.9)
+            .attr('d', flatPath(areaData));
+        
+        totalLine.transition()
+            .duration(1500)
+            .ease(d3.easeCubicOut)
+            .attr('d', totalLinePath);
+    } else {
+        totalLine.datum(areaData).transition()
+            .duration(800)
+            .ease(d3.easeCubicOut)
+            .attr('d', totalLinePath);
+    }
 
-    // Draw deposits line (accumulated deposits)
-    chartGroup.append('path')
-        .datum(areaData)
-        .attr('d', depositsLinePath)
-        .attr('fill', 'none')
-        .attr('stroke', '#9BA3B4')
-        .attr('stroke-width', 3)
-        .attr('stroke-dasharray', '5,5')
-        .attr('opacity', 0.6);
+    const depositsGradient = defs.append('linearGradient')
+        .attr('id', 'deposits-gradient')
+        .attr('x1', '0%')
+        .attr('y1', '0%')
+        .attr('x2', '100%')
+        .attr('y2', '0%');
+
+    depositsGradient.append('stop')
+        .attr('offset', '0%')
+        .attr('stop-color', '#555555');
+
+    depositsGradient.append('stop')
+        .attr('offset', '100%')
+        .attr('stop-color', '#777777');
+
+    let depositsLine = chartGroup.select('path.deposits-line');
+    const depositsFlatPath = d3.line()
+        .x(d => xScale(d.year))
+        .y(() => height)
+        .curve(d3.curveMonotoneX);
+    
+    if (isCreate) {
+        depositsLine = chartGroup.append('path')
+            .attr('class', 'deposits-line')
+            .datum(areaData)
+            .attr('fill', 'none')
+            .attr('stroke', 'url(#deposits-gradient)')
+            .attr('stroke-width', 3)
+            .attr('opacity', 0.7)
+            .attr('d', depositsFlatPath(areaData));
+        
+        depositsLine.transition()
+            .duration(1500)
+            .ease(d3.easeCubicOut)
+            .attr('d', depositsLinePath(areaData));
+    } else {
+        depositsLine.datum(areaData).transition()
+            .duration(800)
+            .ease(d3.easeCubicOut)
+            .attr('d', depositsLinePath(areaData));
+    }
 
     // Add circles at data points (only show every 5 years)
+    const circleData = areaData.filter((d, i) => i % Math.ceil(data.length / 12) === 0 || i === data.length - 1);
     const circles = chartGroup.selectAll('.data-point')
-        .data(areaData.filter((d, i) => i % Math.ceil(data.length / 12) === 0 || i === data.length - 1))
-        .enter()
+        .data(circleData);
+    
+    circles.exit().remove();
+    
+    const circlesEnter = circles.enter()
         .append('circle')
         .attr('class', 'data-point')
         .attr('cx', d => xScale(d.year))
@@ -213,46 +283,73 @@ function drawChart(data) {
         .attr('r', 4)
         .attr('fill', '#006AA7')
         .attr('opacity', 0);
+    
+    circlesEnter.merge(circles)
+        .attr('cx', d => xScale(d.year));
 
-    // Animate on first render only
+    // Animate circles on first render only
     if (isFirstRender) {
-        totalLine.transition()
-            .duration(1500)
-            .ease(d3.easeCubicOut)
-            .attr('d', line(areaData));
-
         circles.transition()
             .delay((d, i) => i * 100)
             .duration(800)
             .ease(d3.easeBackOut)
             .attr('cy', d => yScale(d.value))
             .attr('opacity', 1);
-
-        isFirstRender = false;
     } else {
-        totalLine.transition()
-            .duration(800)
-            .ease(d3.easeCubicOut)
-            .attr('d', line(areaData));
-
         circles.transition()
             .duration(500)
             .attr('cy', d => yScale(d.value));
     }
 
+    isFirstRender = false;
+
+    // Remove old axes and labels
+    chartGroup.select('.x-axis').remove();
+    chartGroup.select('.axis-label').remove();
+
     // Add axes
     const xAxis = chartGroup.append('g')
-        .attr('transform', `translate(0,${height})`)
-        .call(d3.axisBottom(xScale).tickValues(
-            data.length > 20
-                ? data.filter((d, i) => i % Math.ceil(data.length / 12) === 0).map(d => d.year)
-                : data.map(d => d.year)
-        ))
-        .attr('color', '#9BA3B4');
+        .attr('class', 'x-axis')
+        .attr('transform', `translate(0,${height})`);
+    
+    const years = data.map(d => d.year);
+    const firstYear = years[0];
+    const lastYear = years[years.length - 1];
+    
+    let tickIndices;
+    if (years.length <= 12) {
+        tickIndices = years.map((_, i) => i);
+    } else {
+        const intermediateIndices = [];
+        for (let i = 1; i < years.length - 1; i++) {
+            if (i % Math.ceil(years.length / 12) === 0) {
+                intermediateIndices.push(i);
+            }
+        }
+        tickIndices = [0, ...intermediateIndices, years.length - 1];
+    }
+    
+    const tickValues = tickIndices.map(i => data[i].year);
+    
+    xAxis.call(d3.axisBottom(xScale)
+        .tickValues(tickIndices)
+        .tickFormat(d => {
+            const yearData = data[d];
+            if (yearData) {
+                return `${currencyFormatter.format(yearData.value)} (${yearData.year})`;
+            }
+            return d;
+        }));
+    
+    xAxis.attr('color', '#9BA3B4');
 
     xAxis.selectAll('text')
         .style('fill', '#9BA3B4')
-        .style('font-size', '13px');
+        .style('font-size', '18px')
+        .style('text-anchor', 'start')
+        .attr('transform', 'rotate(90)')
+        .attr('dy', '-5px')
+        .attr('dx', '22px');
 
     xAxis.selectAll('line')
         .style('stroke', 'rgba(255, 255, 255, 0.1)');
@@ -260,89 +357,62 @@ function drawChart(data) {
     xAxis.select('.domain')
         .style('stroke', 'rgba(255, 255, 255, 0.1)');
 
-    const yAxis = chartGroup.append('g')
-        .call(d3.axisLeft(yScale).ticks(5).tickFormat(d => currencyFormatter.format(d)))
-        .attr('color', '#9BA3B4');
+    xAxis.selectAll('tick')
+        .attr('transform', 'rotate(90)');
 
-    yAxis.selectAll('text')
-        .style('fill', '#9BA3B4')
-        .style('font-size', '13px');
+    // Don't repaint legend on recalculate
+    if (isCreate) {
+        const legendX = 10;
+        const legendY = 10;
+        const legendWidth = 240;
+        const legendHeight = 75;
 
-    yAxis.selectAll('line')
-        .style('stroke', 'rgba(255, 255, 255, 0.1)');
+        const legend = chartGroup.append('g')
+            .attr('class', 'legend')
+            .attr('transform', `translate(${legendX},${legendY})`);
 
-    yAxis.select('.domain')
-        .style('stroke', 'rgba(255, 255, 255, 0.1)');
+        legend.append('rect')
+            .attr('x', 0)
+            .attr('y', 0)
+            .attr('width', legendWidth)
+            .attr('height', legendHeight)
+            .attr('rx', 8)
+            .attr('ry', 8)
+            .style('fill', 'rgba(30, 35, 40, 0.85)')
+            .style('stroke', 'rgba(255, 255, 255, 0.05)')
+            .style('stroke-width', 1);
 
-    // Add grid lines
-    chartGroup.append('g')
-        .attr('class', 'grid')
-        .call(d3.axisLeft(yScale)
-            .ticks(5)
-            .tickSize(-width)
-            .tickFormat(''))
-        .style('stroke', 'rgba(255, 255, 255, 0.05)')
-        .select('.domain')
-        .style('stroke', 'none');
+        legend.append('line')
+            .attr('x1', 20)
+            .attr('y1', 20)
+            .attr('x2', 65)
+            .attr('y2', 20)
+            .attr('stroke', '#006AA7')
+            .attr('stroke-width', 6);
 
-    // Add axis labels
-    chartGroup.append('text')
-        .attr('x', width / 2)
-        .attr('y', height + margin.bottom - 10)
-        .attr('text-anchor', 'middle')
-        .style('fill', '#E6E9EF')
-        .style('font-size', '14px')
-        .style('font-weight', '600')
-        .text(translations[lang].years);
+        legend.append('text')
+            .attr('x', 75)
+            .attr('y', 28)
+            .style('fill', '#E6E9EF')
+            .style('font-size', '20px')
+            .text(translations[lang].totalValue);
 
-    chartGroup.append('text')
-        .attr('transform', 'rotate(-90)')
-        .attr('x', -height / 2)
-        .attr('y', -margin.left + 20)
-        .attr('text-anchor', 'middle')
-        .style('fill', '#E6E9EF')
-        .style('font-size', '14px')
-        .style('font-weight', '600')
-        .text(translations[lang].totalValue);
+        legend.append('line')
+            .attr('x1', 20)
+            .attr('y1', 55)
+            .attr('x2', 65)
+            .attr('y2', 55)
+            .attr('stroke', '#555555')
+            .attr('stroke-width', 5)
+            .attr('opacity', 0.7);
 
-    // Add legend (moved further right)
-    const legendX = width - 200;
-    const legendY = 10;
-
-    const legend = chartGroup.append('g')
-        .attr('class', 'legend')
-        .attr('transform', `translate(${legendX},${legendY})`);
-
-    legend.append('line')
-        .attr('x1', 0)
-        .attr('y1', 0)
-        .attr('x2', 30)
-        .attr('y2', 0)
-        .attr('stroke', '#006AA7')
-        .attr('stroke-width', 4);
-
-    legend.append('text')
-        .attr('x', 35)
-        .attr('y', 5)
-        .style('fill', '#E6E9EF')
-        .style('font-size', '13px')
-        .text(translations[lang].totalValue);
-
-    legend.append('line')
-        .attr('x1', 0)
-        .attr('y1', 20)
-        .attr('x2', 30)
-        .attr('y2', 20)
-        .attr('stroke', '#9BA3B4')
-        .attr('stroke-width', 3)
-        .attr('stroke-dasharray', '5,5');
-
-    legend.append('text')
-        .attr('x', 35)
-        .attr('y', 25)
-        .style('fill', '#E6E9EF')
-        .style('font-size', '13px')
-        .text(translations[lang].deposits);
+        legend.append('text')
+            .attr('x', 75)
+            .attr('y', 63)
+            .style('fill', '#E6E9EF')
+            .style('font-size', '20px')
+            .text(translations[lang].deposits);
+    }
 }
 
 // Update display
