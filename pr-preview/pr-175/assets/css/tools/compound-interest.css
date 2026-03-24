@@ -1,0 +1,181 @@
+.calculator-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.calculator-controls {
+    background: var(--color-bg-dark-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 3px solid var(--color-accent-blue);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    margin-top: var(--space-xl);
+}
+
+.slider-group {
+    margin-bottom: var(--space-md);
+}
+
+.slider-group label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-text-primary);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    font-size: 1rem;
+}
+
+.slider-value {
+    color: var(--color-accent-yellow);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.slider-container {
+    position: relative;
+    padding: var(--space-md) 0;
+}
+
+.slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background: var(--color-bg-dark-elevated);
+    outline: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--color-accent-blue);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+.slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--color-accent-blue);
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.slider::-moz-range-thumb:hover {
+    transform: scale(1.1);
+}
+
+.slider::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(to right,
+        var(--color-accent-blue) 0%,
+        var(--color-accent-blue) var(--slider-progress, 0%),
+        var(--color-bg-dark-elevated) var(--slider-progress, 0%),
+        var(--color-bg-dark-elevated) 100%);
+}
+
+.slider::-moz-range-track {
+    height: 8px;
+    border-radius: 4px;
+    background: var(--color-bg-dark-elevated);
+}
+
+.slider::-moz-range-progress {
+    height: 8px;
+    border-radius: 4px;
+    background: var(--color-accent-blue);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+    margin-top: var(--space-xl);
+}
+
+.result-card {
+    background: var(--color-bg-dark-elevated);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.result-label {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: var(--space-sm);
+}
+
+.result-value {
+    color: var(--color-accent-yellow);
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+}
+
+#chart-container {
+    background: var(--color-bg-dark-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    min-height: 400px;
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chart {
+    width: 100%;
+    height: 400px;
+    max-height: 450px;
+}
+
+.explanation-section {
+    background: var(--color-bg-dark-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    margin-top: var(--space-xl);
+}
+
+.explanation-section h3 {
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-md);
+}
+
+.explanation-section p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    #chart {
+        height: 300px;
+        max-height: 350px;
+    }
+    
+    #chart-container {
+        min-height: 350px;
+        max-height: 400px;
+        padding: var(--space-lg);
+    }
+    
+    .calculator-controls {
+        padding: var(--space-lg);
+    }
+}
