@@ -3,7 +3,7 @@ layout: default
 lang: en
 asset_prefix: ""
 title: "Compound Interest Calculator - Finance Planner"
-description: "Interactive compound interest calculator with 3D visualization. See how your investments grow over time with regular contributions and compound interest."
+description: "Interactive compound interest calculator. See how your investments grow over time with regular contributions and compound interest."
 ---
 {% assign lang_data = site.data[page.lang] %}
 
@@ -81,6 +81,10 @@ description: "Interactive compound interest calculator with 3D visualization. Se
         <p>{{ lang_data.tools.compoundInterestCalc.description }}</p>
     </div>
 </section>
+
+<footer class="blog-post-footer">
+    <a href="tools.html" class="btn btn-secondary">{{ lang_data.blog.backToTools }}</a>
+</footer>
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="{{ page.asset_prefix }}assets/js/tools/compound-interest.js"></script>

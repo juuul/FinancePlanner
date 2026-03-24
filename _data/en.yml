@@ -392,7 +392,7 @@ tools:
   subtitle: "Interactive Tools to Help You Plan Your Financial Future"
   compoundInterest:
     title: "🔢 Compound Interest Calculator"
-    description: "Visualize the power of compound interest over time. See how regular investments and interest rates affect your wealth accumulation with an interactive 3D chart."
+    description: "Visualize the power of compound interest over time. See how regular investments and interest rates affect your wealth accumulation."
     tryItOut: "Try it out"
   compoundInterestCalc:
     title: "Compound Interest Calculator"
@@ -404,7 +404,7 @@ tools:
     totalValue: "Total Value"
     totalContributions: "Total Deposits"
     totalInterest: "Total Interest Earned"
-    description: "Adjust the sliders to see how compound interest affects your wealth accumulation over time. The 3D visualization shows your investment growth year by year."
+    description: "Adjust the sliders to see how compound interest affects your wealth accumulation over time. The chart shows your investment growth year by year."
 
 blog:
   title: "Blog"
@@ -413,6 +413,7 @@ blog:
   postedOn: "Posted on"
   by: "by"
   backToBlog: "← Back to Blog"
+  backToTools: "Back to Tools"
   recentPosts: "Recent Posts"
   noPostsYet: "No blog posts yet. Check back soon!"
 

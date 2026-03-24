@@ -393,7 +393,7 @@ tools:
   subtitle: "Interactieve tools om je financiële toekomst te plannen"
   compoundInterest:
     title: "🔢 Samengestelde rente calculator"
-    description: "Visualiseer de kracht van samengestelde rente over tijd. Zie hoe regelmatige investeringen en rentepercentages je vermogensopbouw beïnvloeden met een interactieve 3D-grafiek."
+    description: "Visualiseer de kracht van samengestelde rente over tijd. Zie hoe regelmatige investeringen en rentepercentages je vermogensopbouw beïnvloeden."
     tryItOut: "Probeer het uit"
   compoundInterestCalc:
     title: "Samengestelde rente calculator"
@@ -405,7 +405,7 @@ tools:
     totalValue: "Totale waarde"
     totalContributions: "Totale stortingen"
     totalInterest: "Totale rente verdiend"
-    description: "Pas de schuifregelaars aan om te zien hoe samengestelde rente je vermogensopbouw in de loop van de tijd beïnvloedt. De 3D-visualisatie toont je investeringsgroei jaar na jaar."
+    description: "Pas de schuifregelaars aan om te zien hoe samengestelde rente je vermogensopbouw in de loop van de tijd beïnvloedt. De grafiek toont je investeringsgroei jaar na jaar."
 
 blog:
   title: "Blog"
@@ -414,6 +414,7 @@ blog:
   postedOn: "Geplaatst op"
   by: "door"
   backToBlog: "← Terug naar Blog"
+  backToTools: "Terug naar tools"
   recentPosts: "Recente berichten"
   noPostsYet: "Nog geen blogberichten. Kom snel terug!"
 
