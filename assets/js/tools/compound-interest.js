@@ -46,7 +46,7 @@ function updateChartDimensions() {
     const containerWidth = container.clientWidth;
     const containerHeight = container.clientHeight;
 
-    margin = { top: 40, right: 30, bottom: 60, left: 70 };
+    margin = { top: 40, right: 30, bottom: 80, left: 190 };
     width = Math.min(800, containerWidth - margin.left - margin.right);
     height = containerHeight - margin.top - margin.bottom;
 }
@@ -192,15 +192,28 @@ function drawChart(data) {
         .attr('stroke-width', 4)
         .attr('opacity', 0.9);
 
-    // Draw deposits line (accumulated deposits)
+    const depositsGradient = defs.append('linearGradient')
+        .attr('id', 'deposits-gradient')
+        .attr('x1', '0%')
+        .attr('y1', '0%')
+        .attr('x2', '100%')
+        .attr('y2', '0%');
+
+    depositsGradient.append('stop')
+        .attr('offset', '0%')
+        .attr('stop-color', '#555555');
+
+    depositsGradient.append('stop')
+        .attr('offset', '100%')
+        .attr('stop-color', '#777777');
+
     chartGroup.append('path')
         .datum(areaData)
         .attr('d', depositsLinePath)
         .attr('fill', 'none')
-        .attr('stroke', '#9BA3B4')
+        .attr('stroke', 'url(#deposits-gradient)')
         .attr('stroke-width', 3)
-        .attr('stroke-dasharray', '5,5')
-        .attr('opacity', 0.6);
+        .attr('opacity', 0.7);
 
     // Add circles at data points (only show every 5 years)
     const circles = chartGroup.selectAll('.data-point')
@@ -252,7 +265,7 @@ function drawChart(data) {
 
     xAxis.selectAll('text')
         .style('fill', '#9BA3B4')
-        .style('font-size', '13px');
+        .style('font-size', '26px');
 
     xAxis.selectAll('line')
         .style('stroke', 'rgba(255, 255, 255, 0.1)');
@@ -266,7 +279,7 @@ function drawChart(data) {
 
     yAxis.selectAll('text')
         .style('fill', '#9BA3B4')
-        .style('font-size', '13px');
+        .style('font-size', '26px');
 
     yAxis.selectAll('line')
         .style('stroke', 'rgba(255, 255, 255, 0.1)');
@@ -291,57 +304,69 @@ function drawChart(data) {
         .attr('y', height + margin.bottom - 10)
         .attr('text-anchor', 'middle')
         .style('fill', '#E6E9EF')
-        .style('font-size', '14px')
+        .style('font-size', '28px')
         .style('font-weight', '600')
         .text(translations[lang].years);
 
     chartGroup.append('text')
         .attr('transform', 'rotate(-90)')
         .attr('x', -height / 2)
-        .attr('y', -margin.left + 20)
+        .attr('y', -margin.left + 35)
         .attr('text-anchor', 'middle')
         .style('fill', '#E6E9EF')
-        .style('font-size', '14px')
+        .style('font-size', '28px')
         .style('font-weight', '600')
         .text(translations[lang].totalValue);
 
-    // Add legend (moved further right)
-    const legendX = width - 200;
+    const legendX = 50;
     const legendY = 10;
+    const legendWidth = 240;
+    const legendHeight = 75;
 
     const legend = chartGroup.append('g')
         .attr('class', 'legend')
         .attr('transform', `translate(${legendX},${legendY})`);
 
+    legend.append('rect')
+        .attr('x', 0)
+        .attr('y', 0)
+        .attr('width', legendWidth)
+        .attr('height', legendHeight)
+        .attr('rx', 8)
+        .attr('ry', 8)
+        .style('fill', 'rgba(30, 35, 40, 0.85)')
+        .style('stroke', 'rgba(255, 255, 255, 0.05)')
+        .style('stroke-width', 1);
+
     legend.append('line')
-        .attr('x1', 0)
-        .attr('y1', 0)
-        .attr('x2', 30)
-        .attr('y2', 0)
+        .attr('x1', 20)
+        .attr('y1', 20)
+        .attr('x2', 65)
+        .attr('y2', 20)
         .attr('stroke', '#006AA7')
-        .attr('stroke-width', 4);
+        .attr('stroke-width', 6);
 
     legend.append('text')
-        .attr('x', 35)
-        .attr('y', 5)
+        .attr('x', 75)
+        .attr('y', 28)
         .style('fill', '#E6E9EF')
-        .style('font-size', '13px')
+        .style('font-size', '20px')
         .text(translations[lang].totalValue);
 
     legend.append('line')
-        .attr('x1', 0)
-        .attr('y1', 20)
-        .attr('x2', 30)
-        .attr('y2', 20)
-        .attr('stroke', '#9BA3B4')
-        .attr('stroke-width', 3)
-        .attr('stroke-dasharray', '5,5');
+        .attr('x1', 20)
+        .attr('y1', 55)
+        .attr('x2', 65)
+        .attr('y2', 55)
+        .attr('stroke', '#555555')
+        .attr('stroke-width', 5)
+        .attr('opacity', 0.7);
 
     legend.append('text')
-        .attr('x', 35)
-        .attr('y', 25)
+        .attr('x', 75)
+        .attr('y', 63)
         .style('fill', '#E6E9EF')
-        .style('font-size', '13px')
+        .style('font-size', '20px')
         .text(translations[lang].deposits);
 }
 
