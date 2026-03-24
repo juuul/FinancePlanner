@@ -391,6 +391,7 @@ strong {
     padding: 0.2rem 0.6rem;
     border-radius: 12px;
     line-height: 1;
+    margin-top: 6px;
 }
 
 .btn-get-app:hover {
@@ -625,7 +626,7 @@ strong {
     gap: var(--space-md);
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: var(--space-lg);
+    margin-top: var(--space-2xl);
 }
 
 .app-features-grid {
@@ -638,15 +639,15 @@ strong {
 }
 
 .app-feature-pill {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: var(--color-accent-yellow);
+    color: var(--color-bg-dark);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 24px;
     padding: 1rem 1.5rem;
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
-    color: white;
+    white-space: nowrap;
     transition: all 0.3s ease;
 }
 
@@ -1301,6 +1302,7 @@ img {
     .app-feature-pill {
         padding: 0.75rem 1rem;
         font-size: 0.9rem;
+        white-space: nowrap;
     }
 
     .footer-columns {
