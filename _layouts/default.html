@@ -68,7 +68,10 @@
             </nav>
             <a href="#" class="btn-get-app" id="getAppBtn" aria-label="Get Finance Planner App">
                 <img src="{{ page.asset_prefix }}assets/images/app_icon.svg" alt="Finance Planner Logo" class="logo-icon" />
-                <span class="logo-text">Get App</span>
+                <span class="logo-text-container">
+                    <span class="logo-text">Get App</span>
+                    <span class="free-badge">{{ lang_data.appStore.subtitle }}</span>
+                </span>
             </a>
             {% assign page_name = page.path | split: "/" | last %}
             {% if page.layout == 'post' %}

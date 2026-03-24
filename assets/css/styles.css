@@ -365,13 +365,33 @@ strong {
 }
 
 .btn-get-app .logo-icon {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     flex-shrink: 0;
+}
+
+.btn-get-app .logo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
 }
 
 .btn-get-app .logo-text {
     color: white;
+    line-height: 1;
+}
+
+.btn-get-app .free-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    background: var(--color-accent-yellow);
+    color: var(--color-bg-dark);
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    line-height: 1;
+    margin-top: 6px;
 }
 
 .btn-get-app:hover {
@@ -379,6 +399,10 @@ strong {
     border-color: var(--color-accent-blue);
     color: var(--color-accent-blue);
     transform: translateY(-2px);
+}
+
+.btn-get-app:hover .logo-text {
+    color: var(--color-accent-blue);
 }
 
 /* Language toggle */
@@ -602,7 +626,35 @@ strong {
     gap: var(--space-md);
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: var(--space-lg);
+    margin-top: var(--space-2xl);
+}
+
+.app-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+    margin: var(--space-xl) auto;
+    max-width: 800px;
+    padding: 0 var(--space-md);
+}
+
+.app-feature-pill {
+    background: var(--color-accent-yellow);
+    color: var(--color-bg-dark);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.app-feature-pill:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--color-accent-yellow);
+    transform: translateY(-2px);
 }
 
 /* ========================================
@@ -1164,8 +1216,19 @@ img {
     }
 
     .btn-get-app .logo-icon {
-        width: 24px;
-        height: 24px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .btn-get-app .logo-text-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    .btn-get-app .free-badge {
+        font-size: 0.55rem;
+        padding: 0.15rem 0.4rem;
     }
 
     .nav {
@@ -1227,6 +1290,19 @@ img {
 
     .section {
         padding: var(--space-xl) var(--space-md);
+    }
+
+    .app-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-sm);
+        margin: var(--space-lg) 0;
+        padding: 0;
+    }
+
+    .app-feature-pill {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+        white-space: nowrap;
     }
 
     .footer-columns {
