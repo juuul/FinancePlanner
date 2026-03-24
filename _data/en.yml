@@ -402,7 +402,7 @@ tools:
     interest: "Annual Interest Rate (%)"
     years: "Investment Period (Years)"
     totalValue: "Total Value"
-    totalContributions: "Total Contributions"
+    totalContributions: "Total Deposits"
     totalInterest: "Total Interest Earned"
     description: "Adjust the sliders to see how compound interest affects your wealth accumulation over time. The 3D visualization shows your investment growth year by year."
 

@@ -403,7 +403,7 @@ tools:
     interest: "Jaarlijks rentepercentage (%)"
     years: "Investeringsperiode (jaren)"
     totalValue: "Totale waarde"
-    totalContributions: "Totale bijdragen"
+    totalContributions: "Totale stortingen"
     totalInterest: "Totale rente verdiend"
     description: "Pas de schuifregelaars aan om te zien hoe samengestelde rente je vermogensopbouw in de loop van de tijd beïnvloedt. De 3D-visualisatie toont je investeringsgroei jaar na jaar."
 
