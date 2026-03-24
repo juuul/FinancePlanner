@@ -391,6 +391,7 @@ strong {
     padding: 0.2rem 0.6rem;
     border-radius: 12px;
     line-height: 1;
+    margin-top: 6px;
 }
 
 .btn-get-app:hover {
