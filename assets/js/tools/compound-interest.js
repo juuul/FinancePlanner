@@ -312,11 +312,21 @@ function drawChart(data) {
         .attr('class', 'x-axis')
         .attr('transform', `translate(0,${height})`)
         .call(d3.axisBottom(xScale)
-            .tickValues(
-                data.length > 20
-                    ? data.filter((d, i) => i % Math.ceil(data.length / 12) === 0).map(d => d.year)
-                    : data.map(d => d.year)
-            )
+            .tickValues(() => {
+                const years = data.map(d => d.year);
+                const firstYear = years[0];
+                const lastYear = years[years.length - 1];
+                
+                if (years.length <= 12) {
+                    return years;
+                }
+                
+                const intermediateYears = years.filter((d, i) => 
+                    i > 0 && i < years.length - 1 && i % Math.ceil(years.length / 12) === 0
+                );
+                
+                return [firstYear, ...intermediateYears, lastYear];
+            })
             .tickFormat(d => {
                 const yearData = data.find(dataPoint => dataPoint.year === d);
                 if (yearData) {
