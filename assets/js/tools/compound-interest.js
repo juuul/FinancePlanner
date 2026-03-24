@@ -331,8 +331,8 @@ function drawChart(data) {
         .style('font-size', '18px')
         .style('text-anchor', 'start')
         .attr('transform', 'rotate(90)')
-        .attr('dy', '22px')
-        .attr('dx', '30px');
+        .attr('dy', '-5px')
+        .attr('dx', '22px');
 
     xAxis.selectAll('line')
         .style('stroke', 'rgba(255, 255, 255, 0.1)');
