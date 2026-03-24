@@ -310,31 +310,38 @@ function drawChart(data) {
     // Add axes
     const xAxis = chartGroup.append('g')
         .attr('class', 'x-axis')
-        .attr('transform', `translate(0,${height})`)
-        .call(d3.axisBottom(xScale)
-            .tickValues(() => {
-                const years = data.map(d => d.year);
-                const firstYear = years[0];
-                const lastYear = years[years.length - 1];
-                
-                if (years.length <= 12) {
-                    return years;
-                }
-                
-                const intermediateYears = years.filter((d, i) => 
-                    i > 0 && i < years.length - 1 && i % Math.ceil(years.length / 12) === 0
-                );
-                
-                return [firstYear, ...intermediateYears, lastYear];
-            })
-            .tickFormat(d => {
-                const yearData = data.find(dataPoint => dataPoint.year === d);
-                if (yearData) {
-                    return `${currencyFormatter.format(yearData.value)} (${d})`;
-                }
-                return d;
-            }))
-        .attr('color', '#9BA3B4');
+        .attr('transform', `translate(0,${height})`);
+    
+    const years = data.map(d => d.year);
+    const firstYear = years[0];
+    const lastYear = years[years.length - 1];
+    
+    let tickIndices;
+    if (years.length <= 12) {
+        tickIndices = years.map((_, i) => i);
+    } else {
+        const intermediateIndices = [];
+        for (let i = 1; i < years.length - 1; i++) {
+            if (i % Math.ceil(years.length / 12) === 0) {
+                intermediateIndices.push(i);
+            }
+        }
+        tickIndices = [0, ...intermediateIndices, years.length - 1];
+    }
+    
+    const tickValues = tickIndices.map(i => data[i].year);
+    
+    xAxis.call(d3.axisBottom(xScale)
+        .tickValues(tickIndices)
+        .tickFormat(d => {
+            const yearData = data[d];
+            if (yearData) {
+                return `${currencyFormatter.format(yearData.value)} (${yearData.year})`;
+            }
+            return d;
+        }));
+    
+    xAxis.attr('color', '#9BA3B4');
 
     xAxis.selectAll('text')
         .style('fill', '#9BA3B4')
