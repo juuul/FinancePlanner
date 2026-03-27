@@ -233,6 +233,15 @@
     }
 }
 
+.data-point {
+    fill: #006AA7;
+    transition: r 0.2s ease;
+}
+
+.data-point:hover {
+    r: 7;
+}
+
 @media (max-width: 768px) {
     #chart {
         height: 300px;
