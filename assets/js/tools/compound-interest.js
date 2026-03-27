@@ -196,6 +196,32 @@ function drawChart(data) {
         .y(d => yScale(d.deposits))
         .curve(d3.curveMonotoneX);
 
+    // Create area path for deposits gradient backfill
+    const depositsArea = d3.area()
+        .x(d => xScale(d.year))
+        .y0(height)
+        .y1(d => yScale(d.deposits))
+        .curve(d3.curveMonotoneX);
+
+    const depositsAreaData = [{ year: 0, value: data[0].value, deposits: data[0].deposits }, ...data];
+
+    // Draw deposits area gradient backfill
+    let depositsAreaPath = chartGroup.select('path.deposits-backfill');
+    if (isCreate) {
+        depositsAreaPath = chartGroup.append('path')
+            .attr('class', 'deposits-backfill')
+            .datum(depositsAreaData)
+            .attr('fill', 'url(#deposits-gradient)')
+            .attr('opacity', 0)
+            .attr('d', depositsArea(depositsAreaData));
+        
+        depositsAreaPath.transition()
+            .duration(800)
+            .attr('opacity', 0.15);
+    } else {
+        depositsAreaPath.datum(depositsAreaData).attr('d', depositsArea(depositsAreaData));
+    }
+
     // Draw total value line
     let totalLine = chartGroup.select('path.total-value-line');
     const totalLinePath = line(areaData);
@@ -235,11 +261,11 @@ function drawChart(data) {
 
     depositsGradient.append('stop')
         .attr('offset', '0%')
-        .attr('stop-color', '#555555');
+        .attr('stop-color', '#8B7300');
 
     depositsGradient.append('stop')
         .attr('offset', '100%')
-        .attr('stop-color', '#777777');
+        .attr('stop-color', '#D4B010');
 
     let depositsLine = chartGroup.select('path.deposits-line');
     const depositsFlatPath = d3.line()
@@ -252,7 +278,7 @@ function drawChart(data) {
             .attr('class', 'deposits-line')
             .datum(areaData)
             .attr('fill', 'none')
-            .attr('stroke', 'url(#deposits-gradient)')
+            .attr('stroke', '#D4B010')
             .attr('stroke-width', 3)
             .attr('opacity', 0.7)
             .attr('d', depositsFlatPath(areaData));
@@ -413,7 +439,7 @@ function drawChart(data) {
             .attr('y1', 55)
             .attr('x2', 65)
             .attr('y2', 55)
-            .attr('stroke', '#555555')
+            .attr('stroke', '#D4B010')
             .attr('stroke-width', 5)
             .attr('opacity', 0.7);
 
