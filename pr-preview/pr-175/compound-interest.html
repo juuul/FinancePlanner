@@ -127,71 +127,64 @@
     <p class="subtitle">Visualize the Power of Compound Interest</p>
 </section>
 
-<section class="calculator-container">
-    <div class="results-grid animate-fade-in">
-        <div class="result-card">
-            <div class="result-label">Total Value</div>
-            <div class="result-value" id="total-value">$0</div>
-        </div>
-        <div class="result-card">
-            <div class="result-label">Total Deposits</div>
-            <div class="result-value" id="total-contributions">$0</div>
-        </div>
-        <div class="result-card">
-            <div class="result-label">Total Interest Earned</div>
-            <div class="result-value" id="total-interest">$0</div>
-        </div>
-    </div>
+<div class="mobile-warning">
+    <strong>⚠️ For the best experience, we recommend using this calculator on a desktop or laptop. The interface includes multiple sliders and a detailed chart that work best on larger screens.</strong>
+</div>
 
-    <div id="chart-container" class="animate-fade-in">
-        <div id="chart"></div>
+<section class="calculator-container">
+    <div class="calculator-layout animate-fade-in">
+        <div id="chart-container">
+            <div id="chart"></div>
+        </div>
+
+        <div class="results-grid animate-fade-in">
+            <div class="result-card">
+                <div class="result-label">Total Value</div>
+                <div class="result-value" id="total-value">$0</div>
+            </div>
+            <div class="result-card">
+                <div class="result-label">Total Deposits</div>
+                <div class="result-value" id="total-contributions">$0</div>
+            </div>
+            <div class="result-card">
+                <div class="result-label">Total Interest Earned</div>
+                <div class="result-value" id="total-interest">$0</div>
+            </div>
+        </div>
     </div>
 
     <div class="calculator-controls animate-fade-in">
         <div class="slider-group">
-            <label>
-                Initial Amount
-                <span class="slider-value" id="initial-value">$0</span>
-            </label>
-            <div class="slider-container">
+            <span class="slider-label">Initial Amount</span>
+            <div class="slider-input">
                 <input type="range" id="initial" class="slider" min="0" max="100000" step="2500" value="0">
             </div>
+            <span class="slider-display" id="initial-value">$0</span>
         </div>
 
         <div class="slider-group">
-            <label>
-                Monthly Contribution
-                <span class="slider-value" id="monthly-value">$100</span>
-            </label>
-            <div class="slider-container">
+            <span class="slider-label">Monthly Contribution</span>
+            <div class="slider-input">
                 <input type="range" id="monthly" class="slider" min="0" max="1000" step="25" value="100">
             </div>
+            <span class="slider-display" id="monthly-value">$100</span>
         </div>
 
         <div class="slider-group">
-            <label>
-                Annual Interest Rate (%)
-                <span class="slider-value" id="interest-value">7.0%</span>
-            </label>
-            <div class="slider-container">
+            <span class="slider-label">Annual Interest Rate (%)</span>
+            <div class="slider-input">
                 <input type="range" id="interest" class="slider" min="0" max="20" step="0.5" value="7">
             </div>
+            <span class="slider-display" id="interest-value">7.0%</span>
         </div>
 
         <div class="slider-group">
-            <label>
-                Investment Period (Years)
-                <span class="slider-value" id="years-value">20</span>
-            </label>
-            <div class="slider-container">
+            <span class="slider-label">Investment Period (Years)</span>
+            <div class="slider-input">
                 <input type="range" id="years" class="slider" min="1" max="60" step="1" value="20">
             </div>
+            <span class="slider-display" id="years-value">20</span>
         </div>
-    </div>
-
-    <div class="explanation-section">
-        <h3>Visualize the Power of Compound Interest</h3>
-        <p>Adjust the sliders to see how compound interest affects your wealth accumulation over time. The chart shows your investment growth year by year.</p>
     </div>
 </section>
 

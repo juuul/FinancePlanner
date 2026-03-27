@@ -139,7 +139,7 @@ function updateSliderProgress(slider) {
 // Track if this is the first render
 let isFirstRender = true;
 
-// Draw line chart with gradient backfill
+ // Draw line chart with gradient backfill
 function drawChart(data) {
     // Get or create chart group
     let chartGroup = svg.select('.chart-content');
@@ -196,6 +196,32 @@ function drawChart(data) {
         .y(d => yScale(d.deposits))
         .curve(d3.curveMonotoneX);
 
+    // Create area path for deposits gradient backfill
+    const depositsArea = d3.area()
+        .x(d => xScale(d.year))
+        .y0(height)
+        .y1(d => yScale(d.deposits))
+        .curve(d3.curveMonotoneX);
+
+    const depositsAreaData = [{ year: 0, value: data[0].value, deposits: data[0].deposits }, ...data];
+
+    // Draw deposits area gradient backfill
+    let depositsAreaPath = chartGroup.select('path.deposits-backfill');
+    if (isCreate) {
+        depositsAreaPath = chartGroup.append('path')
+            .attr('class', 'deposits-backfill')
+            .datum(depositsAreaData)
+            .attr('fill', 'url(#deposits-gradient)')
+            .attr('opacity', 0)
+            .attr('d', depositsArea(depositsAreaData));
+        
+        depositsAreaPath.transition()
+            .duration(800)
+            .attr('opacity', 0.15);
+    } else {
+        depositsAreaPath.datum(depositsAreaData).attr('d', depositsArea(depositsAreaData));
+    }
+
     // Draw total value line
     let totalLine = chartGroup.select('path.total-value-line');
     const totalLinePath = line(areaData);
@@ -235,11 +261,11 @@ function drawChart(data) {
 
     depositsGradient.append('stop')
         .attr('offset', '0%')
-        .attr('stop-color', '#555555');
+        .attr('stop-color', '#8B7300');
 
     depositsGradient.append('stop')
         .attr('offset', '100%')
-        .attr('stop-color', '#777777');
+        .attr('stop-color', '#D4B010');
 
     let depositsLine = chartGroup.select('path.deposits-line');
     const depositsFlatPath = d3.line()
@@ -252,7 +278,7 @@ function drawChart(data) {
             .attr('class', 'deposits-line')
             .datum(areaData)
             .attr('fill', 'none')
-            .attr('stroke', 'url(#deposits-gradient)')
+            .attr('stroke', '#D4B010')
             .attr('stroke-width', 3)
             .attr('opacity', 0.7)
             .attr('d', depositsFlatPath(areaData));
@@ -268,8 +294,21 @@ function drawChart(data) {
             .attr('d', depositsLinePath(areaData));
     }
 
-    // Add circles at data points (only show every 5 years)
-    const circleData = areaData.filter((d, i) => i % Math.ceil(data.length / 12) === 0 || i === data.length - 1);
+   // Add circles at data points (only show every 5 years, aligned with x-axis ticks)
+    let circleTickIndices;
+    if (data.length <= 12) {
+        circleTickIndices = data.map((_, i) => i);
+    } else {
+        const intermediateIndices = [];
+        for (let i = 1; i < data.length - 1; i++) {
+            if (i % Math.ceil(data.length / 12) === 0) {
+                intermediateIndices.push(i);
+            }
+        }
+        circleTickIndices = [0, ...intermediateIndices, data.length - 1];
+    }
+    
+    const circleData = circleTickIndices.map(i => data[i]);
     const circles = chartGroup.selectAll('.data-point')
         .data(circleData);
     
@@ -280,23 +319,21 @@ function drawChart(data) {
         .attr('class', 'data-point')
         .attr('cx', d => xScale(d.year))
         .attr('cy', height)
-        .attr('r', 4)
-        .attr('fill', '#006AA7')
-        .attr('opacity', 0);
+        .attr('r', 6)
+        .attr('fill', '#006AA7');
     
-    circlesEnter.merge(circles)
+    const allCircles = circlesEnter.merge(circles)
         .attr('cx', d => xScale(d.year));
 
     // Animate circles on first render only
     if (isFirstRender) {
-        circles.transition()
+        allCircles.transition()
             .delay((d, i) => i * 100)
             .duration(800)
             .ease(d3.easeBackOut)
-            .attr('cy', d => yScale(d.value))
-            .attr('opacity', 1);
+            .attr('cy', d => yScale(d.value));
     } else {
-        circles.transition()
+        allCircles.transition()
             .duration(500)
             .attr('cy', d => yScale(d.value));
     }
@@ -402,7 +439,7 @@ function drawChart(data) {
             .attr('y1', 55)
             .attr('x2', 65)
             .attr('y2', 55)
-            .attr('stroke', '#555555')
+            .attr('stroke', '#D4B010')
             .attr('stroke-width', 5)
             .attr('opacity', 0.7);
 
