@@ -1,0 +1,23 @@
+---
+layout: default
+lang: en
+asset_prefix: ""
+title: "Financial Tools - Finance Planner"
+description: "Interactive financial tools to help you visualize and understand key financial concepts like compound interest, investment growth, and retirement planning."
+---
+{% assign lang_data = site.data[page.lang] %}
+
+<section class="animate-fade-in section">
+    <h1>{{ lang_data.tools.title }}</h1>
+    <p class="subtitle animate-from-top" data-animate-delay="200ms">Various financial tools and calculators to help you achieve your financial goals</p>
+</section>
+
+<section class="animate-fade-in section">
+    <div class="features-grid">
+        <article class="feature-card animate-from-left">
+            <h3>{{ lang_data.tools.compoundInterest.title }}</h3>
+            <p>{{ lang_data.tools.compoundInterest.description }}</p>
+            <a href="compound-interest.html" class="btn btn-primary">{{ lang_data.tools.compoundInterest.tryItOut }}</a>
+        </article>
+    </div>
+</section>

@@ -4,6 +4,7 @@ nav:
   tutorials: "Tutorials"
   scenarios: "Voorbeelden"
   howToPlan: "Hoe te plannen"
+  tools: "Tools"
   blog: "Blog"
   faq: "FAQ"
   about: "Over"
@@ -395,6 +396,26 @@ howToPlan:
     scenarios: "📂 Bekijk voorbeeldscenario's"
     community: "💬 Deelnemen aan gemeenschapsdiscussies"
 
+tools:
+  title: "Financiële tools"
+  subtitle: "Interactieve tools om je financiële toekomst te plannen"
+  compoundInterest:
+    title: "🔢 Samengestelde rente calculator"
+    description: "Visualiseer de kracht van samengestelde rente over tijd. Zie hoe regelmatige investeringen en rentepercentages je vermogensopbouw beïnvloeden."
+    tryItOut: "Probeer het uit"
+  compoundInterestCalc:
+    title: "Samengestelde rente calculator"
+    subtitle: "Visualiseer de kracht van samengestelde rente"
+    initial: "Startbedrag"
+    monthly: "Maandelijkse bijdrage"
+    interest: "Jaarlijks rentepercentage (%)"
+    years: "Investeringsperiode (jaren)"
+    totalValue: "Totale waarde"
+    totalContributions: "Totale stortingen"
+    totalInterest: "Totale rente verdiend"
+    mobileWarning: "⚠️ Voor de beste ervaring raden we aan deze calculator te gebruiken op een desktop of laptop. De interface bevat meerdere schuifregelaars en een gedetailleerde grafiek die het beste werken op grotere schermen."
+    description: "Pas de schuifregelaars aan om te zien hoe samengestelde rente je vermogensopbouw in de loop van de tijd beïnvloedt. De grafiek toont je investeringsgroei jaar na jaar."
+
 blog:
   title: "Blog"
   subtitle: "Financiële tips, updates en voorbeelden"
@@ -402,6 +423,7 @@ blog:
   postedOn: "Geplaatst op"
   by: "door"
   backToBlog: "← Terug naar Blog"
+  backToTools: "Terug naar tools"
   recentPosts: "Recente berichten"
   noPostsYet: "Nog geen blogberichten. Kom snel terug!"
 

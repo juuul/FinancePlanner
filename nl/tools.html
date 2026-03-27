@@ -1,0 +1,23 @@
+---
+layout: default
+lang: nl
+asset_prefix: "../"
+title: "Financiële tools - Finance Planner"
+description: "Interactieve financiële tools om je te helpen belangrijke financiële concepten zoals samengestelde rente, investeringsgroei en pensioenplanning te visualiseren en te begrijpen."
+---
+{% assign lang_data = site.data[page.lang] %}
+
+<section class="animate-fade-in section">
+    <h1>{{ lang_data.tools.title }}</h1>
+    <p class="subtitle animate-from-top" data-animate-delay="200ms">Diverse financiële tools en rekenhulpen om je financiële doelen te bereiken</p>
+</section>
+
+<section class="animate-fade-in section">
+    <div class="features-grid">
+        <article class="feature-card animate-from-left">
+            <h3>{{ lang_data.tools.compoundInterest.title }}</h3>
+            <p>{{ lang_data.tools.compoundInterest.description }}</p>
+            <a href="compound-interest.html" class="btn btn-primary">{{ lang_data.tools.compoundInterest.tryItOut }}</a>
+        </article>
+    </div>
+</section>
