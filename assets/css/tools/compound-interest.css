@@ -55,6 +55,7 @@
     border-radius: 50%;
     background: var(--color-accent-blue);
     cursor: pointer;
+    margin-top: -8px;
     transition: all 0.2s ease;
 }
 
