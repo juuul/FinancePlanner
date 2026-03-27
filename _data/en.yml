@@ -404,6 +404,7 @@ tools:
     totalValue: "Total Value"
     totalContributions: "Total Deposits"
     totalInterest: "Total Interest Earned"
+    mobileWarning: "⚠️ For the best experience, we recommend using this calculator on a desktop or laptop. The interface includes multiple sliders and a detailed chart that work best on larger screens."
     description: "Adjust the sliders to see how compound interest affects your wealth accumulation over time. The chart shows your investment growth year by year."
 
 blog:
