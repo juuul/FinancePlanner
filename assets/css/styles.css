@@ -1228,6 +1228,7 @@ img {
     .btn-get-app .free-badge {
         font-size: 0.55rem;
         padding: 0.15rem 0.4rem;
+        margin-top: 0;
     }
 
     .nav {
