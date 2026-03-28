@@ -647,7 +647,6 @@ strong {
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
-    white-space: nowrap;
     transition: all 0.3s ease;
 }
 
@@ -1302,7 +1301,6 @@ img {
     .app-feature-pill {
         padding: 0.75rem 1rem;
         font-size: 0.9rem;
-        white-space: nowrap;
     }
 
     .footer-columns {
@@ -1340,5 +1338,44 @@ img {
 
     .hero {
         padding: var(--space-xl) var(--space-lg);
+    }
+
+    /* Make app store buttons stack vertically on smaller screens */
+    .app-store-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-sm);
+    }
+
+    .btn-app-store {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+
+    .btn-app-store img {
+        max-width: 100%;
+        height: auto !important;
+    }
+}
+
+/* Additional breakpoint for very small phones */
+@media (max-width: 480px) {
+    .app-features-grid {
+        grid-template-columns: 1fr;
+        padding: 0 var(--space-sm);
+    }
+
+    .app-feature-pill {
+        padding: 0.75rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .app-store-buttons {
+        padding: 0 var(--space-md);
+    }
+
+    .btn-app-store {
+        max-width: 200px;
     }
 }
