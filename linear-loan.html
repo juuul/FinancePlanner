@@ -1,0 +1,91 @@
+---
+layout: default
+lang: en
+asset_prefix: ""
+title: "Linear Loan Calculator - Finance Planner"
+description: "Interactive linear loan calculator. Visualize how your monthly payments decrease over time with a linear loan repayment schedule."
+---
+{% assign lang_data = site.data[page.lang] %}
+
+<link rel="stylesheet" href="{{ page.asset_prefix }}assets/css/tools/linear-loan.css">
+
+<section class="animate-fade-in section calculator-container">
+    <h1>{{ lang_data.tools.linearLoanCalc.title }}</h1>
+    <p class="subtitle">{{ lang_data.tools.linearLoanCalc.subtitle }}</p>
+</section>
+
+<div class="mobile-warning">
+    <strong>{{ lang_data.tools.linearLoanCalc.mobileWarning }}</strong>
+</div>
+
+<section class="calculator-container">
+    <div class="calculator-layout animate-fade-in">
+        <div class="left-column">
+            <div class="results-grid animate-fade-in">
+                <div class="result-card">
+                    <div class="result-label">{{ lang_data.tools.linearLoanCalc.totalInterest }}</div>
+                    <div class="result-value" id="total-interest">$0</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-label">{{ lang_data.tools.linearLoanCalc.totalPrincipal }}</div>
+                    <div class="result-value" id="total-principal">$0</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-label">{{ lang_data.tools.linearLoanCalc.totalAmount }}</div>
+                    <div class="result-value" id="total-amount">$0</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-label">{{ lang_data.tools.linearLoanCalc.firstPayment }}</div>
+                    <div class="result-value" id="first-payment">$0</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-label">{{ lang_data.tools.linearLoanCalc.lastPayment }}</div>
+                    <div class="result-value" id="last-payment">$0</div>
+                </div>
+            </div>
+
+            <div id="chart-container">
+                <div id="chart"></div>
+            </div>
+        </div>
+
+        <div class="sliders-column animate-fade-in">
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">{{ lang_data.tools.linearLoanCalc.amount }}</span>
+                    <span class="slider-display" id="amount-value">$250,000</span>
+                </div>
+                <div class="slider-input">
+                    <input type="range" id="amount" class="slider" min="0" max="1000000" step="25000" value="250000">
+                </div>
+            </div>
+
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">{{ lang_data.tools.linearLoanCalc.interest }}</span>
+                    <span class="slider-display" id="interest-value">3.5%</span>
+                </div>
+                <div class="slider-input">
+                    <input type="range" id="interest" class="slider" min="0" max="20" step="0.5" value="3.5">
+                </div>
+            </div>
+
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">{{ lang_data.tools.linearLoanCalc.years }}</span>
+                    <span class="slider-display" id="years-value">30</span>
+                </div>
+                <div class="slider-input">
+                    <input type="range" id="years" class="slider" min="1" max="60" step="1" value="30">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="blog-post-footer">
+    <a href="tools.html" class="btn btn-secondary">{{ lang_data.blog.backToTools }}</a>
+</footer>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="{{ page.asset_prefix }}assets/js/tools/linear-loan.js"></script>
