@@ -11,13 +11,13 @@
     </script>
     <meta charset="UTF-8">
     <meta name="language" content="en">
-    <title>Financial Tools - Finance Planner</title>
-    <meta name="description" content="Interactive financial tools to help you visualize and understand key financial concepts like compound interest, investment growth, and retirement planning.">
+    <title>Linear Loan Calculator - Finance Planner</title>
+    <meta name="description" content="Interactive linear loan calculator. Visualize how your monthly payments decrease over time with a linear loan repayment schedule.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://financeplannerapp.com/tools.html">
+    <link rel="canonical" href="https://financeplannerapp.com/linear-loan.html">
     
-        <link rel="alternate" hreflang="nl" href="https://financeplannerapp.com/nl/tools.html">
-        <link rel="alternate" hreflang="en" href="https://financeplannerapp.com/tools.html">
+        <link rel="alternate" hreflang="nl" href="https://financeplannerapp.com/nl/linear-loan.html">
+        <link rel="alternate" hreflang="en" href="https://financeplannerapp.com/linear-loan.html">
     
     <link rel="icon" href="assets/images/app_icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="assets/images/app_icon.png">
@@ -36,7 +36,7 @@
       "@id": "https://financeplannerapp.com/#website",
       "url": "https://financeplannerapp.com",
       "name": "Finance Planner: The F.I.R.E. Tool",
-      "description": "Interactive financial tools to help you visualize and understand key financial concepts like compound interest, investment growth, and retirement planning.",
+      "description": "Interactive linear loan calculator. Visualize how your monthly payments decrease over time with a linear loan repayment schedule.",
       "inLanguage": "en",
       "publisher": {
         "@id": "https://financeplannerapp.com/#organization"
@@ -99,7 +99,7 @@
                 <a href="scenarios.html" >Use Cases</a>
                 <a href="how-to-plan.html" >How to Plan</a>
                 <a href="tutorials.html" >Tutorials</a>
-                <a href="tools.html" class="active">Tools</a>
+                <a href="tools.html" >Tools</a>
                 <a href="blog.html" >Blog</a>
                 <a href="faq.html" >FAQ</a>
                 <a href="about.html" >About</a>
@@ -114,7 +114,7 @@
             </a>
             
             
-            <a href="nl/tools.html" class="lang-toggle">NL</a>
+            <a href="nl/linear-loan.html" class="lang-toggle">NL</a>
             
         </div>
         <div class="nav-overlay"></div>
@@ -123,25 +123,88 @@
     <div class="container">
         
 
-<section class="animate-fade-in section">
-    <h1>Financial Tools</h1>
-    <p class="subtitle animate-from-top" data-animate-delay="200ms">Various financial tools and calculators to help you achieve your financial goals</p>
+<link rel="stylesheet" href="assets/css/tools/linear-loan.css">
+
+<section class="animate-fade-in section calculator-container">
+    <h1>Linear Loan Calculator</h1>
+    <p class="subtitle">Visualize the Complete Payments of a Linear Loan</p>
 </section>
 
-<section class="animate-fade-in section">
-    <div class="features-grid">
-        <article class="feature-card animate-from-left">
-            <h3>🔢 Compound Interest Calculator</h3>
-            <p>Visualize the power of compound interest over time. See how regular investments and interest rates affect your wealth accumulation.</p>
-            <a href="compound-interest.html" class="btn btn-primary">Try it out</a>
-        </article>
-        <article class="feature-card animate-from-right">
-            <h3>💰 Linear Loan Calculator</h3>
-            <p>Visualize the complete payment schedule of a linear loan. See how your payments decrease over time as the principal is paid down.</p>
-            <a href="linear-loan.html" class="btn btn-primary">Try it out</a>
-        </article>
+<div class="mobile-warning">
+    <strong>⚠️ For the best experience, we recommend using this calculator on a desktop or laptop. The interface includes multiple sliders and a detailed chart that work best on larger screens.</strong>
+</div>
+
+<section class="calculator-container">
+    <div class="calculator-layout animate-fade-in">
+        <div class="left-column">
+            <div class="results-grid animate-fade-in">
+                <div class="result-card">
+                    <div class="result-label">Total Interest</div>
+                    <div class="result-value" id="total-interest">$0</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-label">Total Principal</div>
+                    <div class="result-value" id="total-principal">$0</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-label">Total Amount</div>
+                    <div class="result-value" id="total-amount">$0</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-label">First Monthly Payment</div>
+                    <div class="result-value" id="first-payment">$0</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-label">Last Monthly Payment</div>
+                    <div class="result-value" id="last-payment">$0</div>
+                </div>
+            </div>
+
+            <div id="chart-container">
+                <div id="chart"></div>
+            </div>
+        </div>
+
+        <div class="sliders-column animate-fade-in">
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">Loan Amount</span>
+                    <span class="slider-display" id="amount-value">$250,000</span>
+                </div>
+                <div class="slider-input">
+                    <input type="range" id="amount" class="slider" min="0" max="1000000" step="25000" value="250000">
+                </div>
+            </div>
+
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">Annual Interest Rate (%)</span>
+                    <span class="slider-display" id="interest-value">3.5%</span>
+                </div>
+                <div class="slider-input">
+                    <input type="range" id="interest" class="slider" min="0" max="20" step="0.5" value="3.5">
+                </div>
+            </div>
+
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">Loan Period (Years)</span>
+                    <span class="slider-display" id="years-value">30</span>
+                </div>
+                <div class="slider-input">
+                    <input type="range" id="years" class="slider" min="1" max="60" step="1" value="30">
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+<footer class="blog-post-footer">
+    <a href="tools.html" class="btn btn-secondary">Back to Tools</a>
+</footer>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="assets/js/tools/linear-loan.js"></script>
 
     </div>
 
