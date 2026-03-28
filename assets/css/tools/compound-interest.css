@@ -174,55 +174,6 @@
     background: var(--color-accent-blue);
 }
 
-.results-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
-}
-
-.results-grid .result-card {
-    margin-bottom: 0;
-}
-
-.result-card {
-    background: var(--color-bg-dark-elevated);
-    padding: var(--space-lg);
-    border-radius: var(--radius-md);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    text-align: center;
-}
-
-.result-label {
-    color: var(--color-text-secondary);
-    font-size: 0.9rem;
-    margin-bottom: var(--space-sm);
-}
-
-.result-value {
-    color: var(--color-accent-yellow);
-    font-size: 1.8rem;
-    font-weight: 700;
-    font-family: var(--font-heading);
-}
-
-#chart-container {
-    background: var(--color-bg-dark-card);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: var(--radius-md);
-    padding: var(--space-sm);
-    min-height: 450px;
-    max-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#chart {
-    width: 100%;
-    height: 450px;
-    max-height: 500px;
-}
-
 .explanation-section {
     background: var(--color-bg-dark-card);
     border: 1px solid rgba(255, 255, 255, 0.05);
