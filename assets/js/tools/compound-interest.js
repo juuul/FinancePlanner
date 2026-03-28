@@ -46,7 +46,7 @@ function updateChartDimensions() {
     const containerWidth = container.clientWidth;
     const containerHeight = container.clientHeight;
 
-    margin = { top: 0, right: 20, bottom: 160, left: 30 };
+    margin = { top: 0, right: 0, bottom: 160, left: 30 };
     width = Math.min(800, containerWidth - margin.left - margin.right);
     height = containerHeight - margin.top - margin.bottom;
 }
