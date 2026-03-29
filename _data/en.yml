@@ -406,6 +406,10 @@ tools:
     title: "💰 Linear Loan Calculator"
     description: "Visualize the complete payment schedule of a linear loan. See how your payments decrease over time as the principal is paid down."
     tryItOut: "Try it out"
+  annuityLoan:
+    title: "💵 Annuity Loan Calculator"
+    description: "Visualize the complete payment schedule of an annuity loan. See how your fixed monthly payments consist of varying interest and principal portions over time."
+    tryItOut: "Try it out"
   compoundInterestCalc:
     title: "Compound Interest Calculator"
     subtitle: "Visualize the Power of Compound Interest"
@@ -431,6 +435,18 @@ tools:
     lastPayment: "Last Monthly Payment"
     mobileWarning: "⚠️ For the best experience, we recommend using this calculator on a desktop or laptop. The interface includes multiple sliders and a detailed chart that work best on larger screens."
     description: "Adjust the sliders to see how a linear loan works. With a linear loan, you pay a fixed amount of principal each month, plus decreasing interest as the remaining balance goes down."
+  annuityLoanCalc:
+    title: "Annuity Loan Calculator"
+    subtitle: "Visualize the Complete Payments of an Annuity Loan"
+    amount: "Loan Amount"
+    interest: "Annual Interest Rate (%)"
+    years: "Loan Period (Years)"
+    totalInterest: "Total Interest"
+    totalPrincipal: "Total Principal"
+    totalAmount: "Total Amount"
+    monthlyPayment: "Monthly Payment"
+    mobileWarning: "⚠️ For the best experience, we recommend using this calculator on a desktop or laptop. The interface includes multiple sliders and a detailed chart that work best on larger screens."
+    description: "Adjust the sliders to see how an annuity loan works. With an annuity loan, your monthly payment stays the same throughout the loan term. Early payments consist mostly of interest, while later payments consist mostly of principal repayment."
 
 blog:
   title: "Blog"

@@ -407,6 +407,10 @@ tools:
     title: "💰 Lineaire lening calculator"
     description: "Visualiseer het volledige betalingsschema van een lineaire lening. Zie hoe je betalingen afnemen over tijd naarmate de hoofdsom wordt afbetaald."
     tryItOut: "Probeer het uit"
+  annuityLoan:
+    title: "💵 Annuïteitenlening calculator"
+    description: "Visualiseer het volledige betalingsschema van een annuïteitenlening. Zie hoe uw vaste maandelijkse betalingen uit verschillende interest- en hoofdsomdelen over de tijd bestaan."
+    tryItOut: "Probeer het uit"
   compoundInterestCalc:
     title: "Samengestelde rente calculator"
     subtitle: "Visualiseer de kracht van samengestelde rente"
@@ -432,6 +436,18 @@ tools:
     lastPayment: "Laatste maandelijkse betaling"
     mobileWarning: "⚠️ Voor de beste ervaring raden we aan deze calculator te gebruiken op een desktop of laptop. De interface bevat meerdere schuifregelaars en een gedetailleerde grafiek die het beste werken op grotere schermen."
     description: "Pas de schuifregelaars aan om te zien hoe een lineaire lening werkt. Bij een lineaire lening betaal je elke maand een vast bedrag aan hoofdsom, plus afnemende rente naarmate het resterende saldo daalt."
+  annuityLoanCalc:
+    title: "Annuïteitenlening calculator"
+    subtitle: "Visualiseer de volledige betalingen van een annuïteitenlening"
+    amount: "Leningbedrag"
+    interest: "Jaarlijks rentepercentage (%)"
+    years: "Leningperiode (jaren)"
+    totalInterest: "Totale rente"
+    totalPrincipal: "Totale hoofdsom"
+    totalAmount: "Totaal bedrag"
+    monthlyPayment: "Maandelijkse betaling"
+    mobileWarning: "⚠️ Voor de beste ervaring raden we aan deze calculator te gebruiken op een desktop of laptop. De interface bevat meerdere schuifregelaars en een gedetailleerde grafiek die het beste werken op grotere schermen."
+    description: "Pas de schuifregelaars aan om te zien hoe een annuïteitenlening werkt. Bij een annuïteitenlening blijft uw maandelijkse betaling gedurende de hele looptijd hetzelfde. Vroege betalingen bestaan voornamelijk uit rente, terwijl latere betalingen voornamelijk uit aflossing bestaan."
 
 blog:
   title: "Blog"
