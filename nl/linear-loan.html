@@ -11,13 +11,13 @@
     </script>
     <meta charset="UTF-8">
     <meta name="language" content="nl">
-    <title>Financiële tools - Finance Planner</title>
-    <meta name="description" content="Interactieve financiële tools om je te helpen belangrijke financiële concepten zoals samengestelde rente, investeringsgroei en pensioenplanning te visualiseren en te begrijpen.">
+    <title>Lineaire Lening Calculator - Finance Planner</title>
+    <meta name="description" content="Interactieve lineaire lening calculator. Visualiseer hoe je maandelijkse betalingen afnemen over tijd met een lineair aflosschema.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://financeplannerapp.com/nl/tools.html">
+    <link rel="canonical" href="https://financeplannerapp.com/nl/linear-loan.html">
     
-        <link rel="alternate" hreflang="en" href="https://financeplannerapp.com/tools.html">
-        <link rel="alternate" hreflang="nl" href="https://financeplannerapp.com/nl/tools.html">
+        <link rel="alternate" hreflang="en" href="https://financeplannerapp.com/linear-loan.html">
+        <link rel="alternate" hreflang="nl" href="https://financeplannerapp.com/nl/linear-loan.html">
     
     <link rel="icon" href="../assets/images/app_icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../assets/images/app_icon.png">
@@ -36,7 +36,7 @@
       "@id": "https://financeplannerapp.com/#website",
       "url": "https://financeplannerapp.com",
       "name": "Finance Planner: The F.I.R.E. Tool",
-      "description": "Interactieve financiële tools om je te helpen belangrijke financiële concepten zoals samengestelde rente, investeringsgroei en pensioenplanning te visualiseren en te begrijpen.",
+      "description": "Interactieve lineaire lening calculator. Visualiseer hoe je maandelijkse betalingen afnemen over tijd met een lineair aflosschema.",
       "inLanguage": "nl",
       "publisher": {
         "@id": "https://financeplannerapp.com/#organization"
@@ -99,7 +99,7 @@
                 <a href="scenarios.html" >Voorbeelden</a>
                 <a href="how-to-plan.html" >Hoe te plannen</a>
                 <a href="tutorials.html" >Tutorials</a>
-                <a href="tools.html" class="active">Tools</a>
+                <a href="tools.html" >Tools</a>
                 <a href="blog.html" >Blog</a>
                 <a href="faq.html" >FAQ</a>
                 <a href="about.html" >Over</a>
@@ -114,7 +114,7 @@
             </a>
             
             
-            <a href="../tools.html" class="lang-toggle">EN</a>
+            <a href="../linear-loan.html" class="lang-toggle">EN</a>
             
         </div>
         <div class="nav-overlay"></div>
@@ -123,25 +123,88 @@
     <div class="container">
         
 
-<section class="animate-fade-in section">
-    <h1>Financiële tools</h1>
-    <p class="subtitle animate-from-top" data-animate-delay="200ms">Diverse financiële tools en rekenhulpen om je financiële doelen te bereiken</p>
+<link rel="stylesheet" href="../assets/css/tools/linear-loan.css">
+
+<section class="animate-fade-in section calculator-container">
+    <h1>Lineaire lening calculator</h1>
+    <p class="subtitle">Visualiseer de volledige betalingen van een lineaire lening</p>
 </section>
 
-<section class="animate-fade-in section">
-    <div class="features-grid">
-        <article class="feature-card animate-from-left">
-            <h3>🔢 Samengestelde rente calculator</h3>
-            <p>Visualiseer de kracht van samengestelde rente over tijd. Zie hoe regelmatige investeringen en rentepercentages je vermogensopbouw beïnvloeden.</p>
-            <a href="compound-interest.html" class="btn btn-primary">Probeer het uit</a>
-        </article>
-        <article class="feature-card animate-from-right">
-            <h3>💰 Lineaire lening calculator</h3>
-            <p>Visualiseer het volledige betalingsschema van een lineaire lening. Zie hoe je betalingen afnemen over tijd naarmate de hoofdsom wordt afbetaald.</p>
-            <a href="linear-loan.html" class="btn btn-primary">Probeer het uit</a>
-        </article>
+<div class="mobile-warning">
+    <strong>⚠️ Voor de beste ervaring raden we aan deze calculator te gebruiken op een desktop of laptop. De interface bevat meerdere schuifregelaars en een gedetailleerde grafiek die het beste werken op grotere schermen.</strong>
+</div>
+
+<section class="calculator-container">
+    <div class="results-grid animate-fade-in">
+        <div class="result-card">
+            <div class="result-label">Totale rente</div>
+            <div class="result-value" id="total-interest">€0</div>
+        </div>
+        <div class="result-card">
+            <div class="result-label">Totale hoofdsom</div>
+            <div class="result-value" id="total-principal">€0</div>
+        </div>
+        <div class="result-card">
+            <div class="result-label">Totaal bedrag</div>
+            <div class="result-value" id="total-amount">€0</div>
+        </div>
+        <div class="result-card">
+            <div class="result-label">Eerste maandelijkse betaling</div>
+            <div class="result-value" id="first-payment">€0</div>
+        </div>
+        <div class="result-card">
+            <div class="result-label">Laatste maandelijkse betaling</div>
+            <div class="result-value" id="last-payment">€0</div>
+        </div>
+    </div>
+
+    <div class="calculator-layout animate-fade-in">
+        <div class="left-column">
+            <div id="chart-container">
+                <div id="chart"></div>
+            </div>
+        </div>
+
+        <div class="sliders-column animate-fade-in">
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">Leningbedrag</span>
+                    <span class="slider-display" id="amount-value">€250.000</span>
+                </div>
+                <div class="slider-input">
+                    <input type="range" id="amount" class="slider" min="0" max="1000000" step="25000" value="250000">
+                </div>
+            </div>
+
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">Jaarlijks rentepercentage (%)</span>
+                    <span class="slider-display" id="interest-value">3,5%</span>
+                </div>
+                <div class="slider-input">
+                    <input type="range" id="interest" class="slider" min="0" max="20" step="0.5" value="3.5">
+                </div>
+            </div>
+
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">Leningperiode (jaren)</span>
+                    <span class="slider-display" id="years-value">30</span>
+                </div>
+                <div class="slider-input">
+                    <input type="range" id="years" class="slider" min="1" max="60" step="1" value="30">
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+<footer class="blog-post-footer">
+    <a href="tools.html" class="btn btn-secondary">Terug naar tools</a>
+</footer>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="../assets/js/tools/linear-loan.js"></script>
 
     </div>
 
