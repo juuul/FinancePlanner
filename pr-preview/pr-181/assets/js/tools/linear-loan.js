@@ -11,12 +11,16 @@ const currencyFormatter = new Intl.NumberFormat(lang === 'nl' ? 'nl-NL' : 'en-US
 const translations = {
     en: {
         years: 'Years',
+        totalPaid: 'Total Paid',
+        totalPrincipal: 'Total Principal',
         monthlyPayment: 'Monthly Payment',
         principal: 'Principal',
         interest: 'Interest'
     },
     nl: {
         years: 'Jaren',
+        totalPaid: 'Totaal Betaald',
+        totalPrincipal: 'Totaal Aflossing',
         monthlyPayment: 'Maandelijkse Betaling',
         principal: 'Hoofdsom',
         interest: 'Rente'
@@ -68,35 +72,18 @@ const svg = d3.select('#chart')
 // Create gradient definitions
 const defs = svg.append('defs');
 
-const areaGradient = defs.append('linearGradient')
-    .attr('id', 'area-gradient')
-    .attr('x1', '0%')
-    .attr('y1', '0%')
-    .attr('x2', '0%')
-    .attr('y2', '100%');
-
-areaGradient.append('stop')
-    .attr('offset', '0%')
-    .attr('stop-color', '#006AA7')
-    .attr('stop-opacity', 0.3);
-
-areaGradient.append('stop')
-    .attr('offset', '100%')
-    .attr('stop-color', '#006AA7')
-    .attr('stop-opacity', 0.02);
-
-const lineGradient = defs.append('linearGradient')
-    .attr('id', 'line-gradient')
+const totalGradient = defs.append('linearGradient')
+    .attr('id', 'total-gradient')
     .attr('x1', '0%')
     .attr('y1', '0%')
     .attr('x2', '100%')
     .attr('y2', '0%');
 
-lineGradient.append('stop')
+totalGradient.append('stop')
     .attr('offset', '0%')
     .attr('stop-color', '#006AA7');
 
-lineGradient.append('stop')
+totalGradient.append('stop')
     .attr('offset', '100%')
     .attr('stop-color', '#008AD8');
 
@@ -115,20 +102,39 @@ principalGradient.append('stop')
     .attr('offset', '100%')
     .attr('stop-color', '#D4B010');
 
-const interestGradient = defs.append('linearGradient')
-    .attr('id', 'interest-gradient')
+const totalAreaGradient = defs.append('linearGradient')
+    .attr('id', 'total-area-gradient')
     .attr('x1', '0%')
     .attr('y1', '0%')
-    .attr('x2', '100%')
-    .attr('y2', '0%');
+    .attr('x2', '0%')
+    .attr('y2', '100%');
 
-interestGradient.append('stop')
+totalAreaGradient.append('stop')
     .attr('offset', '0%')
-    .attr('stop-color', '#8B0000');
+    .attr('stop-color', '#006AA7')
+    .attr('stop-opacity', 0.3);
 
-interestGradient.append('stop')
+totalAreaGradient.append('stop')
     .attr('offset', '100%')
-    .attr('stop-color', '#DC143C');
+    .attr('stop-color', '#006AA7')
+    .attr('stop-opacity', 0.02);
+
+const principalAreaGradient = defs.append('linearGradient')
+    .attr('id', 'principal-area-gradient')
+    .attr('x1', '0%')
+    .attr('y1', '0%')
+    .attr('x2', '0%')
+    .attr('y2', '100%');
+
+principalAreaGradient.append('stop')
+    .attr('offset', '0%')
+    .attr('stop-color', '#8B7300')
+    .attr('stop-opacity', 0.3);
+
+principalAreaGradient.append('stop')
+    .attr('offset', '100%')
+    .attr('stop-color', '#8B7300')
+    .attr('stop-opacity', 0.02);
 
 // Calculate linear loan
 function calculateLinearLoan(amount, rate, years) {
@@ -138,13 +144,17 @@ function calculateLinearLoan(amount, rate, years) {
     const monthlyRate = rate / 100 / 12;
     let remainingBalance = amount;
     let totalInterest = 0;
+    let cumulativePrincipal = 0;
+    let cumulativeTotal = 0;
 
     data.push({
         year: 0,
         payment: 0,
         principal: 0,
         interest: 0,
-        remainingBalance: amount
+        remainingBalance: amount,
+        cumulativePrincipal: 0,
+        cumulativeTotal: 0
     });
 
     for (let year = 1; year <= years; year++) {
@@ -164,12 +174,17 @@ function calculateLinearLoan(amount, rate, years) {
             totalInterest += monthlyInterest;
         }
 
+        cumulativePrincipal += yearPrincipal;
+        cumulativeTotal += yearPayment;
+
         data.push({
             year: year,
             payment: yearPayment,
             principal: yearPrincipal,
             interest: yearInterest,
-            remainingBalance: Math.max(0, remainingBalance)
+            remainingBalance: Math.max(0, remainingBalance),
+            cumulativePrincipal: cumulativePrincipal,
+            cumulativeTotal: cumulativeTotal
         });
     }
 
@@ -207,132 +222,127 @@ function drawChart(data) {
         .range([0, width]);
 
     const yScale = d3.scaleLinear()
-        .domain([0, d3.max(data, d => d.payment) * 1.1])
+        .domain([0, d3.max(data, d => d.cumulativeTotal) * 1.05])
         .nice()
         .range([height, 0]);
 
-    // Create area path for gradient backfill (total payment)
-    const area = d3.area()
+    // Create area path for total gradient backfill
+    const totalArea = d3.area()
         .x(d => xScale(d.year))
         .y0(height)
-        .y1(d => yScale(d.payment))
+        .y1(d => yScale(d.cumulativeTotal))
         .curve(d3.curveMonotoneX);
 
-    const areaData = [{ year: 0, payment: data[1]?.payment || 0, principal: 0, interest: 0 }, ...data.slice(1)];
-
-    // Draw area gradient backfill
-    let areaPath = chartGroup.select('path.area-backfill');
+    // Draw total area gradient backfill
+    let totalAreaPath = chartGroup.select('path.total-area-backfill');
     if (isCreate) {
-        areaPath = chartGroup.append('path')
-            .attr('class', 'area-backfill')
-            .datum(areaData)
-            .attr('fill', 'url(#area-gradient)')
+        totalAreaPath = chartGroup.append('path')
+            .attr('class', 'total-area-backfill')
+            .datum(data)
+            .attr('fill', 'url(#total-area-gradient)')
             .attr('opacity', 0)
-            .attr('d', area);
-
-        areaPath.transition()
+            .attr('d', totalArea);
+        
+        totalAreaPath.transition()
             .duration(800)
             .attr('opacity', 0.6);
     } else {
-        areaPath.datum(areaData).attr('d', area);
+        totalAreaPath.datum(data).attr('d', totalArea);
     }
-
-    // Create line paths
-    const line = d3.line()
-        .x(d => xScale(d.year))
-        .y(d => yScale(d.payment))
-        .curve(d3.curveMonotoneX);
-
-    const principalLinePath = d3.line()
-        .x(d => xScale(d.year))
-        .y(d => yScale(d.principal))
-        .curve(d3.curveMonotoneX);
-
-    const interestLinePath = d3.line()
-        .x(d => xScale(d.year))
-        .y(d => yScale(d.interest))
-        .curve(d3.curveMonotoneX);
 
     // Create area path for principal gradient backfill
     const principalArea = d3.area()
         .x(d => xScale(d.year))
         .y0(height)
-        .y1(d => yScale(d.principal))
+        .y1(d => yScale(d.cumulativePrincipal))
         .curve(d3.curveMonotoneX);
 
     // Draw principal area gradient backfill
-    let principalAreaPath = chartGroup.select('path.principal-backfill');
+    let principalAreaPath = chartGroup.select('path.principal-area-backfill');
     if (isCreate) {
         principalAreaPath = chartGroup.append('path')
-            .attr('class', 'principal-backfill')
-            .datum(areaData)
-            .attr('fill', 'url(#principal-gradient)')
+            .attr('class', 'principal-area-backfill')
+            .datum(data)
+            .attr('fill', 'url(#principal-area-gradient)')
             .attr('opacity', 0)
-            .attr('d', principalArea(areaData));
-
+            .attr('d', principalArea);
+        
         principalAreaPath.transition()
             .duration(800)
             .attr('opacity', 0.15);
     } else {
-        principalAreaPath.datum(areaData).attr('d', principalArea(areaData));
+        principalAreaPath.datum(data).attr('d', principalArea);
     }
 
-    // Draw total payment line
-    let totalLine = chartGroup.select('path.total-payment-line');
-    const totalLinePath = line(areaData);
+    // Create line paths
+    const totalLine = d3.line()
+        .x(d => xScale(d.year))
+        .y(d => yScale(d.cumulativeTotal))
+        .curve(d3.curveMonotoneX);
 
+    const principalLine = d3.line()
+        .x(d => xScale(d.year))
+        .y(d => yScale(d.cumulativePrincipal))
+        .curve(d3.curveMonotoneX);
+
+    // Draw total paid line
+    let totalLinePathEl = chartGroup.select('path.total-paid-line');
+    const totalLinePath = totalLine(data);
+    
     if (isCreate) {
         const flatPath = d3.line()
             .x(d => xScale(d.year))
             .y(() => height)
             .curve(d3.curveMonotoneX);
-
-        totalLine = chartGroup.append('path')
-            .attr('class', 'total-payment-line')
-            .datum(areaData)
+        
+        totalLinePathEl = chartGroup.append('path')
+            .attr('class', 'total-paid-line')
+            .datum(data)
             .attr('fill', 'none')
-            .attr('stroke', 'url(#line-gradient)')
+            .attr('stroke', 'url(#total-gradient)')
             .attr('stroke-width', 4)
             .attr('opacity', 0.9)
-            .attr('d', flatPath(areaData));
-
-        totalLine.transition()
+            .attr('d', flatPath(data));
+        
+        totalLinePathEl.transition()
             .duration(1500)
             .ease(d3.easeCubicOut)
             .attr('d', totalLinePath);
     } else {
-        totalLine.datum(areaData).transition()
+        totalLinePathEl.datum(data).transition()
             .duration(800)
             .ease(d3.easeCubicOut)
             .attr('d', totalLinePath);
     }
 
-    // Draw interest line
-    let interestLine = chartGroup.select('path.interest-line');
-    const interestFlatPath = d3.line()
-        .x(d => xScale(d.year))
-        .y(() => height)
-        .curve(d3.curveMonotoneX);
-
+    // Draw total principal line
+    let principalLinePathEl = chartGroup.select('path.total-principal-line');
+    const principalLinePath = principalLine(data);
+    
     if (isCreate) {
-        interestLine = chartGroup.append('path')
-            .attr('class', 'interest-line')
-            .datum(areaData)
+        const flatPath = d3.line()
+            .x(d => xScale(d.year))
+            .y(() => height)
+            .curve(d3.curveMonotoneX);
+        
+        principalLinePathEl = chartGroup.append('path')
+            .attr('class', 'total-principal-line')
+            .datum(data)
             .attr('fill', 'none')
-            .attr('stroke', 'url(#interest-gradient)')
+            .attr('stroke', 'url(#principal-gradient)')
             .attr('stroke-width', 3)
             .attr('opacity', 0.7)
-            .attr('d', interestFlatPath(areaData));
-
-        interestLine.transition()
+            .attr('d', flatPath(data));
+        
+        principalLinePathEl.transition()
             .duration(1500)
             .ease(d3.easeCubicOut)
-            .attr('d', interestLinePath(areaData));
+            .attr('d', principalLinePath);
     } else {
-        interestLine.datum(areaData).transition()
+        principalLinePathEl.datum(data).transition()
             .duration(800)
             .ease(d3.easeCubicOut)
-            .attr('d', interestLinePath(areaData));
+            .attr('d', principalLinePath);
     }
 
     // Add circles at data points (only show every 5 years, aligned with x-axis ticks)
@@ -372,11 +382,11 @@ function drawChart(data) {
             .delay((d, i) => i * 100)
             .duration(800)
             .ease(d3.easeBackOut)
-            .attr('cy', d => yScale(d.payment));
+            .attr('cy', d => yScale(d.cumulativeTotal));
     } else {
         allCircles.transition()
             .duration(500)
-            .attr('cy', d => yScale(d.payment));
+            .attr('cy', d => yScale(d.cumulativeTotal));
     }
 
     isFirstRender = false;
@@ -414,7 +424,7 @@ function drawChart(data) {
         .tickFormat(d => {
             const yearData = data[d];
             if (yearData && d > 0) {
-                return `${currencyFormatter.format(yearData.payment / 12)} (${yearData.year})`;
+                return `${currencyFormatter.format(yearData.cumulativeTotal)} (${yearData.year})`;
             }
             return '';
         }));
@@ -442,8 +452,8 @@ function drawChart(data) {
     if (isCreate) {
         const legendX = 10;
         const legendY = 10;
-        const legendWidth = 280;
-        const legendHeight = 110;
+        const legendWidth = 240;
+        const legendHeight = 75;
 
         const legend = chartGroup.append('g')
             .attr('class', 'legend')
@@ -473,7 +483,7 @@ function drawChart(data) {
             .attr('y', 28)
             .style('fill', '#E6E9EF')
             .style('font-size', '20px')
-            .text(translations[lang].monthlyPayment);
+            .text(translations[lang].totalPaid);
 
         legend.append('line')
             .attr('x1', 20)
@@ -489,23 +499,7 @@ function drawChart(data) {
             .attr('y', 63)
             .style('fill', '#E6E9EF')
             .style('font-size', '20px')
-            .text(translations[lang].principal);
-
-        legend.append('line')
-            .attr('x1', 20)
-            .attr('y1', 90)
-            .attr('x2', 65)
-            .attr('y2', 90)
-            .attr('stroke', '#DC143C')
-            .attr('stroke-width', 5)
-            .attr('opacity', 0.7);
-
-        legend.append('text')
-            .attr('x', 75)
-            .attr('y', 98)
-            .style('fill', '#E6E9EF')
-            .style('font-size', '20px')
-            .text(translations[lang].interest);
+            .text(translations[lang].totalPrincipal);
     }
 }
 

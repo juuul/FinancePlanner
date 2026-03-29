@@ -3,6 +3,13 @@
     margin: var(--space-xl) auto;
 }
 
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
 .calculator-layout {
     display: flex;
     gap: var(--space-md);
@@ -44,12 +51,6 @@
     width: 100%;
     height: 400px;
     max-height: 450px;
-}
-
-.results-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: var(--space-md);
 }
 
 .results-grid .result-card {
