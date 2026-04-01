@@ -398,10 +398,18 @@ howToPlan:
 
 tools:
   title: "Financiële tools"
-  subtitle: "Interactieve tools om je financiële toekomst te plannen"
+  subtitle: "Interactieve tools om te visualiseren hoe financiële producten zijn samengesteld, hun impact beter te begrijpen, en je financiële beslissingen te verbeteren"
   compoundInterest:
     title: "🔢 Samengestelde rente calculator"
     description: "Visualiseer de kracht van samengestelde rente over tijd. Zie hoe regelmatige investeringen en rentepercentages je vermogensopbouw beïnvloeden."
+    tryItOut: "Probeer het uit"
+  linearLoan:
+    title: "💰 Lineaire lening calculator"
+    description: "Visualiseer het volledige betalingsschema van een lineaire lening. Zie hoe je betalingen afnemen over tijd naarmate de hoofdsom wordt afbetaald."
+    tryItOut: "Probeer het uit"
+  annuityLoan:
+    title: "💵 Annuïteitenlening calculator"
+    description: "Visualiseer het volledige betalingsschema van een annuïteitenlening. Zie hoe uw vaste maandelijkse betalingen uit verschillende interest- en hoofdsomdelen over de tijd bestaan."
     tryItOut: "Probeer het uit"
   compoundInterestCalc:
     title: "Samengestelde rente calculator"
@@ -415,6 +423,31 @@ tools:
     totalInterest: "Totale rente verdiend"
     mobileWarning: "⚠️ Voor de beste ervaring raden we aan deze calculator te gebruiken op een desktop of laptop. De interface bevat meerdere schuifregelaars en een gedetailleerde grafiek die het beste werken op grotere schermen."
     description: "Pas de schuifregelaars aan om te zien hoe samengestelde rente je vermogensopbouw in de loop van de tijd beïnvloedt. De grafiek toont je investeringsgroei jaar na jaar."
+  linearLoanCalc:
+    title: "Lineaire lening calculator"
+    subtitle: "Visualiseer de volledige betalingen van een lineaire lening"
+    amount: "Leningbedrag"
+    interest: "Jaarlijks rentepercentage (%)"
+    years: "Leningperiode (jaren)"
+    totalInterest: "Totale rente"
+    totalPrincipal: "Totale hoofdsom"
+    totalAmount: "Totaal bedrag"
+    firstPayment: "Eerste maandelijkse betaling"
+    lastPayment: "Laatste maandelijkse betaling"
+    mobileWarning: "⚠️ Voor de beste ervaring raden we aan deze calculator te gebruiken op een desktop of laptop. De interface bevat meerdere schuifregelaars en een gedetailleerde grafiek die het beste werken op grotere schermen."
+    description: "Pas de schuifregelaars aan om te zien hoe een lineaire lening werkt. Bij een lineaire lening betaal je elke maand een vast bedrag aan hoofdsom, plus afnemende rente naarmate het resterende saldo daalt."
+  annuityLoanCalc:
+    title: "Annuïteitenlening calculator"
+    subtitle: "Visualiseer de volledige betalingen van een annuïteitenlening"
+    amount: "Leningbedrag"
+    interest: "Jaarlijks rentepercentage (%)"
+    years: "Leningperiode (jaren)"
+    totalInterest: "Totale rente"
+    totalPrincipal: "Totale hoofdsom"
+    totalAmount: "Totaal bedrag"
+    monthlyPayment: "Maandelijkse betaling"
+    mobileWarning: "⚠️ Voor de beste ervaring raden we aan deze calculator te gebruiken op een desktop of laptop. De interface bevat meerdere schuifregelaars en een gedetailleerde grafiek die het beste werken op grotere schermen."
+    description: "Pas de schuifregelaars aan om te zien hoe een annuïteitenlening werkt. Bij een annuïteitenlening blijft uw maandelijkse betaling gedurende de hele looptijd hetzelfde. Vroege betalingen bestaan voornamelijk uit rente, terwijl latere betalingen voornamelijk uit aflossing bestaan."
 
 blog:
   title: "Blog"
