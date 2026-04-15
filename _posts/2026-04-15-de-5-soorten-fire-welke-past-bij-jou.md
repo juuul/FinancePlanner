@@ -25,7 +25,7 @@ Standard FIRE is wat de meeste mensen bedoelen als ze "FIRE" zeggen. Het is de k
 
 **De wiskunde:** Als je €40.000 per jaar uitgeeft, heb je €1 miljoen nodig (40.000 × 25).
 
-![Standard FIRE grafiek: inkomsten uit beleggingen dekken volledig uitgaven]({{ page.asset_prefix }}assets/images/blog/fire-standard.png)
+![Standard FIRE grafiek: inkomsten uit beleggingen dekken volledig uitgaven]({{ page.asset_prefix }}assets/images/blog/fire-success-scenario.png)
 
 *Figure 1: Standard FIRE toont hoe beleggingsinkomen volledig je uitgaven dekt zonder verdere inleg*
 

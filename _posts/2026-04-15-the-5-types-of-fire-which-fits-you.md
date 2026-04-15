@@ -25,7 +25,7 @@ Standard FIRE is what most people mean when they say "FIRE." It's the classic ap
 
 **The math:** If you spend €40,000 per year, you need €1 million (40,000 × 25).
 
-![Standard FIRE chart: investment income fully covers expenses]({{ page.asset_prefix }}assets/images/blog/fire-standard.png)
+![Standard FIRE chart: investment income fully covers expenses]({{ page.asset_prefix }}assets/images/blog/fire-success-scenario.png)
 
 *Figure 1: Standard FIRE shows how investment income fully covers expenses without further contributions*
 
