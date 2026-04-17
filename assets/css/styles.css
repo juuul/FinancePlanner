@@ -1518,6 +1518,10 @@ body.js-enabled .accordion.active .accordion-content {
         font-size: 1.25rem;
     }
 
+    .accordion-inner {
+        padding: var(--space-lg) var(--space-lg);
+    }
+
     .flow-diagram {
         padding: var(--space-xl) var(--space-md);
     }
