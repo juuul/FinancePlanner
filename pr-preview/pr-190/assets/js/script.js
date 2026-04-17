@@ -144,4 +144,37 @@ document.addEventListener('DOMContentLoaded', () => {
             element.classList.add('is-visible');
         });
     }
+
+    // ========================================
+    // ACCORDION FUNCTIONALITY
+    // ========================================
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const accordion = header.closest('.accordion');
+            const isActive = accordion.classList.contains('active');
+
+            // Toggle the clicked accordion
+            accordion.classList.toggle('active');
+
+            // Update ARIA attribute for accessibility
+            header.setAttribute('aria-expanded', !isActive);
+        });
+    });
+
+    // Set initial ARIA attributes
+    accordionHeaders.forEach(header => {
+        header.setAttribute('role', 'button');
+        header.setAttribute('aria-expanded', 'false');
+        header.setAttribute('tabindex', '0');
+
+        // Allow keyboard navigation
+        header.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                header.click();
+            }
+        });
+    });
 });
