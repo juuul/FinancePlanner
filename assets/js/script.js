@@ -149,29 +149,46 @@ document.addEventListener('DOMContentLoaded', () => {
     // ACCORDION FUNCTIONALITY
     // ========================================
 
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    // Early return if no accordions exist
+    if (accordionHeaders.length === 0) return;
+
     // Add js-enabled class to body for progressive enhancement
     document.body.classList.add('js-enabled');
 
-    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    // Initialize accordions with combined setup
+    accordionHeaders.forEach((header, index) => {
+        const accordion = header.closest('.accordion');
+        const content = accordion.querySelector('.accordion-content');
+        const isActive = accordion.classList.contains('active');
 
-    accordionHeaders.forEach(header => {
+        // Set up initial ARIA attributes and IDs
+        header.setAttribute('role', 'button');
+        header.setAttribute('aria-expanded', isActive.toString());
+        header.setAttribute('tabindex', '0');
+
+        // Use predictable IDs for better debugging and testing
+        if (content && !content.id) {
+            content.id = `accordion-content-${index}`;
+        }
+        if (content) {
+            header.setAttribute('aria-controls', content.id);
+        }
+
+        // Handle click events
         header.addEventListener('click', () => {
-            const accordion = header.closest('.accordion');
-            const isActive = accordion.classList.contains('active');
+            const wasActive = accordion.classList.contains('active');
 
             // Toggle the clicked accordion
             accordion.classList.toggle('active');
+            header.setAttribute('aria-expanded', (!wasActive).toString());
 
-            // Update ARIA attribute for accessibility
-            header.setAttribute('aria-expanded', !isActive);
-
-            // Scroll the header to the top of the viewport when opening
-            // Only scroll when opening (not when closing)
-            if (!isActive) {
-                // Wait for the DOM to update before scrolling
+            // Scroll the header to the top when opening
+            if (!wasActive) {
                 requestAnimationFrame(() => {
-                    const headerTop = header.getBoundingClientRect().top + window.pageYOffset;
-                    const offset = 20; // Small offset from the top for better visibility
+                    const headerTop = header.getBoundingClientRect().top + window.scrollY;
+                    const offset = 20;
 
                     window.scrollTo({
                         top: headerTop - offset,
@@ -180,26 +197,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
-    });
 
-    // Set initial ARIA attributes
-    accordionHeaders.forEach(header => {
-        const accordion = header.closest('.accordion');
-        const isActive = accordion.classList.contains('active');
-
-        header.setAttribute('role', 'button');
-        header.setAttribute('aria-expanded', isActive ? 'true' : 'false');
-        header.setAttribute('tabindex', '0');
-
-        // Add aria-controls for better accessibility
-        const content = accordion.querySelector('.accordion-content');
-        if (content) {
-            const contentId = content.id || `accordion-content-${Math.random().toString(36).substr(2, 9)}`;
-            if (!content.id) content.id = contentId;
-            header.setAttribute('aria-controls', contentId);
-        }
-
-        // Allow keyboard navigation
+        // Handle keyboard navigation
         header.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
