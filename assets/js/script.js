@@ -148,6 +148,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // ========================================
     // ACCORDION FUNCTIONALITY
     // ========================================
+
+    // Add js-enabled class to body for progressive enhancement
+    document.body.classList.add('js-enabled');
+
     const accordionHeaders = document.querySelectorAll('.accordion-header');
 
     accordionHeaders.forEach(header => {
@@ -165,9 +169,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Set initial ARIA attributes
     accordionHeaders.forEach(header => {
+        const accordion = header.closest('.accordion');
+        const isActive = accordion.classList.contains('active');
+
         header.setAttribute('role', 'button');
-        header.setAttribute('aria-expanded', 'false');
+        header.setAttribute('aria-expanded', isActive ? 'true' : 'false');
         header.setAttribute('tabindex', '0');
+
+        // Add aria-controls for better accessibility
+        const content = accordion.querySelector('.accordion-content');
+        if (content) {
+            const contentId = content.id || `accordion-content-${Math.random().toString(36).substr(2, 9)}`;
+            if (!content.id) content.id = contentId;
+            header.setAttribute('aria-controls', contentId);
+        }
 
         // Allow keyboard navigation
         header.addEventListener('keydown', (e) => {
