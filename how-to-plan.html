@@ -53,18 +53,71 @@ description: "Learn how to create a financial plan in Finance Planner. Step-by-s
         <section class="animate-fade-in section">
             <h2 class="animate-from-left">Planning Categories</h2>
             <p>After creating your calculation, you can start planning different financial categories. The recommended order is:</p>
-            
+
             <ol>
                 <li><strong>Mortgages:</strong> Set up mortgage loans with interest calculations and tax deductions</li>
                 <li><strong>Expenses:</strong> Plan other costs you need to cover</li>
                 <li><strong>Incomes:</strong> Set up current and future income sources, taking into account your expenses</li>
                 <li><strong>Savings:</strong> Plan your savings to see if you can cover your costs and potentially retire early</li>
             </ol>
+
+            <!-- Flow Diagram -->
+            <div class="flow-diagram animate-from-bottom" data-animate-delay="200ms">
+                <h3>💡 Understanding the Financial Flow</h3>
+                <svg class="flow-diagram-svg" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                            <polygon points="0 0, 10 3, 0 6" fill="#FECC13" />
+                        </marker>
+                    </defs>
+
+                    <!-- Income Box -->
+                    <rect class="flow-box" x="20" y="60" width="140" height="80" rx="4" />
+                    <text class="flow-text" x="90" y="95" text-anchor="middle">Income</text>
+                    <text class="flow-text" x="90" y="115" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Salary, Pension,</text>
+                    <text class="flow-text" x="90" y="130" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Investments</text>
+
+                    <!-- Minus Operator -->
+                    <text class="flow-operator" x="190" y="110" text-anchor="middle">−</text>
+
+                    <!-- Expenses Box -->
+                    <rect class="flow-box" x="220" y="60" width="140" height="80" rx="4" />
+                    <text class="flow-text" x="290" y="95" text-anchor="middle">Expenses</text>
+                    <text class="flow-text" x="290" y="115" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Living Costs,</text>
+                    <text class="flow-text" x="290" y="130" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Mortgages</text>
+
+                    <!-- Equals Operator -->
+                    <text class="flow-operator" x="390" y="110" text-anchor="middle">=</text>
+
+                    <!-- Surplus Box -->
+                    <rect class="flow-box" x="420" y="60" width="140" height="80" rx="4" />
+                    <text class="flow-text" x="490" y="95" text-anchor="middle">Surplus</text>
+                    <text class="flow-text" x="490" y="115" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Available to</text>
+                    <text class="flow-text" x="490" y="130" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Save</text>
+
+                    <!-- Arrow to Savings -->
+                    <line class="flow-arrow" x1="560" y1="100" x2="620" y2="100" />
+
+                    <!-- Savings Box -->
+                    <rect class="flow-box" x="620" y="60" width="160" height="80" rx="4" />
+                    <text class="flow-text" x="700" y="95" text-anchor="middle">Savings</text>
+                    <text class="flow-text" x="700" y="115" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Grows with</text>
+                    <text class="flow-text" x="700" y="130" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Interest</text>
+                </svg>
+                <p style="margin-top: var(--space-lg); color: var(--color-text-secondary);">
+                    This diagram shows how your financial plan works: your income minus expenses equals your surplus, which flows into savings where it grows with interest over time.
+                </p>
+            </div>
         </section>
 
         <!-- Step 2: Planning Mortgages -->
-        <section class="animate-fade-in section">
-            <h2 class="animate-from-right">Step 2: Planning Mortgages</h2>
+        <section class="animate-fade-in section accordion">
+            <div class="accordion-header">
+                <h2 class="animate-from-right">Step 2: Planning Mortgages</h2>
+                <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
             <p>Mortgages are a specific type of expense where the monthly payment is calculated based on the loan amount, interest rate, and repayment schedule. You can also model mortgage interest tax deductions. Here's how to configure a mortgage:</p>
             
             <img src="https://github.com/user-attachments/assets/8b7c5f7b-d0b5-459b-b61e-ab5ee35ee2d3" alt="Mortgage planning screen in Finance Planner app" class="app-screenshot">
@@ -97,13 +150,20 @@ description: "Learn how to create a financial plan in Finance Planner. Step-by-s
                     <p>💡 <strong>Note:</strong> Many countries offer tax deductions on mortgage interest to encourage homeownership. Check your local tax regulations to determine if you qualify and what percentage applies to you.</p>
                 </div>
             </div>
-            
+
             <p>💡 <strong>Tip:</strong> Mortgage planning is essential for long-term financial planning, as it typically represents one of the largest expenses in a household budget. By modeling different scenarios, you can understand how your mortgage affects your ability to save and retire early.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Step 3: Planning Expenses -->
-        <section class="animate-fade-in section">
-            <h2 class="animate-from-left">Step 3: Planning Expenses</h2>
+        <section class="animate-fade-in section accordion">
+            <div class="accordion-header">
+                <h2 class="animate-from-left">Step 3: Planning Expenses</h2>
+                <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
             <p>Expenses are a crucial part of your financial plan. When you plan your expenses, you can see what you need to do to achieve your financial goals. Here's how to configure an expense:</p>
             
             <img src="https://github.com/user-attachments/assets/69e1eead-87d2-4cb1-8ec6-0e972580a698" alt="Expense planning screen in Finance Planner app" class="app-screenshot">
@@ -140,11 +200,18 @@ description: "Learn how to create a financial plan in Finance Planner. Step-by-s
                     <p>Determine if the expense should be indexed for inflation. Most costs are indexed over time, so enable this for most cases. This is important when you want to analyze your calculation with the effect of inflation to get a realistic view of future costs.</p>
                 </div>
             </div>
+                </div>
+            </div>
         </section>
 
         <!-- Step 4: Planning Incomes -->
-        <section class="animate-fade-in section">
-            <h2 class="animate-from-right">Step 4: Planning Incomes</h2>
+        <section class="animate-fade-in section accordion">
+            <div class="accordion-header">
+                <h2 class="animate-from-right">Step 4: Planning Incomes</h2>
+                <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
             <p>After planning your expenses, set up your income sources. Income planning follows similar principles to expense planning:</p>
             
             <div class="features-grid">
@@ -181,13 +248,20 @@ description: "Learn how to create a financial plan in Finance Planner. Step-by-s
             
             <img src="https://github.com/user-attachments/assets/0ee6e54c-1fc1-4c24-a7e3-6211d78a1a56" alt="Wealth graph showing shortage at age 76" class="app-screenshot">
             <p class="screenshot-caption">The wealth graph shows a shortage at age 76 in 2049</p>
-            
+
             <p>By clicking on the pink line in the income graph, we can see we have 1,000 to spend monthly until the early retirement date. Let's use this surplus to build savings!</p>
+                </div>
+            </div>
         </section>
 
         <!-- Step 5: Planning Savings -->
-        <section class="animate-fade-in section">
-            <h2 class="animate-from-left">Step 5: Planning Savings</h2>
+        <section class="animate-fade-in section accordion">
+            <div class="accordion-header">
+                <h2 class="animate-from-left">Step 5: Planning Savings</h2>
+                <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
             <p>Savings planning helps you understand if you can cover your costs and even retire early. A savings subject is made up of three parts: general settings, deposits, and withdrawals.</p>
 
             <h3>⚙️ Part 1: General Settings</h3>
@@ -224,11 +298,18 @@ description: "Learn how to create a financial plan in Finance Planner. Step-by-s
             <p class="screenshot-caption">With savings, the shortage now occurs much later at age 85</p>
 
             <p>Congratulations! You've created your first complete financial plan. From here, you can continue to refine your plan by adjusting savings rates, exploring different retirement ages, or adding additional income sources.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Step 6: Add Persons -->
-        <section class="animate-fade-in section">
-            <h2 class="animate-from-right">Step 6: Add Persons</h2>
+        <section class="animate-fade-in section accordion">
+            <div class="accordion-header">
+                <h2 class="animate-from-right">Step 6: Add Persons</h2>
+                <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
             <p>After setting up your financial plan, you can add persons to your calculation. This allows you to model multi-person households and track individual retirement scenarios. Each person can have their own early retirement date that you can adjust to explore different FIRE (Financial Independence, Retire Early) scenarios.</p>
 
             <img src="https://github.com/user-attachments/assets/7e042373-b66c-4abf-82d9-d08be9425e5b" alt="Add Person dialog in Finance Planner app" class="app-screenshot">
@@ -246,6 +327,8 @@ description: "Learn how to create a financial plan in Finance Planner. Step-by-s
             </div>
 
             <p>💡 <strong>Tip:</strong> Once a person is added, you can adjust their early retirement date using the FIRE slider in the calculation results. This is particularly useful for couples who want to explore scenarios where one partner retires earlier than the other, or for testing different retirement ages to see their impact on your financial plan.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Calculate and Analyze -->
