@@ -127,9 +127,75 @@
             <p>Leer hoe je een uitgebreid financieel plan opzet in de Finance Planner app. Volg deze stappen om je berekening te maken, personen toe te voegen en je uitgaven, inkomsten, besparingen en leningen te plannen voor een compleet financieel overzicht.</p>
         </section>
 
-        <!-- Step 1: Create a Calculation -->
+        <!-- Planning Overview -->
         <section class="animate-fade-in section">
-            <h2 class="animate-from-left">Stap 1: Maak een berekening</h2>
+            <h2 class="animate-from-left">Planning categorieën</h2>
+            <p>Na het aanmaken van je berekening kun je beginnen met het plannen van verschillende financiële categorieën. De aanbevolen volgorde is:</p>
+
+            <ol>
+                <li><strong>Hypotheken:</strong> Stel hypotheken in met renteberekeningen en belastingaftrek</li>
+                <li><strong>Uitgaven:</strong> Plan andere kosten die je moet dekken</li>
+                <li><strong>Inkomsten:</strong> Stel huidige en toekomstige inkomensbronnen in, rekening houdend met je uitgaven</li>
+                <li><strong>Besparingen:</strong> Plan je besparingen om te zien of je je kosten kunt dekken en mogelijk eerder met pensioen kunt</li>
+            </ol>
+
+            <!-- Flow Diagram -->
+            <div class="flow-diagram animate-from-bottom" data-animate-delay="200ms">
+                <h3>💡 De financiële flow begrijpen</h3>
+                <svg class="flow-diagram-svg" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                            <polygon points="0 0, 10 3, 0 6" fill="#FECC13" />
+                        </marker>
+                    </defs>
+
+                    <!-- Income Box -->
+                    <rect class="flow-box" x="20" y="60" width="140" height="80" rx="4" />
+                    <text class="flow-text" x="90" y="95" text-anchor="middle">Inkomsten</text>
+                    <text class="flow-text" x="90" y="115" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Salaris, Pensioen,</text>
+                    <text class="flow-text" x="90" y="130" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Investeringen</text>
+
+                    <!-- Minus Operator -->
+                    <text class="flow-operator" x="190" y="110" text-anchor="middle">−</text>
+
+                    <!-- Expenses Box -->
+                    <rect class="flow-box" x="220" y="60" width="140" height="80" rx="4" />
+                    <text class="flow-text" x="290" y="95" text-anchor="middle">Uitgaven</text>
+                    <text class="flow-text" x="290" y="115" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Levenskosten,</text>
+                    <text class="flow-text" x="290" y="130" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Hypotheken</text>
+
+                    <!-- Equals Operator -->
+                    <text class="flow-operator" x="390" y="110" text-anchor="middle">=</text>
+
+                    <!-- Surplus Box -->
+                    <rect class="flow-box" x="420" y="60" width="140" height="80" rx="4" />
+                    <text class="flow-text" x="490" y="95" text-anchor="middle">Overschot</text>
+                    <text class="flow-text" x="490" y="115" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Beschikbaar</text>
+                    <text class="flow-text" x="490" y="130" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">om te sparen</text>
+
+                    <!-- Arrow to Savings -->
+                    <line class="flow-arrow" x1="560" y1="100" x2="620" y2="100" marker-end="url(#arrowhead)" />
+
+                    <!-- Savings Box -->
+                    <rect class="flow-box" x="620" y="60" width="160" height="80" rx="4" />
+                    <text class="flow-text" x="700" y="95" text-anchor="middle">Besparingen</text>
+                    <text class="flow-text" x="700" y="115" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Groeit met</text>
+                    <text class="flow-text" x="700" y="130" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">rente</text>
+                </svg>
+                <p style="margin-top: var(--space-lg); color: var(--color-text-secondary);">
+                    Dit diagram toont hoe je financiële plan werkt: je inkomsten minus uitgaven is gelijk aan je overschot, dat naar je besparingen stroomt waar het groeit met rente in de loop van de tijd.
+                </p>
+            </div>
+        </section>
+
+        <!-- Step 1: Create a Calculation -->
+        <section class="animate-fade-in section accordion active">
+            <div class="accordion-header">
+                <h2 class="animate-from-left">Stap 1: Maak een berekening</h2>
+                <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
             <p>De eerste stap bij het maken van je financiële plan is het opzetten van een nieuwe berekening. Dit vormt de basis van je planning door je planningsnaam en belangrijke financiële parameters te definiëren.</p>
 
             <img src="https://github.com/user-attachments/assets/b579e556-0a55-47bf-89e2-a9575912361f" alt="Dialoogvenster 'Berekening maken' in de Finance Planner-app" class="app-screenshot">
@@ -163,24 +229,18 @@
             </div>
 
             <p>💡 <strong>Tip:</strong> Deze vereenvoudigde instelling maakt automatisch de essentiële onderwerpen (inkomen, uitgaven, pensioen en besparingen) aan die nodig zijn voor FIRE-planning. De spaarrekening fungeert als een buffer, verzamelt overtollig inkomen tijdens werkjaren en voorziet in middelen tijdens de periode tussen vervroegd pensioen en de pensioenleeftijd.</p>
-        </section>
-
-        <!-- Planning Overview -->
-        <section class="animate-fade-in section">
-            <h2 class="animate-from-left">Planning categorieën</h2>
-            <p>Na het aanmaken van je berekening kun je beginnen met het plannen van verschillende financiële categorieën. De aanbevolen volgorde is:</p>
-            
-            <ol>
-                <li><strong>Hypotheken:</strong> Stel hypotheken in met renteberekeningen en belastingaftrek</li>
-                <li><strong>Uitgaven:</strong> Plan andere kosten die je moet dekken</li>
-                <li><strong>Inkomsten:</strong> Stel huidige en toekomstige inkomensbronnen in, rekening houdend met je uitgaven</li>
-                <li><strong>Besparingen:</strong> Plan je besparingen om te zien of je je kosten kunt dekken en mogelijk eerder met pensioen kunt</li>
-            </ol>
+                </div>
+            </div>
         </section>
 
         <!-- Step 2: Planning Mortgages -->
-        <section class="animate-fade-in section">
-            <h2 class="animate-from-right">Stap 2: Hypotheken plannen</h2>
+        <section class="animate-fade-in section accordion">
+            <div class="accordion-header">
+                <h2 class="animate-from-right">Stap 2: Hypotheken plannen</h2>
+                <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
             <p>Hypotheken zijn een specifiek type uitgave waarbij de maandelijkse betaling wordt berekend op basis van het leningbedrag, de rente en het aflossingsschema. Je kunt ook hypotheekrenteaftrek modelleren. Zo configureer je een hypotheek:</p>
             
             <img src="https://github.com/user-attachments/assets/8b7c5f7b-d0b5-459b-b61e-ab5ee35ee2d3" alt="Mortgage planning screen in Finance Planner app" class="app-screenshot">
@@ -213,13 +273,20 @@
                     <p>💡 <strong>Let op:</strong> Veel landen bieden belastingaftrek op hypotheekrente om woningbezit aan te moedigen. Controleer je lokale belastingregels om te bepalen of je in aanmerking komt en welk percentage voor jou van toepassing is.</p>
                 </div>
             </div>
-            
+
             <p>💡 <strong>Tip:</strong> Hypotheekplanning is essentieel voor langetermijnplanning, omdat het meestal een van de grootste uitgaven in een huishoudbudget vertegenwoordigt. Door verschillende scenario's te modelleren, kun je begrijpen hoe je hypotheek je mogelijkheid om te sparen en eerder met pensioen te gaan beïnvloedt.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Step 3: Planning Expenses -->
-        <section class="animate-fade-in section">
-            <h2 class="animate-from-left">Stap 3: Uitgaven plannen</h2>
+        <section class="animate-fade-in section accordion">
+            <div class="accordion-header">
+                <h2 class="animate-from-left">Stap 3: Uitgaven plannen</h2>
+                <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
             <p>Uitgaven zijn een cruciaal onderdeel van je financiële plan. Wanneer je je uitgaven plant, kun je zien wat je moet doen om je financiële doelen te bereiken. Zo configureer je een uitgave:</p>
             
             <img src="https://github.com/user-attachments/assets/69e1eead-87d2-4cb1-8ec6-0e972580a698" alt="Expense planning screen in Finance Planner app" class="app-screenshot">
@@ -256,11 +323,18 @@
                     <p>Bepaal of de uitgave moet worden geïndexeerd voor inflatie. De meeste kosten worden in de loop van de tijd geïndexeerd, dus schakel dit in voor de meeste gevallen. Dit is belangrijk wanneer je je berekening wilt analyseren met het effect van inflatie om een realistisch beeld te krijgen van toekomstige kosten.</p>
                 </div>
             </div>
+                </div>
+            </div>
         </section>
 
         <!-- Step 4: Planning Incomes -->
-        <section class="animate-fade-in section">
-            <h2 class="animate-from-right">Stap 4: Inkomsten plannen</h2>
+        <section class="animate-fade-in section accordion">
+            <div class="accordion-header">
+                <h2 class="animate-from-right">Stap 4: Inkomsten plannen</h2>
+                <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
             <p>Na het plannen van je uitgaven, stel je je inkomensbronnen in. Inkomensplanning volgt vergelijkbare principes als uitgavenplanning:</p>
             
             <div class="features-grid">
@@ -297,13 +371,20 @@
             
             <img src="https://github.com/user-attachments/assets/0ee6e54c-1fc1-4c24-a7e3-6211d78a1a56" alt="Wealth graph showing shortage at age 76" class="app-screenshot">
             <p class="screenshot-caption">De vermogensgrafiek toont een tekort op 76-jarige leeftijd in 2049</p>
-            
+
             <p>Door op de roze lijn in de inkomstengrafiek te klikken, zien we dat we 1.000 per maand te besteden hebben tot de vervroegde pensioendatum. Laten we dit overschot gebruiken om te sparen!</p>
+                </div>
+            </div>
         </section>
 
         <!-- Step 5: Planning Savings -->
-        <section class="animate-fade-in section">
-            <h2 class="animate-from-left">Stap 5: Besparingen plannen</h2>
+        <section class="animate-fade-in section accordion">
+            <div class="accordion-header">
+                <h2 class="animate-from-left">Stap 5: Besparingen plannen</h2>
+                <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
             <p>Besparingsplanning helpt je te begrijpen of je je kosten kunt dekken en zelfs eerder met pensioen kunt. Een spaarbewerking bestaat uit drie onderdelen: algemene instellingen, stortingen en opnames.</p>
 
             <h3>⚙️ Deel 1: Algemene instellingen</h3>
@@ -340,11 +421,18 @@
             <p class="screenshot-caption">Met spaargeld treedt het tekort nu veel later op, op 85-jarige leeftijd</p>
 
             <p>Gefeliciteerd! Je hebt je eerste complete financiële plan gemaakt. Vanaf hier kun je je plan blijven verfijnen door spaarpercentages aan te passen, verschillende pensioenleeftijden te verkennen of extra inkomensbronnen toe te voegen.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Step 6: Add Persons -->
-        <section class="animate-fade-in section">
-            <h2 class="animate-from-right">Stap 6: Voeg personen toe</h2>
+        <section class="animate-fade-in section accordion">
+            <div class="accordion-header">
+                <h2 class="animate-from-right">Stap 6: Voeg personen toe</h2>
+                <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
             <p>Na het opzetten van je financiële plan kun je personen toevoegen aan je berekening. Hiermee kun je huishoudens met meerdere personen modelleren en individuele pensioenscenario's volgen. Elke persoon kan zijn eigen vervroegde pensioendatum hebben die je kunt aanpassen om verschillende FIRE-scenario's (Financial Independence, Retire Early) te verkennen.</p>
 
             <img src="https://github.com/user-attachments/assets/7e042373-b66c-4abf-82d9-d08be9425e5b" alt="Add Person dialog in Finance Planner app" class="app-screenshot">
@@ -362,18 +450,20 @@
             </div>
 
             <p>💡 <strong>Tip:</strong> Zodra een persoon is toegevoegd, kun je hun vervroegde pensioendatum aanpassen met de FIRE-schuifregelaar in de berekeningsresultaten. Dit is vooral nuttig voor koppels die scenario's willen verkennen waarin de ene partner eerder met pensioen gaat dan de andere, of voor het testen van verschillende pensioenleeftijden om te zien wat de impact is op je financiële plan.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Calculate and Analyze -->
         <section class="animate-fade-in section tutorials-section">
             <h2 class="animate-from-right">📊 Bereken en analyseer</h2>
             <p>Zodra je al je financiële gegevens hebt ingevoerd, gebruik je de Bereken-knop om je analyse uit te voeren:</p>
-            <ul style="text-align: left; max-width: 600px; margin: 1rem auto;">
-                <li>Bekijk visuele projecties van je financiële toekomst</li>
-                <li>Pas pensioenleeftijd-schuifregelaars aan om verschillende scenario's te zien</li>
-                <li>Test "wat als" scenario's door invoer aan te passen</li>
-                <li>Exporteer of bewaar je financiële plan voor toekomstige referentie</li>
-            </ul>
+            <ol>
+                <li><strong>Bekijk projecties:</strong> Bekijk visuele projecties van je financiële toekomst</li>
+                <li><strong>Pas scenario's aan:</strong> Pas pensioenleeftijd-schuifregelaars aan om verschillende scenario's te zien</li>
+                <li><strong>Test variabelen:</strong> Test "wat als" scenario's door invoer aan te passen</li>
+                <li><strong>Bewaar je plan:</strong> Exporteer of bewaar je financiële plan voor toekomstige referentie</li>
+            </ol>
         </section>
 
         <!-- Get Started -->

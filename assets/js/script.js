@@ -144,4 +144,66 @@ document.addEventListener('DOMContentLoaded', () => {
             element.classList.add('is-visible');
         });
     }
+
+    // ========================================
+    // ACCORDION FUNCTIONALITY
+    // ========================================
+
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    // Early return if no accordions exist
+    if (accordionHeaders.length === 0) return;
+
+    // Add js-enabled class to body for progressive enhancement
+    document.body.classList.add('js-enabled');
+
+    // Initialize accordions with combined setup
+    accordionHeaders.forEach((header, index) => {
+        const accordion = header.closest('.accordion');
+        const content = accordion.querySelector('.accordion-content');
+        const isActive = accordion.classList.contains('active');
+
+        // Set up initial ARIA attributes and IDs
+        header.setAttribute('role', 'button');
+        header.setAttribute('aria-expanded', isActive.toString());
+        header.setAttribute('tabindex', '0');
+
+        // Use predictable IDs for better debugging and testing
+        if (content && !content.id) {
+            content.id = `accordion-content-${index}`;
+        }
+        if (content) {
+            header.setAttribute('aria-controls', content.id);
+        }
+
+        // Handle click events
+        header.addEventListener('click', () => {
+            const wasActive = accordion.classList.contains('active');
+
+            // Toggle the clicked accordion
+            accordion.classList.toggle('active');
+            header.setAttribute('aria-expanded', (!wasActive).toString());
+
+            // Scroll the header to the top when opening
+            if (!wasActive) {
+                requestAnimationFrame(() => {
+                    const headerTop = header.getBoundingClientRect().top + window.scrollY;
+                    const offset = 20;
+
+                    window.scrollTo({
+                        top: headerTop - offset,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+
+        // Handle keyboard navigation
+        header.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                header.click();
+            }
+        });
+    });
 });

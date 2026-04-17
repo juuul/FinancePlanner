@@ -1380,3 +1380,157 @@ img {
         max-width: 200px;
     }
 }
+
+/* ========================================
+   ACCORDION STYLES
+   ======================================== */
+
+.accordion {
+    margin-bottom: var(--space-lg);
+}
+
+.accordion-header {
+    background: var(--color-bg-dark-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg) var(--space-xl);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    margin-bottom: 0;
+}
+
+.accordion-header:hover {
+    background: var(--color-bg-dark-elevated);
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.accordion-header h2 {
+    margin: 0;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.accordion-icon {
+    font-size: 1.5rem;
+    color: var(--color-accent-blue);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: var(--space-md);
+}
+
+.accordion.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: none;
+    overflow: visible;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+
+/* Only collapse when JS is enabled */
+body.js-enabled .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+body.js-enabled .accordion.active .accordion-content {
+    /* Use a large value that accommodates content while being reasonable */
+    max-height: 5000px;
+    opacity: 1;
+    overflow: visible;
+}
+
+.accordion-inner {
+    padding: var(--space-3xl) var(--space-xl);
+}
+
+/* ========================================
+   FLOW DIAGRAM STYLES
+   ======================================== */
+
+.flow-diagram {
+    background: var(--color-bg-dark-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl) var(--space-xl);
+    margin: var(--space-2xl) 0;
+    text-align: center;
+}
+
+.flow-diagram h3 {
+    margin-bottom: var(--space-xl);
+    color: var(--color-accent-blue);
+}
+
+.flow-diagram-svg {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.flow-box {
+    fill: var(--color-bg-dark-elevated);
+    stroke: var(--color-accent-blue);
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+.flow-box:hover {
+    fill: var(--color-bg-dark-card);
+    stroke: var(--color-accent-yellow);
+}
+
+.flow-text {
+    fill: var(--color-text-primary);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.flow-arrow {
+    stroke: var(--color-accent-yellow);
+    stroke-width: 3;
+    fill: none;
+}
+
+.flow-operator {
+    fill: var(--color-accent-yellow);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .accordion-header {
+        padding: var(--space-md) var(--space-lg);
+    }
+
+    .accordion-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .accordion-icon {
+        font-size: 1.25rem;
+    }
+
+    .accordion-inner {
+        padding: var(--space-xl) var(--space-md);
+    }
+
+    .flow-diagram {
+        padding: var(--space-xl) var(--space-md);
+    }
+
+    .flow-text {
+        font-size: 12px;
+    }
+
+    .flow-operator {
+        font-size: 18px;
+    }
+}
