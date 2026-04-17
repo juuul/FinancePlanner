@@ -159,6 +159,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const accordion = header.closest('.accordion');
             const isActive = accordion.classList.contains('active');
 
+            // Close all other accordions
+            accordionHeaders.forEach(otherHeader => {
+                const otherAccordion = otherHeader.closest('.accordion');
+                if (otherAccordion !== accordion) {
+                    otherAccordion.classList.remove('active');
+                    otherHeader.setAttribute('aria-expanded', 'false');
+                }
+            });
+
             // Toggle the clicked accordion
             accordion.classList.toggle('active');
 
