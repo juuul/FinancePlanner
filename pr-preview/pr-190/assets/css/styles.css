@@ -1446,7 +1446,7 @@ body.js-enabled .accordion.active .accordion-content {
 }
 
 .accordion-inner {
-    padding: var(--space-lg) 0;
+    padding: var(--space-3xl) var(--space-xl);
 }
 
 /* ========================================
@@ -1519,7 +1519,7 @@ body.js-enabled .accordion.active .accordion-content {
     }
 
     .accordion-inner {
-        padding: var(--space-lg) var(--space-lg);
+        padding: var(--space-xl) var(--space-md);
     }
 
     .flow-diagram {
