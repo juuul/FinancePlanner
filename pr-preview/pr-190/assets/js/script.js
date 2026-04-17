@@ -159,10 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const accordion = header.closest('.accordion');
             const isActive = accordion.classList.contains('active');
 
-            // Store the position of the clicked header relative to the viewport
-            const headerRect = header.getBoundingClientRect();
-            const headerTopBeforeToggle = headerRect.top + window.pageYOffset;
-
             // Close all other accordions
             accordionHeaders.forEach(otherHeader => {
                 const otherAccordion = otherHeader.closest('.accordion');
@@ -178,19 +174,20 @@ document.addEventListener('DOMContentLoaded', () => {
             // Update ARIA attribute for accessibility
             header.setAttribute('aria-expanded', !isActive);
 
-            // Maintain the clicked header's position by adjusting scroll
-            // This prevents page jumping when other accordions close
-            requestAnimationFrame(() => {
-                const headerTopAfterToggle = header.getBoundingClientRect().top + window.pageYOffset;
-                const scrollAdjustment = headerTopAfterToggle - headerTopBeforeToggle;
+            // Scroll the header to the top of the viewport when opening
+            // Only scroll when opening (not when closing)
+            if (!isActive) {
+                // Wait for the DOM to update before scrolling
+                requestAnimationFrame(() => {
+                    const headerTop = header.getBoundingClientRect().top + window.pageYOffset;
+                    const offset = 20; // Small offset from the top for better visibility
 
-                if (Math.abs(scrollAdjustment) > 1) {
                     window.scrollTo({
-                        top: window.pageYOffset + scrollAdjustment,
-                        behavior: 'auto'
+                        top: headerTop - offset,
+                        behavior: 'smooth'
                     });
-                }
-            });
+                });
+            }
         });
     });
 
