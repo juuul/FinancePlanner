@@ -1426,12 +1426,18 @@ img {
 }
 
 .accordion-content {
-    max-height: 0;
-    overflow: hidden;
+    max-height: none;
+    overflow: visible;
     transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.accordion.active .accordion-content {
+/* Only collapse when JS is enabled */
+body.js-enabled .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+body.js-enabled .accordion.active .accordion-content {
     max-height: 10000px;
 }
 
@@ -1486,7 +1492,6 @@ img {
     stroke: var(--color-accent-yellow);
     stroke-width: 3;
     fill: none;
-    marker-end: url(#arrowhead);
 }
 
 .flow-operator {

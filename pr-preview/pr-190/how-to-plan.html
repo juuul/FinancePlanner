@@ -128,8 +128,13 @@
         </section>
 
         <!-- Step 1: Create a Calculation -->
-        <section class="animate-fade-in section">
-            <h2 class="animate-from-left">Step 1: Create a Calculation</h2>
+        <section class="animate-fade-in section accordion">
+            <div class="accordion-header">
+                <h2 class="animate-from-left">Step 1: Create a Calculation</h2>
+                <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
             <p>The first step in creating your financial plan is to set up a new calculation. This forms the foundation of your planning by defining your planning name and key financial parameters.</p>
 
             <img src="https://github.com/user-attachments/assets/b579e556-0a55-47bf-89e2-a9575912361f" alt="Create a Calculation dialog in Finance Planner app" class="app-screenshot">
@@ -163,6 +168,8 @@
             </div>
 
             <p>💡 <strong>Tip:</strong> This simplified setup automatically creates the essential subjects (income, expenses, pension, and savings) needed for FIRE planning. The savings account acts as a buffer, accumulating surplus income during working years and providing funds during the gap between early retirement and pension age.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Planning Overview -->
@@ -212,7 +219,7 @@
                     <text class="flow-text" x="490" y="130" text-anchor="middle" style="font-size: 12px; fill: #9BA3B4;">Save</text>
 
                     <!-- Arrow to Savings -->
-                    <line class="flow-arrow" x1="560" y1="100" x2="620" y2="100" />
+                    <line class="flow-arrow" x1="560" y1="100" x2="620" y2="100" marker-end="url(#arrowhead)" />
 
                     <!-- Savings Box -->
                     <rect class="flow-box" x="620" y="60" width="160" height="80" rx="4" />
