@@ -10,7 +10,7 @@ description: "Een complete gids over de FIRE-beweging en hoe je financieel onafh
 alternate_lang: en
 alternate_url: blog_2026_03_04_fire-financial-independence-retire-early.html
 ---
-
+http://127.0.0.1:4000/
 De FIRE-beweging heeft een grote aanhang onder jongere generaties gewonnen en biedt een routeplan naar financiële vrijheid en de mogelijkheid om veel eerder met pensioen te gaan dan traditioneel het geval is. Maar wat is FIRE precies, en is het haalbaar voor jou?
 
 ## Wat is FIRE?
