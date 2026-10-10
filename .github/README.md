@@ -9,6 +9,7 @@ This directory contains GitHub-specific configurations and workflows for the Fin
 - **[deploy-gh-pages.yml](workflows/deploy-gh-pages.yml)** - Deploys the production site from main branch to GitHub Pages
 - **[pr-preview.yml](workflows/pr-preview.yml)** - Automatically deploys PR preview environments
 - **[pr-preview-cleanup.yml](workflows/pr-preview-cleanup.yml)** - Cleans up preview environments when PRs close
+- **[feature-preview.yml](workflows/feature-preview.yml)** - Publishes feature branches to an isolated test URL
 
 ### Documentation
 
@@ -88,6 +89,16 @@ When PR Closes/Merges:
 │  Removes Directory  │
 └─────────────────────┘
 ```
+
+### Feature Preview System
+
+Push a branch named `feature/...` to publish it automatically, or run **Deploy feature preview** manually and enter any branch name. The site is published below:
+
+```
+https://financeplannerapp.com/feature-preview/<branch-name>/
+```
+
+This path is separate from production, which is still deployed only from `main`.
 
 ## 📚 Documentation Structure
 

@@ -1,0 +1,77 @@
+name: Deploy feature preview
+
+on:
+  push:
+    branches:
+      - 'feature/**'
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Feature branch to deploy (for example feature/new-dashboard)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  # All previews share gh-pages, so serialize pushes to avoid overwriting another branch's deployment.
+  group: gh-pages-feature-previews
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      FEATURE_BRANCH: ${{ github.event_name == 'workflow_dispatch' && inputs.branch || github.ref_name }}
+    steps:
+      - name: Validate branch name
+        run: git check-ref-format --branch "$FEATURE_BRANCH"
+
+      - name: Checkout feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.branch || github.ref_name }}
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: false
+
+      - name: Install Jekyll
+        run: gem install jekyll bundler
+
+      - name: Build Jekyll site
+        run: jekyll build
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Publish feature preview
+        run: |
+          BRANCH_SLUG=$(printf '%s' "$FEATURE_BRANCH" | tr '[:upper:]' '[:lower:]' | sed 's#[^a-z0-9._-]#-#g; s#-\+#-#g; s#^-##; s#-$##')
+          if [ -z "$BRANCH_SLUG" ]; then
+            echo "The branch name produced an empty preview path."
+            exit 1
+          fi
+
+          PREVIEW_DIR="gh-pages/feature-preview/${BRANCH_SLUG}"
+          mkdir -p "$PREVIEW_DIR"
+          rsync -av --delete --exclude='.git' _site/ "$PREVIEW_DIR/"
+
+          cd gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "feature-preview/${BRANCH_SLUG}"
+          if git commit -m "Deploy feature preview for ${FEATURE_BRANCH}"; then
+            git pull --rebase origin gh-pages
+            git push origin gh-pages
+          else
+            echo "No changes to commit"
+          fi
+
+          echo "Preview URL: https://financeplannerapp.com/feature-preview/${BRANCH_SLUG}/"

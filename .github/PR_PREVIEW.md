@@ -47,6 +47,16 @@ The preview includes:
 
 Simply push new commits to your PR branch. The preview will automatically rebuild and update within about a minute.
 
+## Testing a feature branch without opening a PR
+
+Branches named `feature/...` are also published automatically by the **Deploy feature preview** workflow. You can test a feature branch at:
+
+```
+https://financeplannerapp.com/feature-preview/<branch-name>/
+```
+
+For another branch name, open **Actions → Deploy feature preview → Run workflow** and enter the branch name. This never deploys to the production root; production remains connected to `main`.
+
 ### Important Notes
 
 - Previews are hosted on GitHub Pages using the `gh-pages` branch
