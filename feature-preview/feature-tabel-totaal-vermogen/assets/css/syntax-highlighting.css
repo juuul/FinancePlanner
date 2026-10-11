@@ -1,0 +1,99 @@
+/* Syntax Highlighting - Modern Stockholm Dark Theme */
+
+/* General code block styling */
+.highlight {
+    background: var(--color-bg-dark-elevated, #141923);
+    border-radius: var(--radius-md, 4px);
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.highlight pre {
+    margin: 0;
+    padding: 1.5rem;
+    background: transparent;
+    border-radius: var(--radius-md, 4px);
+}
+
+.highlight code {
+    font-family: 'Monaco', 'Menlo', 'Consolas', 'Courier New', monospace;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-primary, #E6E9EF);
+}
+
+/* Inline code - scoped to avoid conflicts with code blocks */
+p code,
+li code,
+span code {
+    background: var(--color-bg-dark-elevated, #141923);
+    padding: 0.2rem 0.4rem;
+    border-radius: var(--radius-sm, 2px);
+    font-family: 'Monaco', 'Menlo', 'Consolas', 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--color-accent-yellow, #FECC13);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Syntax Highlighting Colors - Dark Theme */
+
+/* Keywords */
+.highlight .k { color: #006AA7; font-weight: 600; } /* keyword */
+.highlight .kr { color: #006AA7; font-weight: 600; } /* keyword reserved */
+.highlight .kt { color: #FECC13; font-weight: 600; } /* type */
+
+/* Functions and Classes */
+.highlight .nf { color: #5AC8FA; font-weight: 600; } /* function name */
+.highlight .nc { color: #5AC8FA; font-weight: 600; } /* class name */
+
+/* Variables */
+.highlight .n { color: #E6E9EF; } /* name/variable */
+.highlight .na { color: #9BA3B4; } /* attribute name */
+.highlight .nv { color: #E6E9EF; } /* variable */
+.highlight .no { color: #FECC13; } /* constant */
+.highlight .nl { color: #006AA7; font-weight: 600; } /* label */
+
+/* Numbers */
+.highlight .m { color: #FF9500; } /* number */
+.highlight .mf { color: #FF9500; } /* float */
+.highlight .mi { color: #FF9500; } /* integer */
+.highlight .il { color: #FF9500; } /* integer long */
+
+/* Strings */
+.highlight .s { color: #32D74B; } /* string */
+.highlight .s2 { color: #32D74B; } /* string double quote */
+.highlight .s1 { color: #32D74B; } /* string single quote */
+.highlight .ss { color: #32D74B; } /* string symbol */
+
+/* Punctuation and Operators */
+.highlight .p { color: #9BA3B4; } /* punctuation */
+.highlight .o { color: #9BA3B4; } /* operator */
+.highlight .ow { color: #006AA7; font-weight: 600; } /* operator word */
+
+/* Comments */
+.highlight .cp { color: #006AA7; font-weight: 600; } /* comment prep */
+.highlight .c1 { color: #6B7280; font-style: italic; } /* comment single line */
+.highlight .c { color: #6B7280; font-style: italic; } /* comment */
+.highlight .cm { color: #6B7280; font-style: italic; } /* comment multiline */
+.highlight .cno { color: #6B7280; font-style: italic; } /* comment number */
+
+/* JSON specific */
+.highlight .nl { color: #006AA7; font-weight: 600; } /* JSON label */
+
+/* Error */
+.highlight .err { color: #FF453A; } /* error */
+
+/* Built-ins */
+.highlight .nb { color: #5AC8FA; } /* name builtin */
+.highlight .bp { color: #5AC8FA; } /* builtin pseudo */
+
+/* Decorators */
+.highlight .nd { color: #FECC13; } /* decorator */
+
+/* Escapes */
+.highlight .se { color: #FF9500; } /* string escape */
+
+/* Regular expressions */
+.highlight .sr { color: #FF9500; } /* string regex */
+.highlight .sx { color: #32D74B; } /* string other */
