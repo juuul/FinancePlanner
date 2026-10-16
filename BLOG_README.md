@@ -29,8 +29,11 @@ title: "Your Post Title"
 date: 2026-02-28
 author: "Author Name"
 lang: en
-asset_prefix: "../"
+permalink: blog_2026_02_28_your-post-title.html
+asset_prefix: ""
 description: "A brief description of your post for SEO"
+alternate_lang: nl
+alternate_url: nl/blog_2026_02_28_your-post-title.html
 ---
 ```
 
@@ -41,8 +44,11 @@ description: "A brief description of your post for SEO"
 - `date`: Publication date in YYYY-MM-DD format
 - `author`: Name of the author (optional)
 - `lang`: Language code - `en` for English or `nl` for Dutch
-- `asset_prefix`: Use `"../"` for English posts, `"../../"` for Dutch posts (for proper asset linking)
+- `permalink`: URL of the post. English: `blog_YYYY_MM_DD_slug.html`, Dutch: `nl/blog_YYYY_MM_DD_slug.html`
+- `asset_prefix`: Use `""` for English posts, `"../"` for Dutch posts (for proper asset linking)
 - `description`: Short description for SEO and previews
+- `alternate_lang`: Language code of the alternate version (`nl` on English posts, `en` on Dutch posts)
+- `alternate_url`: Permalink of the alternate-language version. Used by the language switcher and the `hreflang` tags in the `<head>`
 
 ### Step 3: Write Your Content
 
@@ -74,6 +80,12 @@ After the front matter, write your content using Markdown. The blog system suppo
 **Links:**
 ```markdown
 [Link text](https://example.com)
+```
+
+**Images:**
+Blog images live in `assets/images/blog/`. Always reference them with the asset prefix so they work in both production and preview environments:
+```markdown
+![Alt text]({{ page.asset_prefix }}assets/images/blog/my-image.png)
 ```
 
 #### Code Formatting
@@ -134,8 +146,11 @@ title: "My FIRE Journey"
 date: 2026-02-28
 author: "John Doe"
 lang: en
-asset_prefix: "../"
+permalink: blog_2026_02_28_my-fire-journey.html
+asset_prefix: ""
 description: "My personal journey to financial independence"
+alternate_lang: nl
+alternate_url: nl/blog_2026_02_28_mijn-fire-reis.html
 ---
 
 Content in English...
@@ -150,12 +165,17 @@ title: "Mijn FIRE reis"
 date: 2026-02-28
 author: "John Doe"
 lang: nl
-asset_prefix: "../../"
+permalink: nl/blog_2026_02_28_mijn-fire-reis.html
+asset_prefix: "../"
 description: "Mijn persoonlijke reis naar financiële onafhankelijkheid"
+alternate_lang: en
+alternate_url: blog_2026_02_28_my-fire-journey.html
 ---
 
 Content in Nederlands...
 ```
+
+Both versions must exist and their `alternate_url` values must point to each other, otherwise the language switcher will result in a 404.
 
 ## Blog Pages
 
@@ -186,9 +206,10 @@ FinancePlanner/
 │   ├── en.yml                       # English translations (includes blog strings)
 │   └── nl.yml                       # Dutch translations (includes blog strings)
 └── assets/
-    └── css/
-        └── styles.css               # Includes blog styles
-
+    ├── css/
+    │   └── styles.css               # Includes blog styles
+    └── images/
+        └── blog/                    # Blog post images
 ```
 
 ## GitHub Pages Compatibility
@@ -205,9 +226,11 @@ The blog system uses only features available in the `github-pages` gem:
 **Important Note:** The language switcher behaves differently for blog posts compared to regular pages:
 
 - **Regular pages** (e.g., about.html, contact.html): The language switcher takes you to the same page in the other language
-- **Blog posts**: Since post titles and slugs differ between languages, the language switcher redirects you to the **blog index page** of the other language instead of trying to find a corresponding post
+- **Blog posts**: The language switcher links directly to the alternate-language version of the post, using `alternate_url` from the front matter (see `_layouts/default.html`)
 
-This ensures users always get a valid page instead of a 404 error when switching languages while reading a blog post.
+Because post titles and slugs differ between languages, both versions of a post must exist and their `alternate_url` values must point to each other. Until the alternate version exists, the switcher will result in a 404.
+
+The same `alternate_url` is also used for the `<link rel="alternate" hreflang="...">` tags in the `<head>` of both language versions.
 
 ## Example Post Template
 
@@ -220,8 +243,11 @@ title: "Understanding the 4% Rule"
 date: 2026-03-01
 author: "Finance Planner Team"
 lang: en
-asset_prefix: "../"
+permalink: blog_2026_03_01_understanding-the-4-percent-rule.html
+asset_prefix: ""
 description: "A comprehensive guide to the 4% withdrawal rule for retirement planning"
+alternate_lang: nl
+alternate_url: nl/blog_2026_03_01_de-4-procent-regel.html
 ---
 
 ## Introduction
@@ -262,6 +288,6 @@ To preview your blog post locally:
 
 1. Install Jekyll: `gem install jekyll bundler`
 2. Run: `bundle exec jekyll serve`
-3. Visit: `http://localhost:4000/blog.html`
+3. Visit: `http://localhost:4000/blog.html` (English) or `http://localhost:4000/nl/blog.html` (Dutch)
 
 Or simply push to GitHub and let GitHub Pages build it automatically!
